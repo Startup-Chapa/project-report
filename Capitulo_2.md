@@ -2,12 +2,8 @@
 
 ## 2.1. Competidores
 
-### 2.1.1. Análisis competitivo
 
-### 2.1.2. Estrategias y tácticas frente a competidores
-
-
-## 2.1.1. Análisis competitivo.
+### 2.1.1. Análisis competitivo.
 <table border="1" cellspacing="0" cellpadding="7" style="border-collapse: collapse; width: 100%; border: 2px solid black;"> <tr> <th colspan="6" align="left">Competitive Analysis Landscape</th> </tr> <tr> <td colspan="2" rowspan="2"><b>¿Por qué llevar a cabo este análisis?</b></td> <td colspan="4"><b>Identificar las características, fortalezas y debilidades de los principales servicios de alquiler de bicicletas en Lima, con el propósito de reconocer oportunidades de diferenciación y establecer una propuesta de valor competitiva para la startup.</b></td> </tr> <tr> <td colspan="4">&nbsp;<br><br></td> </tr> <tr> <td colspan="2"><b>Competidores</b></td>   <th align="center">
     <img src="./Resources/Capitulo2/bicigo.png" width="85"><br>
     <b>biciGO</b>
@@ -206,7 +202,7 @@
 
 
 
-## 2.1.2 Estrategias y tácticas frente a competidores
+### 2.1.2 Estrategias y tácticas frente a competidores
 
 Se plantean estrategias y tácticas preliminares que permitan a **biciGO** afrontar las fortalezas de sus competidores, aprovechar sus debilidades y responder a las oportunidades y amenazas presentes en el mercado de alquiler de bicicletas.
 
@@ -238,6 +234,69 @@ La startup buscará aprovechar las limitaciones de los competidores mediante una
 - Implementar reportes de daños y averías.
 - Gestionar el mantenimiento preventivo de las bicicletas.
 - Expandir progresivamente los puntos de alquiler según la demanda.
+
+## 2.2. Entrevistas
+
+### 2.2.1. Diseño de entrevistas
+
+A continuación, se presentan las preguntas principales y complementarias diseñadas para cada segmento objetivo.
+
+#### Segmento 1: Ciudadanos urbanos que realizan trayectos cortos
+
+Este segmento está compuesto por estudiantes, trabajadores y profesionales jóvenes que residen en Lima Metropolitana y requieren desplazamientos frecuentes en zonas congestionadas.
+
+##### Preguntas principales
+| N° | Pregunta |
+|---|---|
+| 1 | ¿Cuál es su edad, distrito de residencia, ocupación actual y estado civil? |
+| 2 | ¿Con qué frecuencia realiza desplazamientos cortos dentro de la ciudad y en qué horarios? |
+| 3 | ¿Qué medio de transporte utiliza con mayor frecuencia para recorridos cortos y por qué? |
+| 4 | ¿Qué tan cómodo o frustrado se siente al usar transporte público o taxis para trayectos cortos? |
+| 5 | ¿Qué factores influyen en su decisión al elegir un medio de transporte para desplazamientos diarios? |
+| 6 | ¿Ha considerado alguna vez usar bicicletas como alternativa para moverse por la ciudad? ¿Por qué sí o por qué no? |
+| 7 | ¿Qué aspectos serían decisivos para que usted adopte un servicio de bicicletas compartidas? |
+| 8 | ¿Cuál sería su nivel de aceptación frente a una app que permita registrar bicicletas, consultar disponibilidad y desbloquearlas mediante código QR? |
+| 9 | ¿Está dispuesto a pagar por un servicio de bicicletas compartidas y qué tipo de tarifa le resultaría más atractiva? |
+| 10 | ¿Qué tan importante es para usted la seguridad, la sostenibilidad y la rapidez al momento de desplazarse? |
+
+##### Preguntas complementarias
+- ¿Qué tan frecuente usa aplicaciones móviles para transporte o pago digital?
+- ¿Qué tan seguro se siente al usar bicicletas en la ciudad y qué factores lo afectan?
+- ¿Qué tan recomendable sería para usted desplazarse en bicicleta durante la mañana o la tarde en su zona?
+- ¿Qué mejoras le gustaría ver en un servicio de bicicletas compartidas?
+- ¿Qué tan importante es contar con estaciones cercanas a su hogar, universidad o trabajo?
+- ¿Cuánto tiempo está dispuesto a invertir en buscar una bicicleta o station point antes de iniciar un viaje?
+- ¿Se sentiría motivado a usar este servicio si existiera un plan mensual para usuarios frecuentes?
+- ¿Qué tan útil considera que sería un servicio pensado para recorridos de 10 a 30 minutos?
+
+#### Segmento 2: Instituciones que desean promover el uso de la bicicleta
+
+Este segmento incluye universidades, municipalidades, empresas y otras organizaciones interesadas en fomentar la movilidad sostenible entre sus miembros, estudiantes o trabajadores.
+
+##### Preguntas principales
+| N° | Pregunta |
+|---|---|
+| 1 | ¿Qué tipo de institución representa y cuál es su rol en la promoción de la movilidad sostenible? |
+| 2 | ¿Qué tipo de población atiende la institución y qué necesidades de movilidad presenta? |
+| 3 | ¿Actualmente se promueve alguna iniciativa relacionada con la bicicleta o con medios de transporte sostenibles? |
+| 4 | ¿Qué limitaciones tienen los empleados o estudiantes para desplazarse en bicicleta dentro de la ciudad? |
+| 5 | ¿Considera que la movilidad sostenible es una prioridad dentro de la institución o comunidad que representa? |
+| 6 | ¿Qué beneficios esperaría obtener una institución si implementa un servicio de bicicletas compartidas para sus usuarios? |
+| 7 | ¿Qué tan viable sería para su institución contar con puntos de acceso o BikePoints dentro de sus instalaciones? |
+| 8 | ¿Qué condiciones deberían cumplirse para que una alianza con una startup de micromovilidad sea atractiva para su organización? |
+| 9 | ¿Qué indicadores permitirían medir el éxito de una iniciativa de movilidad sostenible dentro de la institución? |
+| 10 | ¿Estaría dispuesto a participar en una estrategia de promoción del uso de bicicleta mediante beneficios, incentivos o convenios? |
+
+##### Preguntas complementarias
+- ¿Qué tan importante es para la institución reducir la congestión, mejorar la movilidad o mejorar la imagen sostenible de la organización?
+- ¿Qué tan factible sería implementar bicicletas compartidas en espacios universitarios, corporativos o municipales?
+- ¿Qué nivel de apoyo administrativo o financiero podría ofrecer la institución para una iniciativa de este tipo?
+- ¿Qué tipo de usuarios serían los principales beneficiarios de una solución de movilidad sostenible?
+- ¿Qué tan relevante es para la institución la seguridad del usuario, el mantenimiento de la flota y la digitalización del servicio?
+- ¿Qué tipo de servicios adicionales complementarios podrían ser valorados por la institución?
+- ¿Qué barreras percibe para la adopción de bicicletas como opción de transporte institucional?
+- ¿Qué tan viable es establecer alianzas con empresas o universidades para ampliar los puntos de uso del servicio?
+
 
 ### 2.2.2. Registro de entrevistas
 
