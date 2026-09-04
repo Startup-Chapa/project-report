@@ -29,6 +29,26 @@ El sistema incorpora mecanismos de búsqueda que permiten acceder rápidamente a
     - Fecha del viaje (dia, semana, mes)
 
 ### 4.2.5. Navigation Systems
+La navegación del sistema está diseñada para ser clara, eficiente y orientada a las necesidades del usuario:
+
+- **Menú principal:**
+  - Dashboard
+  - Mapa
+  - Mis viajes
+  - Pagos y suscripciones
+
+- **Navegación por flujo:**
+  - Seguimiento de la bicicleta en base a su estado, ya sea si se encuentra disponible, en uso, en mantenimiento o no disponible por fallas.  
+
+- **Navegación contextual:**
+  - Acceso a información detallada desde dashboards.
+
+- **Elementos de apoyo:**
+  - Breadcrumbs (ej: Dashboard > Bicicletas > Bicicleta)  
+  - Botones de acceso rápido
+  - Indicadores de estado de las bicicletas
+
+Asimismo, el sistema permite al usuario desplazarse facilmente entre las funcionalidades de alquiler y uso de bicicletas.
 
 ## 4.3. Landing Page UI Design
 
