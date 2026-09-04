@@ -22,11 +22,13 @@ El sistema incorpora mecanismos de búsqueda que permiten acceder rápidamente a
     - ID de bicicleta.
     - Ubicacion del BikePoint
     - ID del viaje
+    - ID del incidente
 
 - **Filtros avanzados:**
     - Estado de bicicleta (disponible, en uso, en mantenimiento, no disponible)
     - Nombre del BikePoint
     - Fecha del viaje (dia, semana, mes)
+    - Fecha del incidente
 
 ### 4.2.5. Navigation Systems
 La navegación del sistema está diseñada para ser clara, eficiente y orientada a las necesidades del usuario:
@@ -35,6 +37,7 @@ La navegación del sistema está diseñada para ser clara, eficiente y orientada
   - Dashboard
   - Mapa
   - Mis viajes
+  - Incidentes
   - Pagos y suscripciones
 
 - **Navegación por flujo:**
