@@ -15,6 +15,18 @@
 ### 4.2.3. SEO Tags and Meta Tags
 
 ### 4.2.4. Searching Systems
+El sistema incorpora mecanismos de búsqueda que permiten acceder rápidamente a información específica:
+
+- **Búsqueda por:**
+    - Codigo QR de bicicleta
+    - ID de bicicleta.
+    - Ubicacion del BikePoint
+    - ID del viaje
+
+- **Filtros avanzados:**
+    - Estado de bicicleta (disponible, en uso, en mantenimiento, no disponible)
+    - Nombre del BikePoint
+    - Fecha del viaje (dia, semana, mes)
 
 ### 4.2.5. Navigation Systems
 
