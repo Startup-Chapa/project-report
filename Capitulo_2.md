@@ -363,6 +363,10 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 
 ### 2.2.3. Análisis de entrevistas
 
+#### Segmento 2
+##### Entrevistado 3:
+Mauricio nos menciona que el no suele recorrer trayectos cortos, pero cuando los hace, prefiere utilizar el transporte publico pues piensa en ahorrar su tiempo. Sin embargo, tiene en cuenta los tiempos de espera, la falta de horarios establecidos y la congestión de trafico en general, lo cual lo frustra puesto que el considera que la comodidad y la rapidez son factores importantes para decidir como movilizarse. Él conoce las bicicletas de alquiler, aunque no las ha utilizado debido a la falta de claridad sobre el proceso de pago. Considera que usar una bicicleta para desplazamientos cortos es bueno siempre y cuando el tiempo de alquiler sea rentable, prefiriendo pagar por minutos en lugar de adquirir una suscripción. Destaca el método de desbloqueo de las bicicletas mediante QR por su comodidad y rapidez las cuales satisface sus necesidades. Del mismo modo, considera razonable devolver las bicicletas en estaciones especificas aunque le gustaría que se le destaque cuales son las estaciones más cercanas. Finalmente, considera indispensable que la aplicación muestre un mapa de estaciones y bicicletas disponibles, además del costo estimado por uso y las rutas por ciclovías, destacando las ultimas dos como elementos importantes para garantizar un buen uso hacia el usuario.
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
