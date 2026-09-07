@@ -299,7 +299,6 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 
 
 ### 2.2.2. Registro de entrevistas
-
 #### Primer Segmento objetivo: Estudiantes y profesionales
 
 #### Segundo Segmento objetivo: Transeuntes
@@ -349,14 +348,15 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
       <b>Perfil del entrevistado:</b>como pasajero.
     </td>
     <td valign="top">
-      <b>Entrevistador:</b> Dalila Torres <br>
-      <b>Entrevistado:</b> Ario Chavez <br>
-      <b>Edad:</b> 22 años <br>
-      <b>Distrito:</b> Huaraz <br>
-      <b>Inicio de la entrevista:</b> 1:49 <br><br>
-      <b>Resumen:</b> El entrevista Ario indica que en Huaraz si hay muchas mototaxis y que la mayoría de personas las utilizan para transporte público, que existen grupos de WhatsApp donde se coordinan los viajes y que los conductores son independientes. <br>
+      <b>Entrevistador:</b> Adrian Armestar <br>
+      <b>Entrevistado:</b> Mauricio <br>
+      <b>Edad:</b> 23 años <br>
+      <b>Distrito:</b> Miraflores <br>
+      <b>Inicio de la entrevista:</b> 00:01 <br><br>
+      <b>Resumen:</b> El entrevistado Mauricio indica que realiza trayectos cortos muy pocas veces pero tiende a optar por el transporte publica cuando necesita ahorrar tiempo
+      aunque se suele frustrar con los tiempos de espera y el trafico que se genera.<br>
       <br>
-      <b>Perfil del entrevistado:</b> Es un hombre de 22 años que reside en el distrito de Huaraz, donde menciona que es una ciudad turística y que hay mucha afluencia de personas, además menciona que las mototaxis son el principal medio de transporte público y que la mayoría de personas las utilizan para desplazarse a diferentes zonas y resalta los problemas diarios a los que se enfrenta, como la necesidad de "regatear" las tarifas. Asimismo, expresa el temor que le genera subir a este tipo de transporte, recordando ocasiones en las que el conductor, por intentar ahorrar tiempo, manejó en sentido contrario a la ruta permitida, poniendo en riesgo su seguridad como pasajero.
+      <b>Perfil del entrevistado:</b> Es un hombre de 23 años que reside en el distrito de Miraflores
     </td>
   </tr>
 </table>
@@ -374,5 +374,11 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 ### 2.3.4. Empathy Mapping
 
 ## 2.4. Big Picture EventStorming
+En la sesión de Big Picture Event Storming, el equipo exploró de forma visual el panorama general del dominio de movilidad urbana sostenible y gestión de bicicletas compartidas de Chapa. Se identificaron los eventos significativos del ciclo de vida de un viaje, desde el registro del usuario y la disponibilidad de una bicicleta hasta el inicio, seguimiento y finalización del recorrido en un BikePoint autorizado. Integrando los actores que interactuan con la plataforma y exponiendo los problemas, dudas y oportunidades de mejora detectados durante la sesión. Esta primera aproximación permitió alinear el entendimiento del equipo y sentar las bases para el diseño detallado de la solución.
+
+**Primera fase: Eventos**
+![Big picture event storming](./Resources/Capitulo2/bigpictureeventstormingbicigo.png)
+
+**Mapa General:** https://canva.link/7coo689oj2nx3b7
 
 ## 2.5. Ubiquitous Language
