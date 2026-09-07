@@ -300,6 +300,67 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 
 ### 2.2.2. Registro de entrevistas
 
+#### Primer Segmento objetivo: Estudiantes y profesionales
+
+#### Segundo Segmento objetivo: Transeuntes
+
+<table style="width: 100%" align='center'>
+  <tr>
+    <th>Entrevistado 1</th>
+    <th>Entrevistado 2</th>
+    <th>Entrevistado 3</th>
+  </tr>
+  <tr>
+    <td align='center'>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322952_upc_edu_pe/IQCmXEuLne2lTZsZnWYzY_9gAUFseCBoR-M_F5l_kv8R3z0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PqFbEC" target="_blank">
+        <img src="Resources/entrevistas/u20241a911_Pasajero_Antony.png" alt="Primera entrevista del segundo segmento" width="150">
+      </a>
+    </td>
+    <td align='center'>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQCfnIQowgWEQKxTcK51KNwUAeiVUFnDUoG8urSVMs6EWMg?e=Hh2UL8" target="_blank">
+        <img src="Resources/Capitulo2/Entrevista-2-ciudadanos.png" alt="Segunda entrevista del segundo segmento" width="150">
+      </a>
+    </td>
+    <td align='center'>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQArqY5miSBMTq7c8R2ZrekrAX2BczGjyQ_9jew8pat2KDo?e=aWA2gK" target="_blank">
+        <img src="Resources/Capitulo2/Entrevista-3-ciudadanos.png" alt="Tercera entrevista del segundo segmento" width="150">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
+      <b>Entrevistado:</b> Antony Rodrigo Quito Ancasy<br>
+      <b>Edad:</b> 20 años <br>
+      <b>Distrito:</b> Chorrillos <br>
+      <b>Inicio de la entrevista:</b> 1:18 <br><br>
+      <b>Resumen:</b> El entrevistado, joven de 20 años relató su experiencia sobre las mototaxis en la zona de Chorrillos,en el cual compartio sus dificultades tanto por el lado del precio como tambien el de no saber si el conductor pueda tener precaución al conducir además de ello aclaro que lo que priorizaria en una app de transporte seria ver el perfil del conductor para no tomar riesgos al pedir un viaje.
+      <br><br>
+      <b>Perfil del entrevistado:</b>Hombre de 20 años que reside en Lima por el distrito de Chorrillos, ha vivido toda su vida alli y menciona que mayormente para transportarse a diferentes zonas pide mototaxi regularmente, además menciona problemas que le sucede dia a dia como el tener que "regatear" precios ademas de miedo por tener que subirse a una mototaxi la cual el conductor para ahorrar tiempo se metio en contra de la ruta y puso en peligro al pasajero.
+    </td>
+    <td valign="top">
+      <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
+      <b>Entrevistado:</b>  <br>
+      <b>Edad:</b>  años <br>
+      <b>Distrito:</b> Carhuaz <br>
+      <b>Inicio de la entrevista:</b>  <br><br>
+      <b>Resumen:</b> .
+      <br><br>
+      <b>Perfil del entrevistado:</b>como pasajero.
+    </td>
+    <td valign="top">
+      <b>Entrevistador:</b> Dalila Torres <br>
+      <b>Entrevistado:</b> Ario Chavez <br>
+      <b>Edad:</b> 22 años <br>
+      <b>Distrito:</b> Huaraz <br>
+      <b>Inicio de la entrevista:</b> 1:49 <br><br>
+      <b>Resumen:</b> El entrevista Ario indica que en Huaraz si hay muchas mototaxis y que la mayoría de personas las utilizan para transporte público, que existen grupos de WhatsApp donde se coordinan los viajes y que los conductores son independientes. <br>
+      <br>
+      <b>Perfil del entrevistado:</b> Es un hombre de 22 años que reside en el distrito de Huaraz, donde menciona que es una ciudad turística y que hay mucha afluencia de personas, además menciona que las mototaxis son el principal medio de transporte público y que la mayoría de personas las utilizan para desplazarse a diferentes zonas y resalta los problemas diarios a los que se enfrenta, como la necesidad de "regatear" las tarifas. Asimismo, expresa el temor que le genera subir a este tipo de transporte, recordando ocasiones en las que el conductor, por intentar ahorrar tiempo, manejó en sentido contrario a la ruta permitida, poniendo en riesgo su seguridad como pasajero.
+    </td>
+  </tr>
+</table>
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
