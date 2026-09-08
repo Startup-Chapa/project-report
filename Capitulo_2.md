@@ -302,6 +302,63 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 
 #### Primer Segmento objetivo: Estudiantes y profesionales
 
+<table style="width: 100%" align="center">
+  <tr>
+    <th>Entrevistado 1</th>
+    <th>Entrevistado 2</th>
+    <th>Entrevistado 3</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQDxZUCIUMf8RpBSZ5jmNJTWAe3OcVVZVYDUP-SV0bk5Pu8?e=DMd2bO" target="_blank">
+        <img src="Resources/Capitulo2/entrevista1-estudiante.png" alt="Primera entrevista del primer segmento" width="150">
+      </a>
+    </td>
+    <td align="center">
+      <a href="ENLACE_VIDEO_2" target="_blank">
+        <img src="RUTA_IMAGEN_2" alt="Segunda entrevista del primer segmento" width="150">
+      </a>
+    </td>
+    <td align="center">
+      <a href="ENLACE_VIDEO_3" target="_blank">
+        <img src="RUTA_IMAGEN_3" alt="Tercera entrevista del primer segmento" width="150">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b>Entrevistador:</b> Juan David Ayllon Pauccar<br>
+      <b>Entrevistado:</b> Fernando Güere Calero<br>
+      <b>Edad:</b> 19 años <br>
+      <b>Distrito:</b> Chaclacayo <br>
+      <b>Estado civil:</b> Soltero <br>
+      <b>Ocupación:</b> Estudiante de ingeniería <br>
+      <b>Inicio de la entrevista:</b> 0:00 <br><br>
+      <b>Resumen:</b> El entrevistado usa principalmente la bicicleta para desplazamientos cortos porque la considera cómoda, económica y útil para hacer ejercicio. Considera incómodo y costoso utilizar transporte público o taxis para estos trayectos. Muestra interés en un servicio de bicicletas compartidas con una aplicación para consultar disponibilidad y desbloquear bicicletas mediante código QR, siempre que tenga tarifas razonables y condiciones de seguridad adecuadas.<br><br>
+      <b>Perfil del entrevistado:</b> Fernando Güere Calero es un hombre de 19 años, soltero, residente en el distrito de Chaclacayo y estudiante de ingeniería. Forma parte del grupo de jóvenes que realiza desplazamientos cotidianos dentro de la ciudad y tiene experiencia utilizando la bicicleta como medio de transporte para recorridos cortos. Su perfil corresponde al de un usuario que busca alternativas prácticas para movilizarse en sus actividades diarias.
+    </td>
+    <td valign="top">
+      <b>Entrevistador:</b> <br>
+      <b>Entrevistado:</b> <br>
+      <b>Edad:</b> <br>
+      <b>Distrito:</b> <br>
+      <b>Inicio de la entrevista:</b> <br><br>
+      <b>Resumen:</b> <br><br>
+      <b>Perfil del entrevistado:</b>
+    </td>
+    <td valign="top">
+      <b>Entrevistador:</b> <br>
+      <b>Entrevistado:</b> <br>
+      <b>Edad:</b> <br>
+      <b>Distrito:</b> <br>
+      <b>Inicio de la entrevista:</b> <br><br>
+      <b>Resumen:</b> <br><br>
+      <b>Perfil del entrevistado:</b>
+    </td>
+  </tr>
+</table>
+
+
 #### Segundo Segmento objetivo: Transeuntes
 
 <table style="width: 100%" align='center'>
