@@ -492,4 +492,435 @@ Los siguientes Epics agrupan las User Stories y Technical Stories de biciGO seg�
 <p align="center">
   <img src="./Resources/Capitulo3/ImpactMap.png" width="100%">
 </p>
+
 ## 3.3. Product Backlog
+
+<table border="1" cellspacing="0" cellpadding="7" style="border-collapse: collapse; width: 100%; border: 2px solid black;">
+  <tr>
+    <th align="center"># Orden</th>
+    <th align="center">User Story Id</th>
+    <th align="center">Título</th>
+    <th align="center">Descripción</th>
+    <th align="center">Story Points<br>(1 / 2 / 3 / 5 / 8)</th>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>1</b></td>
+    <td valign="top" align="center"><b>US-39</b></td>
+    <td valign="top">Consulta de zonas de cobertura</td>
+    <td valign="top">Como usuario , quiero consultar las zonas donde opera biciGO, para saber si el servicio está disponible en el lugar donde deseo utilizar una bicicleta.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>2</b></td>
+    <td valign="top" align="center"><b>US-07</b></td>
+    <td valign="top">Visualización de bicicletas cercanas</td>
+    <td valign="top">Como usuario registrado , quiero visualizar las bicicletas disponibles cerca de mi ubicación, para elegir una alternativa conveniente para mi viaje.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>3</b></td>
+    <td valign="top" align="center"><b>US-08</b></td>
+    <td valign="top">Consulta de información de bicicleta</td>
+    <td valign="top">Como usuario registrado , quiero consultar la información de una bicicleta, para verificar su disponibilidad y condición antes de alquilarla.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>4</b></td>
+    <td valign="top" align="center"><b>US-17</b></td>
+    <td valign="top">Consulta de tarifa</td>
+    <td valign="top">Como usuario registrado , quiero consultar la tarifa aplicable al alquiler, para conocer las condiciones de cobro antes de utilizar una bicicleta.</td>
+    <td valign="top" align="center"><b>2</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>5</b></td>
+    <td valign="top" align="center"><b>US-01</b></td>
+    <td valign="top">Registro de usuario</td>
+    <td valign="top">Como visitante , quiero registrarme en biciGO proporcionando mis datos personales y credenciales, para poder acceder a los servicios de alquiler de bicicletas.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>6</b></td>
+    <td valign="top" align="center"><b>US-02</b></td>
+    <td valign="top">Inicio de sesión</td>
+    <td valign="top">Como usuario registrado , quiero iniciar sesión con mis credenciales, para acceder de forma segura a las funcionalidades de biciGO.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>7</b></td>
+    <td valign="top" align="center"><b>US-11</b></td>
+    <td valign="top">Inicio de alquiler</td>
+    <td valign="top">Como usuario registrado , quiero iniciar el alquiler de una bicicleta disponible, para utilizarla durante mi desplazamiento.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>8</b></td>
+    <td valign="top" align="center"><b>US-12</b></td>
+    <td valign="top">Desbloqueo de bicicleta</td>
+    <td valign="top">Como usuario con un alquiler autorizado , quiero desbloquear la bicicleta mediante el mecanismo proporcionado por biciGO, para comenzar mi recorrido.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>9</b></td>
+    <td valign="top" align="center"><b>US-13</b></td>
+    <td valign="top">Consulta del viaje activo</td>
+    <td valign="top">Como usuario con un alquiler activo , quiero consultar la información de mi recorrido, para conocer el estado actual de mi viaje.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>10</b></td>
+    <td valign="top" align="center"><b>US-14</b></td>
+    <td valign="top">Consulta de costo durante el viaje</td>
+    <td valign="top">Como usuario con un alquiler activo , quiero consultar el costo acumulado del recorrido, para controlar cuánto estoy gastando mientras utilizo la bicicleta.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>11</b></td>
+    <td valign="top" align="center"><b>US-15</b></td>
+    <td valign="top">Finalización de alquiler</td>
+    <td valign="top">Como usuario con un alquiler activo , quiero finalizar correctamente mi alquiler, para detener el cobro y liberar la bicicleta para otros usuarios.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>12</b></td>
+    <td valign="top" align="center"><b>US-16</b></td>
+    <td valign="top">Registro de método de pago</td>
+    <td valign="top">Como usuario registrado , quiero registrar un método de pago, para poder pagar los servicios utilizados en biciGO.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>13</b></td>
+    <td valign="top" align="center"><b>US-18</b></td>
+    <td valign="top">Pago del alquiler</td>
+    <td valign="top">Como usuario , quiero pagar el importe generado por mi alquiler, para completar correctamente la transacción del servicio utilizado.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>14</b></td>
+    <td valign="top" align="center"><b>US-37</b></td>
+    <td valign="top">Consulta de comprobantes de pago</td>
+    <td valign="top">Como usuario registrado , quiero consultar los comprobantes de mis pagos realizados, para revisar los cargos asociados a mis alquileres y suscripciones.</td>
+    <td valign="top" align="center"><b>2</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>15</b></td>
+    <td valign="top" align="center"><b>US-06</b></td>
+    <td valign="top">Permitir acceso a ubicación</td>
+    <td valign="top">Como usuario registrado , quiero permitir que biciGO acceda a mi ubicación, para identificar bicicletas disponibles cercanas.</td>
+    <td valign="top" align="center"><b>2</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>16</b></td>
+    <td valign="top" align="center"><b>US-09</b></td>
+    <td valign="top">Búsqueda de bicicletas por zona</td>
+    <td valign="top">Como usuario registrado , quiero buscar bicicletas en una zona específica, para planificar un desplazamiento aunque no me encuentre actualmente en ese lugar.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>17</b></td>
+    <td valign="top" align="center"><b>US-10</b></td>
+    <td valign="top">Actualización de disponibilidad</td>
+    <td valign="top">Como usuario registrado , quiero actualizar la disponibilidad de bicicletas mostrada, para consultar información reciente antes de seleccionar una unidad.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>18</b></td>
+    <td valign="top" align="center"><b>US-23</b></td>
+    <td valign="top">Consulta de historial de viajes</td>
+    <td valign="top">Como usuario registrado , quiero consultar mis viajes anteriores, para revisar el uso que he realizado de biciGO.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>19</b></td>
+    <td valign="top" align="center"><b>US-24</b></td>
+    <td valign="top">Consulta de detalle de viaje</td>
+    <td valign="top">Como usuario registrado , quiero consultar el detalle de un viaje realizado, para conocer su duración, distancia y costo final.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>20</b></td>
+    <td valign="top" align="center"><b>US-26</b></td>
+    <td valign="top">Reporte de bicicleta dañada</td>
+    <td valign="top">Como usuario , quiero reportar una bicicleta que presente daños, para evitar que otros usuarios utilicen una unidad potencialmente insegura.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>21</b></td>
+    <td valign="top" align="center"><b>US-27</b></td>
+    <td valign="top">Reporte de problema durante un viaje</td>
+    <td valign="top">Como usuario con un alquiler activo , quiero reportar un problema ocurrido durante mi recorrido, para recibir asistencia y dejar constancia del incidente.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>22</b></td>
+    <td valign="top" align="center"><b>US-28</b></td>
+    <td valign="top">Contacto con soporte</td>
+    <td valign="top">Como usuario , quiero comunicarme con soporte desde la plataforma, para obtener ayuda ante problemas relacionados con mi cuenta o alquileres.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>23</b></td>
+    <td valign="top" align="center"><b>US-29</b></td>
+    <td valign="top">Seguimiento de incidencias</td>
+    <td valign="top">Como usuario , quiero consultar el estado de mis incidencias reportadas, para conocer si están pendientes, en revisión o resueltas.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>24</b></td>
+    <td valign="top" align="center"><b>US-30</b></td>
+    <td valign="top">Recepción de notificaciones</td>
+    <td valign="top">Como usuario , quiero recibir notificaciones relacionadas con mis alquileres, pagos e incidencias, para mantenerme informado sobre eventos importantes de mi cuenta.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>25</b></td>
+    <td valign="top" align="center"><b>US-19</b></td>
+    <td valign="top">Suscripción a plan mensual</td>
+    <td valign="top">Como usuario frecuente , quiero contratar un plan mensual de biciGO, para acceder a condiciones de uso más convenientes.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>26</b></td>
+    <td valign="top" align="center"><b>US-20</b></td>
+    <td valign="top">Cancelación de suscripción</td>
+    <td valign="top">Como usuario suscrito , quiero cancelar mi suscripción mensual, para evitar futuras renovaciones cuando ya no desee utilizar el plan.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>27</b></td>
+    <td valign="top" align="center"><b>US-38</b></td>
+    <td valign="top">Configuración de notificaciones</td>
+    <td valign="top">Como usuario registrado , quiero configurar qué notificaciones deseo recibir, para controlar los avisos enviados por biciGO.</td>
+    <td valign="top" align="center"><b>2</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>28</b></td>
+    <td valign="top" align="center"><b>US-21</b></td>
+    <td valign="top">Consulta de perfil</td>
+    <td valign="top">Como usuario registrado , quiero consultar la información de mi perfil, para verificar los datos asociados a mi cuenta.</td>
+    <td valign="top" align="center"><b>2</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>29</b></td>
+    <td valign="top" align="center"><b>US-22</b></td>
+    <td valign="top">Edición de perfil</td>
+    <td valign="top">Como usuario registrado , quiero modificar mis datos personales, para mantener actualizada la información de mi cuenta.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>30</b></td>
+    <td valign="top" align="center"><b>US-25</b></td>
+    <td valign="top">Cambio de contraseña</td>
+    <td valign="top">Como usuario registrado , quiero cambiar mi contraseña desde mi perfil, para mantener segura mi cuenta.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>31</b></td>
+    <td valign="top" align="center"><b>US-36</b></td>
+    <td valign="top">Eliminación de método de pago</td>
+    <td valign="top">Como usuario registrado , quiero eliminar un método de pago que ya no utilizo, para mantener actualizadas mis opciones de cobro.</td>
+    <td valign="top" align="center"><b>2</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>32</b></td>
+    <td valign="top" align="center"><b>US-40</b></td>
+    <td valign="top">Desactivación de cuenta</td>
+    <td valign="top">Como usuario registrado , quiero desactivar mi cuenta cuando ya no desee utilizar biciGO, para dejar de acceder a los servicios de la plataforma.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>33</b></td>
+    <td valign="top" align="center"><b>US-31</b></td>
+    <td valign="top">Visualización de flota</td>
+    <td valign="top">Como administrador , quiero consultar el estado de las bicicletas de la plataforma, para supervisar la disponibilidad general de la flota.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>34</b></td>
+    <td valign="top" align="center"><b>US-32</b></td>
+    <td valign="top">Actualización del estado de bicicleta</td>
+    <td valign="top">Como administrador , quiero modificar el estado operativo de una bicicleta, para controlar qué unidades pueden ser alquiladas por los usuarios.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>35</b></td>
+    <td valign="top" align="center"><b>US-33</b></td>
+    <td valign="top">Gestión de incidencias de bicicletas</td>
+    <td valign="top">Como administrador , quiero revisar los reportes relacionados con bicicletas dañadas, para priorizar su mantenimiento y mantener segura la flota.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>36</b></td>
+    <td valign="top" align="center"><b>US-34</b></td>
+    <td valign="top">Consulta de métricas de alquiler</td>
+    <td valign="top">Como administrador , quiero visualizar métricas de uso de las bicicletas, para analizar el comportamiento del servicio y apoyar decisiones operativas.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>37</b></td>
+    <td valign="top" align="center"><b>US-35</b></td>
+    <td valign="top">Gestión de usuarios</td>
+    <td valign="top">Como administrador , quiero consultar y gestionar las cuentas de los usuarios, para atender situaciones que puedan afectar la seguridad o el correcto funcionamiento de biciGO.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>38</b></td>
+    <td valign="top" align="center"><b>US-03</b></td>
+    <td valign="top">Recuperación de contraseña</td>
+    <td valign="top">Como usuario registrado , quiero recuperar el acceso a mi cuenta cuando olvide mi contraseña, para poder continuar utilizando biciGO.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>39</b></td>
+    <td valign="top" align="center"><b>US-04</b></td>
+    <td valign="top">Verificación de cuenta</td>
+    <td valign="top">Como usuario recién registrado , quiero verificar mi cuenta, para confirmar mis datos y habilitar el acceso completo a los servicios de biciGO.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>40</b></td>
+    <td valign="top" align="center"><b>US-05</b></td>
+    <td valign="top">Cierre de sesión</td>
+    <td valign="top">Como usuario autenticado , quiero cerrar mi sesión, para evitar que otras personas accedan a mi cuenta desde el mismo dispositivo.</td>
+    <td valign="top" align="center"><b>1</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>41</b></td>
+    <td valign="top" align="center"><b>TS-05</b></td>
+    <td valign="top">Get Nearby Bikes</td>
+    <td valign="top">Como desarrollador , quiero implementar la consulta de bicicletas cercanas, para mostrar al usuario las unidades disponibles según su ubicación.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>42</b></td>
+    <td valign="top" align="center"><b>TS-06</b></td>
+    <td valign="top">Get Bike Detail</td>
+    <td valign="top">Como desarrollador , quiero implementar el detalle de una bicicleta, para exponer su estado y datos necesarios antes de iniciar un alquiler.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>43</b></td>
+    <td valign="top" align="center"><b>TS-07</b></td>
+    <td valign="top">Search Coverage Zone</td>
+    <td valign="top">Como desarrollador , quiero implementar la consulta de zonas de cobertura, para indicar si biciGO opera en una ubicación determinada.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>44</b></td>
+    <td valign="top" align="center"><b>TS-01</b></td>
+    <td valign="top">Register Passenger</td>
+    <td valign="top">Como desarrollador , quiero implementar el endpoint de registro de usuario, para permitir la creación de cuentas en la plataforma.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>45</b></td>
+    <td valign="top" align="center"><b>TS-02</b></td>
+    <td valign="top">Login User</td>
+    <td valign="top">Como desarrollador , quiero implementar el endpoint de inicio de sesión, para autenticar usuarios y permitir el acceso seguro a las funciones privadas.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>46</b></td>
+    <td valign="top" align="center"><b>TS-08</b></td>
+    <td valign="top">Start Rental</td>
+    <td valign="top">Como desarrollador , quiero implementar el endpoint para iniciar un alquiler, para asociar una bicicleta disponible con un usuario autenticado.</td>
+    <td valign="top" align="center"><b>8</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>47</b></td>
+    <td valign="top" align="center"><b>TS-09</b></td>
+    <td valign="top">Unlock Bike</td>
+    <td valign="top">Como desarrollador , quiero implementar la validación del código de desbloqueo, para autorizar únicamente la apertura de la bicicleta asociada al alquiler vigente.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>48</b></td>
+    <td valign="top" align="center"><b>TS-10</b></td>
+    <td valign="top">Get Active Rental</td>
+    <td valign="top">Como desarrollador , quiero implementar la consulta del alquiler activo, para mostrar al usuario la información actual de su viaje.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>49</b></td>
+    <td valign="top" align="center"><b>TS-11</b></td>
+    <td valign="top">Finish Rental</td>
+    <td valign="top">Como desarrollador , quiero implementar el endpoint de finalización de alquiler, para cerrar el viaje, calcular el importe y liberar la bicicleta.</td>
+    <td valign="top" align="center"><b>8</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>50</b></td>
+    <td valign="top" align="center"><b>TS-12</b></td>
+    <td valign="top">Register Payment Method</td>
+    <td valign="top">Como desarrollador , quiero implementar el registro de métodos de pago, para permitir que los usuarios dispongan de una opción válida para realizar cobros.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>51</b></td>
+    <td valign="top" align="center"><b>TS-13</b></td>
+    <td valign="top">Process Rental Payment</td>
+    <td valign="top">Como desarrollador , quiero implementar el procesamiento del pago de un alquiler, para registrar el cobro correspondiente al servicio utilizado.</td>
+    <td valign="top" align="center"><b>8</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>52</b></td>
+    <td valign="top" align="center"><b>TS-14</b></td>
+    <td valign="top">Manage Subscription</td>
+    <td valign="top">Como desarrollador , quiero implementar la gestión de suscripciones, para permitir activar y cancelar planes mensuales de biciGO.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>53</b></td>
+    <td valign="top" align="center"><b>TS-15</b></td>
+    <td valign="top">Get User Profile</td>
+    <td valign="top">Como desarrollador , quiero implementar la consulta y actualización del perfil, para permitir que cada usuario gestione sus datos personales.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>54</b></td>
+    <td valign="top" align="center"><b>TS-16</b></td>
+    <td valign="top">Get Travel History</td>
+    <td valign="top">Como desarrollador , quiero implementar la consulta del historial de viajes, para mostrar únicamente los alquileres pertenecientes al usuario autenticado.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>55</b></td>
+    <td valign="top" align="center"><b>TS-17</b></td>
+    <td valign="top">Create Incident</td>
+    <td valign="top">Como desarrollador , quiero implementar el registro de incidencias, para almacenar reportes relacionados con bicicletas y viajes.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>56</b></td>
+    <td valign="top" align="center"><b>TS-18</b></td>
+    <td valign="top">Get Incident Status</td>
+    <td valign="top">Como desarrollador , quiero implementar la consulta del estado de incidencias, para que el usuario pueda dar seguimiento a sus reportes.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>57</b></td>
+    <td valign="top" align="center"><b>TS-19</b></td>
+    <td valign="top">Manage Bike Status</td>
+    <td valign="top">Como desarrollador , quiero implementar endpoints administrativos para actualizar el estado de las bicicletas, para controlar disponibilidad y mantenimiento de la flota.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>58</b></td>
+    <td valign="top" align="center"><b>TS-20</b></td>
+    <td valign="top">Get Dashboard Metrics</td>
+    <td valign="top">Como desarrollador , quiero implementar las consultas del dashboard administrativo, para obtener métricas de alquileres, usuarios y disponibilidad de bicicletas.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>59</b></td>
+    <td valign="top" align="center"><b>TS-03</b></td>
+    <td valign="top">Recover Password</td>
+    <td valign="top">Como desarrollador , quiero implementar el proceso de recuperación de contraseña, para que un usuario pueda restablecer sus credenciales de forma segura.</td>
+    <td valign="top" align="center"><b>5</b></td>
+  </tr>
+  <tr>
+    <td valign="top" align="center"><b>60</b></td>
+    <td valign="top" align="center"><b>TS-04</b></td>
+    <td valign="top">Verify Account</td>
+    <td valign="top">Como desarrollador , quiero implementar la verificación de cuenta, para habilitar únicamente usuarios que hayan completado correctamente el proceso de validación.</td>
+    <td valign="top" align="center"><b>3</b></td>
+  </tr>
+</table>
