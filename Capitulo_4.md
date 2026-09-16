@@ -31,6 +31,7 @@
 ### 4.4.2. Web Applications Wireflow Diagrams
 
 ### 4.4.2. Web Applications Mock-ups
+![Captura_Figma](./Resources/captura_figma1.jpeg)
 
 ### 4.4.3. Web Applications User Flow Diagrams
 
