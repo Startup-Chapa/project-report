@@ -174,8 +174,10 @@ La navegación del sistema está diseñada para ser clara, eficiente y orientada
 Asimismo, el sistema permite al usuario desplazarse facilmente entre las funcionalidades de alquiler y uso de bicicletas.
 
 ## 4.3. Landing Page UI Design
-
 ### 4.3.1. Landing Page Wireframe
+![landing-wireframe](./Resources/chapter-images/chapter-4/wireframeLanding.png)
+
+**Para ver el Wireframe completo dar click aqui:** https://www.figma.com/design/3nqdv1dpncuL6cV2shloZk/BiciGo_Landing_Page_Wireframe_-_Mockups?node-id=0-1&t=yX2veXVTfTuGFtXk-1
 
 ### 4.3.2. Landing Page Mock-up
 
