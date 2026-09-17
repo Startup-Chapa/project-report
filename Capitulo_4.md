@@ -42,6 +42,8 @@
 
 ### 4.6.2. Software Architecture Context Diagram
 
+# 4.6.2. Software Architecture Context Diagram
+
 ## Descripción
 
 El diagrama de contexto de la arquitectura de software representa la interacción entre la **Plataforma Web de Alquiler de Bicicletas** y los principales actores y servicios externos que participan en su funcionamiento.
