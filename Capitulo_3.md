@@ -492,4 +492,5 @@ Los siguientes Epics agrupan las User Stories y Technical Stories de biciGO seg√
 <p align="center">
   <img src="./Resources/Capitulo3/ImpactMap.png" width="100%">
 </p>
+
 ## 3.3. Product Backlog
