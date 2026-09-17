@@ -1,4 +1,61 @@
+# CAPÍTULO III: REQUIREMENTS SPECIFICATION
 ## 3.1. User Stories
+
+### Epics
+
+Los siguientes Epics agrupan las User Stories y Technical Stories de biciGO según las principales capacidades funcionales del sistema.
+
+<table border="1" cellspacing="0" cellpadding="7" style="border-collapse: collapse; width: 100%; border: 2px solid black;">
+  <tr>
+    <th align="center">Epic ID</th>
+    <th align="center">Título</th>
+    <th align="center">Descripción</th>
+    <th align="center">Historias relacionadas</th>
+  </tr>
+  <tr>
+    <td valign="top"><b>EP-01</b></td>
+    <td valign="top">Gestión de cuentas y autenticación</td>
+    <td valign="top">Agrupa las funcionalidades relacionadas con el registro, inicio de sesión, verificación, recuperación de contraseña y seguridad de acceso de los usuarios en biciGO.</td>
+    <td valign="top">US-01 a US-05, TS-01 a TS-04</td>
+  </tr>
+  <tr>
+    <td valign="top"><b>EP-02</b></td>
+    <td valign="top">Localización y disponibilidad de bicicletas</td>
+    <td valign="top">Incluye las funcionalidades que permiten consultar la ubicación, disponibilidad, información y cobertura de las bicicletas dentro de las zonas donde opera biciGO.</td>
+    <td valign="top">US-06 a US-10, US-39, TS-05 a TS-07</td>
+  </tr>
+  <tr>
+    <td valign="top"><b>EP-03</b></td>
+    <td valign="top">Gestión de alquileres y viajes</td>
+    <td valign="top">Reúne las funcionalidades necesarias para iniciar, desbloquear, consultar y finalizar alquileres, así como controlar la información del recorrido y su costo.</td>
+    <td valign="top">US-11 a US-15, TS-08 a TS-11</td>
+  </tr>
+  <tr>
+    <td valign="top"><b>EP-04</b></td>
+    <td valign="top">Pagos, tarifas y suscripciones</td>
+    <td valign="top">Comprende la gestión de métodos de pago, tarifas, cobros, comprobantes y planes de suscripción para usuarios frecuentes de biciGO.</td>
+    <td valign="top">US-16 a US-20, US-36, US-37, TS-12 a TS-14</td>
+  </tr>
+  <tr>
+    <td valign="top"><b>EP-05</b></td>
+    <td valign="top">Perfil, historial y gestión personal</td>
+    <td valign="top">Agrupa las funcionalidades que permiten al usuario consultar y actualizar su perfil, revisar viajes anteriores, gestionar su contraseña y desactivar su cuenta.</td>
+    <td valign="top">US-21 a US-25, US-40, TS-15 y TS-16</td>
+  </tr>
+  <tr>
+    <td valign="top"><b>EP-06</b></td>
+    <td valign="top">Incidencias, soporte y notificaciones</td>
+    <td valign="top">Incluye el reporte y seguimiento de problemas, la comunicación con soporte y la gestión de notificaciones relacionadas con alquileres, pagos e incidencias.</td>
+    <td valign="top">US-26 a US-30, US-38, TS-17 y TS-18</td>
+  </tr>
+  <tr>
+    <td valign="top"><b>EP-07</b></td>
+    <td valign="top">Administración y gestión operativa</td>
+    <td valign="top">Reúne las funcionalidades administrativas necesarias para supervisar la flota, gestionar usuarios e incidencias y consultar métricas operativas del servicio.</td>
+    <td valign="top">US-31 a US-35, TS-19 y TS-20</td>
+  </tr>
+</table>
+
 
 <table border="1" cellspacing="0" cellpadding="7" style="border-collapse: collapse; width: 100%; border: 2px solid black;">
     <tr>
@@ -429,3 +486,11 @@
       <td valign="top"><b>EP-07</b></td>
     </tr>
 </table>
+
+## 3.2. Impact Mapping
+
+<p align="center">
+  <img src="./Resources/Capitulo3/ImpactMap.png" width="100%">
+</p>
+
+## 3.3. Product Backlog
