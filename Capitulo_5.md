@@ -147,9 +147,8 @@ Geo --> Business : Ubicación y distancia
 
 Business --> Payment : Solicitar pago
 Payment --> Business : Resultado del pago
-
 @enduml
-```markdown
+
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
