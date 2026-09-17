@@ -171,7 +171,6 @@ Sistema --> Pago : Solicitar procesamiento\nde pagos
 
 Pago --> Sistema : Resultado de la operación
 
-markdown
 @enduml
 
 
