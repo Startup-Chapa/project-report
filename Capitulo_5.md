@@ -10,7 +10,6 @@
 
 ### 5.1.4. Software Deployment Configuration
 
-```markdown
 ## Descripción
 
 La configuración de despliegue de software describe cómo se distribuyen los componentes de la **Plataforma Web de Alquiler de Bicicletas** en los diferentes nodos necesarios para su funcionamiento.
@@ -114,6 +113,7 @@ La plataforma no ejecuta directamente el procesamiento financiero, sino que dele
 
 ## Diagrama de Despliegue
 
+```markdown
 ```plantuml
 @startuml
 title 5.1.4. Software Deployment Configuration
