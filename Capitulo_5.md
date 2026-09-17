@@ -113,7 +113,7 @@ La plataforma no ejecuta directamente el procesamiento financiero, sino que dele
 
 ## Diagrama de Despliegue
 
-```plantuml
+```Plaintext
 
 @startuml
 title 5.1.4. Software Deployment Configuration
