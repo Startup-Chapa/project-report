@@ -143,6 +143,7 @@ Entre sus responsabilidades se encuentran:
 ## Diagrama de Contexto
 
 ```plantuml
+
 @startuml
 title 4.6.2. Software Architecture Context Diagram
 
