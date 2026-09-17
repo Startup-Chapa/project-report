@@ -42,111 +42,23 @@
 
 ### 4.6.2. Software Architecture Context Diagram
 
-# 4.6.2. Software Architecture Context Diagram
+El diagrama de contexto de la arquitectura de software representa la interacción entre la plataforma web de alquiler de bicicletas y los actores o servicios externos que participan en su funcionamiento.
 
-## Descripción
+El sistema central corresponde a la **Plataforma Web de Alquiler de Bicicletas**, la cual permite a los usuarios registrarse, consultar bicicletas disponibles, seleccionar zonas de recogida y devolución, iniciar y finalizar viajes y consultar su historial.
 
-El diagrama de contexto de la arquitectura de software representa la interacción entre la **Plataforma Web de Alquiler de Bicicletas** y los principales actores y servicios externos que participan en su funcionamiento.
+Los principales elementos externos que interactúan con la plataforma son:
 
-La plataforma permite a los usuarios registrarse, consultar bicicletas disponibles, seleccionar zonas de recogida y devolución, iniciar y finalizar viajes y consultar el historial de sus recorridos.
+- **Usuario:** utiliza la plataforma para registrarse, consultar bicicletas disponibles, realizar viajes y revisar el historial de sus recorridos.
+- **Usuario Premium:** además de las funcionalidades habituales, cuenta con una suscripción Premium que le permite utilizar el servicio sin pagar la tarifa correspondiente al kilometraje durante la vigencia de su suscripción.
+- **Administrador:** gestiona los usuarios, bicicletas, zonas habilitadas y suscripciones dentro de la plataforma.
+- **Servicio de Geolocalización:** proporciona información de ubicación y permite determinar la distancia recorrida durante un viaje.
+- **Pasarela de Pagos:** procesa los pagos correspondientes al servicio y las suscripciones Premium.
 
-El sistema también contempla usuarios con una suscripción **Premium**, quienes pueden utilizar el servicio sin pagar la tarifa correspondiente al kilometraje durante la vigencia de dicha suscripción.
-
-Además, la plataforma se comunica con servicios externos para obtener información de ubicación y distancia recorrida, así como para procesar las operaciones de pago.
-
----
-
-## Actores y sistemas externos
-
-### Usuario
-
-El usuario interactúa directamente con la plataforma para:
-
-- Registrarse e iniciar sesión.
-- Consultar bicicletas disponibles.
-- Consultar las zonas habilitadas.
-- Seleccionar una bicicleta.
-- Seleccionar una zona de recogida.
-- Iniciar un viaje.
-- Finalizar un viaje.
-- Devolver la bicicleta.
-- Consultar los kilómetros recorridos.
-- Consultar el costo de sus viajes.
-- Revisar el historial de viajes.
-
-### Usuario Premium
-
-El usuario Premium dispone de las mismas funcionalidades que un usuario regular, pero cuenta adicionalmente con los beneficios de una suscripción Premium.
-
-Durante la vigencia de la suscripción:
-
-- Puede realizar viajes normalmente.
-- El sistema verifica su estado Premium al finalizar el viaje.
-- No se aplica el cobro correspondiente al kilometraje recorrido.
-- Puede gestionar y consultar el estado de su suscripción.
-
-### Administrador
-
-El administrador utiliza la plataforma para gestionar los principales elementos del servicio:
-
-- Usuarios.
-- Bicicletas.
-- Zonas habilitadas.
-- Puntos de recogida.
-- Puntos de devolución.
-- Viajes.
-- Suscripciones Premium.
-
-### Servicio de Geolocalización
-
-El servicio de geolocalización es un sistema externo que proporciona información relacionada con la ubicación y la distancia recorrida.
-
-La plataforma puede utilizar esta información para:
-
-- Obtener la ubicación de las bicicletas.
-- Registrar la ubicación durante un viaje.
-- Determinar la distancia recorrida.
-- Utilizar los kilómetros registrados para calcular la tarifa correspondiente.
-
-### Pasarela de Pagos
-
-La pasarela de pagos es un servicio externo encargado de procesar las operaciones económicas realizadas mediante la plataforma.
-
-Puede utilizarse para:
-
-- Procesar el pago de los viajes.
-- Procesar el pago de las suscripciones Premium.
-- Informar el resultado de una operación de pago.
-
----
-
-## Sistema central
-
-El sistema central corresponde a la:
-
-**Plataforma Web de Alquiler de Bicicletas**
-
-Esta plataforma concentra las funcionalidades principales del servicio y actúa como intermediario entre los usuarios, el administrador y los servicios externos.
-
-Entre sus responsabilidades se encuentran:
-
-- Gestión de usuarios.
-- Gestión de bicicletas.
-- Gestión de zonas.
-- Gestión de viajes.
-- Registro de kilómetros recorridos.
-- Cálculo de tarifas.
-- Gestión de suscripciones Premium.
-- Procesamiento de solicitudes de pago.
-- Integración con el servicio de geolocalización.
-
----
-
-## Diagrama de Contexto
+### Diagrama de Contexto
 
 ```plantuml
 @startuml
-title 4.6.2. Software Architecture Context Diagram
+title Software Architecture Context Diagram - Servicio de Bicicletas
 
 left to right direction
 
