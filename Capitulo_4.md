@@ -25,7 +25,9 @@
 **Para ver el Wireframe completo dar click aqui:** https://www.figma.com/design/3nqdv1dpncuL6cV2shloZk/BiciGo_Landing_Page_Wireframe_-_Mockups?node-id=0-1&t=yX2veXVTfTuGFtXk-1
 
 ### 4.3.2. Landing Page Mock-up
+![landing-mockup](./Resources/chapter-images/chapter-4/mockupLanding.png)
 
+**Para ver el Mockup completo dar click aqui:** https://www.figma.com/design/3nqdv1dpncuL6cV2shloZk/BiciGo_Landing_Page_Wireframe_-_Mockups?node-id=0-1&t=yX2veXVTfTuGFtXk-1
 ## 4.4. Web Applications UX/UI Design
 
 ### 4.4.1. Web Applications Wireframes
