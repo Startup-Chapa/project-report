@@ -114,7 +114,6 @@ La plataforma no ejecuta directamente el procesamiento financiero, sino que dele
 ## Diagrama de Despliegue
 
 
-```plantuml
 @startuml
 title 5.1.4. Software Deployment Configuration
 
@@ -147,7 +146,8 @@ Geo --> Business : Ubicación y distancia
 
 Business --> Payment : Solicitar pago
 Payment --> Business : Resultado del pago
-```@enduml
+
+@enduml
 
 
 ## 5.2. Landing Page, Services & Applications Implementation
