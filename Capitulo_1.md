@@ -14,11 +14,13 @@ Visión: Convertirnos en la plataforma líder de movilidad sostenible e intermod
 
 | Integrantes | Descripción |
 | :--- | :--- |
-| | |
+| ![Foto de Eduardo Manuel Aguirre Ramos](./Resources/Chapter1/eduardo.png) | **Nombres y Apellidos:** Eduardo Manuel Aguirre Ramos <br> **Código:** U20241A911 <br> **Edad:** 19 años <br> **Ciclo:** Sexto ciclo <br> **Carrera:** Ingeniería de Software - UPC <br> Me gusta aprender de las vivencias de las demás personas y siento curiosidad por conocer sus historias. Tengo conocimientos sobre HTML, CSS, JavaScript, React, Python y MySQL, además de dominar Scrum. Como aporte fundamental, me especializo en habilidades blandas y en la colaboración constante con mis compañeros, facilitando así la comunicación entre los miembros del equipo. |
 | (foto xd) | **Nombres y Apellidos:** Adrian Andres Armestar Felipa <br> **Código:** U202410084 <br> **Carrera:** Ingenieria de Software <br> Soy una persona confiable, adaptable y responsable en cuanto a las entregas de los trabajos. Me especializo en el lenguaje C++ pero también tengo conocimientos acerca de base de datos y JavaScript. Poseo una mentalidad de mejora continua, donde busco aprender y mejorar mis habilidades. Del mismo modo, busco trabajar de manera constante y con una adecuada gestión del tiempo. |
-| | |
-| | |
-| | |
+| ![Foto de José María Franco del Carpio](./Resources/Chapter1/jose.png) | **Nombres y Apellidos:** José María Franco del Carpio <br> **Edad:** 21 años <br> **Ciclo:** Quinto ciclo <br> **Carrera:** Ingeniería de Software <br> Soy una persona creativa y apasionada por la tecnología. Entre mis hobbies se encuentran jugar videojuegos, dibujar y crear historias, además del desarrollo de videojuegos. Tengo conocimientos en los lenguajes de programación C++ y Python, y busco seguir desarrollando mis habilidades en el área de la ingeniería de software. |
+| <img src="./Resources/Chapter1/img_juan.jpg" alt="Foto de Juan David Ayllon Pauccar"> | **Nombres y Apellidos:** Juan David Ayllon Pauccar <br> **Código:** U20241A860 <br> **Carrera:** Ingeniería de Software <br> Estudiante de sexto ciclo de Ingeniería de Software en la UPC. Cuento con conocimientos técnicos avanzados en desarrollo con C++, SQL, Python intermedio, HTML y CSS. Me distingo por ser un integrante responsable y con gran capacidad de comunicación, facilitando la coordinación y el flujo de trabajo dentro del equipo. |
+| ![Foto de Rodrigo Velasquez Velasquez](./Resources/Chapter1/rodrigo.png) | **Nombres y Apellidos:** Rodrigo Velasquez Velasquez <br> **Código:** U202222074 <br> **Ciclo:** Sexto ciclo <br> **Carrera:** Ingeniería de Software <br> Me interesa el desarrollo de aplicaciones web, las bases de datos y el diseño de software. Participo activamente en proyectos académicos colaborativos, donde aplico buenas prácticas de desarrollo, documentación y control de versiones. |
+
+
 
 ## 1.2. Solution Profile
 
