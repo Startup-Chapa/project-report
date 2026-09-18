@@ -463,6 +463,9 @@ Los segmentos considerados para este análisis son:
 | Gestionar datos del perfil personal / cuenta | Sometimes | Medium | Sometimes | Medium |
 ### 2.3.3. User Journey Mapping
 
+![jesus](./Resources/Capitulo2/user1(1).png)
+
+![torres](./Resources/Capitulo2/use.png)
 ### 2.3.4. Empathy Mapping
 
 ## 2.4. Big Picture EventStorming
