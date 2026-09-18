@@ -468,6 +468,10 @@ Los segmentos considerados para este análisis son:
 ![torres](./Resources/Capitulo2/use.png)
 ### 2.3.4. Empathy Mapping
 
+![jesusEM](./Resources/Capitulo2/Empathy_map.png)
+
+![TorresEM](./Resources/Capitulo2/Empathy_map2.png)
+
 ## 2.4. Big Picture EventStorming
 En la sesión de Big Picture Event Storming, el equipo exploró de forma visual el panorama general del dominio de movilidad urbana sostenible y gestión de bicicletas compartidas de Chapa. Se identificaron los eventos significativos del ciclo de vida de un viaje, desde el registro del usuario y la disponibilidad de una bicicleta hasta el inicio, seguimiento y finalización del recorrido en un BikePoint autorizado. Integrando los actores que interactuan con la plataforma y exponiendo los problemas, dudas y oportunidades de mejora detectados durante la sesión. Esta primera aproximación permitió alinear el entendimiento del equipo y sentar las bases para el diseño detallado de la solución.
 
