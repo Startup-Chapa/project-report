@@ -299,8 +299,130 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 
 
 ### 2.2.2. Registro de entrevistas
+#### Primer Segmento objetivo: Estudiantes y profesionales
+
+<table style="width: 100%" align="center">
+  <tr>
+    <th>Entrevistado 1</th>
+    <th>Entrevistado 2</th>
+    <th>Entrevistado 3</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQDxZUCIUMf8RpBSZ5jmNJTWAe3OcVVZVYDUP-SV0bk5Pu8?e=DMd2bO" target="_blank">
+        <img src="Resources/Capitulo2/entrevista1-estudiante.png" alt="Primera entrevista del primer segmento" width="150">
+      </a>
+    </td>
+    <td align="center">
+      <a href="ENLACE_VIDEO_2" target="_blank">
+        <img src="RUTA_IMAGEN_2" alt="Segunda entrevista del primer segmento" width="150">
+      </a>
+    </td>
+    <td align="center">
+      <a href="ENLACE_VIDEO_3" target="_blank">
+        <img src="RUTA_IMAGEN_3" alt="Tercera entrevista del primer segmento" width="150">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b>Entrevistador:</b> Juan David Ayllon Pauccar<br>
+      <b>Entrevistado:</b> Fernando Güere Calero<br>
+      <b>Edad:</b> 19 años <br>
+      <b>Distrito:</b> Chaclacayo <br>
+      <b>Estado civil:</b> Soltero <br>
+      <b>Ocupación:</b> Estudiante de ingeniería <br>
+      <b>Inicio de la entrevista:</b> 0:00 <br><br>
+      <b>Resumen:</b> El entrevistado usa principalmente la bicicleta para desplazamientos cortos porque la considera cómoda, económica y útil para hacer ejercicio. Considera incómodo y costoso utilizar transporte público o taxis para estos trayectos. Muestra interés en un servicio de bicicletas compartidas con una aplicación para consultar disponibilidad y desbloquear bicicletas mediante código QR, siempre que tenga tarifas razonables y condiciones de seguridad adecuadas.<br><br>
+      <b>Perfil del entrevistado:</b> Fernando Güere Calero es un hombre de 19 años, soltero, residente en el distrito de Chaclacayo y estudiante de ingeniería. Forma parte del grupo de jóvenes que realiza desplazamientos cotidianos dentro de la ciudad y tiene experiencia utilizando la bicicleta como medio de transporte para recorridos cortos. Su perfil corresponde al de un usuario que busca alternativas prácticas para movilizarse en sus actividades diarias.
+    </td>
+    <td valign="top">
+      <b>Entrevistador:</b> <br>
+      <b>Entrevistado:</b> <br>
+      <b>Edad:</b> <br>
+      <b>Distrito:</b> <br>
+      <b>Inicio de la entrevista:</b> <br><br>
+      <b>Resumen:</b> <br><br>
+      <b>Perfil del entrevistado:</b>
+    </td>
+    <td valign="top">
+      <b>Entrevistador:</b> <br>
+      <b>Entrevistado:</b> <br>
+      <b>Edad:</b> <br>
+      <b>Distrito:</b> <br>
+      <b>Inicio de la entrevista:</b> <br><br>
+      <b>Resumen:</b> <br><br>
+      <b>Perfil del entrevistado:</b>
+    </td>
+  </tr>
+</table>
+
+
+#### Segundo Segmento objetivo: Transeuntes
+
+<table style="width: 100%" align='center'>
+  <tr>
+    <th>Entrevistado 1</th>
+    <th>Entrevistado 2</th>
+    <th>Entrevistado 3</th>
+  </tr>
+  <tr>
+    <td align='center'>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322952_upc_edu_pe/IQCmXEuLne2lTZsZnWYzY_9gAUFseCBoR-M_F5l_kv8R3z0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PqFbEC" target="_blank">
+        <img src="Resources/entrevistas/u20241a911_Pasajero_Antony.png" alt="Primera entrevista del segundo segmento" width="150">
+      </a>
+    </td>
+    <td align='center'>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQCfnIQowgWEQKxTcK51KNwUAeiVUFnDUoG8urSVMs6EWMg?e=Hh2UL8" target="_blank">
+        <img src="Resources/Capitulo2/Entrevista-2-ciudadanos.png" alt="Segunda entrevista del segundo segmento" width="150">
+      </a>
+    </td>
+    <td align='center'>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQArqY5miSBMTq7c8R2ZrekrAX2BczGjyQ_9jew8pat2KDo?e=aWA2gK" target="_blank">
+        <img src="Resources/Capitulo2/Entrevista-3-ciudadanos.png" alt="Tercera entrevista del segundo segmento" width="150">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
+      <b>Entrevistado:</b> Antony Rodrigo Quito Ancasy<br>
+      <b>Edad:</b> 20 años <br>
+      <b>Distrito:</b> Chorrillos <br>
+      <b>Inicio de la entrevista:</b> 1:18 <br><br>
+      <b>Resumen:</b> El entrevistado, joven de 20 años relató su experiencia sobre las mototaxis en la zona de Chorrillos,en el cual compartio sus dificultades tanto por el lado del precio como tambien el de no saber si el conductor pueda tener precaución al conducir además de ello aclaro que lo que priorizaria en una app de transporte seria ver el perfil del conductor para no tomar riesgos al pedir un viaje.
+      <br><br>
+      <b>Perfil del entrevistado:</b>Hombre de 20 años que reside en Lima por el distrito de Chorrillos, ha vivido toda su vida alli y menciona que mayormente para transportarse a diferentes zonas pide mototaxi regularmente, además menciona problemas que le sucede dia a dia como el tener que "regatear" precios ademas de miedo por tener que subirse a una mototaxi la cual el conductor para ahorrar tiempo se metio en contra de la ruta y puso en peligro al pasajero.
+    </td>
+    <td valign="top">
+      <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
+      <b>Entrevistado:</b>  <br>
+      <b>Edad:</b>  años <br>
+      <b>Distrito:</b> Carhuaz <br>
+      <b>Inicio de la entrevista:</b>  <br><br>
+      <b>Resumen:</b> .
+      <br><br>
+      <b>Perfil del entrevistado:</b>como pasajero.
+    </td>
+    <td valign="top">
+      <b>Entrevistador:</b> Adrian Armestar <br>
+      <b>Entrevistado:</b> Mauricio <br>
+      <b>Edad:</b> 23 años <br>
+      <b>Distrito:</b> Miraflores <br>
+      <b>Inicio de la entrevista:</b> 00:01 <br><br>
+      <b>Resumen:</b> El entrevistado Mauricio indica que realiza trayectos cortos muy pocas veces pero tiende a optar por el transporte publica cuando necesita ahorrar tiempo
+      aunque se suele frustrar con los tiempos de espera y el trafico que se genera.<br>
+      <br>
+      <b>Perfil del entrevistado:</b> Es un hombre de 23 años que reside en el distrito de Miraflores
+    </td>
+  </tr>
+</table>
 
 ### 2.2.3. Análisis de entrevistas
+
+#### Segmento 2
+##### Entrevistado 3:
+Mauricio nos menciona que el no suele recorrer trayectos cortos, pero cuando los hace, prefiere utilizar el transporte publico pues piensa en ahorrar su tiempo. Sin embargo, tiene en cuenta los tiempos de espera, la falta de horarios establecidos y la congestión de trafico en general, lo cual lo frustra puesto que el considera que la comodidad y la rapidez son factores importantes para decidir como movilizarse. Él conoce las bicicletas de alquiler, aunque no las ha utilizado debido a la falta de claridad sobre el proceso de pago. Considera que usar una bicicleta para desplazamientos cortos es bueno siempre y cuando el tiempo de alquiler sea rentable, prefiriendo pagar por minutos en lugar de adquirir una suscripción. Destaca el método de desbloqueo de las bicicletas mediante QR por su comodidad y rapidez las cuales satisface sus necesidades. Del mismo modo, considera razonable devolver las bicicletas en estaciones especificas aunque le gustaría que se le destaque cuales son las estaciones más cercanas. Finalmente, considera indispensable que la aplicación muestre un mapa de estaciones y bicicletas disponibles, además del costo estimado por uso y las rutas por ciclovías, destacando las ultimas dos como elementos importantes para garantizar un buen uso hacia el usuario.
 
 ## 2.3. Needfinding
 
@@ -313,5 +435,11 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 ### 2.3.4. Empathy Mapping
 
 ## 2.4. Big Picture EventStorming
+En la sesión de Big Picture Event Storming, el equipo exploró de forma visual el panorama general del dominio de movilidad urbana sostenible y gestión de bicicletas compartidas de Chapa. Se identificaron los eventos significativos del ciclo de vida de un viaje, desde el registro del usuario y la disponibilidad de una bicicleta hasta el inicio, seguimiento y finalización del recorrido en un BikePoint autorizado. Integrando los actores que interactuan con la plataforma y exponiendo los problemas, dudas y oportunidades de mejora detectados durante la sesión. Esta primera aproximación permitió alinear el entendimiento del equipo y sentar las bases para el diseño detallado de la solución.
+
+**Primera fase: Eventos**
+![Big picture event storming](./Resources/Capitulo2/bigpictureeventstormingbicigo.png)
+
+**Mapa General:** https://canva.link/7coo689oj2nx3b7
 
 ## 2.5. Ubiquitous Language
