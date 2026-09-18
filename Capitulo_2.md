@@ -440,6 +440,27 @@ Claudia representa al segmento ciudado el cual realiza trayectos con poca frecue
 
 ### 2.3.2. User Task Matrix
 
+La User Task Matrix nos permite descomponer las actividades y tareas que nuestros usuarios realizan al utilizar la solución propuesta. Estas tareas, al clasificarse por su frecuencia e importancia, nos ayudan a priorizar qué funcionalidades de BiciGo deben desarrollarse con mayor énfasis para optimizar la experiencia de cada segmento.
+
+Los segmentos considerados para este análisis son:
+
+- **Estudiante (Jesús Andrés)**
+- **Ciudadano (Claudia Torres)**
+
+| Tarea | Jesús Andrés Luján (Rider / Commuter - 34) | | Claudia Torres (Rational - 21) | |
+| :--- | :--- | :--- | :--- | :--- |
+| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| Consultar disponibilidad de bicicletas y BikePoints cercanos | Always | High | Always | High |
+| Desbloquear bicicleta mediante código QR | Always | High | Always | High |
+| Iniciar y finalizar el alquiler de la bicicleta | Always | High | Always | High |
+| Consultar tarifa estimada y métodos de pago | Always | High | Always | High |
+| Visualizar rutas y mapa de ciclovías en tiempo real | Often | Medium | Often | Medium |
+| Adquirir o gestionar plan de suscripción mensual | Sometimes | Medium | Sometimes | Medium |
+| Consultar historial de viajes y pagos | Sometimes | Medium | Sometimes | Medium |
+| Monitorear disponibilidad y estado de flota en BikePoints | Never | — | Never | — |
+| Registrar incidencias o fallas mecánicas en bicicletas | Rarely | High | Rarely | High |
+| Consultar métricas de uso e impacto ambiental | Rarely | Low | Rarely | Low |
+| Gestionar datos del perfil personal / cuenta | Sometimes | Medium | Sometimes | Medium |
 ### 2.3.3. User Journey Mapping
 
 ### 2.3.4. Empathy Mapping
