@@ -427,6 +427,16 @@ Mauricio nos menciona que el no suele recorrer trayectos cortos, pero cuando los
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
+Para comprender mejor las necesidades y comportamientos de los usuarios, se elaboraron dos User Personas basados en los segmentos objetivo identificados en el proyecto.
+
+Andres representa al segmento de Rider que realiza trayectos cortos cotidianos hacia la universidad o trabajo. Busca una alternativa rápida, económica y sostenible para evitar el tráfico y la dependencia del transporte público.
+
+![estudiante](./Resources/Capitulo2/Andres_Lujan.jpeg)
+
+Claudia representa al segmento ciudado el cual realiza trayectos con poca frecuencia para cosas puntuales  orientado a la eficiencia en el uso del tiempo y presupuesto. Realiza trayectos breves para compras, trámites y reuniones, buscando evitar las altas tarifas de taxi y el tráfico, valorando la predictibilidad, la seguridad y la facilidad de pago.
+
+![ciudadano](./Resources/Capitulo2/Claudia_Torres.png)
+
 
 ### 2.3.2. User Task Matrix
 
