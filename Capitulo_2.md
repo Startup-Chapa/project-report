@@ -427,12 +427,50 @@ Mauricio nos menciona que el no suele recorrer trayectos cortos, pero cuando los
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
+Para comprender mejor las necesidades y comportamientos de los usuarios, se elaboraron dos User Personas basados en los segmentos objetivo identificados en el proyecto.
+
+Andres representa al segmento de Rider que realiza trayectos cortos cotidianos hacia la universidad o trabajo. Busca una alternativa rápida, económica y sostenible para evitar el tráfico y la dependencia del transporte público.
+
+![estudiante](./Resources/Capitulo2/Andres_Lujan.jpeg)
+
+Claudia representa al segmento ciudado el cual realiza trayectos con poca frecuencia para cosas puntuales  orientado a la eficiencia en el uso del tiempo y presupuesto. Realiza trayectos breves para compras, trámites y reuniones, buscando evitar las altas tarifas de taxi y el tráfico, valorando la predictibilidad, la seguridad y la facilidad de pago.
+
+![ciudadano](./Resources/Capitulo2/Claudia_Torres.png)
+
 
 ### 2.3.2. User Task Matrix
 
+La User Task Matrix nos permite descomponer las actividades y tareas que nuestros usuarios realizan al utilizar la solución propuesta. Estas tareas, al clasificarse por su frecuencia e importancia, nos ayudan a priorizar qué funcionalidades de BiciGo deben desarrollarse con mayor énfasis para optimizar la experiencia de cada segmento.
+
+Los segmentos considerados para este análisis son:
+
+- **Estudiante (Jesús Andrés)**
+- **Ciudadano (Claudia Torres)**
+
+| Tarea | Jesús Andrés Luján (Rider / Commuter - 34) | | Claudia Torres (Rational - 21) | |
+| :--- | :--- | :--- | :--- | :--- |
+| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| Consultar disponibilidad de bicicletas y BikePoints cercanos | Always | High | Always | High |
+| Desbloquear bicicleta mediante código QR | Always | High | Always | High |
+| Iniciar y finalizar el alquiler de la bicicleta | Always | High | Always | High |
+| Consultar tarifa estimada y métodos de pago | Always | High | Always | High |
+| Visualizar rutas y mapa de ciclovías en tiempo real | Often | Medium | Often | Medium |
+| Adquirir o gestionar plan de suscripción mensual | Sometimes | Medium | Sometimes | Medium |
+| Consultar historial de viajes y pagos | Sometimes | Medium | Sometimes | Medium |
+| Monitorear disponibilidad y estado de flota en BikePoints | Never | — | Never | — |
+| Registrar incidencias o fallas mecánicas en bicicletas | Rarely | High | Rarely | High |
+| Consultar métricas de uso e impacto ambiental | Rarely | Low | Rarely | Low |
+| Gestionar datos del perfil personal / cuenta | Sometimes | Medium | Sometimes | Medium |
 ### 2.3.3. User Journey Mapping
 
+![jesus](./Resources/Capitulo2/user1(1).png)
+
+![torres](./Resources/Capitulo2/use.png)
 ### 2.3.4. Empathy Mapping
+
+![jesusEM](./Resources/Capitulo2/Empathy_map.png)
+
+![TorresEM](./Resources/Capitulo2/Empathy_map2.png)
 
 ## 2.4. Big Picture EventStorming
 En la sesión de Big Picture Event Storming, el equipo exploró de forma visual el panorama general del dominio de movilidad urbana sostenible y gestión de bicicletas compartidas de Chapa. Se identificaron los eventos significativos del ciclo de vida de un viaje, desde el registro del usuario y la disponibilidad de una bicicleta hasta el inicio, seguimiento y finalización del recorrido en un BikePoint autorizado. Integrando los actores que interactuan con la plataforma y exponiendo los problemas, dudas y oportunidades de mejora detectados durante la sesión. Esta primera aproximación permitió alinear el entendimiento del equipo y sentar las bases para el diseño detallado de la solución.
@@ -443,3 +481,72 @@ En la sesión de Big Picture Event Storming, el equipo exploró de forma visual 
 **Mapa General:** https://canva.link/7coo689oj2nx3b7
 
 ## 2.5. Ubiquitous Language
+
+El **Ubiquitous Language** establece un lenguaje común para todos los participantes del proyecto **BiciGo**, permitiendo que los conceptos relacionados con el servicio de alquiler de bicicletas sean comprendidos de la misma manera por el equipo de desarrollo, los usuarios y demás participantes.
+
+Los siguientes términos representan los principales conceptos utilizados dentro del dominio de BiciGo.
+
+## Términos del dominio
+
+| Término                      | Definición                                                                                                                                                             |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BiciGo**                   | Servicio de alquiler de bicicletas que permite a los usuarios realizar desplazamientos mediante bicicletas disponibles en puntos de estacionamiento establecidos.      |
+| **Usuario**                  | Persona que se registra en BiciGo y utiliza el servicio de alquiler de bicicletas.                                                                                     |
+| **Registro**                 | Proceso mediante el cual una persona crea una cuenta en BiciGo para poder acceder al servicio.                                                                         |
+| **Bicicleta**                | Medio de transporte proporcionado por BiciGo para que los usuarios puedan realizar sus desplazamientos.                                                                |
+| **Punto de estacionamiento** | Zona fija establecida por BiciGo donde los usuarios pueden recoger o dejar una bicicleta.                                                                              |
+| **Disponibilidad**           | Estado que indica si una bicicleta se encuentra disponible para ser utilizada.                                                                                         |
+| **Alquiler**                 | Acción mediante la cual un usuario obtiene una bicicleta de BiciGo para realizar un recorrido.                                                                         |
+| **Viaje**                    | Recorrido realizado por un usuario desde que inicia el uso de una bicicleta hasta que finaliza y la devuelve en un punto habilitado.                                   |
+| **Kilometraje**              | Distancia recorrida durante un viaje y utilizada como referencia para calcular la tarifa del servicio.                                                                 |
+| **Tarifa**                   | Monto correspondiente al pago de un viaje de acuerdo con los kilómetros recorridos.                                                                                    |
+| **Cobro**                    | Proceso mediante el cual BiciGo determina y realiza el pago correspondiente al viaje del usuario.                                                                      |
+| **Suscripción Premium**      | Modalidad de suscripción de BiciGo que permite al usuario utilizar el servicio sin pagar la tarifa correspondiente al kilometraje, según las condiciones establecidas. |
+| **Usuario Premium**          | Usuario que posee una suscripción Premium activa y cuenta con los beneficios asociados a dicha modalidad.                                                              |
+| **Inicio de viaje**          | Momento en que el usuario comienza a utilizar una bicicleta disponible.                                                                                                |
+| **Fin de viaje**             | Momento en que el usuario termina su recorrido y deja la bicicleta en un punto de estacionamiento habilitado.                                                          |
+| **Recorrido**                | Trayecto realizado entre el punto donde el usuario recoge la bicicleta y el punto donde la devuelve.                                                                   |
+| **Punto de recogida**        | Punto de estacionamiento en el que el usuario obtiene una bicicleta disponible para iniciar un viaje.                                                                  |
+| **Punto de devolución**      | Punto de estacionamiento en el que el usuario finaliza su viaje y deja la bicicleta.                                                                                   |
+
+## Flujo principal del servicio
+
+El funcionamiento principal de BiciGo se puede representar mediante el siguiente flujo:
+
+```text
+Usuario
+   ↓
+Registro
+   ↓
+Bicicleta disponible
+   ↓
+Punto de recogida
+   ↓
+Inicio de viaje
+   ↓
+Recorrido
+   ↓
+Kilometraje
+   ↓
+Punto de devolución
+   ↓
+Fin de viaje
+   ↓
+Cobro
+```
+
+En el caso de un **Usuario Premium**, el sistema mantiene el registro del viaje y del kilometraje recorrido. Sin embargo, el usuario no realiza el cobro asociado a los kilómetros recorridos debido al beneficio proporcionado por su **Suscripción Premium**.
+
+## Uso del lenguaje común
+
+La terminología definida en este apartado será utilizada como referencia durante las siguientes etapas del desarrollo de BiciGo. Esto permitirá mantener una comunicación consistente entre los integrantes del equipo y evitar diferencias en la interpretación de los conceptos del sistema.
+
+Los términos definidos serán considerados posteriormente en:
+
+* Historias de usuario.
+* EventStorming.
+* Arquitectura de software.
+* Arquitectura de información.
+* Diseño de la base de datos.
+* Diseño de interfaces.
+* Implementación de la aplicación.

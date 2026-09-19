@@ -202,6 +202,12 @@ Asimismo, el sistema permite al usuario desplazarse facilmente entre las funcion
 
 ### 4.6.1. Design-Level EventStorming
 
+En esta sección se presenta el Design-Level EventStorming de biciGO, realizado con el fin de detallar y refinar el modelado del dominio identificado previamente. Durante la sesión, el equipo organizó eventos de dominio, comandos, políticas, agregados y bounded contexts relacionados con los principales procesos del sistema, como la gestión de usuarios, bicicletas, estaciones, disponibilidad, reservas, alquileres, pagos, mantenimiento y notificaciones. Este análisis permitió comprender mejor las responsabilidades de cada contexto y sus relaciones, sirviendo como base para el diseño de la arquitectura del software.
+
+![Design-Level EventStorming de biciGO](./Resources/chapter4/design-level-eventstorming.png)
+
+Figura 4: Design-Level EventStorming del dominio de biciGO.
+
 ### 4.6.2. Software Architecture Context Diagram
 
 ### 4.6.3. Software Architecture Container Diagrams
