@@ -341,5 +341,5 @@ Billing
 Maintance
 [maintance](./Resources/chapter4/main.png)
 ## 4.8. Database Design
-
+![Diagrama de base de datos de biciGO](./Resources/chapter-images/chapter-4/BICIGO.jpeg)
 ### 4.8.1. Database Diagrams
