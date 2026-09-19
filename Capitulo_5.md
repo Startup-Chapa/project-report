@@ -52,9 +52,6 @@ En síntesis, cada nueva funcionalidad se desarrolla en una rama feature, las ve
 
 **Repositorio platform**
 ![backend-screenshoot](./Resources/chapter-images/chapter-5/platform.png)
-### 5.1.3. Source Code Style Guide & Conventions
-
-### 5.1.4. Software Deployment Configuration
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
