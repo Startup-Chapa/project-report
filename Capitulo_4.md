@@ -138,15 +138,54 @@ Cada componente interactivo debe contemplar los estados **normal, hover, focus, 
 ### 4.2.3. SEO Tags and Meta Tags
 
 ### 4.2.4. Searching Systems
+El sistema incorpora mecanismos de búsqueda que permiten acceder rápidamente a información específica:
+
+- **Búsqueda por:**
+    - Codigo QR de bicicleta
+    - ID de bicicleta.
+    - Ubicacion del BikePoint
+    - ID del viaje
+    - ID del incidente
+
+- **Filtros avanzados:**
+    - Estado de bicicleta (disponible, en uso, en mantenimiento, no disponible)
+    - Nombre del BikePoint
+    - Fecha del viaje (dia, semana, mes)
+    - Fecha del incidente
 
 ### 4.2.5. Navigation Systems
+La navegación del sistema está diseñada para ser clara, eficiente y orientada a las necesidades del usuario:
+
+- **Menú principal:**
+  - Dashboard
+  - Mapa
+  - Mis viajes
+  - Incidentes
+  - Pagos y suscripciones
+
+- **Navegación por flujo:**
+  - Seguimiento de la bicicleta en base a su estado, ya sea si se encuentra disponible, en uso, en mantenimiento o no disponible por fallas.  
+
+- **Navegación contextual:**
+  - Acceso a información detallada desde dashboards.
+
+- **Elementos de apoyo:**
+  - Breadcrumbs (ej: Dashboard > Bicicletas > Bicicleta)  
+  - Botones de acceso rápido
+  - Indicadores de estado de las bicicletas
+
+Asimismo, el sistema permite al usuario desplazarse facilmente entre las funcionalidades de alquiler y uso de bicicletas.
 
 ## 4.3. Landing Page UI Design
-
 ### 4.3.1. Landing Page Wireframe
+![landing-wireframe](./Resources/chapter-images/chapter-4/wireframeLanding.png)
+
+**Para ver el Wireframe completo dar click aqui:** https://www.figma.com/design/3nqdv1dpncuL6cV2shloZk/BiciGo_Landing_Page_Wireframe_-_Mockups?node-id=0-1&t=yX2veXVTfTuGFtXk-1
 
 ### 4.3.2. Landing Page Mock-up
+![landing-mockup](./Resources/chapter-images/chapter-4/mockupLanding.png)
 
+**Para ver el Mockup completo dar click aqui:** https://www.figma.com/design/3nqdv1dpncuL6cV2shloZk/BiciGo_Landing_Page_Wireframe_-_Mockups?node-id=0-1&t=yX2veXVTfTuGFtXk-1
 ## 4.4. Web Applications UX/UI Design
 
 ### 4.4.1. Web Applications Wireframes
