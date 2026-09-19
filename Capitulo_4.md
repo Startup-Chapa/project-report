@@ -320,6 +320,8 @@ El diagrama de contenedores (L2) descompone BiciGo en sus bloques de alto nivel:
 
 ### 4.6.4. Software Architecture Components Diagrams
 
+![archi-compo](./Resources/chapter4/ala.png)
+
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
