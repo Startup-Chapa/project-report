@@ -211,6 +211,10 @@ Figura 4: Design-Level EventStorming del dominio de biciGO.
 ### 4.6.2. Software Architecture Context Diagram
 
 ### 4.6.3. Software Architecture Container Diagrams
+El diagrama de contenedores (L2) descompone BiciGo en sus bloques de alto nivel: la Landing Page (HTML5/CSS3/JS) que dirige a los usuarios hacia la aplicación, el Web Application que sirve los archivos estáticos y el Single Page Application (Vue 3 + PrimeVue) que provee todas las funcionalidades de la plataforma directamente en el navegador. El SPA se comunica con la API Application mediante llamadas REST, y depende de Html5Qrcode para el acceso a la cámara del dispositivo.
+
+![containter-diagram](./Resources/chapter-images/chapter-4/Container.png)
+
 
 ### 4.6.4. Software Architecture Components Diagrams
 
