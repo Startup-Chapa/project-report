@@ -194,6 +194,85 @@ Asimismo, el sistema permite al usuario desplazarse facilmente entre las funcion
 
 ### 4.4.2. Web Applications Mock-ups
 
+Estas maquetas visuales representan la experiencia principal del producto BiciGo en dispositivos móviles y web. Permiten validar la lógica de navegación del usuario, la claridad de la información y la consistencia visual con la guía de estilos definida en la sección anterior. En conjunto, los mockups muestran cómo el usuario accede, se registra, visualiza bicicletas disponibles, inicia un viaje, revisa su estado de cuenta y gestiona servicios adicionales como la suscripción o el cambio de plan.
+
+#### Acceso y autenticación
+
+![Login Celular](./Resources/mockups-bicigo/Login%20Celular.png)
+
+Figura 5: Mockup de inicio de sesión para usuarios móviles.
+
+**Análisis:** La vista de acceso prioriza la simplicidad y la rapidez para un usuario que necesita entrar al sistema en movimiento. El uso de una composición limpia, campos mínimos y un llamado a la acción visible refuerza la intención de uso móvil. La interfaz evita saturar la pantalla y permite una lectura rápida del flujo de autenticación, lo cual es coherente con el contexto urbano y la necesidad de interacción ágil.
+
+![Accede a la cuenta](./Resources/mockups-bicigo/Accede%20a%20la%20cuenta.png)
+
+Figura 6: Mockup de acceso a la cuenta con enfoque en la validación de identidad del usuario.
+
+**Análisis:** Esta propuesta comunica la confianza y la seguridad del proceso de ingreso. La estructura del formulario y la disposición de la información favorecen la comprensión del usuario, reduciendo la incertidumbre asociada a la autenticación. Además, destaca la relación entre la acción de acceso y la experiencia de servicio continuo, sugeriendo una plataforma disponible en cualquier momento.
+
+#### Registro de usuario y onboarding
+
+![Crear Cuenta Mobile](./Resources/mockups-bicigo/Crear%20Cuenta%20Mobile.png)
+
+![Crear Cuenta Mobille 2](./Resources/mockups-bicigo/Crear%20Cuenta%20Mobille%202.png)
+
+![Crear Cuenta Mobille 3](./Resources/mockups-bicigo/Crear%20Cuenta%20Mobille%203.png)
+
+![Crear Cuenta Mobille 4](./Resources/mockups-bicigo/Crear%20Cuenta%20Mobille%204.png)
+
+![Crear Cuenta Mobille 5](./Resources/mockups-bicigo/Crear%20Cuenta%20Mobille%205.png)
+
+Figura 7: Secuencia de registro y onboarding para usuario nuevo.
+
+**Análisis:** El conjunto de pantallas muestra un flujo guiado, con pasos claramente separados para completar la creación de la cuenta. Esto ayuda a disminuir la fricción en la primera interacción con la aplicación, especialmente cuando el usuario se registra por primera vez. La progresión visual sugiere un proceso ordenado, intuitivo y enfocado en la captación de información esencial sin sobrecargar la pantalla.
+
+#### Mapa, localización y alquiler de bicicletas
+
+![Mapa Usuario](./Resources/mockups-bicigo/Mapa%20Usuario.png)
+
+Figura 8: Mockup del mapa de bicicletas disponibles para el usuario.
+
+**Análisis:** El mapa es el componente principal dentro del flujo de uso de la aplicación, ya que permite ubicar bicicletas en tiempo real y decidir rápidamente el punto de retirada. La distribución de la información en una vista geográfica favorece la toma de decisiones inmediatas; además, el uso de marcadores y estados visuales permite distinguir de forma intuitiva la disponibilidad de cada vehículo. Este tipo de diseño responde directamente a la necesidad de rapidez de un usuario en movimiento.
+
+![Bicycle Rental Page Mockups](./Resources/mockups-bicigo/Bicycle%20Rental%20Page%20Mockups.png)
+
+![Bicycle Rental Page Mockups-1](./Resources/mockups-bicigo/Bicycle%20Rental%20Page%20Mockups-1.png)
+
+![Bicycle Rental Page Mockups-2](./Resources/mockups-bicigo/Bicycle%20Rental%20Page%20Mockups-2.png)
+
+![Bicycle Rental Page Mockups-3](./Resources/mockups-bicigo/Bicycle%20Rental%20Page%20Mockups-3.png)
+
+Figura 9: Propuestas de interfaz del proceso de alquiler de bicicletas.
+
+**Análisis:** Estas pantallas presentan la experiencia del ciclo de alquiler con un enfoque en la claridad del recorrido, desde la búsqueda de la bicicleta hasta la confirmación de la acción. El diseño prioriza elementos funcionales como el estado de la bicicleta, la ruta, la tarifa y la validación del viaje. La consistencia visual entre pantallas refuerza la identidad de marca y reduce la necesidad de aprendizaje por parte del usuario.
+
+![App](./Resources/mockups-bicigo/App.png)
+
+Figura 10: Compact view de la aplicación en entorno móvil.
+
+**Análisis:** La composición de esta maqueta evidencia una estrategia de interfaz enfocada en la ergonomía táctil y la resolución de tareas rápidas. La organización visual favorece la interacción con una sola mano, un aspecto clave para aplicaciones de movilidad urbana. Además, el cromatismo y la jerarquía tipográfica ayudan a distinguir información principal y secundaria, mejorando la comprensión del flujo principal.
+
+#### Dashboard del usuario y gestión de cuenta
+
+![Dashboard Usuario](./Resources/mockups-bicigo/Dashboard%20Usuario.png)
+
+![Dashboard Usuario-1](./Resources/mockups-bicigo/Dashboard%20Usuario-1.png)
+
+![Dashboard Usuario-2](./Resources/mockups-bicigo/Dashboard%20Usuario-2.png)
+
+![Dashboard Usuario-3](./Resources/mockups-bicigo/Dashboard%20Usuario-3.png)
+
+Figura 11: Variantes del dashboard del usuario.
+
+**Análisis:** El dashboard presenta un panorama general del rendimiento del servicio y de la actividad personal del usuario. Los elementos visuales principales, como indicadores de viajes, análisis de uso y acceso a funciones clave, sugieren una experiencia funcional y orientada a la gestión. La organización modular permite que el usuario identifique rápidamente su historial, estados de viaje y opciones relevantes sin perder contexto dentro de la aplicación.
+
+![Cambiar plan](./Resources/mockups-bicigo/Cambiar%20plan.png)
+
+Figura 12: Mockup de cambio de plan o suscripción del usuario.
+
+**Análisis:** Esta vista refleja una funcionalidad de valor agregado dentro del producto: la posibilidad de adaptar el servicio según el comportamiento y las necesidades del cliente. La lógica visual de la pantalla enfatiza la comparación entre planes, la claridad en la elección y la comprensión de beneficios. Esto contribuye a mejorar la percepción de flexibilidad y personalización del servicio de movilidad.
+
+
 ### 4.4.3. Web Applications User Flow Diagrams
 
 ## 4.5. Web Applications Prototyping
