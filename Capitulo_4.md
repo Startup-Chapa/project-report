@@ -310,37 +310,7 @@ Entre sus responsabilidades se encuentran:
 
 ## Diagrama de Contexto
 
-```Plaintext
-@startuml
-title 4.6.2. Software Architecture Context Diagram
-
-left to right direction
-
-actor "Usuario" as Usuario
-actor "Usuario Premium" as Premium
-actor "Administrador" as Admin
-
-rectangle "Plataforma Web de\nAlquiler de Bicicletas" as Sistema
-
-rectangle "Servicio de\nGeolocalización" as Geo
-rectangle "Pasarela de Pagos" as Pago
-
-Usuario --> Sistema : Registro, consultas,\nalquiler y viajes
-
-Premium --> Sistema : Gestión de viajes\ny beneficios Premium
-
-Admin --> Sistema : Gestión de usuarios,\nbicicletas, zonas y suscripciones
-
-Sistema --> Geo : Solicitar ubicación\ny registrar distancia
-
-Geo --> Sistema : Ubicación y distancia\nrecorrida
-
-Sistema --> Pago : Solicitar procesamiento\nde pagos
-
-Pago --> Sistema : Resultado de la operación
-
-@enduml
-
+![diagramacontext](./Resources/chapter4/2asa.png)
 
 ### 4.6.3. Software Architecture Container Diagrams
 El diagrama de contenedores (L2) descompone BiciGo en sus bloques de alto nivel: la Landing Page (HTML5/CSS3/JS) que dirige a los usuarios hacia la aplicación, el Web Application que sirve los archivos estáticos y el Single Page Application (Vue 3 + PrimeVue) que provee todas las funcionalidades de la plataforma directamente en el navegador. El SPA se comunica con la API Application mediante llamadas REST, y depende de Html5Qrcode para el acceso a la cámara del dispositivo.
