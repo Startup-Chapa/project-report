@@ -389,6 +389,7 @@ AdminPanel --> AdminViajes
 AdminPanel --> AdminSuscripciones
 
 @enduml
+```
 
 ### 4.4.2. Web Applications Mock-ups
 
