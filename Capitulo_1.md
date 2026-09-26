@@ -121,12 +121,12 @@ Según ComexPerú (2024), los limeños pierden aproximadamente 157 horas al año
 #### Necesidad:
 Este segmento necesita una alternativa de movilidad rápida y accesible para los trayectos cortos, la cual no influya en la congestion vehicular ni del transporte informal.
 
-### Segmento 2: Instituciones que desean promover el uso de la bicicleta
+### Segmento 2: Ciudadanos urbanos que realicen trayectos cortos
 #### Descripción general:
-Se refiere a instituciones que podrían albergar BikePoints de manera que se facilitan puntos de acceso al servicio dentro de sus instalaciones.
+Se refiere a personas que necesitan recorrer trayectos cortos dentro de la ciudad y que busquen una alternativa accesible a comparación del transporte público actual.
 #### Perfil demográfico:
-Incluye universidades, municipalidades o empresas interesadas en impulsar el transporte no motorizado.
+Incluye a residentes de entre 23 a 40 años que residen en Lima Metropolitana.
 #### Dato del sector:
-La Ley 29593 promueve el uso de la bicicleta como medio de transporte sostenible. Esta ley, que declara de interés nacional el uso de la bicicleta, impulsa a las instituciones, sobre todo a las nacionales, a fomentar su uso.
+Según ComexPerú (2024), los limeños pierden aproximadamente 157 horas al año debido al tránsito en las horas punta. Lo cual evidencia que el segmento se traslada con mayor lentitud a comparación de las bicicletas.
 #### Necesidad:
-Este segmento necesita soluciones de bajo costo que les permita ofrecer una movilidad sostenible a sus trabajadores.
+Este segmento necesita una alternativa de movilidad rápida y accesible para los trayectos cortos, la cual no influya en la congestion vehicular ni del transporte informal.
