@@ -106,41 +106,38 @@ Las tareas no derivan de User Stories del Product Backlog, ya que estas describe
 
 **Sprint #: Sprint 1**
 
-| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|:---:|---|---|
-| N/A | Landing Page (tarea general) | T-01 | Landing content and structure | Definir las secciones y los contenidos del Landing Page a partir del wireframe y del mock-up del Capítulo IV: navegación, hero, misión y visión, beneficios, cómo funciona, contacto, FAQ y footer. | 6 | Armestar Felipa, Adrian Andres | Done |
-| N/A | Landing Page (tarea general) | T-02 | HTML5 semantic structure | Implementar `index.html` con elementos semánticos y atributos `data-i18n` para todos los textos visibles. | 8 | Armestar Felipa, Adrian Andres | Done |
-| N/A | Landing Page (tarea general) | T-03 | Style guide and responsive CSS | Implementar `style.css` con las variables de color, tipografía y espaciado de la guía de estilos, y con *media queries* para móvil y escritorio. | 8 | Armestar Felipa, Adrian Andres | Done |
-| N/A | Landing Page (tarea general) | T-04 | i18n English and Spanish | Crear los diccionarios `en.json` y `es.json`, y el selector de idioma EN/ES con persistencia del idioma elegido. | 6 | Armestar Felipa, Adrian Andres | Done |
-| N/A | Landing Page (tarea general) | T-05 | Accessible FAQ accordion | Implementar el acordeón de preguntas frecuentes con atributos ARIA y soporte de teclado (Enter y Espacio). | 4 | Armestar Felipa, Adrian Andres | Done |
-| N/A | Landing Page (tarea general) | T-06 | Contact form UI | Implementar la interfaz del formulario de contacto (nombre, teléfono, correo, tipo de usuario y mensaje). El envío del formulario queda pendiente. | 4 | Armestar Felipa, Adrian Andres | Done |
-| N/A | Landing Page (tarea general) | T-07 | Deploy to GitHub Pages | Publicar el Landing Page desde la rama `main` con GitHub Pages y verificar el acceso público. | 4 | Armestar Felipa, Adrian Andres | Done |
-| N/A | Landing Page (tarea general) | T-08 | Pricing section and sign-up CTA | Agregar la sección de tarifas prevista en la navegación del Capítulo IV y conectar los llamados a la acción con el registro. | 6 | Sin asignar | To-do |
-| N/A | Landing Page (tarea general) | T-09 | Terms and conditions and social links | Redactar los términos y condiciones, enlazarlos en el footer y reemplazar los íconos de redes sociales por los enlaces reales. | 4 | Sin asignar | To-do |
-| N/A | Landing Page (tarea general) | T-10 | SEO and meta tags | Agregar las etiquetas meta (description, Open Graph) y traducir el título de la página con el diccionario i18n. | 4 | Sin asignar | To-do |
-| N/A | Landing Page (tarea general) | T-11 | Accessibility review | Revisar contraste de colores, estados de foco, etiquetas de formulario y atributos ARIA del Landing Page. | 6 | Sin asignar | To-do |
-| N/A | Landing Page (tarea general) | T-12 | Execution video | Grabar el video que muestra la navegación del Landing Page y publicarlo para enlazarlo en la sección 5.2.1.5. | 4 | Sin asignar | To-do |
-| N/A | Sprint management | T-13 | Sprint board in Trello | Crear el tablero del Sprint 1 en Trello, cargar las tareas y hacerlo público. | 4 | Sin asignar | To-do |
-| N/A | Sprint management | T-14 | Chapter V documentation | Redactar las secciones 5.1.1, 5.1.3 y 5.2.1 del informe con las evidencias del Sprint. | 8 | Aguirre Ramos, Eduardo Manuel | To-Review |
+| Epic / Story ID | Task ID | Título de la Microtarea | Descripción y Alcance Técnico | Estimación (Horas) | Asignado a | Estado |
+| :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **US-LP01** | T-01.1 | `[US-LP01]` `[UI/UX]` Navbar & Hero Design | Diseñar el componente del Navbar con el isotipo biciGO y la sección Hero en Figma aplicando contraste de marca. | 2 h | Ayllon Pauccar, Juan David | Done |
+| **US-LP01** | T-01.2 | `[US-LP01]` `[FRONT]` Navbar responsive layout | Maquetar el menú superior responsive con el logo de biciGO, enlaces de navegación y menú hamburguesa para móviles. | 3 h | Armestar Felipa, Adrian Andres | Done |
+| **US-LP01** | T-01.3 | `[US-LP01]` `[FRONT]` Hero section CTA & Overlay | Construir el Hero Section con el título H1, subtítulo, imagen de fondo con overlay oscuro (#263238) y botones principales de acción (CTA). | 3 h | Armestar Felipa, Adrian Andres | Done |
+| **US-LP02** | T-02.1 | `[US-LP02]` `[UI/UX]` "How it Works" Icons | Seleccionar y optimizar los 4 íconos SVG representativos del proceso (*Busca, Escanea, Muévete, Devuelve*). | 2 h | Velasquez Velasquez, Rodrigo | Done |
+| **US-LP02** | T-02.2 | `[US-LP02]` `[FRONT]` "How it Works" 4-step grid | Maquetar el grid responsive de 4 pasos secuenciales aplicando la escala de espaciado `space-md` (16px) y textos explicativos. | 3 h | Ayllon Pauccar, Juan David | Done |
+| **US-LP03** | T-03.1 | `[US-LP03]` `[FRONT]` Benefits cards layout | Maquetar las tarjetas de beneficios (Ahorro, Ecología, Rapidez) con bordes redondeados de 8px y sombras suaves. | 3 h | Velasquez Velasquez, Rodrigo | Done |
+| **US-LP03** | T-03.2 | `[US-LP03]` `[FRONT]` Key metrics counter bar | Maquetar la barra de métricas destacadas (100+ estaciones, 500+ bicis, 100% ecofriendly) con números en Verde biciGO (#7BC617). | 2 h | Velasquez Velasquez, Rodrigo | Done |
+| **US-LP04** | T-04.1 | `[US-LP04]` `[FRONT]` Pricing cards comparison | Maquetar la comparativa de tarifas (Pago por uso vs. Suscripción Pro) con la tabla de precios transparente. | 3 h | Franco Del Carpio, José María | Done |
+| **US-LP04** | T-04.2 | `[US-LP04]` `[FRONT]` Pro plan highlight & CTA | Aplicar el estilo destacado (Fondo #263238, tag 'Recomendado' y botón #7BC617) a la tarjeta de suscripción mensual. | 2 h | Franco Del Carpio, José María | Done |
+| **US-LP05** | T-05.1 | `[US-LP05]` `[FRONT]` FAQ accordion HTML/CSS | Maquetar la estructura de acordeón para las preguntas frecuentes sobre zonas de cobertura y métodos de pago. | 2 h | Armestar Felipa, Adrian Andres | Done |
+| **US-LP05** | T-05.2 | `[US-LP05]` `[JS]` Accessible accordion logic | Implementar la interacción JavaScript para abrir/cerrar preguntas con soporte de teclado y atributos ARIA de accesibilidad. | 2 h | Armestar Felipa, Adrian Andres | Done |
+| **US-LP06** | T-06.1 | `[US-LP06]` `[FRONT]` Contact form UI | Maquetar los campos del formulario (Nombre, Correo, Mensaje) asegurando una altura táctil mínima de 44px. | 2 h | Armestar Felipa, Adrian Andres | Done |
+| **US-LP06** | T-06.2 | `[US-LP06]` `[JS]` Form validation & feedback | Implementar la validación básica de campos obligatorios e indicador de confirmación de envío en verde (#2E8B57). | 2 h | Armestar Felipa, Adrian Andres | Done |
+| **TS-LP01** | T-07.1 | `[TS-LP01]` `[DEVOPS]` Git repo & GitHub Pages setup | Crear el repositorio en GitHub, configurar la rama `main` y habilitar el despliegue automático en GitHub Pages. | 2 h | Armestar Felipa, Adrian Andres | Done |
+| **TS-LP01** | T-07.2 | `[TS-LP01]` `[DEVOPS]` Public URL & Domain check | Verificar el despliegue correcto de la URL pública (`https://startup-chapa.github.io/Landing-Page/`) y ruta de assets. | 2 h | Armestar Felipa, Adrian Andres | Done |
+| **TS-LP01** | T-11.1 | `[TS-LP01]` `[QA]` Cross-device responsive test | Probar la adaptabilidad en resoluciones móviles (393x852px), tablets y monitores de escritorio (1200px max-width). | 3 h | Aguirre Ramos, Eduardo Manuel | Done |
+
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 Durante el Sprint 1 se implementó la primera versión del Landing Page en el repositorio `Startup-Chapa/Landing-Page`: la estructura HTML, los estilos CSS responsive, los diccionarios de traducción en inglés y español y las imágenes de las secciones. En paralelo, en el repositorio `Startup-Chapa/project-report` se documentaron el wireframe y el mock-up del Landing Page (Capítulo IV) y la gestión del código fuente (Capítulo V), que sirvieron de base para la implementación. Los commits siguen la convención Conventional Commits descrita en la sección 5.1.2.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|---|---|---|---|---|---|
-| Startup-Chapa/Landing-Page | main | ef218d4 | Initial commit | Creación del repositorio del Landing Page. | 30/08/2026 |
-| Startup-Chapa/Landing-Page | main | aeca1f3 | feat: add index & css files | Se crean los archivos `index.html` y `style.css`. | 14/09/2026 |
-| Startup-Chapa/Landing-Page | main | 615a806 | feat: add first version of Landing Page | Primera versión de `index.html` (311 líneas) y `style.css` (511 líneas), y el logotipo de BiciGO. | 14/09/2026 |
-| Startup-Chapa/Landing-Page | main | ef59cb5 | feat: add info for BiciGo | Se agregan las imágenes del hero, misión, visión y contacto, y los diccionarios `i18n/en.json` e `i18n/es.json`. | 14/09/2026 |
-| Startup-Chapa/project-report | feature/chapter-4-landing-page-wireframe | e62842e | feat(chapter-4): add landing page wireframe | Se agrega la imagen del wireframe del Landing Page. | 16/09/2026 |
-| Startup-Chapa/project-report | feature/chapter-4-landing-page-wireframe | 2caad89 | feat(chapter-4): add landing page Wireframe in report | Se incorpora el wireframe en la sección 4.3.1 del informe. | 16/09/2026 |
-| Startup-Chapa/project-report | feature/chapter-4-landing-page-mockup | 8c32eb6 | feat(chapter-4): add landing page Mockup | Se agrega la imagen del mock-up del Landing Page. | 16/09/2026 |
-| Startup-Chapa/project-report | feature/chapter-4-landing-page-mockup | e845f4f | feat(chapter-4): add landing page Mockup in report | Se incorpora el mock-up en la sección 4.3.2 del informe. | 16/09/2026 |
-| Startup-Chapa/project-report | feature/source-code-management | 5c22418 | feat(chapter-5): add source code management | Se documenta la sección 5.1.2 Source Code Management. | 16/09/2026 |
-| Startup-Chapa/project-report | feature/source-code-management | 44581d4 | feat(chapter-5): add source code management justification | Se agrega la justificación del flujo GitFlow y de Conventional Commits. | 16/09/2026 |
+| Commit | Autor | Email | Fecha | Mensaje |
+| --- | --- | --- | --- | --- |
+| `ef59cb5` | Adrian5102 | u202410084@upc.edu.pe | 2026-09-14 | feat: add info for BiciGo |
+| `615a806` | Adrian5102 | u202410084@upc.edu.pe | 2026-09-14 | feat: add first version of Landing Page |
+| `aeca1f3` | Adrian5102 | u202410084@upc.edu.pe | 2026-09-14 | feat: add index & css files |
+| `ef218d4` | Eduardo Manuel Aguirre | enginedujob@gmail.com | 2026-08-30 | Initial commit |
 
-![github-landing-commits](./Resources/chapter-images/chapter-5/github-landing-commits.png)
+![github-landing-commits](./Resources/chapter5/github-commits.png)
 
 *Figura: historial de commits del repositorio Landing-Page en GitHub.*
 
@@ -161,15 +158,15 @@ La interfaz está disponible en inglés (idioma por defecto) y en español latin
 
 **Vista de escritorio (1440 px)**
 
-![landing-hero-desktop](./Resources/chapter-images/chapter-5/landing-hero-desktop.png)
+![landing-hero-desktop](./Resources/chapter5/landing-hero-desktop.png)
 
 **Página completa en escritorio (1440 px)**
 
-![landing-full-desktop](./Resources/chapter-images/chapter-5/landing-full-desktop.png)
+![landing-full-desktop](./Resources/chapter5/captura-completa-web.png)
 
 **Página completa en móvil (390 px)**
 
-![landing-full-mobile](./Resources/chapter-images/chapter-5/landing-full-mobile.png)
+![landing-full-mobile](./Resources/chapter5/captura-completa-mobile.png)
 
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
@@ -196,7 +193,7 @@ Los pasos realizados fueron los siguientes:
 | Web Applications | Por definir (sección 5.1.4) | Sin desplegar en el Sprint 1 | No incluido en el alcance |
 | Web Services | Por definir (sección 5.1.4) | Sin desplegar en el Sprint 1 | No incluido en el alcance |
 
-![github-landing-actions](./Resources/chapter-images/chapter-5/github-landing-actions.png)
+![github-landing-actions](./Resources/chapter5/github-actions.png)
 
 *Figura: ejecución del flujo pages build and deployment en GitHub Actions.*
 
