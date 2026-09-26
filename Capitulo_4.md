@@ -192,6 +192,204 @@ Asimismo, el sistema permite al usuario desplazarse facilmente entre las funcion
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+## Descripción
+
+Los diagramas Wireflow representan la navegación y el flujo de interacción entre las principales interfaces de la **Plataforma Web de Alquiler de Bicicletas**.
+
+El flujo inicia cuando el usuario accede a la plataforma y puede registrarse o iniciar sesión. Una vez autenticado, puede consultar las bicicletas disponibles, revisar las zonas habilitadas, seleccionar una bicicleta e iniciar un viaje.
+
+Durante el viaje, la plataforma registra la distancia recorrida mediante el servicio de geolocalización. Al finalizar el recorrido, el sistema determina los kilómetros realizados y calcula el costo correspondiente.
+
+En el caso de los usuarios con una suscripción **Premium vigente**, el sistema verifica su estado y no aplica el cobro correspondiente al kilometraje del viaje.
+
+El flujo también contempla el procesamiento de pagos para los usuarios que deben realizar un cobro, así como la consulta del historial de viajes y el estado de la suscripción Premium.
+
+---
+
+## Flujo principal del usuario
+
+El usuario puede realizar las siguientes acciones:
+
+- Acceder a la plataforma.
+- Registrarse o iniciar sesión.
+- Consultar las bicicletas disponibles.
+- Consultar las zonas habilitadas.
+- Seleccionar una bicicleta.
+- Seleccionar una zona de recogida.
+- Iniciar un viaje.
+- Consultar los kilómetros recorridos.
+- Finalizar el viaje.
+- Seleccionar la zona de devolución.
+- Consultar el costo del viaje.
+- Realizar el pago cuando corresponda.
+- Consultar el historial de viajes.
+
+---
+
+## Flujo del usuario Premium
+
+El usuario Premium cuenta con las mismas funcionalidades principales del usuario regular.
+
+Sin embargo, durante la vigencia de su suscripción:
+
+- El sistema verifica el estado de la suscripción.
+- Puede realizar viajes normalmente.
+- Se registran los kilómetros recorridos.
+- No se aplica el cobro correspondiente al kilometraje.
+- Puede consultar el estado de su suscripción.
+
+---
+
+## Flujo del administrador
+
+El administrador puede acceder a las funcionalidades de gestión de la plataforma:
+
+- Gestionar usuarios.
+- Gestionar bicicletas.
+- Gestionar zonas.
+- Gestionar puntos de recogida.
+- Gestionar puntos de devolución.
+- Gestionar viajes.
+- Gestionar suscripciones Premium.
+
+---
+
+## Wireflow Diagram
+
+```plantuml
+@startuml
+title 4.4.2. Web Applications Wireflow Diagrams
+
+left to right direction
+
+' =========================================================
+' ACCESO
+' =========================================================
+
+rectangle "Inicio" as Inicio
+rectangle "Registro" as Registro
+rectangle "Inicio de Sesión" as Login
+
+Inicio --> Registro : Registrarse
+Inicio --> Login : Iniciar sesión
+
+' =========================================================
+' USUARIO
+' =========================================================
+
+rectangle "Panel Principal" as Panel
+
+Login --> Panel : Autenticación exitosa
+Registro --> Login : Cuenta creada
+
+rectangle "Bicicletas\nDisponibles" as Bicicletas
+rectangle "Zonas\nHabilitadas" as Zonas
+rectangle "Seleccionar\nBicicleta" as Seleccionar
+rectangle "Seleccionar Zona\nde Recogida" as Recogida
+
+Panel --> Bicicletas : Consultar bicicletas
+Panel --> Zonas : Consultar zonas
+
+Bicicletas --> Seleccionar : Seleccionar bicicleta
+Zonas --> Recogida : Seleccionar zona
+Seleccionar --> Recogida : Continuar alquiler
+
+' =========================================================
+' VIAJE
+' =========================================================
+
+rectangle "Viaje en Curso" as Viaje
+rectangle "Servicio de\nGeolocalización" as Geo
+rectangle "Finalizar Viaje" as Finalizar
+rectangle "Zona de\nDevolución" as Devolucion
+
+Recogida --> Viaje : Iniciar viaje
+
+Viaje --> Geo : Registrar ubicación\ny distancia
+Geo --> Viaje : Kilómetros recorridos
+
+Viaje --> Finalizar : Finalizar viaje
+Finalizar --> Devolucion : Seleccionar devolución
+
+' =========================================================
+' COSTO
+' =========================================================
+
+rectangle "Cálculo del\nCosto" as Costo
+rectangle "Verificar Estado\nPremium" as VerificarPremium
+
+Devolucion --> Costo : Calcular costo
+Costo --> VerificarPremium : Verificar suscripción
+
+' =========================================================
+' DECISIÓN PREMIUM
+' =========================================================
+
+diamond "¿Premium\nvigente?" as PremiumDecision
+
+VerificarPremium --> PremiumDecision
+
+rectangle "Costo S/ 0 por\nkilometraje" as CostoPremium
+rectangle "Pago del\nViaje" as Pago
+
+PremiumDecision --> CostoPremium : Sí
+PremiumDecision --> Pago : No
+
+' =========================================================
+' PASARELA DE PAGOS
+' =========================================================
+
+rectangle "Pasarela de\nPagos" as Pasarela
+rectangle "Resultado del\nPago" as ResultadoPago
+
+Pago --> Pasarela : Procesar pago
+Pasarela --> ResultadoPago : Confirmación
+
+' =========================================================
+' HISTORIAL
+' =========================================================
+
+rectangle "Historial de\nViajes" as Historial
+
+CostoPremium --> Historial : Registrar viaje
+ResultadoPago --> Historial : Registrar viaje
+
+Historial --> Panel : Volver al panel
+
+' =========================================================
+' PREMIUM
+' =========================================================
+
+rectangle "Suscripción\nPremium" as Suscripcion
+
+Panel --> Suscripcion : Consultar suscripción
+Suscripcion --> Pasarela : Procesar suscripción
+Pasarela --> Suscripcion : Confirmar pago
+
+' =========================================================
+' ADMINISTRADOR
+' =========================================================
+
+rectangle "Acceso Administrador" as AdminLogin
+rectangle "Panel de\nAdministración" as AdminPanel
+
+Inicio --> AdminLogin : Acceso administrador
+AdminLogin --> AdminPanel : Autenticación exitosa
+
+rectangle "Gestionar\nUsuarios" as AdminUsuarios
+rectangle "Gestionar\nBicicletas" as AdminBicicletas
+rectangle "Gestionar\nZonas" as AdminZonas
+rectangle "Gestionar\nViajes" as AdminViajes
+rectangle "Gestionar\nSuscripciones" as AdminSuscripciones
+
+AdminPanel --> AdminUsuarios
+AdminPanel --> AdminBicicletas
+AdminPanel --> AdminZonas
+AdminPanel --> AdminViajes
+AdminPanel --> AdminSuscripciones
+
+@enduml
+
 ### 4.4.2. Web Applications Mock-ups
 
 ### 4.4.3. Web Applications User Flow Diagrams
