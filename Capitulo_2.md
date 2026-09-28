@@ -362,7 +362,7 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 </table>
 
 
-#### Segundo Segmento objetivo: Transeuntes
+#### Segundo Segmento objetivo: Ciudadanos
 
 <table style="width: 100%" align='center'>
   <tr>
@@ -400,13 +400,14 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
     </td>
     <td valign="top">
       <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
-      <b>Entrevistado:</b>  <br>
-      <b>Edad:</b>  años <br>
-      <b>Distrito:</b> Carhuaz <br>
-      <b>Inicio de la entrevista:</b>  <br><br>
-      <b>Resumen:</b> .
+      <b>Entrevistado:</b> Claudia <br>
+      <b>Edad:</b> No especificada <br>
+      <b>Distrito:</b> No especificado <br>
+      <b>Inicio de la entrevista:</b> 0:00 <br><br>
+      <b>Resumen:</b> Claudia realiza desplazamientos cortos ocasionalmente para hacer compras, asistir a reuniones o resolver asuntos puntuales. Como no cuenta con automóvil propio, utiliza principalmente el transporte público, pero señala que el tráfico, los tiempos de espera y los costos pueden dificultar sus traslados. También identifica como problemas de los taxis las tarifas elevadas y la inseguridad durante algunas horas de la noche.<br><br>
+      Para un servicio de bicicletas compartidas, preferiría pagar una tarifa por uso debido a la poca frecuencia de sus viajes. Considera útil el desbloqueo mediante código QR y espera que la aplicación tenga una interfaz sencilla, un proceso de registro rápido y opciones para vincular cuentas como Facebook o Gmail.
       <br><br>
-      <b>Perfil del entrevistado:</b>como pasajero.
+      <b>Perfil del entrevistado:</b> Claudia es una ciudadana que realiza desplazamientos ocasionales para compras, reuniones y otros asuntos puntuales. Valora la economía, la rapidez, la seguridad y la facilidad de uso al elegir una alternativa de transporte.
     </td>
     <td valign="top">
       <b>Entrevistador:</b> Adrian Armestar <br>
