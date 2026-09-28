@@ -373,7 +373,7 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
   <tr>
     <td align='center'>
       <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322952_upc_edu_pe/IQCmXEuLne2lTZsZnWYzY_9gAUFseCBoR-M_F5l_kv8R3z0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PqFbEC" target="_blank">
-        <img src="Resources/entrevistas/u20241a911_Pasajero_Antony.png" alt="Primera entrevista del segundo segmento" width="150">
+        <img src="Resources/Capitulo2/entrevista1-ciudadanos.png" alt="Primera entrevista del segmento de ciudadanos" width="150">
       </a>
     </td>
     <td align='center'>
@@ -389,14 +389,18 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
   </tr>
   <tr>
     <td valign="top">
-      <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
-      <b>Entrevistado:</b> Antony Rodrigo Quito Ancasy<br>
+      <b>Entrevistador:</b> José María Franco del Carpio <br>
+      <b>Entrevistado:</b> David<br>
       <b>Edad:</b> 20 años <br>
-      <b>Distrito:</b> Chorrillos <br>
-      <b>Inicio de la entrevista:</b> 1:18 <br><br>
-      <b>Resumen:</b> El entrevistado, joven de 20 años relató su experiencia sobre las mototaxis en la zona de Chorrillos,en el cual compartio sus dificultades tanto por el lado del precio como tambien el de no saber si el conductor pueda tener precaución al conducir además de ello aclaro que lo que priorizaria en una app de transporte seria ver el perfil del conductor para no tomar riesgos al pedir un viaje.
+      <b>Distrito:</b> Santa Anita <br>
+      <b>Estado civil:</b> Soltero <br>
+      <b>Ocupación:</b> Estudiante <br>
+      <b>Inicio de la entrevista:</b> 0:02 <br><br>
+      <b>Resumen:</b> David, estudiante de 20 años residente en Santa Anita, realiza desplazamientos cortos principalmente los fines de semana para salir al centro o realizar diversas tareas. Utiliza buses porque son económicos y accesibles, aunque considera incómodo viajar en vehículos pequeños y llenos, además de que algunas veces los conductores cobran tarifas poco claras. También ha considerado usar bicicletas, especialmente en trayectos planos, pero le preocupan las subidas, el cansancio y la seguridad.
       <br><br>
-      <b>Perfil del entrevistado:</b>Hombre de 20 años que reside en Lima por el distrito de Chorrillos, ha vivido toda su vida alli y menciona que mayormente para transportarse a diferentes zonas pide mototaxi regularmente, además menciona problemas que le sucede dia a dia como el tener que "regatear" precios ademas de miedo por tener que subirse a una mototaxi la cual el conductor para ahorrar tiempo se metio en contra de la ruta y puso en peligro al pasajero.
+      Considera que la disponibilidad de bicicletas sería determinante para adoptar el servicio, y muestra un interés moderado por una aplicación con desbloqueo mediante código QR. Estaría dispuesto a pagar si la tarifa es igual o menor que la del transporte público, y valora especialmente la seguridad, la rapidez y la sostenibilidad.
+      <br><br>
+      <b>Perfil del entrevistado:</b> David es un estudiante de 20 años, soltero y residente en Santa Anita. Busca alternativas económicas y disponibles para sus recorridos, priorizando la seguridad, la comodidad y la rapidez.
     </td>
     <td valign="top">
       <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
