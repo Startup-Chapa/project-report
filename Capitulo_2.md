@@ -314,8 +314,8 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
       </a>
     </td>
     <td align="center">
-      <a href="ENLACE_VIDEO_2" target="_blank">
-        <img src="RUTA_IMAGEN_2" alt="Segunda entrevista del primer segmento" width="150">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQD26ILH7iaJQqIYzfMs8ZDgAaSMjBcDyQOpYwTzCoOx4Yg?e=qi30H0" target="_blank">
+        <img src="Resources/Capitulo2/entrevista2-estudiante.png" alt="Segunda entrevista del primer segmento" width="150">
       </a>
     </td>
     <td align="center">
@@ -337,13 +337,17 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
       <b>Perfil del entrevistado:</b> Fernando Güere Calero es un hombre de 19 años, soltero, residente en el distrito de Chaclacayo y estudiante de ingeniería. Forma parte del grupo de jóvenes que realiza desplazamientos cotidianos dentro de la ciudad y tiene experiencia utilizando la bicicleta como medio de transporte para recorridos cortos. Su perfil corresponde al de un usuario que busca alternativas prácticas para movilizarse en sus actividades diarias.
     </td>
     <td valign="top">
-      <b>Entrevistador:</b> <br>
-      <b>Entrevistado:</b> <br>
-      <b>Edad:</b> <br>
-      <b>Distrito:</b> <br>
-      <b>Inicio de la entrevista:</b> <br><br>
-      <b>Resumen:</b> <br><br>
-      <b>Perfil del entrevistado:</b>
+      <b>Entrevistador:</b> Rodrigo Velázquez<br>
+      <b>Entrevistado:</b> Alonso<br>
+      <b>Edad:</b> 19 años <br>
+      <b>Distrito:</b> No especificado <br>
+      <b>Estado civil:</b> Soltero <br>
+      <b>Ocupación:</b> Estudiante de arquitectura en la UPC <br>
+      <b>Inicio de la entrevista:</b> No especificado <br><br>
+      <b>Resumen:</b> Alonso, estudiante de arquitectura de 19 años, suele utilizar bus o automóvil para realizar desplazamientos cortos durante los fines de semana. Sin embargo, se siente incómodo por la congestión, el tiempo de espera y la cantidad de personas en el transporte público. Considera que la bicicleta sería una alternativa más rápida, cómoda y agradable para evitar el tráfico.<br><br>
+      También muestra interés en BiciGo, especialmente por el desbloqueo mediante código QR, la disponibilidad de estaciones cercanas y los planes de suscripción. Considera importantes la seguridad, la sostenibilidad, la rapidez y una cobertura amplia en zonas como San Isidro, Miraflores y Barranco.
+      <br><br>
+      <b>Perfil del entrevistado:</b> Alonso es un estudiante de arquitectura de 19 años de la UPC, soltero y usuario habitual del transporte público. Busca una opción de movilidad económica que reduzca el estrés y el tiempo perdido en el tráfico.
     </td>
     <td valign="top">
       <b>Entrevistador:</b> <br>
