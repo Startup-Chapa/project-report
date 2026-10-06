@@ -111,15 +111,15 @@ A partir de los assumptions definidos, se establecen las hipótesis de valor del
 ![Lean UX Canvas BiciGo](./Resources/Chapter1/LeanUXCanvas.png)
 
 ## 1.3. Segmentos Objetivo
-### Segmento 1: Ciudadanos urbanos que realicen trayectos cortos
+### Segmento 1: Estudiantes y jovenes profesionales
 #### Descripción general:
-Se refiere a personas que necesitan recorrer trayectos cortos dentro de la ciudad y que busquen una alternativa accesible a comparación del transporte público actual.
+Se refiere a personas que se desplazan diariamente por motivos de estudio o trabajo, utilizando diariamente medios como el transporte publico.
 #### Perfil demográfico:
-Incluye a estudiantes y trabajadores jovenes de entre 18 a 40 años que residen en Lima Metropolitana.
+Incluye a jovenes de entre a 18 a 30 años que transitan por San Isidro, Miraflores y Santiago de Surco.
 #### Dato del sector:
-Según ComexPerú (2024), los limeños pierden aproximadamente 157 horas al año debido al tránsito en las horas punta. Lo cual evidencia que el segmento se traslada con mayor lentitud a comparación de las bicicletas.
+Según Ortega Et Al. (2026), el 83.6% de estudiantes universitarios cree que las horas perdidas en el transporte publico afectan negativamente en sus horas de estudio y rendimiento academico.
 #### Necesidad:
-Este segmento necesita una alternativa de movilidad rápida y accesible para los trayectos cortos, la cual no influya en la congestion vehicular ni del transporte informal.
+Este segmento necesita soluciones rapidas y que pueda predecir cuanto tiempo puede reducir en tiempos de viaje durante las horas punta.
 
 ### Segmento 2: Ciudadanos urbanos que realicen trayectos cortos
 #### Descripción general:

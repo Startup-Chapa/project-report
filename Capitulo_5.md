@@ -104,6 +104,12 @@ El objetivo principal del Sprint 1 es publicar la primera versión del Landing P
 
 Las tareas no derivan de User Stories del Product Backlog, ya que estas describen funcionalidades de las aplicaciones. Por ese motivo se registran como tareas adicionales asociadas a las restricciones del Landing Page (responsive design, i18n, accesibilidad, SEO, términos y condiciones, y despliegue). Cada tarea está estimada en un rango de 4 a 8 horas.
 
+**Trello del  AV1**
+
+![imagen trello](./Resources/chapter5/trello.png)
+
+[https://trello.com/invite/b/6aac96a6ce176e2f9d496d31/ATTI96186798f26dde57c47e51ca96f0fff04FDD51DF/sprint-web-1](https://trello.com/invite/b/6aac96a6ce176e2f9d496d31/ATTI96186798f26dde57c47e51ca96f0fff04FDD51DF/sprint-web-1)
+
 **Sprint #: Sprint 1**
 
 | Epic / Story ID | Task ID | Título de la Microtarea | Descripción y Alcance Técnico | Estimación (Horas) | Asignado a | Estado |
