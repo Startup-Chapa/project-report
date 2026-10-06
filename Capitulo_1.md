@@ -14,11 +14,13 @@ Visión: Convertirnos en la plataforma líder de movilidad sostenible e intermod
 
 | Integrantes | Descripción |
 | :--- | :--- |
-| | |
-| (foto xd) | **Nombres y Apellidos:** Adrian Andres Armestar Felipa <br> **Código:** U202410084 <br> **Carrera:** Ingenieria de Software <br> Soy una persona confiable, adaptable y responsable en cuanto a las entregas de los trabajos. Me especializo en el lenguaje C++ pero también tengo conocimientos acerca de base de datos y JavaScript. Poseo una mentalidad de mejora continua, donde busco aprender y mejorar mis habilidades. Del mismo modo, busco trabajar de manera constante y con una adecuada gestión del tiempo. |
-| | |
-| | |
-| | |
+| ![Foto de Eduardo Manuel Aguirre Ramos](./Resources/Chapter1/eduardo.png) | **Nombres y Apellidos:** Eduardo Manuel Aguirre Ramos <br> **Código:** U20241A911 <br> **Edad:** 19 años <br> **Ciclo:** Sexto ciclo <br> **Carrera:** Ingeniería de Software - UPC <br> Me gusta aprender de las vivencias de las demás personas y siento curiosidad por conocer sus historias. Tengo conocimientos sobre HTML, CSS, JavaScript, React, Python y MySQL, además de dominar Scrum. Como aporte fundamental, me especializo en habilidades blandas y en la colaboración constante con mis compañeros, facilitando así la comunicación entre los miembros del equipo. |
+| ![Foto de Adrian](./Resources/Chapter1/adrian.jpeg) | **Nombres y Apellidos:** Adrian Andres Armestar Felipa <br> **Código:** U202410084 <br> **Carrera:** Ingenieria de Software <br> Soy una persona confiable, adaptable y responsable en cuanto a las entregas de los trabajos. Me especializo en el lenguaje C++ pero también tengo conocimientos acerca de base de datos y JavaScript. Poseo una mentalidad de mejora continua, donde busco aprender y mejorar mis habilidades. Del mismo modo, busco trabajar de manera constante y con una adecuada gestión del tiempo. |
+| ![Foto de José María Franco del Carpio](./Resources/Chapter1/jose.png) | **Nombres y Apellidos:** José María Franco del Carpio <br> **Edad:** 21 años <br> **Ciclo:** Quinto ciclo <br> **Carrera:** Ingeniería de Software <br> Soy una persona creativa y apasionada por la tecnología. Entre mis hobbies se encuentran jugar videojuegos, dibujar y crear historias, además del desarrollo de videojuegos. Tengo conocimientos en los lenguajes de programación C++ y Python, y busco seguir desarrollando mis habilidades en el área de la ingeniería de software. |
+| <img src="./Resources/Chapter1/img_juan.jpg" alt="Foto de Juan David Ayllon Pauccar"> | **Nombres y Apellidos:** Juan David Ayllon Pauccar <br> **Código:** U20241A860 <br> **Carrera:** Ingeniería de Software <br> Estudiante de sexto ciclo de Ingeniería de Software en la UPC. Cuento con conocimientos técnicos avanzados en desarrollo con C++, SQL, Python intermedio, HTML y CSS. Me distingo por ser un integrante responsable y con gran capacidad de comunicación, facilitando la coordinación y el flujo de trabajo dentro del equipo. |
+| ![Foto de Rodrigo Velasquez Velasquez](./Resources/Chapter1/rodrigo.png) | **Nombres y Apellidos:** Rodrigo Velasquez Velasquez <br> **Código:** U202222074 <br> **Ciclo:** Sexto ciclo <br> **Carrera:** Ingeniería de Software <br> Me interesa el desarrollo de aplicaciones web, las bases de datos y el diseño de software. Participo activamente en proyectos académicos colaborativos, donde aplico buenas prácticas de desarrollo, documentación y control de versiones. |
+
+
 
 ## 1.2. Solution Profile
 
@@ -109,22 +111,22 @@ A partir de los assumptions definidos, se establecen las hipótesis de valor del
 ![Lean UX Canvas BiciGo](./Resources/Chapter1/LeanUXCanvas.png)
 
 ## 1.3. Segmentos Objetivo
-### Segmento 1: Ciudadanos urbanos que realicen trayectos cortos
+### Segmento 1: Estudiantes y jovenes profesionales
+#### Descripción general:
+Se refiere a personas que se desplazan diariamente por motivos de estudio o trabajo, utilizando diariamente medios como el transporte publico.
+#### Perfil demográfico:
+Incluye a jovenes de entre a 18 a 30 años que transitan por San Isidro, Miraflores y Santiago de Surco.
+#### Dato del sector:
+Según Ortega Et Al. (2026), el 83.6% de estudiantes universitarios cree que las horas perdidas en el transporte publico afectan negativamente en sus horas de estudio y rendimiento academico.
+#### Necesidad:
+Este segmento necesita soluciones rapidas y que pueda predecir cuanto tiempo puede reducir en tiempos de viaje durante las horas punta.
+
+### Segmento 2: Ciudadanos urbanos que realicen trayectos cortos
 #### Descripción general:
 Se refiere a personas que necesitan recorrer trayectos cortos dentro de la ciudad y que busquen una alternativa accesible a comparación del transporte público actual.
 #### Perfil demográfico:
-Incluye a estudiantes y trabajadores jovenes de entre 18 a 40 años que residen en Lima Metropolitana.
+Incluye a residentes de entre 23 a 40 años que residen en Lima Metropolitana.
 #### Dato del sector:
 Según ComexPerú (2024), los limeños pierden aproximadamente 157 horas al año debido al tránsito en las horas punta. Lo cual evidencia que el segmento se traslada con mayor lentitud a comparación de las bicicletas.
 #### Necesidad:
 Este segmento necesita una alternativa de movilidad rápida y accesible para los trayectos cortos, la cual no influya en la congestion vehicular ni del transporte informal.
-
-### Segmento 2: Instituciones que desean promover el uso de la bicicleta
-#### Descripción general:
-Se refiere a instituciones que podrían albergar BikePoints de manera que se facilitan puntos de acceso al servicio dentro de sus instalaciones.
-#### Perfil demográfico:
-Incluye universidades, municipalidades o empresas interesadas en impulsar el transporte no motorizado.
-#### Dato del sector:
-La Ley 29593 promueve el uso de la bicicleta como medio de transporte sostenible. Esta ley, que declara de interés nacional el uso de la bicicleta, impulsa a las instituciones, sobre todo a las nacionales, a fomentar su uso.
-#### Necesidad:
-Este segmento necesita soluciones de bajo costo que les permita ofrecer una movilidad sostenible a sus trabajadores.
