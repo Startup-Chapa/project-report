@@ -319,8 +319,8 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
       </a>
     </td>
     <td align="center">
-      <a href="ENLACE_VIDEO_3" target="_blank">
-        <img src="RUTA_IMAGEN_3" alt="Tercera entrevista del primer segmento" width="150">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQATP6dev96vQ496zr1LYLifAUDdGvW6xxuifXeucPhCNBM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=orCIl3" target="_blank">
+        <img src="Resources/Capitulo2/entrevista3-estudiante.png" alt="Tercera entrevista del primer segmento" width="150">
       </a>
     </td>
   </tr>
@@ -350,13 +350,13 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
       <b>Perfil del entrevistado:</b> Alonso es un estudiante de arquitectura de 19 años de la UPC, soltero y usuario habitual del transporte público. Busca una opción de movilidad económica que reduzca el estrés y el tiempo perdido en el tráfico.
     </td>
     <td valign="top">
-      <b>Entrevistador:</b> <br>
-      <b>Entrevistado:</b> <br>
-      <b>Edad:</b> <br>
-      <b>Distrito:</b> <br>
-      <b>Inicio de la entrevista:</b> <br><br>
-      <b>Resumen:</b> <br><br>
-      <b>Perfil del entrevistado:</b>
+      <b>Entrevistador:Eduardo Manuel Aguirre Ramos</b> <br>
+      <b>Entrevistado:Angelo Faustino</b> <br>
+      <b>Edad: 20 años</b> <br>
+      <b>Distrito: Surco</b> <br>
+      <b>Inicio de la entrevista: 0:00</b> <br><br>
+      <b>Resumen:El entrevistado es un estudiante universitario que realiza rutas cotidianas y frecuentes de tramos cortos (5 a 20 minutos) entre 3 y 4 veces por semana, movilizándose continuamente entre su sede de estudios y áreas aledañas en Surco, San Isidro y Miraflores para almorzar, hacer pagos o asistir a reuniones breves. Aunque camina cuando dispone de tiempo, recurre habitualmente al taxi por aplicativo cuando el horario entre clases o trámites es ajustado. Manifiesta estar muy insatisfecho con el taxi para estas rutas universitarias breves debido a las altas tarifas mínimas y el tiempo que pierde atrapado en el tráfico.</b> <br><br>
+      <b>Perfil del entrevistado:Angelo es un estudiante universitario de 20 años que reside en Surco. Su rutina diaria demanda desplazamientos frecuentes e intermedios en zonas universitarias y comerciales con alto flujo vehicular. Encaja en el perfil de un estudiante universitario de rutas frecuentes que necesita una alternativa de micromovilidad rápida, económica y predecible que se integre a su horario académico, permitiéndole conectar sus actividades del día sin depender del tráfico vehicular ni de las altas tarifas de los servicios de transporte tradicional.<b>
     </td>
   </tr>
 </table>
@@ -429,9 +429,22 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 
 ### 2.2.3. Análisis de entrevistas
 
-#### Segmento 2
-##### Entrevistado 3:
-Mauricio nos menciona que el no suele recorrer trayectos cortos, pero cuando los hace, prefiere utilizar el transporte publico pues piensa en ahorrar su tiempo. Sin embargo, tiene en cuenta los tiempos de espera, la falta de horarios establecidos y la congestión de trafico en general, lo cual lo frustra puesto que el considera que la comodidad y la rapidez son factores importantes para decidir como movilizarse. Él conoce las bicicletas de alquiler, aunque no las ha utilizado debido a la falta de claridad sobre el proceso de pago. Considera que usar una bicicleta para desplazamientos cortos es bueno siempre y cuando el tiempo de alquiler sea rentable, prefiriendo pagar por minutos en lugar de adquirir una suscripción. Destaca el método de desbloqueo de las bicicletas mediante QR por su comodidad y rapidez las cuales satisface sus necesidades. Del mismo modo, considera razonable devolver las bicicletas en estaciones especificas aunque le gustaría que se le destaque cuales son las estaciones más cercanas. Finalmente, considera indispensable que la aplicación muestre un mapa de estaciones y bicicletas disponibles, además del costo estimado por uso y las rutas por ciclovías, destacando las ultimas dos como elementos importantes para garantizar un buen uso hacia el usuario.
+#### 1.Estudiantes y trabajadores con desplazamientos diarios habituales
+
+Este grupo está integrado por usuarios jóvenes (estudiantes universitarios, de ingeniería y arquitectura) que necesitan realizar **desplazamientos cortos pero continuos (de 5 a 20 minutos), entre 3 a 4 veces por semana o diariamente**, para conectar sus sedes de estudio, lugares de trabajo y áreas comerciales aledañas (como Surco, San Isidro y Miraflores).
+
+* **Principales hallazgos y dolores:** Muestran una alta frustración hacia los servicios de transporte tradicionales. Consideran que el taxi por aplicativo resulta sumamente costoso para tramos breves debido a las tarifas mínimas y al tiempo perdido en la congestión vehicular, mientras que el transporte público les parece incómodo, lento y poco directo.
+* **Aceptación y modelo de negocio:** Exhiben una elevada predisposición hacia el uso de bicicletas compartidas como alternativa rápida y práctica. Al ser usuarios de alta frecuencia, **prefieren abrumadoramente un modelo de suscripción mensual** que les permita optimizar y amortizar sus costos sin preocuparse por el conteo de minutos o kilómetros.
+* **Requerimientos clave:** Valoran el desbloqueo ágil mediante código QR, una red amplia de estaciones fijas (*bike points*) cerca de sus puntos de interés, rutas sugeridas por ciclovías seguras en la app y la consulta en tiempo real de la disponibilidad de bicicletas y espacios libres para estacionar.
+<br>
+
+#### 2. Ciudadanos que utilizan transporte de manera ocasional
+
+Este segmento abarca a ciudadanos que realizan **traslados breves de forma esporádica o durante los fines de semana** para llevar a cabo compras, trámites puntuales, actividades de ocio o reuniones breves, sin mantener una rutina fija de transporte diario.
+
+* **Principales hallazgos y dolores:** Dependen habitualmente del transporte público tradicional o del taxi. Sus mayores incomodidades son la congestión vehicular, los excesivos tiempos de espera, las tarifas elevadas para recorridos cortos y la percepción de inseguridad durante ciertas horas del día.
+* **Aceptación y modelo de negocio:** Muestran un interés moderado a positivo en el servicio de bicicletas compartidas por ser una alternativa económica y ágil. Debido a la baja frecuencia e impredecibilidad de sus viajes, **prefieren estrictamente un esquema de pago por uso (tarifa por tiempo o trayecto)** en lugar de asumir el compromiso de una suscripción mensual.
+* **Requerimientos clave:** Priorizan tarifas económicas e iguales o menores a las del transporte público, procesos de registro rápidos (mediante integración con cuentas como Google o Facebook), una interfaz sencilla para ubicar estaciones e infraestructura segura que reduzca el cansancio físico y el temor a transitar junto al tráfico vehicular.
 
 ## 2.3. Needfinding
 

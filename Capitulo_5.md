@@ -53,6 +53,8 @@ En síntesis, cada nueva funcionalidad se desarrolla en una rama feature, las ve
 **Repositorio platform**
 ![backend-screenshoot](./Resources/chapter-images/chapter-5/platform.png)
 
+## 5.1.4. Software Deployment Configuration
+
 ## Descripción
 
 La configuración de despliegue de software describe cómo se distribuyen los componentes de la **Plataforma Web de Alquiler de Bicicletas** en los diferentes nodos necesarios para su funcionamiento.
