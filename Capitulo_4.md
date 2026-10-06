@@ -190,6 +190,64 @@ Asimismo, el sistema permite al usuario desplazarse facilmente entre las funcion
 
 ### 4.4.1. Web Applications Wireframes
 
+Los siguientes wireframes muestran la estructura base de la interfaz web de biciGO en sus principales flujos de uso: acceso, registro, visualización del mapa, alquiler de bicicletas, historial de viajes, pagos, suscripciones y administración del servicio. Estos bocetos permiten validar la organización visual, la jerarquía de la información y la lógica de navegación antes de pasar a la etapa de prototipado y diseño final.
+
+![Wireframe 1](./Resources/wireframes-bicigo/wireframe-1.png)
+
+Figura 1: Wireframe de inicio de sesión y acceso a la aplicación.
+
+![Wireframe 2](./Resources/wireframes-bicigo/wireframe-2.png)
+
+Figura 2: Wireframe de registro de usuario y creación de cuenta.
+
+![Wireframe 3](./Resources/wireframes-bicigo/wireframe-3.png)
+
+Figura 3: Wireframe de onboarding y bienvenida inicial del usuario.
+
+![Wireframe 4](./Resources/wireframes-bicigo/wireframe-4.png)
+
+Figura 4: Wireframe de mapa principal con bicicletas disponibles.
+
+![Wireframe 5](./Resources/wireframes-bicigo/wireframe-5.png)
+
+Figura 5: Wireframe de detalle de una bicicleta y confirmación de reserva.
+
+![Wireframe 6](./Resources/wireframes-bicigo/wireframe-6.png)
+
+Figura 6: Wireframe del flujo de inicio del alquiler.
+
+![Wireframe 7](./Resources/wireframes-bicigo/wireframe-7.png)
+
+Figura 7: Wireframe de viaje activo con seguimiento del recorrido.
+
+![Wireframe 8](./Resources/wireframes-bicigo/wireframe-8.png)
+
+Figura 8: Wireframe de finalización del viaje y resumen del costo.
+
+![Wireframe 9](./Resources/wireframes-bicigo/wireframe-9.png)
+
+Figura 9: Wireframe del historial de viajes realizados por el usuario.
+
+![Wireframe 10](./Resources/wireframes-bicigo/wireframe-10.png)
+
+Figura 10: Wireframe de gestión de pagos y métodos de cobro.
+
+![Wireframe 11](./Resources/wireframes-bicigo/wireframe-11.png)
+
+Figura 11: Wireframe de suscripciones y planes disponibles.
+
+![Wireframe 12](./Resources/wireframes-bicigo/wireframe-12.png)
+
+Figura 12: Wireframe de perfil del usuario y configuración de cuenta.
+
+![Wireframe 13](./Resources/wireframes-bicigo/wireframe-13.png)
+
+Figura 13: Wireframe del dashboard administrativo para gestión de bicicletas y viajes.
+
+![Wireframe 14](./Resources/wireframes-bicigo/wireframe-14.png)
+
+Figura 14: Wireframe de incidencias, mantenimiento y control operativo del sistema.
+
 ### 4.4.2. Web Applications Wireflow Diagrams
 
 ### 4.4.2. Web Applications Mock-ups
