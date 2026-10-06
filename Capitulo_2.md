@@ -314,8 +314,8 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
       </a>
     </td>
     <td align="center">
-      <a href="ENLACE_VIDEO_2" target="_blank">
-        <img src="RUTA_IMAGEN_2" alt="Segunda entrevista del primer segmento" width="150">
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a911_upc_edu_pe/IQD26ILH7iaJQqIYzfMs8ZDgAaSMjBcDyQOpYwTzCoOx4Yg?e=qi30H0" target="_blank">
+        <img src="Resources/Capitulo2/entrevista2-estudiante.png" alt="Segunda entrevista del primer segmento" width="150">
       </a>
     </td>
     <td align="center">
@@ -337,13 +337,17 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
       <b>Perfil del entrevistado:</b> Fernando Güere Calero es un hombre de 19 años, soltero, residente en el distrito de Chaclacayo y estudiante de ingeniería. Forma parte del grupo de jóvenes que realiza desplazamientos cotidianos dentro de la ciudad y tiene experiencia utilizando la bicicleta como medio de transporte para recorridos cortos. Su perfil corresponde al de un usuario que busca alternativas prácticas para movilizarse en sus actividades diarias.
     </td>
     <td valign="top">
-      <b>Entrevistador:</b> <br>
-      <b>Entrevistado:</b> <br>
-      <b>Edad:</b> <br>
-      <b>Distrito:</b> <br>
-      <b>Inicio de la entrevista:</b> <br><br>
-      <b>Resumen:</b> <br><br>
-      <b>Perfil del entrevistado:</b>
+      <b>Entrevistador:</b> Rodrigo Velázquez<br>
+      <b>Entrevistado:</b> Alonso<br>
+      <b>Edad:</b> 19 años <br>
+      <b>Distrito:</b> No especificado <br>
+      <b>Estado civil:</b> Soltero <br>
+      <b>Ocupación:</b> Estudiante de arquitectura en la UPC <br>
+      <b>Inicio de la entrevista:</b> No especificado <br><br>
+      <b>Resumen:</b> Alonso, estudiante de arquitectura de 19 años, suele utilizar bus o automóvil para realizar desplazamientos cortos durante los fines de semana. Sin embargo, se siente incómodo por la congestión, el tiempo de espera y la cantidad de personas en el transporte público. Considera que la bicicleta sería una alternativa más rápida, cómoda y agradable para evitar el tráfico.<br><br>
+      También muestra interés en BiciGo, especialmente por el desbloqueo mediante código QR, la disponibilidad de estaciones cercanas y los planes de suscripción. Considera importantes la seguridad, la sostenibilidad, la rapidez y una cobertura amplia en zonas como San Isidro, Miraflores y Barranco.
+      <br><br>
+      <b>Perfil del entrevistado:</b> Alonso es un estudiante de arquitectura de 19 años de la UPC, soltero y usuario habitual del transporte público. Busca una opción de movilidad económica que reduzca el estrés y el tiempo perdido en el tráfico.
     </td>
     <td valign="top">
       <b>Entrevistador:</b> <br>
@@ -358,7 +362,7 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
 </table>
 
 
-#### Segundo Segmento objetivo: Transeuntes
+#### Segundo Segmento objetivo: Ciudadanos
 
 <table style="width: 100%" align='center'>
   <tr>
@@ -369,7 +373,7 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
   <tr>
     <td align='center'>
       <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202322952_upc_edu_pe/IQCmXEuLne2lTZsZnWYzY_9gAUFseCBoR-M_F5l_kv8R3z0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PqFbEC" target="_blank">
-        <img src="Resources/entrevistas/u20241a911_Pasajero_Antony.png" alt="Primera entrevista del segundo segmento" width="150">
+        <img src="Resources/Capitulo2/entrevista1-ciudadanos.png" alt="Primera entrevista del segmento de ciudadanos" width="150">
       </a>
     </td>
     <td align='center'>
@@ -385,24 +389,29 @@ Este segmento incluye universidades, municipalidades, empresas y otras organizac
   </tr>
   <tr>
     <td valign="top">
-      <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
-      <b>Entrevistado:</b> Antony Rodrigo Quito Ancasy<br>
+      <b>Entrevistador:</b> José María Franco del Carpio <br>
+      <b>Entrevistado:</b> David<br>
       <b>Edad:</b> 20 años <br>
-      <b>Distrito:</b> Chorrillos <br>
-      <b>Inicio de la entrevista:</b> 1:18 <br><br>
-      <b>Resumen:</b> El entrevistado, joven de 20 años relató su experiencia sobre las mototaxis en la zona de Chorrillos,en el cual compartio sus dificultades tanto por el lado del precio como tambien el de no saber si el conductor pueda tener precaución al conducir además de ello aclaro que lo que priorizaria en una app de transporte seria ver el perfil del conductor para no tomar riesgos al pedir un viaje.
+      <b>Distrito:</b> Santa Anita <br>
+      <b>Estado civil:</b> Soltero <br>
+      <b>Ocupación:</b> Estudiante <br>
+      <b>Inicio de la entrevista:</b> 0:02 <br><br>
+      <b>Resumen:</b> David, estudiante de 20 años residente en Santa Anita, realiza desplazamientos cortos principalmente los fines de semana para salir al centro o realizar diversas tareas. Utiliza buses porque son económicos y accesibles, aunque considera incómodo viajar en vehículos pequeños y llenos, además de que algunas veces los conductores cobran tarifas poco claras. También ha considerado usar bicicletas, especialmente en trayectos planos, pero le preocupan las subidas, el cansancio y la seguridad.
       <br><br>
-      <b>Perfil del entrevistado:</b>Hombre de 20 años que reside en Lima por el distrito de Chorrillos, ha vivido toda su vida alli y menciona que mayormente para transportarse a diferentes zonas pide mototaxi regularmente, además menciona problemas que le sucede dia a dia como el tener que "regatear" precios ademas de miedo por tener que subirse a una mototaxi la cual el conductor para ahorrar tiempo se metio en contra de la ruta y puso en peligro al pasajero.
+      Considera que la disponibilidad de bicicletas sería determinante para adoptar el servicio, y muestra un interés moderado por una aplicación con desbloqueo mediante código QR. Estaría dispuesto a pagar si la tarifa es igual o menor que la del transporte público, y valora especialmente la seguridad, la rapidez y la sostenibilidad.
+      <br><br>
+      <b>Perfil del entrevistado:</b> David es un estudiante de 20 años, soltero y residente en Santa Anita. Busca alternativas económicas y disponibles para sus recorridos, priorizando la seguridad, la comodidad y la rapidez.
     </td>
     <td valign="top">
       <b>Entrevistador:</b> Eduardo Manuel Aguirre Ramos <br>
-      <b>Entrevistado:</b>  <br>
-      <b>Edad:</b>  años <br>
-      <b>Distrito:</b> Carhuaz <br>
-      <b>Inicio de la entrevista:</b>  <br><br>
-      <b>Resumen:</b> .
+      <b>Entrevistado:</b> Claudia <br>
+      <b>Edad:</b> No especificada <br>
+      <b>Distrito:</b> No especificado <br>
+      <b>Inicio de la entrevista:</b> 0:00 <br><br>
+      <b>Resumen:</b> Claudia realiza desplazamientos cortos ocasionalmente para hacer compras, asistir a reuniones o resolver asuntos puntuales. Como no cuenta con automóvil propio, utiliza principalmente el transporte público, pero señala que el tráfico, los tiempos de espera y los costos pueden dificultar sus traslados. También identifica como problemas de los taxis las tarifas elevadas y la inseguridad durante algunas horas de la noche.<br><br>
+      Para un servicio de bicicletas compartidas, preferiría pagar una tarifa por uso debido a la poca frecuencia de sus viajes. Considera útil el desbloqueo mediante código QR y espera que la aplicación tenga una interfaz sencilla, un proceso de registro rápido y opciones para vincular cuentas como Facebook o Gmail.
       <br><br>
-      <b>Perfil del entrevistado:</b>como pasajero.
+      <b>Perfil del entrevistado:</b> Claudia es una ciudadana que realiza desplazamientos ocasionales para compras, reuniones y otros asuntos puntuales. Valora la economía, la rapidez, la seguridad y la facilidad de uso al elegir una alternativa de transporte.
     </td>
     <td valign="top">
       <b>Entrevistador:</b> Adrian Armestar <br>
