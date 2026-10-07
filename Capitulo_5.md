@@ -616,63 +616,29 @@ La aplicación está organizada según las funcionalidades de los diferentes Bou
 
 #### Identity & Access Management
 
-Entre las vistas contempladas se encuentran:
+![Login](./Resources/chapter5/evidencia-bicigo/login-evidencia.png)
 
-- Register View.
-- Login View.
-- Password Recovery View.
-
-![Sprint 2 IAM](./Resources/chapter5/sprint-2-iam.png)
-
-*Figura: interfaces correspondientes a Identity & Access Management.*
+![Registro](./Resources/chapter5/evidencia-bicigo/signup-evidencia.png)
 
 #### Fleet & Station Management
 
-Incluye:
+![Dashboard](./Resources/chapter5/evidencia-bicigo/dashboard.png)
 
-- Visualización de bicicletas cercanas.
-- Detalle de bicicleta.
-- Búsqueda de bicicletas por zona.
-
-![Sprint 2 Fleet](./Resources/chapter5/sprint-2-fleet.png)
-
-*Figura: interfaces correspondientes a Fleet & Station Management.*
+![Bicicletas](./Resources/chapter5/evidencia-bicigo/bycicles.png)
 
 #### Trip Management
 
-Incluye:
+![Perfil](./Resources/chapter5/evidencia-bicigo/profile.png)
 
-- Inicio de alquiler.
-- Visualización del viaje activo.
-- Finalización del alquiler.
-
-![Sprint 2 Trip](./Resources/chapter5/sprint-2-trip.png)
-
-*Figura: interfaces correspondientes a Trip Management.*
+![Suscripciones](./Resources/chapter5/evidencia-bicigo/suscriptions.png)
 
 #### Billing & Subscriptions
 
-Incluye:
-
-- Gestión de método de pago.
-- Consulta de tarifa.
-- Visualización de planes de suscripción.
-
-![Sprint 2 Billing](./Resources/chapter5/sprint-2-billing.png)
-
-*Figura: interfaces correspondientes a Billing & Subscriptions.*
+![Facturación](./Resources/chapter5/evidencia-bicigo/billing.png)
 
 #### Maintenance
 
-Incluye:
-
-- Reporte de bicicleta dañada.
-- Seguimiento de incidencias.
-- Gestión de incidencias de bicicletas.
-
-![Sprint 2 Maintenance](./Resources/chapter5/sprint-2-maintenance.png)
-
-*Figura: interfaces correspondientes a Maintenance.*
+![Reporte de incidencias](./Resources/chapter5/evidencia-bicigo/report.png)
 
 #### Video de ejecución
 
