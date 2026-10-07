@@ -3,6 +3,7 @@
 ## 5.1. Software Configuration Management
 
 ### 5.1.1. Software Development Environment Configuration
+
 | Categoría | Herramienta | Propósito | Enlace |
 |---|---|---|---|
 | Diseño UX/UI | Figma | Elaboración de wireframes, mockups y prototipos utilizados para definir la interfaz y experiencia de usuario de biciGO. | [https://www.figma.com/design/FIUjx83bu9OhBxZ4EMqyfe/Sin-t%C3%ADtulo?node-id=0-1&t=2NPsUYYjUh7xKI3R-1](https://www.figma.com/design/FIUjx83bu9OhBxZ4EMqyfe/Sin-t%C3%ADtulo?node-id=0-1&t=2NPsUYYjUh7xKI3R-1) |
@@ -11,6 +12,7 @@
 | Modelado de Base de Datos | Draw.io | Elaboración del diagrama de base de datos de biciGO, incluyendo entidades, atributos, claves y relaciones entre las tablas del sistema. | [https://drive.google.com/file/d/1frY_P-cg-4JuKiY2Jh8m85aaZD9V1CCT/view?usp=sharing](https://drive.google.com/file/d/1frY_P-cg-4JuKiY2Jh8m85aaZD9V1CCT/view?usp=sharing) |
 | Modelado de Dominio | Canva | Desarrollo del Event Storming utilizado para identificar eventos, procesos y elementos principales del dominio de biciGO. | [https://canva.link/7coo689oj2nx3b7](https://canva.link/7coo689oj2nx3b7) |
 | Desarrollo Web | GitHub Pages | Despliegue público de la Landing Page de biciGO. | [https://startup-chapa.github.io/Landing-Page/](https://startup-chapa.github.io/Landing-Page/) |
+| Frontend Deployment | Firebase Hosting | Plataforma utilizada para publicar la Frontend Web Application de biciGO y proporcionar acceso mediante una URL pública. | [https://firebase.google.com/](https://firebase.google.com/) |
 | Entorno de Desarrollo | WebStorm | Entorno utilizado para editar y organizar los archivos del proyecto, trabajar con Git y desarrollar los componentes web de biciGO. | [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/) |
 | Control de Versiones | Git | Sistema utilizado para registrar cambios, trabajar mediante ramas y mantener el historial del proyecto. | [https://git-scm.com/](https://git-scm.com/) |
 | Repositorio Remoto | GitHub | Plataforma utilizada para almacenar el proyecto y facilitar el trabajo colaborativo entre los integrantes. | [https://github.com/](https://github.com/) |
@@ -19,13 +21,15 @@
 | Gestión del Producto | Product Backlog | Permite organizar y priorizar las User Stories y Technical Stories que forman parte del desarrollo de biciGO. | [https://trello.com/invite/b/6aac96a6ce176e2f9d496d31/ATTI96186798f26dde57c47e51ca96f0fff04FDD51DF/sprint-web-1](https://trello.com/invite/b/6aac96a6ce176e2f9d496d31/ATTI96186798f26dde57c47e51ca96f0fff04FDD51DF/sprint-web-1) |
 
 ### 5.1.2. Source Code Management
+
 Para el control de versiones y la organización ordenada del código de nuestro proyecto BiciGo, el equipo utiliza GitHub como plataforma principal. GitHub nos permite almacenar código fuente de la Landing Page, Front-End, Back-End llevar un registro histórico de cambios, colaborar de manera estructurada y garantizar trazabilidad durante todo el ciclo de desarrollo. Por ende, creamos la organización Minex-Organization, que incluye los siguientes repositorios:
-| Solución  | Nombre del repositorio  |  Enlace  |
+
+| Solución | Nombre del repositorio | Enlace |
 |---|---|---|
-| report | bicigo-report  | https://github.com/Startup-Chapa/project-report |
-| website  | bicigo-website  |  https://github.com/Startup-Chapa/Landing-Page |
-| webapp  |  bicigo-webapp  |  |
-| platform  | bicigo-platform   |  |
+| report | bicigo-report | https://github.com/Startup-Chapa/project-report |
+| website | bicigo-website | https://github.com/Startup-Chapa/Landing-Page |
+| webapp | bicigo-webapp | https://github.com/Startup-Chapa/frontend-bicigo |
+| platform | bicigo-platform | |
 
 Nuestro equipo de trabajo ha adoptado el flujo GitFlow, basado en el artículo “A successful Git branching model” de Vincent Driessen. La organización del repositorio se estructura en dos ramas principales y permanentes: master, que contiene las versiones estables listas para entrega, y develop, que funciona como la rama de integración continua del desarrollo. A partir de la rama develop, se crean ramas de tipo feature siguiendo la nomenclatura feature/chapter-#-description, por ejemplo: feature/chapter-ii-interviews. Estas ramas permiten que cada miembro del equipo desarrolle funcionalidades o secciones específicas de manera aislada. En casos donde un integrante desarrolla un capítulo completo, se utiliza una convención como feature/chapter-#-content. Una vez finalizado el trabajo, estas ramas se integran nuevamente en develop, asegurando una consolidación ordenada de los avances.
 
@@ -33,24 +37,28 @@ Cuando el producto se aproxima a una fecha de entrega, se genera una rama releas
 
 Adicionalmente, el equipo aplica la convención Conventional Commits, la cual estandariza los mensajes de confirmación para mejorar la trazabilidad y comprensión de los cambios. Cada commit sigue una estructura clara, por ejemplo:
 
+```text
 git commit -m "docs(chapter-#): add ..."
+```
 
 Este enfoque facilita la generación automática de historiales de cambios y permite mantener un registro organizado y semántico del desarrollo.
 
 En síntesis, cada nueva funcionalidad se desarrolla en una rama feature, las versiones listas para entrega se gestionan mediante release branches, y las correcciones urgentes a través de hotfix branches. Todo ello, junto con el uso de Conventional Commits, asegura un flujo de trabajo estructurado, colaborativo y alineado con buenas prácticas para el desarrollo del proyecto BiciGo.
 
 **Repositorio report**
+
 ![report-screenshoot](./Resources/chapter-images/chapter-5/report.png)
 
+**Repositorio website**
 
-**Repositorio  website**
 ![landing-screenshoot](./Resources/chapter-images/chapter-5/landing.png)
 
-
 **Repositorio webapp**
+
 ![frontend-screenshoot](./Resources/chapter-images/chapter-5/webapp.png)
 
 **Repositorio platform**
+
 ![backend-screenshoot](./Resources/chapter-images/chapter-5/platform.png)
 
 ## 5.1.4. Software Deployment Configuration
@@ -159,7 +167,6 @@ La plataforma no ejecuta directamente el procesamiento financiero, sino que dele
 ## Diagrama de Despliegue
 
 ```Plaintext
-
 @startuml
 title 5.1.4. Software Deployment Configuration
 
@@ -204,19 +211,48 @@ El Sprint 1 corresponde a la primera entrega del proyecto (AV1 – Sprint Review
 
 #### 5.2.1.1. Sprint Planning 1
 
-El Sprint Planning Meeting del Sprint 1 definió el objetivo del Sprint, las tareas necesarias para publicar la primera versión del Landing Page y la distribución del trabajo entre los integrantes de Chapa. Como insumos se utilizaron los artefactos de los capítulos anteriores: el Lean UX Canvas (Capítulo I), los segmentos objetivo, las User Personas, el wireframe y el mock-up del Landing Page (Capítulo IV) y la guía de estilos general y web (sección 4.1).
+La planificación del Sprint 1 organiza la primera versión de la Landing Page de biciGO, tomando como insumos el Lean UX Canvas, los segmentos objetivo, las User Personas, el wireframe, el mock-up y la guía de estilos. Se consideran las seis historias de usuario y la historia técnica identificadas en el Sprint Backlog 1.
 
-| Sprint # | Sprint 1 |
+**Base de planificación:** la fecha y la hora se proponen para completar el registro; los story points y la velocidad planificada son estimaciones de referencia, no mediciones históricas.
+
+**Sprint Planning Background**
+
+| Campo | Sprint 1 |
 |---|---|
-| **Sprint Planning Background** | |
+| Sprint # | Sprint 1 |
+| Date | 07/09/2026 (propuesta) |
+| Time | 20:00–21:00 (hora de Lima; propuesta) |
+| Location | Reunión virtual |
 | Prepared By | Aguirre Ramos, Eduardo Manuel |
 | Attendees (to planning meeting) | Aguirre Ramos, Eduardo Manuel / Armestar Felipa, Adrian Andres / Ayllon Pauccar, Juan David / Franco del Carpio, José María / Velasquez Velasquez, Rodrigo |
-| Sprint 0 Review Summary | No aplica. El Sprint 1 es el primer Sprint del proyecto. Antes de iniciarlo, el equipo completó la documentación de los Capítulos I al IV (Startup Profile, Requirements Elicitation, Requirements Specification y diseño del Landing Page) y creó los repositorios `project-report` y `Landing-Page`. |
-| Sprint 0 Retrospective Summary | No aplica. El Sprint 1 es el primer Sprint del proyecto. |
-| **Sprint Goal & User Stories** | |
+| Sprint 0 Review Summary | No aplica: este es el primer Sprint. Como antecedentes se consideran los artefactos de investigación, requisitos y diseño de los Capítulos I al IV, además de los repositorios del informe y de la Landing Page. |
+| Sprint 0 Retrospective Summary | No aplica: no hubo un Sprint anterior. Como acuerdos iniciales de planificación se propone distribuir tareas por sección, registrar avances en Trello y revisar los cambios antes de integrarlos. |
+
+**Sprint Goal & User Stories**
+
+| Campo | Sprint 1 |
+|---|---|
 | Sprint 1 Goal | *Our focus is on publishing the first deployed version of the BiciGO Landing Page, available in English and Latin American Spanish and responsive on mobile and desktop screens.*<br>*We believe it delivers a clear understanding of the service (mission, vision, benefits and how it works) and a direct way to get in touch with the team to urban citizens who make short trips and to institutions interested in promoting cycling.*<br>*This will be confirmed when the Landing Page is publicly reachable at its GitHub Pages URL, every section can be read on a 390 px and on a 1440 px wide screen without horizontal scrolling, and a visitor can switch the whole interface between English and Spanish.* |
-| Sprint 1 Velocity | No aplica en Story Points. Las tareas del Sprint 1 no provienen de User Stories del Product Backlog (que describen funcionalidades de las aplicaciones), sino de tareas asociadas a las restricciones del Landing Page. El esfuerzo se planifica en horas: **76 horas** en total (ver Sprint Backlog 1). |
-| Sum of Story Points | 0 |
+| Selected User Stories | US-LP01: navegación y presentación principal; US-LP02: funcionamiento del servicio; US-LP03: beneficios y métricas; US-LP04: tarifas y planes; US-LP05: preguntas frecuentes; US-LP06: contacto y validación del formulario. |
+| Selected Technical Stories | TS-LP01: configuración del repositorio, despliegue en GitHub Pages y revisión responsive. |
+| Sprint 1 Velocity | 16 story points por sprint (velocidad planificada inicial, sin historial previo). |
+| Sum of Story Points | 16 story points: 13 de historias de usuario y 3 de la historia técnica. |
+| Task Estimation | 38 horas, correspondientes a las 16 microtareas del Sprint Backlog 1. |
+
+**Distribución estimada de Story Points**
+
+| Story Id | Story Title | Story Points |
+|---|---|---:|
+| US-LP01 | Navegación y presentación principal (Navbar & Hero) | 3 |
+| US-LP02 | Explicación del funcionamiento del servicio | 2 |
+| US-LP03 | Presentación de beneficios y métricas | 2 |
+| US-LP04 | Comparación de tarifas y planes | 2 |
+| US-LP05 | Consulta de preguntas frecuentes | 2 |
+| US-LP06 | Formulario de contacto y validación | 2 |
+| TS-LP01 | Despliegue y revisión responsive | 3 |
+| **Total** | **6 User Stories y 1 Technical Story** | **16** |
+
+Los puntos se asignan a cada historia una sola vez; sus microtareas conservan las estimaciones en horas del backlog. La velocidad real requiere validar las historias terminadas frente a sus criterios de aceptación. La internacionalización se mantiene como condición transversal del Sprint Goal y requiere reflejar su trabajo en las tareas de las historias correspondientes, ya que el backlog disponible no la desglosa como tarea independiente.
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
@@ -245,9 +281,9 @@ La asignación de líderes y colaboradores se definió a partir de la participac
 
 El objetivo principal del Sprint 1 es publicar la primera versión del Landing Page de BiciGO, en inglés y español y con diseño responsive, para presentar el modelo de negocio a los visitantes. El Sprint Backlog 1 se gestiona en un tablero de Trello con las columnas To-do, In-Process, To-Review y Done.
 
-Las tareas no derivan de User Stories del Product Backlog, ya que estas describen funcionalidades de las aplicaciones. Por ese motivo se registran como tareas adicionales asociadas a las restricciones del Landing Page (responsive design, i18n, accesibilidad, SEO, términos y condiciones, y despliegue). Cada tarea está estimada en un rango de 4 a 8 horas.
+Las tareas se agrupan bajo seis historias específicas de la Landing Page (US-LP01 a US-LP06) y una historia técnica (TS-LP01), diferenciadas de las historias de la aplicación web. El backlog disponible contiene 16 microtareas de 2 a 3 horas cada una, con una estimación total de **38 horas**. La estimación de referencia de sus historias suma **16 story points**, como se detalla en Sprint Planning 1.
 
-**Trello del  AV1**
+**Trello del AV1**
 
 ![imagen trello](./Resources/chapter5/trello.png)
 
@@ -274,13 +310,12 @@ Las tareas no derivan de User Stories del Product Backlog, ya que estas describe
 | **TS-LP01** | T-07.2 | `[TS-LP01]` `[DEVOPS]` Public URL & Domain check | Verificar el despliegue correcto de la URL pública (`https://startup-chapa.github.io/Landing-Page/`) y ruta de assets. | 2 h | Armestar Felipa, Adrian Andres | Done |
 | **TS-LP01** | T-11.1 | `[TS-LP01]` `[QA]` Cross-device responsive test | Probar la adaptabilidad en resoluciones móviles (393x852px), tablets y monitores de escritorio (1200px max-width). | 3 h | Aguirre Ramos, Eduardo Manuel | Done |
 
-
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 Durante el Sprint 1 se implementó la primera versión del Landing Page en el repositorio `Startup-Chapa/Landing-Page`: la estructura HTML, los estilos CSS responsive, los diccionarios de traducción en inglés y español y las imágenes de las secciones. En paralelo, en el repositorio `Startup-Chapa/project-report` se documentaron el wireframe y el mock-up del Landing Page (Capítulo IV) y la gestión del código fuente (Capítulo V), que sirvieron de base para la implementación. Los commits siguen la convención Conventional Commits descrita en la sección 5.1.2.
 
 | Commit | Autor | Email | Fecha | Mensaje |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | `ef59cb5` | Adrian5102 | u202410084@upc.edu.pe | 2026-09-14 | feat: add info for BiciGo |
 | `615a806` | Adrian5102 | u202410084@upc.edu.pe | 2026-09-14 | feat: add first version of Landing Page |
 | `aeca1f3` | Adrian5102 | u202410084@upc.edu.pe | 2026-09-14 | feat: add index & css files |
@@ -316,7 +351,6 @@ La interfaz está disponible en inglés (idioma por defecto) y en español latin
 **Página completa en móvil (390 px)**
 
 ![landing-full-mobile](./Resources/chapter5/captura-completa-mobile.png)
-
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -358,24 +392,64 @@ Las actividades del Sprint 1 se organizaron con el flujo GitFlow descrito en la 
 | Franco del Carpio, José María | VoltTrd | 0 | 1 |
 | Velasquez Velasquez, Rodrigo | Rodrigov233 | 0 | 4 |
 
+### 5.2.2. Sprint 2
+
 ### 5.2.2.1. Sprint Planning 2
 
-Durante Sprint Planning 2 se seleccionaron funcionalidades del Product Backlog relacionadas con los principales flujos de usuario de biciGO.
+La planificación del Sprint 2 contempla 15 User Stories relacionadas con los principales flujos de usuario de biciGO, distribuidas entre los cinco Bounded Contexts. El alcance comprende interfaces, navegación y validaciones del frontend con datos simulados; la implementación de RESTful Web Services corresponde a una iteración posterior.
 
-| Sprint # | Sprint 2 |
+**Base de planificación:** la fecha y la hora son propuestas para documentar esta planificación; los story points y la velocidad son estimaciones, no mediciones históricas ni resultados de cierre.
+
+**Sprint Planning Background**
+
+| Campo | Sprint 2 |
 |---|---|
-| **Sprint Planning Background** | |
-| Date | REEMPLAZAR CON FECHA REAL |
-| Time | REEMPLAZAR CON HORA REAL |
+| Sprint # | Sprint 2 |
+| Date | 28/09/2026 (propuesta) |
+| Time | 20:00–21:00 (hora de Lima; propuesta) |
 | Location | Reunión virtual |
 | Prepared By | Chapa Technologies |
 | Attendees | Aguirre Ramos, Eduardo Manuel / Armestar Felipa, Adrian Andres / Ayllon Pauccar, Juan David / Franco del Carpio, José María / Velasquez Velasquez, Rodrigo |
 | Sprint 1 Review Summary | Sprint 1 permitió implementar y desplegar la primera versión de la Landing Page, incluyendo contenido informativo, Responsive Web Design e internacionalización. |
 | Sprint 1 Retrospective Summary | Se identificó la necesidad de distribuir de manera más equilibrada el trabajo de implementación, mantener actualizado el tablero del Sprint y garantizar evidencia individual de desarrollo en GitHub. |
-| **Sprint Goal & User Stories** | |
+
+**Sprint Goal & User Stories**
+
+| Campo | Sprint 2 |
+|---|---|
 | Sprint 2 Goal | *Our focus is on delivering the first usable version of the BiciGO Frontend Web Application. We believe it delivers an initial digital mobility experience by allowing users to access the principal interfaces related to account management, bicycle discovery, trip management, billing and incident reporting. This will be confirmed when the implemented frontend is publicly accessible, responsive and allows navigation through the principal user flows included in the Sprint.* |
-| Sprint 2 Velocity | REEMPLAZAR CON VELOCIDAD PLANIFICADA EN STORY POINTS |
-| Sum of Story Points | REEMPLAZAR CON LA SUMA REAL DE LAS USER STORIES SELECCIONADAS |
+| Selected User Stories | IAM: US-01, US-02 y US-03; Fleet & Station Management: US-07, US-08 y US-09; Trip Management: US-11, US-13 y US-15; Billing & Subscriptions: US-16, US-17 y US-19; Maintenance: US-26, US-29 y US-33. |
+| Supporting Tasks | T2-16: integración del frontend; T2-17: revisión responsive; T2-18: despliegue público. Incluidas en el esfuerzo del Sprint, sin puntos adicionales. |
+| Sprint 2 Velocity | 30 story points por sprint (velocidad planificada). Se estima según el alcance frontend seleccionado; no se deriva de una velocidad real verificada del Sprint 1. |
+| Sum of Story Points | 30 story points, correspondientes a las 15 User Stories seleccionadas. |
+| Task Estimation | 70 horas, correspondientes a las 18 tareas del Sprint Backlog 2. |
+
+#### Estimación de las User Stories seleccionadas
+
+Se utiliza una escala de 1, 2 y 3 puntos según la complejidad relativa de las interfaces, sus estados y validaciones. Estas estimaciones se limitan al alcance frontend del Sprint.
+
+| Story Id | Story Title | Story Points |
+|---|---|---:|
+| US-01 | Registro de usuario | 2 |
+| US-02 | Inicio de sesión | 2 |
+| US-03 | Recuperación de contraseña | 1 |
+| US-07 | Visualización de bicicletas cercanas | 3 |
+| US-08 | Consulta de información de bicicleta | 1 |
+| US-09 | Búsqueda de bicicletas por zona | 2 |
+| US-11 | Inicio de alquiler | 3 |
+| US-13 | Consulta del viaje activo | 2 |
+| US-15 | Finalización de alquiler | 3 |
+| US-16 | Registro de método de pago | 2 |
+| US-17 | Consulta de tarifa | 1 |
+| US-19 | Suscripción a plan mensual | 2 |
+| US-26 | Reporte de bicicleta dañada | 2 |
+| US-29 | Seguimiento de incidencias | 2 |
+| US-33 | Gestión de incidencias de bicicletas | 2 |
+| **Total** | **15 User Stories** | **30** |
+
+Las tareas de integración, revisión responsive y despliegue forman parte de la capacidad prevista del equipo y se mantienen dentro de las **70 horas** del Sprint Backlog 2. No se añaden puntos independientes a estas tareas para evitar duplicar la estimación del trabajo necesario para entregar las historias. Los story points expresan complejidad relativa y no se convierten directamente en horas.
+
+La velocidad real se determinará al cierre, sumando únicamente los puntos de las historias que cumplan los criterios de aceptación y la Definition of Done.
 
 ---
 
@@ -417,7 +491,7 @@ Done
 
 #### Evidencia del tablero
 
-![Sprint 2 Trello Board](./Resources/chapter5/sprint-2-trello.png)
+![Sprint 2 Trello Board](./Resources/chapter5/trello2.png)
 
 *Figura: tablero utilizado para organizar y dar seguimiento a Sprint 2.*
 
@@ -468,22 +542,69 @@ El trabajo se encuentra distribuido según los Bounded Contexts definidos por el
 
 Al finalizar cada funcionalidad, los cambios son integrados dentro de `develop`.
 
-La siguiente tabla debe completarse utilizando únicamente los commits reales realizados durante Sprint 2.
+La siguiente tabla transcribe las entradas del historial de `develop` proporcionado como evidencia. Se conservan los mensajes tal como aparecen y las fechas de los encabezados de GitHub, en lugar de convertir las referencias relativas como “yesterday” o “4 days ago”.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
-|---|---|---|---|---|---|
-| Startup-Chapa/frontend-bicigo | feature/iam | REEMPLAZAR | REEMPLAZAR | Implementación de Identity & Access Management. | REEMPLAZAR |
-| Startup-Chapa/frontend-bicigo | feature/trip-management | REEMPLAZAR | REEMPLAZAR | Implementación de las funcionalidades relacionadas con viajes. | REEMPLAZAR |
-| Startup-Chapa/frontend-bicigo | feature/billing-subscriptions | REEMPLAZAR | REEMPLAZAR | Implementación de pagos y suscripciones. | REEMPLAZAR |
-| Startup-Chapa/frontend-bicigo | feature/fleet-station-management | REEMPLAZAR | REEMPLAZAR | Implementación de consulta y visualización de bicicletas. | REEMPLAZAR |
-| Startup-Chapa/frontend-bicigo | feature/maintenance | REEMPLAZAR | REEMPLAZAR | Implementación del reporte y gestión de incidencias. | REEMPLAZAR |
-| Startup-Chapa/frontend-bicigo | develop | REEMPLAZAR | REEMPLAZAR | Integración de las funcionalidades de Sprint 2. | REEMPLAZAR |
+La columna **Branch** identifica la rama cuyo historial se consultó; no determina en qué rama se creó originalmente cada commit. El extracto no incluye los códigos SHA ni el cuerpo de los mensajes, por lo que esos campos se registran como **No proporcionado**. Las entradas con mensajes repetidos se mantienen porque aparecen por separado en el historial suministrado.
 
-#### Evidencia visual
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on | GitHub User |
+|---|---|---|---|---|---|---|
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | fix: modify db.json | No proporcionado | 07/10/2026 | TheEngineEdu |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | Merge branch 'develop' of https://github.com/Startup-Chapa/frontend-bicigo into develop | No proporcionado | 07/10/2026 | TheEngineEdu |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | Refactor JSON structure in db.json | No proporcionado | 07/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | Change localStorage key from 'bicigo_user' to 'users' | No proporcionado | 07/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | Merge branch 'develop' of https://github.com/Startup-Chapa/frontend-bicigo into develop | No proporcionado | 07/10/2026 | TheEngineEdu |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | db.json | No proporcionado | 06/10/2026 | VoltTrd |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat: integrate BiciGO frontend modules | No proporcionado | 06/10/2026 | Rodrigov233 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat:add configuration to the page | No proporcionado | 06/10/2026 | TheEngineEdu |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | Merge pull request #2 from Startup-Chapa/feature/iam | No proporcionado | 06/10/2026 | TheEngineEdu |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add forgot password view | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add final details for i18n | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): fixed great part of iam | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): trying to fix everything pls maybe hopefully | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): update layout | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | fix iam requirements | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add iam routes | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add authentication section component | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add reset password view | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add forgot password view | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add register view | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add login view | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add pinia start | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add i18n start | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add iam store | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add mock api for iam | No proporcionado | 02/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add user assembler | No proporcionado | 01/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add iam interceptor | No proporcionado | 01/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add iam storage | No proporcionado | 01/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat(iam): add user entity | No proporcionado | 01/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat: add base entity | No proporcionado | 01/10/2026 | Adrian5102 |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat:add shared context to src | No proporcionado | 30/09/2026 | TheEngineEdu |
+| Startup-Chapa/frontend-bicigo | `develop` | No proporcionado | feat:initial commit | No proporcionado | 27/09/2026 | TheEngineEdu |
 
-![Sprint 2 GitHub Commits](./Resources/chapter5/sprint-2-github-commits.png)
+El extracto contiene **32 entradas**, incluidas **3 entradas de fusión**. No constituye por sí solo un conteo completo de contribuciones del Sprint ni de todas las ramas. La entrada inicial del 27/09/2026 se conserva como antecedente del repositorio; su inclusión dentro del Sprint requiere confirmar las fechas de este.
 
-*Figura: historial de commits realizados durante Sprint 2.*
+#### Evidencia visual de actividad e integración
+
+La captura de GitHub Pulse presenta la actividad del repositorio consultado entre el **30 de septiembre y el 7 de octubre de 2026**. En ese período se registran **5 autores**, **62 commits en todas las ramas** y **2 commits en `main`**, excluyendo los commits de fusión según el resumen mostrado.
+
+| Indicador | Valor mostrado en GitHub Pulse |
+|---|---:|
+| Autores con actividad | 5 |
+| Commits en todas las ramas | 62 |
+| Commits en `main` | 2 |
+| Pull requests fusionados | 2 |
+| Pull requests abiertos | 0 |
+| Archivos modificados en `main` | 14 |
+| Líneas añadidas en `main` | 632 |
+| Líneas eliminadas en `main` | 0 |
+
+La captura también muestra los pull requests **#2, `Feature/iam`**, y **#1, `Feature/trip management`**, ambos fusionados. Esta evidencia respalda la actividad de desarrollo y la integración de cambios durante el período consultado.
+
+![GitHub Pulse: actividad e integración del 30 de septiembre al 7 de octubre de 2026](./Resources/chapter5/pulse.png)
+
+*Figura: resumen de GitHub Pulse con actividad en todas las ramas y dos pull requests fusionados.*
+
+**Alcance de la evidencia:** Pulse ofrece un resumen de actividad; no muestra los identificadores, mensajes completos, cuerpos ni fechas de cada commit. La tabla anterior se completó con los mensajes, usuarios y fechas del historial suministrado; quedan pendientes los códigos SHA y los cuerpos de los mensajes, si los hubiera. Las cifras corresponden al período seleccionado y no necesariamente a toda la duración del Sprint 2.
 
 ---
 
@@ -581,48 +702,147 @@ Las Technical Stories especificadas en el Capítulo III serán utilizadas poster
 
 ### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-Para TB1 debe desplegarse públicamente la primera versión de la Frontend Web Application.
+Durante Sprint 2 se realizó el despliegue público de la primera versión de la **Frontend Web Application de biciGO** mediante **Firebase Hosting**.
 
-El proceso de integración y despliegue considerado es:
+Para realizar el despliegue se utilizó Firebase CLI. El proceso incluyó la instalación y autenticación de Firebase, la compilación del proyecto mediante Vite, la inicialización y configuración de Firebase Hosting y finalmente la publicación de la aplicación.
+
+El proceso general de despliegue fue el siguiente:
 
 ```text
-feature/iam
-feature/trip-management
-feature/billing-subscriptions
-feature/fleet-station-management
-feature/maintenance
+Frontend Web Application
         ↓
-      develop
+Firebase CLI
         ↓
-Integration Review
+Firebase Login
         ↓
-       main
+npm run build
         ↓
-Frontend Deployment
+dist/
+        ↓
+Firebase Hosting Configuration
+        ↓
+firebase deploy --only hosting
+        ↓
+Public Frontend Web Application
 ```
 
-Antes del despliegue se deben comprobar los siguientes aspectos:
+Antes de realizar el despliegue se verificaron los siguientes aspectos:
 
-- Navegación entre vistas.
-- Responsive Web Design.
-- Funcionamiento correcto de las rutas.
-- Consistencia visual.
-- Visualización en Desktop Web Browser.
-- Visualización en Mobile Web Browser.
-- Accesibilidad básica.
-- Integración de los componentes desarrollados.
+- Correcta compilación de la Frontend Web Application.
+- Generación del directorio `dist`.
+- Correcta configuración de Firebase Hosting.
+- Funcionamiento de las rutas de la aplicación.
+- Publicación de los archivos generados para producción.
+- Acceso público a la aplicación mediante HTTPS.
 
 | Producto | Plataforma | URL | Estado |
 |---|---|---|---|
 | Landing Page | GitHub Pages | [https://startup-chapa.github.io/Landing-Page/](https://startup-chapa.github.io/Landing-Page/) | Deployed |
-| Frontend Web Application | REEMPLAZAR | REEMPLAZAR CON URL REAL | Debe estar desplegado para TB1 |
+| Frontend Web Application | Firebase Hosting | [https://example-pro-d6e84.web.app](https://example-pro-d6e84.web.app) | Deployed |
 | RESTful Web Services | No aplica | No incluidos en TB1 | Not included |
 
 #### Evidencia de despliegue
 
-![Sprint 2 Deployment](./Resources/chapter5/sprint-2-deployment.png)
+A continuación se presenta la evidencia correspondiente al proceso realizado para publicar la Frontend Web Application mediante Firebase Hosting.
 
-*Figura: evidencia del despliegue de la primera versión de la Frontend Web Application.*
+#### 1. Instalación de Firebase CLI e inicio de autenticación
+
+Primero se instaló Firebase CLI de manera global mediante `npm`.
+
+Posteriormente se ejecutó `firebase login` para iniciar el proceso de autenticación con Firebase.
+
+```text
+npm install firebase-tools -g
+firebase login
+```
+
+![Firebase CLI installation and login](./Resources/chapter5/evidence5.jpeg)
+
+*Figura: instalación de Firebase CLI e inicio del proceso de autenticación.*
+
+#### 2. Autenticación exitosa y compilación de la aplicación
+
+Una vez realizada la autenticación, Firebase confirmó el inicio de sesión correctamente.
+
+Posteriormente se ejecutó:
+
+```text
+npm run build
+```
+
+Este comando utiliza Vite para generar la versión optimizada de producción de la Frontend Web Application.
+
+![Firebase authentication and frontend build](./Resources/chapter5/evidence4.jpeg)
+
+*Figura: autenticación exitosa en Firebase e inicio de la compilación de la Frontend Web Application.*
+
+#### 3. Finalización del build e inicialización de Firebase Hosting
+
+La aplicación fue compilada correctamente mediante Vite.
+
+Después de finalizar el proceso de build se ejecutó:
+
+```text
+firebase init hosting
+```
+
+Este comando inicia la configuración de Firebase Hosting dentro del proyecto `frontend-bicigo`.
+
+![Firebase Hosting initialization](./Resources/chapter5/evidence3.jpeg)
+
+*Figura: compilación exitosa de la Frontend Web Application e inicialización de Firebase Hosting.*
+
+#### 4. Configuración de Firebase Hosting
+
+Durante la configuración se seleccionó un proyecto existente de Firebase.
+
+Asimismo, se estableció el directorio:
+
+```text
+dist
+```
+
+como directorio público de Firebase Hosting, ya que este contiene los archivos generados mediante el proceso de compilación de Vite.
+
+La configuración realizada fue:
+
+```text
+Use an existing project
+Public directory: dist
+Configure as a single-page app: No
+Set up automatic builds and deploys with GitHub: No
+Overwrite dist/index.html: No
+```
+
+![Firebase Hosting configuration](./Resources/chapter5/evidence2.jpeg)
+
+*Figura: configuración de Firebase Hosting y selección del directorio `dist` como directorio de publicación.*
+
+#### 5. Despliegue de la Frontend Web Application
+
+Una vez finalizada la configuración se ejecutó:
+
+```text
+firebase deploy --only hosting
+```
+
+Firebase inició el proceso de publicación, encontró los archivos contenidos dentro del directorio `dist`, creó una nueva versión y la publicó mediante Firebase Hosting.
+
+El proceso finalizó correctamente con el mensaje:
+
+```text
+Deploy complete!
+```
+
+La URL pública obtenida fue:
+
+[https://example-pro-d6e84.web.app](https://example-pro-d6e84.web.app)
+
+![Firebase Hosting deployment](./Resources/chapter5/evidence1.jpeg)
+
+*Figura: despliegue exitoso de la Frontend Web Application de biciGO mediante Firebase Hosting.*
+
+Con esta publicación se dispone de una primera versión públicamente accesible de la Frontend Web Application desarrollada durante Sprint 2.
 
 ---
 
@@ -642,20 +862,24 @@ Cada integrante lidera la implementación de un contexto específico.
 
 Además del trabajo individual, los integrantes participan en actividades de revisión, integración y validación de la Frontend Web Application.
 
-La colaboración debe evidenciarse mediante los analíticos y commits registrados en GitHub.
+La evidencia de colaboración se presenta mediante GitHub Contributors y se complementa con GitHub Pulse, incluido en la sección 5.2.2.4.
 
 #### GitHub Collaboration Evidence
 
-![Sprint 2 GitHub Collaboration](./Resources/chapter5/sprint-2-collaboration.png)
+La captura de **Contributors** muestra contribuciones semanales a la rama **`main`**, con el filtro **Last 3 months** y excluyendo los commits de fusión. En la parte visible aparecen las siguientes contribuciones:
 
-*Figura: evidencia de colaboración del equipo durante Sprint 2.*
+![GitHub Contributors: contribuciones a main excluyendo commits de fusión](./Resources/chapter5/contributors.png)
+*Figura: vista de GitHub Contributors filtrada por los últimos tres meses, correspondiente a la rama `main` y sin commits de fusión.*
 
-| Integrante | Commits Frontend | Pull Requests | Principal Contribution |
-|---|---:|---:|---|
-| Adrian Armestar | REEMPLAZAR | REEMPLAZAR | Identity & Access Management |
-| José María Franco | REEMPLAZAR | REEMPLAZAR | Trip Management |
-| Juan David Ayllon | REEMPLAZAR | REEMPLAZAR | Billing & Subscriptions |
-| Eduardo Aguirre | REEMPLAZAR | REEMPLAZAR | Fleet & Station Management |
-| Rodrigo Velasquez | REEMPLAZAR | REEMPLAZAR | Maintenance |
+| Integrante | GitHub Username | Commits visibles en `main` | Líneas añadidas | Líneas eliminadas |
+|---|---|---:|---:|---:|
+| Eduardo Manuel Aguirre Ramos | TheEngineEdu | 2 | 714 | 0 |
+| José María Franco del Carpio | VoltTrd | 1 | 418 | 0 |
+
+**Interpretación:** estos conteos corresponden al alcance de la vista mostrada. No representan todos los commits del equipo en las ramas de desarrollo ni permiten concluir que los integrantes que no aparecen en la captura no hayan contribuido.
+
+La captura de **Pulse** de la sección 5.2.2.4 registra **5 autores y 62 commits en todas las ramas** entre el 30 de septiembre y el 7 de octubre de 2026, además de **2 pull requests fusionados**. Este resumen complementa la evidencia de participación del equipo. Las cifras de Contributors y Pulse no deben sumarse ni compararse directamente, porque utilizan distintos períodos y alcances de ramas.
+
+Las capturas no muestran el número exacto de commits de cada uno de los cinco integrantes en todas las ramas, ni la distribución individual de los pull requests. Ese desglose queda pendiente de verificar con el historial de GitHub; no se asignan valores cero a los integrantes que no aparecen en Contributors.
 
 El uso de Git, GitHub, Trello y un modelo de liderazgo distribuido permite mantener trazabilidad sobre las contribuciones, facilitar la integración de las funcionalidades y coordinar el cumplimiento del Sprint Goal establecido para TB1.
