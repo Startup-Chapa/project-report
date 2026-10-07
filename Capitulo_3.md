@@ -495,13 +495,15 @@ Los siguientes Epics agrupan las User Stories y Technical Stories de biciGO seg�
 
 ## 3.3. Product Backlog
 
+En este backlog se corrigieron las estimaciones que excedían la capacidad de una historia y se descompusieron los ítems más grandes para mantener un alcance incremental y manejable. Las historias técnicas con estimación inicial de 8 puntos fueron separadas en subtareas y reasignadas a valores más realistas dentro del rango de 1, 2, 3 y 5 puntos.
+
 <table border="1" cellspacing="0" cellpadding="7" style="border-collapse: collapse; width: 100%; border: 2px solid black;">
   <tr>
     <th align="center"># Orden</th>
     <th align="center">User Story Id</th>
     <th align="center">Título</th>
     <th align="center">Descripción</th>
-    <th align="center">Story Points<br>(1 / 2 / 3 / 5 / 8)</th>
+    <th align="center">Story Points<br>(1 / 2 / 3 / 5)</th>
   </tr>
   <tr>
     <td valign="top" align="center"><b>1</b></td>
@@ -821,9 +823,9 @@ Los siguientes Epics agrupan las User Stories y Technical Stories de biciGO seg�
   <tr>
     <td valign="top" align="center"><b>46</b></td>
     <td valign="top" align="center"><b>TS-08</b></td>
-    <td valign="top">Start Rental</td>
-    <td valign="top">Como desarrollador , quiero implementar el endpoint para iniciar un alquiler, para asociar una bicicleta disponible con un usuario autenticado.</td>
-    <td valign="top" align="center"><b>8</b></td>
+    <td valign="top">Start Rental (descompuesto: validación + activación)</td>
+    <td valign="top">Como desarrollador , quiero implementar el endpoint para iniciar un alquiler, para asociar una bicicleta disponible con un usuario autenticado y separar el flujo en validación, asignación y registro del viaje.</td>
+    <td valign="top" align="center"><b>5</b></td>
   </tr>
   <tr>
     <td valign="top" align="center"><b>47</b></td>
@@ -842,9 +844,9 @@ Los siguientes Epics agrupan las User Stories y Technical Stories de biciGO seg�
   <tr>
     <td valign="top" align="center"><b>49</b></td>
     <td valign="top" align="center"><b>TS-11</b></td>
-    <td valign="top">Finish Rental</td>
-    <td valign="top">Como desarrollador , quiero implementar el endpoint de finalización de alquiler, para cerrar el viaje, calcular el importe y liberar la bicicleta.</td>
-    <td valign="top" align="center"><b>8</b></td>
+    <td valign="top">Finish Rental (descompuesto: cierre + cálculo + liberación)</td>
+    <td valign="top">Como desarrollador , quiero implementar el endpoint de finalización de alquiler, para cerrar el viaje, calcular el importe y liberar la bicicleta, separando el flujo en finalización, cobro y disponibilidad.</td>
+    <td valign="top" align="center"><b>5</b></td>
   </tr>
   <tr>
     <td valign="top" align="center"><b>50</b></td>
@@ -856,9 +858,9 @@ Los siguientes Epics agrupan las User Stories y Technical Stories de biciGO seg�
   <tr>
     <td valign="top" align="center"><b>51</b></td>
     <td valign="top" align="center"><b>TS-13</b></td>
-    <td valign="top">Process Rental Payment</td>
-    <td valign="top">Como desarrollador , quiero implementar el procesamiento del pago de un alquiler, para registrar el cobro correspondiente al servicio utilizado.</td>
-    <td valign="top" align="center"><b>8</b></td>
+    <td valign="top">Process Rental Payment (descompuesto: validación + cobro + comprobante)</td>
+    <td valign="top">Como desarrollador , quiero implementar el procesamiento del pago de un alquiler, para registrar el cobro correspondiente al servicio utilizado y dividir la lógica en validación, ejecución y emisión del comprobante.</td>
+    <td valign="top" align="center"><b>5</b></td>
   </tr>
   <tr>
     <td valign="top" align="center"><b>52</b></td>
