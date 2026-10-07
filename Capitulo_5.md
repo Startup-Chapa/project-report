@@ -194,7 +194,7 @@ Business --> Payment : Solicitar pago
 Payment --> Business : Resultado del pago
 
 @enduml
-
+```
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
@@ -357,3 +357,305 @@ Las actividades del Sprint 1 se organizaron con el flujo GitFlow descrito en la 
 | Ayllon Pauccar, Juan David | JuanDPAUC | 0 | 7 |
 | Franco del Carpio, José María | VoltTrd | 0 | 1 |
 | Velasquez Velasquez, Rodrigo | Rodrigov233 | 0 | 4 |
+
+### 5.2.2.1. Sprint Planning 2
+
+Durante Sprint Planning 2 se seleccionaron funcionalidades del Product Backlog relacionadas con los principales flujos de usuario de biciGO.
+
+| Sprint # | Sprint 2 |
+|---|---|
+| **Sprint Planning Background** | |
+| Date | REEMPLAZAR CON FECHA REAL |
+| Time | REEMPLAZAR CON HORA REAL |
+| Location | Reunión virtual |
+| Prepared By | Chapa Technologies |
+| Attendees | Aguirre Ramos, Eduardo Manuel / Armestar Felipa, Adrian Andres / Ayllon Pauccar, Juan David / Franco del Carpio, José María / Velasquez Velasquez, Rodrigo |
+| Sprint 1 Review Summary | Sprint 1 permitió implementar y desplegar la primera versión de la Landing Page, incluyendo contenido informativo, Responsive Web Design e internacionalización. |
+| Sprint 1 Retrospective Summary | Se identificó la necesidad de distribuir de manera más equilibrada el trabajo de implementación, mantener actualizado el tablero del Sprint y garantizar evidencia individual de desarrollo en GitHub. |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | *Our focus is on delivering the first usable version of the BiciGO Frontend Web Application. We believe it delivers an initial digital mobility experience by allowing users to access the principal interfaces related to account management, bicycle discovery, trip management, billing and incident reporting. This will be confirmed when the implemented frontend is publicly accessible, responsive and allows navigation through the principal user flows included in the Sprint.* |
+| Sprint 2 Velocity | REEMPLAZAR CON VELOCIDAD PLANIFICADA EN STORY POINTS |
+| Sum of Story Points | REEMPLAZAR CON LA SUMA REAL DE LAS USER STORIES SELECCIONADAS |
+
+---
+
+### 5.2.2.2. Aspect Leaders and Collaborators
+
+La organización del Sprint 2 se encuentra basada en los cinco Bounded Contexts definidos durante el diseño de arquitectura.
+
+Cada integrante lidera un contexto y participa como colaborador en los demás.
+
+| Team Member | GitHub Username | IAM | Trip Management | Billing & Subscriptions | Fleet & Station Management | Maintenance |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Armestar Felipa, Adrian Andres | Adrian5102 | L | C | C | C | C |
+| Franco del Carpio, José María | VoltTrd | C | L | C | C | C |
+| Ayllon Pauccar, Juan David | JuanDPAUC | C | C | L | C | C |
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | C | C | C | L | C |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | C | C | C | C | L |
+
+**L:** Leader  
+**C:** Collaborator
+
+La distribución permite desarrollar funcionalidades en paralelo y posteriormente integrarlas en una versión común del Frontend Web Application.
+
+---
+
+### 5.2.2.3. Sprint Backlog 2
+
+El objetivo del Sprint Backlog 2 es organizar las tareas necesarias para construir la primera versión navegable de la Frontend Web Application.
+
+El trabajo se gestionará mediante Trello utilizando los estados:
+
+```text
+To-do
+In-Process
+To-Review
+Done
+```
+
+[https://trello.com/invite/b/6ac5b1a35529b83a03b51a0b/ATTI93c275e0a7f8461177850a9425f1680415930B03/sprint-2-web-application](https://trello.com/invite/b/6ac5b1a35529b83a03b51a0b/ATTI93c275e0a7f8461177850a9425f1680415930B03/sprint-2-web-application)
+
+#### Evidencia del tablero
+
+![Sprint 2 Trello Board](./Resources/chapter5/sprint-2-trello.png)
+
+*Figura: tablero utilizado para organizar y dar seguimiento a Sprint 2.*
+
+| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US-01 | Registro de usuario | T2-01 | Implement Register View | Crear la interfaz responsive correspondiente al registro de nuevos usuarios. | 3 h | Adrian Armestar | To-do |
+| US-02 | Inicio de sesión | T2-02 | Implement Login View | Crear la pantalla de inicio de sesión y las validaciones visuales. | 3 h | Adrian Armestar | To-do |
+| US-03 | Recuperación de contraseña | T2-03 | Implement Password Recovery | Crear el flujo visual correspondiente a recuperación de contraseña. | 3 h | Adrian Armestar | To-do |
+| US-07 | Visualización de bicicletas cercanas | T2-04 | Implement Bicycle Map | Crear la vista principal para visualizar bicicletas cercanas. | 5 h | Eduardo Aguirre | To-do |
+| US-08 | Consulta de información de bicicleta | T2-05 | Implement Bicycle Detail | Crear la vista que presenta información y estado de una bicicleta. | 3 h | Eduardo Aguirre | To-do |
+| US-09 | Búsqueda de bicicletas por zona | T2-06 | Implement Zone Search | Crear la búsqueda y selección de zonas. | 3 h | Eduardo Aguirre | To-do |
+| US-11 | Inicio de alquiler | T2-07 | Implement Start Trip | Crear la interfaz necesaria para iniciar un alquiler. | 5 h | José María Franco | To-do |
+| US-13 | Consulta del viaje activo | T2-08 | Implement Active Trip | Crear la interfaz correspondiente a un viaje activo. | 5 h | José María Franco | To-do |
+| US-15 | Finalización de alquiler | T2-09 | Implement Finish Trip | Crear la vista para finalizar el alquiler y mostrar el resumen. | 5 h | José María Franco | To-do |
+| US-16 | Registro de método de pago | T2-10 | Implement Payment Method | Crear la interfaz de gestión de métodos de pago. | 3 h | Juan David Ayllon | To-do |
+| US-17 | Consulta de tarifa | T2-11 | Implement Pricing View | Mostrar las condiciones y tarifas aplicables al servicio. | 3 h | Juan David Ayllon | To-do |
+| US-19 | Suscripción a plan mensual | T2-12 | Implement Subscription View | Crear la interfaz para consultar y seleccionar planes. | 5 h | Juan David Ayllon | To-do |
+| US-26 | Reporte de bicicleta dañada | T2-13 | Implement Damage Report | Crear el formulario para reportar una bicicleta dañada. | 3 h | Rodrigo Velasquez | To-do |
+| US-29 | Seguimiento de incidencias | T2-14 | Implement Incident Tracking | Crear una interfaz para visualizar el estado de los reportes realizados. | 5 h | Rodrigo Velasquez | To-do |
+| US-33 | Gestión de incidencias de bicicletas | T2-15 | Implement Incident Management | Crear la vista administrativa para revisar las incidencias de bicicletas. | 5 h | Rodrigo Velasquez | To-do |
+| N/A | Frontend Integration | T2-16 | Integrate Frontend | Integrar las funcionalidades desarrolladas dentro de la rama `develop`. | 5 h | Todo el equipo | To-do |
+| N/A | Quality Assurance | T2-17 | Responsive Review | Verificar navegación y visualización en Desktop y Mobile Web Browser. | 3 h | Todo el equipo | To-do |
+| N/A | Deployment | T2-18 | Deploy Frontend | Publicar la primera versión de la Frontend Web Application. | 3 h | Todo el equipo | To-do |
+
+La estimación total de las tareas seleccionadas para Sprint 2 es de **70 horas**.
+
+Los estados deberán actualizarse de acuerdo con el avance real del equipo durante el Sprint.
+
+---
+
+### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante Sprint 2 se desarrolla la primera versión de la Frontend Web Application de **biciGO**.
+
+El repositorio utilizado es:
+
+[https://github.com/Startup-Chapa/frontend-bicigo](https://github.com/Startup-Chapa/frontend-bicigo)
+
+El trabajo se encuentra distribuido según los Bounded Contexts definidos por el equipo.
+
+| Bounded Context | Development Branch |
+|---|---|
+| Identity & Access Management | `feature/iam` |
+| Trip Management | `feature/trip-management` |
+| Billing & Subscriptions | `feature/billing-subscriptions` |
+| Fleet & Station Management | `feature/fleet-station-management` |
+| Maintenance | `feature/maintenance` |
+
+Al finalizar cada funcionalidad, los cambios son integrados dentro de `develop`.
+
+La siguiente tabla debe completarse utilizando únicamente los commits reales realizados durante Sprint 2.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+|---|---|---|---|---|---|
+| Startup-Chapa/frontend-bicigo | feature/iam | REEMPLAZAR | REEMPLAZAR | Implementación de Identity & Access Management. | REEMPLAZAR |
+| Startup-Chapa/frontend-bicigo | feature/trip-management | REEMPLAZAR | REEMPLAZAR | Implementación de las funcionalidades relacionadas con viajes. | REEMPLAZAR |
+| Startup-Chapa/frontend-bicigo | feature/billing-subscriptions | REEMPLAZAR | REEMPLAZAR | Implementación de pagos y suscripciones. | REEMPLAZAR |
+| Startup-Chapa/frontend-bicigo | feature/fleet-station-management | REEMPLAZAR | REEMPLAZAR | Implementación de consulta y visualización de bicicletas. | REEMPLAZAR |
+| Startup-Chapa/frontend-bicigo | feature/maintenance | REEMPLAZAR | REEMPLAZAR | Implementación del reporte y gestión de incidencias. | REEMPLAZAR |
+| Startup-Chapa/frontend-bicigo | develop | REEMPLAZAR | REEMPLAZAR | Integración de las funcionalidades de Sprint 2. | REEMPLAZAR |
+
+#### Evidencia visual
+
+![Sprint 2 GitHub Commits](./Resources/chapter5/sprint-2-github-commits.png)
+
+*Figura: historial de commits realizados durante Sprint 2.*
+
+---
+
+### 5.2.2.5. Execution Evidence for Sprint Review
+
+Durante Sprint 2 se implementa la primera versión navegable de la Frontend Web Application.
+
+La aplicación está organizada según las funcionalidades de los diferentes Bounded Contexts.
+
+#### Identity & Access Management
+
+Entre las vistas contempladas se encuentran:
+
+- Register View.
+- Login View.
+- Password Recovery View.
+
+![Sprint 2 IAM](./Resources/chapter5/sprint-2-iam.png)
+
+*Figura: interfaces correspondientes a Identity & Access Management.*
+
+#### Fleet & Station Management
+
+Incluye:
+
+- Visualización de bicicletas cercanas.
+- Detalle de bicicleta.
+- Búsqueda de bicicletas por zona.
+
+![Sprint 2 Fleet](./Resources/chapter5/sprint-2-fleet.png)
+
+*Figura: interfaces correspondientes a Fleet & Station Management.*
+
+#### Trip Management
+
+Incluye:
+
+- Inicio de alquiler.
+- Visualización del viaje activo.
+- Finalización del alquiler.
+
+![Sprint 2 Trip](./Resources/chapter5/sprint-2-trip.png)
+
+*Figura: interfaces correspondientes a Trip Management.*
+
+#### Billing & Subscriptions
+
+Incluye:
+
+- Gestión de método de pago.
+- Consulta de tarifa.
+- Visualización de planes de suscripción.
+
+![Sprint 2 Billing](./Resources/chapter5/sprint-2-billing.png)
+
+*Figura: interfaces correspondientes a Billing & Subscriptions.*
+
+#### Maintenance
+
+Incluye:
+
+- Reporte de bicicleta dañada.
+- Seguimiento de incidencias.
+- Gestión de incidencias de bicicletas.
+
+![Sprint 2 Maintenance](./Resources/chapter5/sprint-2-maintenance.png)
+
+*Figura: interfaces correspondientes a Maintenance.*
+
+#### Video de ejecución
+
+El video correspondiente a Sprint 2 debe presentar la navegación a través de las principales vistas desarrolladas.
+
+```text
+Microsoft Stream URL:
+REEMPLAZAR CON URL REAL
+
+Timing:
+REEMPLAZAR
+```
+
+---
+
+### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante Sprint 2 el alcance principal corresponde a la implementación de la primera versión de la **Frontend Web Application**.
+
+Los RESTful Web Services todavía no forman parte del alcance de implementación de TB1.
+
+Por esta razón no se presentan endpoints implementados ni documentación OpenAPI/Swagger correspondiente a esta iteración.
+
+Las Technical Stories especificadas en el Capítulo III serán utilizadas posteriormente como base para implementar y documentar los Web Services de biciGO.
+
+---
+
+### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Para TB1 debe desplegarse públicamente la primera versión de la Frontend Web Application.
+
+El proceso de integración y despliegue considerado es:
+
+```text
+feature/iam
+feature/trip-management
+feature/billing-subscriptions
+feature/fleet-station-management
+feature/maintenance
+        ↓
+      develop
+        ↓
+Integration Review
+        ↓
+       main
+        ↓
+Frontend Deployment
+```
+
+Antes del despliegue se deben comprobar los siguientes aspectos:
+
+- Navegación entre vistas.
+- Responsive Web Design.
+- Funcionamiento correcto de las rutas.
+- Consistencia visual.
+- Visualización en Desktop Web Browser.
+- Visualización en Mobile Web Browser.
+- Accesibilidad básica.
+- Integración de los componentes desarrollados.
+
+| Producto | Plataforma | URL | Estado |
+|---|---|---|---|
+| Landing Page | GitHub Pages | [https://startup-chapa.github.io/Landing-Page/](https://startup-chapa.github.io/Landing-Page/) | Deployed |
+| Frontend Web Application | REEMPLAZAR | REEMPLAZAR CON URL REAL | Debe estar desplegado para TB1 |
+| RESTful Web Services | No aplica | No incluidos en TB1 | Not included |
+
+#### Evidencia de despliegue
+
+![Sprint 2 Deployment](./Resources/chapter5/sprint-2-deployment.png)
+
+*Figura: evidencia del despliegue de la primera versión de la Frontend Web Application.*
+
+---
+
+### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante Sprint 2 el equipo utiliza un modelo de liderazgo distribuido basado en los Bounded Contexts.
+
+Cada integrante lidera la implementación de un contexto específico.
+
+| Integrante | GitHub Username | Bounded Context | Development Branch |
+|---|---|---|---|
+| Adrian Andres Armestar Felipa | Adrian5102 | Identity & Access Management | `feature/iam` |
+| José María Franco del Carpio | VoltTrd | Trip Management | `feature/trip-management` |
+| Juan David Ayllon Pauccar | JuanDPAUC | Billing & Subscriptions | `feature/billing-subscriptions` |
+| Eduardo Manuel Aguirre Ramos | TheEngineEdu | Fleet & Station Management | `feature/fleet-station-management` |
+| Rodrigo Velasquez Velasquez | Rodrigov233 | Maintenance | `feature/maintenance` |
+
+Además del trabajo individual, los integrantes participan en actividades de revisión, integración y validación de la Frontend Web Application.
+
+La colaboración debe evidenciarse mediante los analíticos y commits registrados en GitHub.
+
+#### GitHub Collaboration Evidence
+
+![Sprint 2 GitHub Collaboration](./Resources/chapter5/sprint-2-collaboration.png)
+
+*Figura: evidencia de colaboración del equipo durante Sprint 2.*
+
+| Integrante | Commits Frontend | Pull Requests | Principal Contribution |
+|---|---:|---:|---|
+| Adrian Armestar | REEMPLAZAR | REEMPLAZAR | Identity & Access Management |
+| José María Franco | REEMPLAZAR | REEMPLAZAR | Trip Management |
+| Juan David Ayllon | REEMPLAZAR | REEMPLAZAR | Billing & Subscriptions |
+| Eduardo Aguirre | REEMPLAZAR | REEMPLAZAR | Fleet & Station Management |
+| Rodrigo Velasquez | REEMPLAZAR | REEMPLAZAR | Maintenance |
+
+El uso de Git, GitHub, Trello y un modelo de liderazgo distribuido permite mantener trazabilidad sobre las contribuciones, facilitar la integración de las funcionalidades y coordinar el cumplimiento del Sprint Goal establecido para TB1.
