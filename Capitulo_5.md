@@ -849,3 +849,89 @@ La captura de **Pulse** de la sección 5.2.2.4 registra **5 autores y 62 commits
 Las capturas no muestran el número exacto de commits de cada uno de los cinco integrantes en todas las ramas, ni la distribución individual de los pull requests. Ese desglose queda pendiente de verificar con el historial de GitHub; no se asignan valores cero a los integrantes que no aparecen en Contributors.
 
 El uso de Git, GitHub, Trello y un modelo de liderazgo distribuido permite mantener trazabilidad sobre las contribuciones, facilitar la integración de las funcionalidades y coordinar el cumplimiento del Sprint Goal establecido para TB1.
+
+### 5.2.3. Sprint 3
+#### 5.2.3.1.Spring Planning 3.
+
+La planificación del Sprint 3 organiza la parte de backend y estructura logica de la aplicación,  abarcando los puntos del sprint 3, validation Interviews y vidfeo about the product.
+
+**Base de planificación:** la fecha y la hora se proponen para completar el registro; los story points y la velocidad planificada son estimaciones de referencia, no mediciones históricas.
+
+**Sprint Planning Background**
+
+| Campo | Sprint 3 |
+|---|---|
+| Sprint # | Sprint 3 |
+| Date | 09/11/2026 (propuesta) |
+| Time | 20:00–21:00 (hora de Lima; propuesta) |
+| Location | Reunión virtual |
+| Prepared By | Aguirre Ramos, Eduardo Manuel |
+| Attendees (to planning meeting) | Aguirre Ramos, Eduardo Manuel / Armestar Felipa, Adrian Andres / Ayllon Pauccar, Juan David / Franco del Carpio, José María / Velasquez Velasquez, Rodrigo |
+| Sprint 0 Review Summary | No aplica: este es el primer Sprint. Como antecedentes se consideran los artefactos de investigación, requisitos y diseño de los Capítulos I al IV, además de los repositorios del informe y de la Landing Page. |
+| Sprint 0 Retrospective Summary | No aplica: no hubo un Sprint anterior. Como acuerdos iniciales de planificación se propone distribuir tareas por sección, registrar avances en Trello y revisar los cambios antes de integrarlos. |
+
+**Sprint Goal & User Stories**
+
+| Campo | Sprint 1 |
+|---|---|
+| Sprint 1 Goal | *Our focus is on publishing the first deployed version of the BiciGO Landing Page, available in English and Latin American Spanish and responsive on mobile and desktop screens.*<br>*We believe it delivers a clear understanding of the service (mission, vision, benefits and how it works) and a direct way to get in touch with the team to urban citizens who make short trips and to institutions interested in promoting cycling.*<br>*This will be confirmed when the Landing Page is publicly reachable at its GitHub Pages URL, every section can be read on a 390 px and on a 1440 px wide screen without horizontal scrolling, and a visitor can switch the whole interface between English and Spanish.* |
+| Selected User Stories | US-LP01: navegación y presentación principal; US-LP02: funcionamiento del servicio; US-LP03: beneficios y métricas; US-LP04: tarifas y planes; US-LP05: preguntas frecuentes; US-LP06: contacto y validación del formulario. |
+| Selected Technical Stories | TS-LP01: configuración del repositorio, despliegue en GitHub Pages y revisión responsive. |
+| Sprint 1 Velocity | 16 story points por sprint (velocidad planificada inicial, sin historial previo). |
+| Sum of Story Points | 16 story points: 13 de historias de usuario y 3 de la historia técnica. |
+| Task Estimation | 38 horas, correspondientes a las 16 microtareas del Sprint Backlog 1. |
+
+**Distribución estimada de Story Points**
+
+| Story Id | Story Title | Story Points |
+|---|---|---:|
+| US-LP01 | Navegación y presentación principal (Navbar & Hero) | 3 |
+| US-LP02 | Explicación del funcionamiento del servicio | 2 |
+| US-LP03 | Presentación de beneficios y métricas | 2 |
+| US-LP04 | Comparación de tarifas y planes | 2 |
+| US-LP05 | Consulta de preguntas frecuentes | 2 |
+| US-LP06 | Formulario de contacto y validación | 2 |
+| TS-LP01 | Despliegue y revisión responsive | 3 |
+| **Total** | **6 User Stories y 1 Technical Story** | **16** |
+
+Los puntos se asignan a cada historia una sola vez; sus microtareas conservan las estimaciones en horas del backlog. La velocidad real requiere validar las historias terminadas frente a sus criterios de aceptación. La internacionalización se mantiene como condición transversal del Sprint Goal y requiere reflejar su trabajo en las tareas de las historias correspondientes, ya que el backlog disponible no la desglosa como tarea independiente.
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+
+La organización del Sprint 2 se encuentra basada en los cinco Bounded Contexts definidos durante el diseño de arquitectura.
+
+Cada integrante lidera un contexto y participa como colaborador en los demás.
+
+| Team Member | GitHub Username | IAM | Trip Management | Billing & Subscriptions | Fleet & Station Management | Maintenance |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Armestar Felipa, Adrian Andres | Adrian5102 | L | C | C | C | C |
+| Franco del Carpio, José María | VoltTrd | C | L | C | C | C |
+| Ayllon Pauccar, Juan David | JuanDPAUC | C | C | L | C | C |
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | C | C | C | L | C |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | C | C | C | C | L |
+
+**L:** Leader  
+**C:** Collaborator
+
+La distribución permite desarrollar funcionalidades en paralelo y posteriormente integrarlas en una versión común del Frontend Web Application.
+
+#### 5.2.3.3.Sprint Backlog 3.
+
+#### 5.2.3.4.Development Evidence for Sprint Review.
+
+#### 5.2.3.5.Execution Evidence for Sprint Review.
+
+#### 5.2.3.6.Services Documentation Evidence for Sprint Review.
+
+#### 5.2.3.7.Software Deployment Evidence for Sprint Review.
+
+#### 5.2.3.8.Team Collaboration Insights during Sprint.
+
+## 5.3. Validation Interviews.
+### 5.3.1. Diseño de Entrevistas.
+
+### 5.3.2. Registro de Entrevistas.
+
+### 5.3.3. Evaluaciones según heurísticas.
+
+## 5.4. Video About-the-Product.
