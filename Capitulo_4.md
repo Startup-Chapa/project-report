@@ -333,6 +333,93 @@ Figura 12: Mockup de cambio de plan o suscripción del usuario.
 
 ### 4.4.3. Web Applications User Flow Diagrams
 
+## 1. Task Flow: Registro de Nuevo Usuario (Sign Up)
+- **Actor:** Claudia (22) o Fernando (19) nuevos en la plataforma.
+- **Objetivo:** Crear una cuenta en la Web App para empezar a alquilar bicicletas.
+- **Secuencia de Pasos:**
+  1. Pantalla de Bienvenida / Landing Page $\rightarrow$ Clic en "Registrarse".
+  2. Formulario de Registro $\rightarrow$ Ingresar nombre, correo electrónico institucional/personal y contraseña.
+  3. Validación de Términos y Condiciones $\rightarrow$ Marcar check y presionar "Crear Cuenta".
+  4. Pantalla de Confirmación / Éxito $\rightarrow$ Redirección automática al mapa principal (Home con sesión iniciada).
+
+![user task 1](./Resources/chapter4/userF1.png)
+
+---
+
+## 2. Task Flow: Inicio de Sesión (Log In)
+- **Actor:** Claudia (22) o Fernando (19) usuarios recurrentes.
+- **Objetivo:** Acceder rápidamente a su cuenta activa antes de realizar un viaje.
+- **Secuencia de Pasos:**
+  1. Pantalla de Acceso $\rightarrow$ Ingresar correo y contraseña.
+  2. Botón "Iniciar Sesión" $\rightarrow$ Sistema valida credenciales en la base de datos.
+  3. Pantalla Principal (Mapa de BikePoints) $\rightarrow$ Usuario visualiza su perfil cargado.
+
+---
+
+## 3. Task Flow: Búsqueda y Localización de BikePoints Cercanos
+- **Actor:** Fernando (19) buscando una bicicleta rápidamente saliendo de clases.
+- **Objetivo:** Encontrar una estación con unidades disponibles cerca de su ubicación actual.
+- **Secuencia de Pasos:**
+  1. Pantalla Home (Mapa GPS) $\rightarrow$ Sistema solicita permiso de ubicación.
+  2. Visualización del Mapa $\rightarrow$ Usuario observa los pines de los BikePoints cercanos con contador de bicicletas disponibles.
+  3. Clic en un BikePoint específico $\rightarrow$ Despliegue de tarjeta inferior (*bottom sheet*) con detalle de bicicletas libres y dirección.
+
+---
+
+## 4. Task Flow: Desbloqueo de Bicicleta mediante Código QR (Inicio de Alquiler)
+- **Actor:** Claudia (22) o Fernando (19) parados frente a la bicicleta en la estación.
+- **Objetivo:** Escanear el código QR de la unidad para iniciar el viaje y liberar el candado.
+- **Secuencia de Pasos:**
+  1. Pantalla Principal $\rightarrow$ Clic en el botón flotante "Escanear QR".
+  2. Activación de la Cámara del Smartphone $\rightarrow$ Apuntar al código QR de la bicicleta o anclaje.
+  3. Lectura Exitosa $\rightarrow$ El sistema valida el estado disponible de la bicicleta y el saldo del usuario.
+  4. Pantalla de Viaje Activo $\rightarrow$ Se inicia el temporizador en tiempo real y se envía la señal IoT para abrir el candado.
+
+---
+
+## 5. Task Flow: Consulta de Tarifas y Gestión de Suscripción Pro
+- **Actor:** Claudia (22) evaluando si le conviene el pago por minuto o la suscripción mensual.
+- **Objetivo:** Revisar los planes tarifarios y adquirir un plan de suscripción para ahorrar dinero.
+- **Secuencia de Pasos:**
+  1. Menú de Navegación / Perfil $\rightarrow$ Seleccionar la sección "Tarifas y Planes".
+  2. Pantalla de Comparativa $\rightarrow$ Visualización del plan "Pago por Uso" vs. "Suscripción Pro".
+  3. Selección de Plan Pro $\rightarrow$ Clic en "Suscribirme".
+  4. Pasarela de Pagos $\rightarrow$ Ingresar datos de tarjeta o billetera digital y confirmar transacción.
+  5. Pantalla de Éxito $\rightarrow$ Confirmación de beneficios activos en el perfil.
+
+---
+
+## 6. Task Flow: Finalización de Alquiler y Devolución en BikePoint
+- **Actor:** Fernando (19) llegando a su destino final.
+- **Objetivo:** Anclar la bicicleta correctamente en un BikePoint autorizado para cerrar el viaje y evitar cobros extra.
+- **Secuencia de Pasos:**
+  1. Pantalla de Viaje Activo $\rightarrow$ Clic en el botón "Finalizar Viaje".
+  2. Validación de Ubicación (GPS) $\rightarrow$ El sistema corrobora que el usuario se encuentra en un BikePoint válido.
+  3. Confirmación de Anclaje Físico $\rightarrow$ El usuario asegura el candado de la bicicleta manualmente.
+  4. Pantalla de Resumen de Viaje $\rightarrow$ Se muestra el tiempo total transcurrido, los kilómetros recorridos y el monto cobrado (o descontado de su suscripción).
+
+---
+
+## 7. Task Flow: Reporte de Incidencias o Fallas Mecánicas
+- **Actor:** Claudia (22) al encontrar una bicicleta con llanta baja o problemas en los frenos.
+- **Objetivo:** Reportar la falla para que el equipo de soporte o administración la retire de circulación.
+- **Secuencia de Pasos:**
+  1. Sección de Ayuda / Historial de Viajes $\rightarrow$ Seleccionar "Reportar Problema con la Bicicleta".
+  2. Formulario de Incidencia $\rightarrow$ Seleccionar el tipo de falla (Frenos, Cadena, Llanta, QR dañado) y adjuntar opcionalmente una foto.
+  3. Botón "Enviar Reporte" $\rightarrow$ El sistema registra el ticket y bloquea temporalmente la bicicleta en el inventario.
+  4. Pantalla de Agradecimiento $\rightarrow$ Mensaje de confirmación de soporte.
+
+---
+
+## 8. Task Flow: Monitoreo y Gestión de Flota por el Administrador (Back-office)
+- **Actor:** Administrador / Gestor de la plataforma.
+- **Objetivo:** Monitorear el estado de las bicicletas y la disponibilidad en los BikePoints para realizar rebalanceos.
+- **Secuencia de Pasos:**
+  1. Panel de Administración (Login Admin) $\rightarrow$ Ingreso al Dashboard principal de gestión.
+  2. Vista de Mapa de Operaciones $\rightarrow$ Visualización del estado de toda la flota en tiempo real (disponibles, en uso, con incidencias).
+  3. Gestión de Inventario / BikePoints $\rightarrow$ Revisión de estaciones con déficit o exceso de unidades.
+  4. Registro de Estado $\rightarrow$ Actualización o desactivación manual de unidades en mantenimiento.
+
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
@@ -347,7 +434,7 @@ Figura 4: Design-Level EventStorming del dominio de biciGO.
 
 ### 4.6.2. Software Architecture Context Diagram
 
-## Descripción
+#### Descripción
 
 El diagrama de contexto de la arquitectura de software representa la interacción entre la **Plataforma Web de Alquiler de Bicicletas** y los principales actores y servicios externos que participan en su funcionamiento.
 
@@ -359,9 +446,9 @@ Además, la plataforma se comunica con servicios externos para obtener informaci
 
 ---
 
-## Actores y sistemas externos
+#### Actores y sistemas externos
 
-### Usuario
+##### Usuario
 
 El usuario interactúa directamente con la plataforma para:
 
@@ -377,7 +464,7 @@ El usuario interactúa directamente con la plataforma para:
 - Consultar el costo de sus viajes.
 - Revisar el historial de viajes.
 
-### Usuario Premium
+##### Usuario Premium
 
 El usuario Premium dispone de las mismas funcionalidades que un usuario regular, pero cuenta adicionalmente con los beneficios de una suscripción Premium.
 
@@ -388,7 +475,7 @@ Durante la vigencia de la suscripción:
 - No se aplica el cobro correspondiente al kilometraje recorrido.
 - Puede gestionar y consultar el estado de su suscripción.
 
-### Administrador
+##### Administrador
 
 El administrador utiliza la plataforma para gestionar los principales elementos del servicio:
 
@@ -400,7 +487,7 @@ El administrador utiliza la plataforma para gestionar los principales elementos 
 - Viajes.
 - Suscripciones Premium.
 
-### Servicio de Geolocalización
+##### Servicio de Geolocalización
 
 El servicio de geolocalización es un sistema externo que proporciona información relacionada con la ubicación y la distancia recorrida.
 
@@ -411,7 +498,7 @@ La plataforma puede utilizar esta información para:
 - Determinar la distancia recorrida.
 - Utilizar los kilómetros registrados para calcular la tarifa correspondiente.
 
-### Pasarela de Pagos
+##### Pasarela de Pagos
 
 La pasarela de pagos es un servicio externo encargado de procesar las operaciones económicas realizadas mediante la plataforma.
 
@@ -423,7 +510,7 @@ Puede utilizarse para:
 
 ---
 
-## Sistema central
+#### Sistema central
 
 El sistema central corresponde a la:
 
