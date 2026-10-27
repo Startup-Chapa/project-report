@@ -250,6 +250,18 @@ Figura 14: Wireframe de incidencias, mantenimiento y control operativo del siste
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+#### User Goal 1: Como usuario nuevo, quiero registrarme para crear una cuenta y comenzar a usar biciGO.
+
+#### User Goal 2: Como usuario registrado, quiero iniciar sesión para acceder a mi cuenta y a las funciones de la aplicación.
+#### User Goal 3: Como usuario, quiero cambiar o consultar mi plan para elegir la suscripción que mejor se adapte a mis necesidades.
+#### User Goal 4: Como usuario, quiero ver en un mapa las bicicletas disponibles para encontrar una cerca de mí.
+#### User Goal 5: Como usuario, quiero consultar la información y disponibilidad de una bicicleta antes de seleccionarla.
+#### User Goal 6: Como usuario, quiero iniciar el alquiler de una bicicleta y confirmar el viaje desde la aplicación.
+#### User Goal 7: Como usuario, quiero consultar la información de mi viaje mientras uso la bicicleta para saber el estado del recorrido.
+#### User Goal 8: Como usuario, quiero finalizar mi viaje y revisar el resumen y costo para conocer los detalles del alquiler.
+#### User Goal 9: Como usuario, quiero consultar mi dashboard para revisar mi actividad y acceder a las funciones principales de mi cuenta.
+
+
 ### 4.4.2. Web Applications Mock-ups
 
 Estas maquetas visuales representan la experiencia principal del producto BiciGo en dispositivos móviles y web. Permiten validar la lógica de navegación del usuario, la claridad de la información y la consistencia visual con la guía de estilos definida en la sección anterior. En conjunto, los mockups muestran cómo el usuario accede, se registra, visualiza bicicletas disponibles, inicia un viaje, revisa su estado de cuenta y gestiona servicios adicionales como la suscripción o el cambio de plan.
