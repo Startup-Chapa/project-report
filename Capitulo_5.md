@@ -716,5 +716,285 @@ La distribución permite desarrollar funcionalidades en paralelo y posteriorment
 ### 5.3.2. Registro de Entrevistas.
 
 ### 5.3.3. Evaluaciones según heurísticas.
+ 
+| Campo | Detalle |
+|-------|---------|
+| CARRERA | Ingenieria de Software |
+| CURSO | Aplicaciones Web |
+| SECCIÓN | 8168 |
+| PROFESORES | Todos |
+| AUDITOR | Bicigo |
+| CLIENTE(S) |  Aguirre, Eduardo & Armestar, Adrian & Ayllon, Juan David & Franco, José Maria & Velasquez, Rodrigo |
+| SITE A EVALUAR | https://github.com/Startup-Chapa/project-report |
+ 
+#### TAREAS A EVALUAR
+ 
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+ 
+1. Navegación general del Landing Page y comportamiento responsive del header
+2. Cambio de idioma (EN/ES) en el Landing Page y en la Web Application
+3. Lectura del contenido informativo del Landing Page (beneficios y "¿Cómo funciona?")
+4. Inicio de sesión (login)
+5. Registro de un nuevo usuario (correo, usuario, contraseña y teléfono)
+6. Consulta y comparación de planes (Plan Tarifa / Suscripción Pro)
+7. Registro de pago con tarjeta para la Suscripción Pro
+8. Consulta y gestión de bicicletas (Fleet & Station Management)
+9. Gestión de perfil y guardado de cambios
+10. Navegación del dashboard y del sidebar
+11. Uso del buscador del header
+ 
+#### ESCALA DE SEVERIDAD
+ 
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser corregido a menos que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir con más frecuencia o es algo más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+ 
+#### TABLA RESUMEN
+ 
+| # | Problema | Severidad | Heurística / Principio violado | Plan afectado |
+|---|----------|-----------|-------------------------------|---------------|
+| 1 | En vista móvil, el header del Landing Page no ofrece menú hamburguesa y los enlaces de navegación desaparecen | 3 | Usability: Consistencia y estándares / Flexibilidad y eficiencia de uso | Todos |
+| 2 | El selector de idioma EN/ES del Landing Page se ve como botones sin estilo, apilados y sin indicar el idioma activo | 2 | Usability: Visibilidad del estado del sistema / Consistencia y estándares | Todos |
+| 3 | La sección "¿Cómo funciona?" es un único bloque de texto sin pasos y omite a los trabajadores | 2 | Usability: Reconocimiento antes que recuerdo / Coincidencia entre el sistema y el mundo real | Todos |
+| 4 | Las tarjetas de beneficios son solo texto, sin íconos ni jerarquía visual | 1 | Usability: Diseño estético y minimalista | Todos |
+| 5 | En el login, el selector de idioma está dentro de la fila de "Forgot Password?" y "Remember me" | 2 | Usability: Consistencia y estándares / Inclusive Design: Offer choice | Todos |
+| 6 | El registro no muestra requisitos de contraseña, no pide confirmarla y el teléfono no indica formato | 2 | Usability: Prevención de errores / Ayuda y documentación | Todos |
+| 7 | La comparación de planes no muestra la tarifa del Plan Tarifa ni explica por qué se recomienda la Suscripción Pro | 2 | Usability: Reconocimiento antes que recuerdo / Ayuda y documentación | Todos |
+| 8 | El formulario de pago expone el botón "Generar datos aleatorios" | 3 | Usability: Prevención de errores / Coincidencia entre el sistema y el mundo real | Suscripción Pro |
+| 9 | El formulario de pago tiene etiquetas inconsistentes y no guía el formato de tarjeta y CVV | 2 | Usability: Consistencia y estándares / Reconocimiento antes que recuerdo | Suscripción Pro |
+| 10 | Las acciones de gestión de flota (crear, editar, eliminar bicicletas) aparecen en el mismo menú del usuario sin distinción de rol | 3 | Usability: Prevención de errores / Coincidencia entre el sistema y el mundo real | Todos |
+| 11 | La vista de bicicletas muestra textos de relleno ("Bicycles Title" / "Bicycles Subtitle") | 2 | Usability: Coincidencia entre el sistema y el mundo real / Consistencia y estándares | Todos |
+| 12 | Las acciones de cada bicicleta son íconos sin etiqueta y la columna "Actions" queda lejos de ellos | 2 | Usability: Reconocimiento antes que recuerdo | Todos |
+| 13 | "Current Station" muestra un ID numérico y los códigos de bicicleta no siguen un mismo formato | 2 | Usability: Coincidencia entre el sistema y el mundo real / Consistencia y estándares | Todos |
+| 14 | La contraseña se edita en el mismo formulario del perfil, sin un flujo de cambio seguro | 3 | Usability: Prevención de errores | Todos |
+| 15 | La locación del perfil parece ser un campo de texto libre en lugar de una lista de opciones | 2 | Usability: Prevención de errores / Consistencia y estándares | Todos |
+| 16 | El perfil solo ofrece "Save changes", sin opción de cancelar o restablecer | 1 | Usability: Control y libertad del usuario | Todos |
+| 17 | La interfaz mezcla inglés y español aunque el idioma activo es EN | 3 | Usability: Consistencia y estándares / Inclusive Design: Offer choice | Todos |
+| 18 | Las tarjetas del dashboard repiten el sidebar y todas usan el mismo botón genérico "Open" | 1 | Usability: Reconocimiento antes que recuerdo / Diseño estético y minimalista | Todos |
+| 19 | El buscador del header ("Search...") no comunica qué se puede buscar | 2 | Usability: Reconocimiento antes que recuerdo / Ayuda y documentación | Todos |
+ 
+#### DESCRIPCIÓN DE PROBLEMAS 
+##### 1. Landing Page
+ 
+**PROBLEMA #1:** En vista móvil, el header del Landing Page no ofrece menú hamburguesa y los enlaces de navegación desaparecen
+ 
+- **Severidad:** 3
+- **Heurística violada:** Usability — Consistencia y estándares / Flexibilidad y eficiencia de uso
+- **Plan afectado:** Todos
+**Problema:**
+En el ancho de 390 px, el header solo muestra el logo, el selector de idioma y los botones "Iniciar sesión" y "Regístrate". Los enlaces de navegación que sí aparecen en escritorio (Inicio, Nosotros, Beneficios, ¿Cómo funciona?, Preguntas frecuentes, Contacto) desaparecen y no existe un menú hamburguesa que los reemplace. El usuario móvil pierde el acceso directo a las secciones y solo puede recorrer la página haciendo scroll.
+ 
+**Recomendación:**
+Agregar un menú hamburguesa por debajo de un breakpoint definido (por ejemplo, < 768px) que agrupe los enlaces de navegación, el selector de idioma y los botones de acceso, manteniendo visible solo el logo y el botón de menú en la barra.
 
+**PROBLEMA #2:** El selector de idioma EN/ES del Landing Page se ve como botones sin estilo, apilados y sin indicar el idioma activo
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Visibilidad del estado del sistema / Consistencia y estándares
+- **Plan afectado:** Todos
+**Problema:**
+En el header del Landing Page, los botones "EN" y "ES" aparecen uno encima del otro con la apariencia de botones nativos del navegador, sin el estilo del resto de la interfaz. Ambos se ven iguales, por lo que el usuario no sabe cuál es el idioma activo. Dentro de la aplicación, en cambio, el selector es una píldora horizontal que resalta el idioma seleccionado, lo que rompe la coherencia entre ambos sitios.
+ 
+**Recomendación:**
+Rediseñar el selector como un control horizontal compacto que resalte el idioma activo y sea idéntico al de la Web Application, de modo que el usuario reconozca el mismo componente en todo el producto.
+ 
+**PROBLEMA #3:** La sección "¿Cómo funciona?" es un único bloque de texto sin pasos y omite a los trabajadores
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Reconocimiento antes que recuerdo / Coincidencia entre el sistema y el mundo real
+- **Plan afectado:** Todos
+**Problema:**
+La sección presenta una sola tarjeta titulada "Estudiantes y ciudadanos" con un párrafo que describe todo el recorrido (ubicar la estación, escanear el QR, viajar, estacionar y finalizar desde la app). Al ser un proceso secuencial, el usuario debe leer y recordar el orden en lugar de reconocerlo de un vistazo. Además, el título deja fuera a los trabajadores, aunque el formulario de contacto del mismo sitio sí los considera como tipo de usuario.
+ 
+**Recomendación:**
+Presentar el flujo como pasos numerados e iconografiados (1. Ubica una bicicleta, 2. Escanea el QR, 3. Viaja, 4. Estaciona y finaliza) y reemplazar el título por uno que cubra a todos los segmentos (estudiantes, trabajadores y ciudadanos).
+ 
+**PROBLEMA #4:** Las tarjetas de beneficios son solo texto, sin íconos ni jerarquía visual
+ 
+- **Severidad:** 1
+- **Heurística violada:** Usability — Diseño estético y minimalista
+- **Plan afectado:** Todos
+**Problema:**
+Los seis beneficios se muestran como tarjetas idénticas con un párrafo corto, sin ícono, título ni énfasis en la idea principal. Esto dificulta el escaneo rápido de la propuesta de valor, ya que ningún beneficio destaca sobre otro.
+ 
+**Recomendación:**
+Añadir un ícono y un título breve a cada tarjeta (por ejemplo, "Rápido", "Sostenible", "Tarifas claras") y reducir el párrafo a una línea de apoyo.
+ 
+##### 2. Autenticación (Login y Registro)
+ 
+**PROBLEMA #5:** En el login, el selector de idioma está dentro de la fila de "Forgot Password?" y "Remember me"
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Consistencia y estándares / Inclusive Design — Offer choice
+- **Plan afectado:** Todos
+**Problema:**
+El selector EN/ES de la pantalla de login está colocado entre el enlace "Forgot Password?" y la casilla "Remember me", en la misma fila de acciones del formulario. Su ubicación no es la habitual (en el header o en una esquina de la pantalla) y puede confundirse con un control relacionado con la sesión o la contraseña, por lo que el usuario difícilmente lo encuentra a tiempo.
+ 
+**Recomendación:**
+Mover el selector a una zona fija y reconocible de la pantalla de autenticación (esquina superior) y mantener la misma posición en login y registro, separado de las acciones del formulario.
+ 
+**PROBLEMA #6:** El registro no muestra requisitos de contraseña, no pide confirmarla y el teléfono no indica formato
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Prevención de errores / Ayuda y documentación
+- **Plan afectado:** Todos
+**Problema:**
+El formulario de registro solicita correo, nombre de usuario, contraseña y teléfono, pero no informa los requisitos de la contraseña (longitud, caracteres) ni solicita repetirla para confirmar. El campo de teléfono tampoco indica el formato esperado ni el código de país. Esto facilita errores de tipeo en credenciales y datos de contacto que el usuario solo descubrirá cuando no pueda ingresar o ser contactado.
+ 
+**Recomendación:**
+Mostrar los requisitos de contraseña junto al campo con validación en tiempo real, agregar un campo de confirmación, y aplicar al teléfono un formato guiado (prefijo +51, tipo `tel` y máscara) con mensajes de error claros.
+ 
+##### 3. Suscripción y Pago
+ 
+**PROBLEMA #7:** La comparación de planes no muestra la tarifa del Plan Tarifa ni explica por qué se recomienda la Suscripción Pro
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Reconocimiento antes que recuerdo / Ayuda y documentación
+- **Plan afectado:** Todos
+**Problema:**
+En la pantalla de planes, la Suscripción Pro muestra su precio (S/ 30.00 al mes) y se marca como "Recomendado", pero el Plan Tarifa solo dice "Pago por uso" sin indicar cuánto cuesta cada viaje o minuto. Sin ese dato el usuario no puede comparar y decidir si le conviene pagar S/ 30.00. Además, el gráfico "Actividad Semanal" no tiene escala ni valores por día, y no se explica que la recomendación se basa en esa actividad.
+ 
+**Recomendación:**
+Mostrar la tarifa concreta del Plan Tarifa (por viaje o por minuto), agregar una estimación como "Con tus 28 viajes semanales pagarías S/ X en Plan Tarifa vs. S/ 30.00 en Pro" y añadir valores al gráfico y una leyenda que justifique la etiqueta "Recomendado".
+ 
+**PROBLEMA #8:** El formulario de pago expone el botón "Generar datos aleatorios"
+ 
+- **Severidad:** 3
+- **Heurística violada:** Usability — Prevención de errores / Coincidencia entre el sistema y el mundo real
+- **Plan afectado:** Suscripción Pro
+**Problema:**
+En el formulario "Datos de la tarjeta" aparece un botón "Generar datos aleatorios" que parece una herramienta de pruebas del equipo de desarrollo. Para un usuario real no tiene sentido en un pago, genera dudas sobre la seriedad y seguridad del proceso y puede llevar a enviar datos falsos creyendo que son válidos.
+ 
+**Recomendación:**
+Retirar el botón de la versión visible al usuario o limitarlo a un entorno de desarrollo mediante una variable de configuración, de modo que el formulario de pago solo contenga los campos reales de la tarjeta.
+ 
+**PROBLEMA #9:** El formulario de pago tiene etiquetas inconsistentes y no guía el formato de tarjeta y CVV
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Consistencia y estándares / Reconocimiento antes que recuerdo
+- **Plan afectado:** Suscripción Pro
+**Problema:**
+Solo el campo de vencimiento tiene una etiqueta visible ("Fecha de vencimiento"); número de tarjeta, nombre del titular y CVV dependen únicamente de un placeholder que desaparece al escribir. Tampoco se aprecia ayuda sobre el formato esperado (grupos de dígitos, longitud del CVV), lo que obliga al usuario a recordar qué campo era cuál y aumenta la probabilidad de errores.
+ 
+**Recomendación:**
+Usar etiquetas persistentes sobre todos los campos, aplicar máscaras de formato (número en grupos de 4, vencimiento MM/AA, CVV de 3–4 dígitos), mostrar el tipo de tarjeta detectado y validar cada campo con mensajes claros.
+ 
+##### 4. App — Flota y Estaciones (Bicicletas)
+ 
+**PROBLEMA #10:** Las acciones de gestión de flota aparecen en el mismo menú del usuario sin distinción de rol
+ 
+- **Severidad:** 3
+- **Heurística violada:** Usability — Prevención de errores / Coincidencia entre el sistema y el mundo real
+- **Plan afectado:** Todos
+**Problema:**
+El sidebar del usuario ("Usuario Demo") incluye la opción "Bicycles", que abre una tabla con el botón "New Bicycle" y acciones de editar y eliminar por cada unidad. Estas son funciones de administración de la flota mezcladas con las de un usuario final (My trips, Subscriptions, Report a problem). Un usuario común podría crear, modificar o eliminar bicicletas por error, y la interfaz no deja claro quién debería usar esa vista.
+ 
+**Recomendación:**
+Separar la experiencia por rol: mostrar la gestión de bicicletas solo a administradores o personal de mantenimiento, y ofrecer al usuario final una vista de solo lectura de bicicletas disponibles y estaciones cercanas.
+ 
+**PROBLEMA #11:** La vista de bicicletas muestra textos de relleno ("Bicycles Title" / "Bicycles Subtitle")
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Coincidencia entre el sistema y el mundo real / Consistencia y estándares
+- **Plan afectado:** Todos
+**Problema:**
+El encabezado de la tabla de bicicletas muestra literalmente "Bicycles Title" y "Bicycles Subtitle", que son textos provisionales. El usuario no recibe un título ni una descripción útil de lo que está viendo, y la pantalla transmite que el producto está inacabado, a diferencia de las demás vistas, que sí tienen títulos reales (por ejemplo, "Planes para Usuario Demo").
+ 
+**Recomendación:**
+Reemplazar los textos provisionales por un título y subtítulo reales (por ejemplo, "Flota de bicicletas" / "Gestiona las unidades registradas") y revisar que no queden otras claves o textos de prueba en la aplicación.
+ 
+**PROBLEMA #12:** Las acciones de cada bicicleta son íconos sin etiqueta y la columna "Actions" queda lejos de ellos
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Reconocimiento antes que recuerdo
+- **Plan afectado:** Todos
+**Problema:**
+Cada fila ofrece cinco íconos pequeños (candado, ubicación, actualizar, editar y eliminar) sin texto visible, y el encabezado "Actions" está a la izquierda mientras los íconos están al extremo derecho de la tabla. El usuario debe adivinar qué hace cada ícono, incluyendo el de eliminar, que está junto a acciones inocuas, con riesgo de pulsar el equivocado.
+ 
+**Recomendación:**
+Alinear el encabezado "Actions" con los íconos, agregar tooltips o etiquetas a cada acción, separar visualmente la acción destructiva (eliminar) y pedir confirmación antes de ejecutarla.
+ 
+**PROBLEMA #13:** "Current Station" muestra un ID numérico y los códigos de bicicleta no siguen un mismo formato
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Coincidencia entre el sistema y el mundo real / Consistencia y estándares
+- **Plan afectado:** Todos
+**Problema:**
+En la columna "Current Station" una bicicleta muestra "1" en lugar del nombre de una estación, mientras otras muestran "Unassigned". Además, los códigos de bicicleta mezclan formatos ("BGO-1042", "BGO-2000" y "B1"). El usuario no puede ubicar la bicicleta con un dato que no corresponde al lenguaje de la ciudad (nombres de estaciones) ni confiar en un código uniforme para identificarla.
+ 
+**Recomendación:**
+Mostrar el nombre de la estación (con enlace a su detalle) en lugar del ID, y estandarizar el formato del código de bicicleta con una validación al crearla.
+ 
+##### 5. App — Perfil
+ 
+**PROBLEMA #14:** La contraseña se edita en el mismo formulario del perfil, sin un flujo de cambio seguro
+ 
+- **Severidad:** 3
+- **Heurística violada:** Usability — Prevención de errores
+- **Plan afectado:** Todos
+**Problema:**
+La pantalla "My Profile" muestra el campo de contraseña dentro del mismo formulario que correo, usuario, teléfono y locación, y todo se guarda con un único botón. Cambiar una credencial junto con datos generales, sin pedir la contraseña actual ni verificar la identidad, aumenta el riesgo de modificaciones accidentales o no autorizadas y compromete la seguridad de la cuenta.
+ 
+**Recomendación:**
+Quitar la contraseña del formulario general y ofrecer una acción separada "Cambiar contraseña" que pida la contraseña actual y la nueva con confirmación; solicitar verificación adicional cuando se cambie el correo.
+ 
+**PROBLEMA #15:** La locación del perfil parece ser un campo de texto libre en lugar de una lista de opciones
+ 
+- **Severidad:** 2
+- **Heurística violada:** Usability — Prevención de errores / Consistencia y estándares
+- **Plan afectado:** Todos
+**Problema:**
+El campo "Location" del perfil tiene el aspecto de una caja de texto igual a las demás (con el valor "Lima"), sin señales de selección como una flecha de desplegable. Si es texto libre, se permiten errores de tipeo y distintas formas de escribir un mismo distrito, lo que dificulta filtrar o agrupar por zona de operación (San Isidro, Miraflores, Surco).
+ 
+**Recomendación:**
+Reemplazar el campo por un dropdown o autocomplete con los distritos donde opera BiciGo, garantizando valores válidos y consistentes.
+
+**PROBLEMA #16:** El perfil solo ofrece "Save changes", sin opción de cancelar o restablecer
+ 
+- **Severidad:** 1
+- **Heurística violada:** Usability — Control y libertad del usuario
+- **Plan afectado:** Todos
+**Problema:**
+La única acción disponible en el formulario del perfil es "Save changes". Si el usuario modifica un dato por error no encuentra un botón para cancelar o restablecer los valores originales, y su única salida es abandonar la pantalla o corregir manualmente.
+ 
+**Recomendación:**
+Agregar un botón secundario "Cancelar" o "Restablecer", deshabilitar "Save changes" mientras no haya cambios y mostrar un mensaje de éxito tras guardar.
+ 
+##### 6. App — Navegación General
+ 
+**PROBLEMA #17:** La interfaz mezcla inglés y español aunque el idioma activo es EN
+
+- **Severidad:** 3
+- **Heurística violada:** Usability — Consistencia y estándares / Inclusive Design — Offer choice
+- **Plan afectado:** Todos
+**Problema:**
+Con el selector en "EN", el sidebar, el dashboard, el perfil y la tabla de bicicletas están en inglés, mientras que las pantallas "Planes para Usuario Demo" y "Realiza tu pago" están completamente en español. En login y registro, el formulario está en inglés pero el eslogan del panel derecho ("Una nueva forma de llegar a tu destino") está en español, y en la tarjeta del Plan Tarifa se muestran juntos "Plan Actual" y "Current plan". El usuario no puede predecir en qué idioma encontrará cada pantalla y el selector de idioma pierde credibilidad.
+ 
+**Recomendación:**
+Centralizar todos los textos en los diccionarios de traducción (sin cadenas escritas directamente en los componentes), revisar cada pantalla en ambos idiomas y garantizar que el idioma elegido se mantenga en todo el flujo, incluidos planes, pagos y paneles de marca.
+  
+**PROBLEMA #18:** Las tarjetas del dashboard repiten el sidebar y todas usan el mismo botón genérico "Open"
+ 
+- **Severidad:** 1
+- **Heurística violada:** Usability — Reconocimiento antes que recuerdo / Diseño estético y minimalista
+- **Plan afectado:** Todos
+**Problema:**
+El dashboard muestra cuatro tarjetas (My trips, Plans and subscriptions, Stations, Report a problem) que duplican las opciones del sidebar y cada una tiene un botón idéntico "Open". El texto del botón no dice qué ocurre al pulsarlo, y la pantalla no destaca información útil como un viaje activo o las bicicletas disponibles cerca. Además, la cuarta tarjeta queda sola en una segunda fila.
+
+**Recomendación:**
+Usar botones con acciones concretas ("Ver mis viajes", "Ver planes", "Ver estaciones", "Reportar problema") o hacer clicable la tarjeta completa, y priorizar en el dashboard información accionable (viaje en curso, estaciones cercanas, plan actual).
+ 
+**PROBLEMA #19:** El buscador del header ("Search...") no comunica qué se puede buscar
+ 
+- **Severidad:** 
+- **Heurística violada:** Usability — Reconocimiento antes que recuerdo / Ayuda y documentación
+- **Plan afectado:** Todos
+**Problema:**
+El header de la Web Application incluye un buscador con el placeholder genérico "Search...", sin indicar si busca estaciones, bicicletas, viajes u opciones del menú. El usuario debe adivinar su alcance, lo que reduce su utilidad y genera incertidumbre sobre el resultado esperado.
+ 
+**Recomendación:**
+Usar un placeholder descriptivo del ámbito de búsqueda (por ejemplo, "Buscar estaciones, bicicletas o viajes...") y mostrar sugerencias o categorías de resultados al escribir.
 ## 5.4. Video About-the-Product.
