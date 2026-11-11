@@ -35,7 +35,7 @@ El equipo de **BiciGO — Startup-Chapa** utiliza Git y GitHub para gestionar el
 | Informe | `project-report` | https://github.com/Startup-Chapa/project-report | Documentación en Markdown y evidencias |
 | Landing Page | `Landing-Page` | https://github.com/Startup-Chapa/Landing-Page | Sitio informativo publicado con GitHub Pages |
 | Frontend Web Application | `frontend-bicigo` | https://github.com/Startup-Chapa/frontend-bicigo | SPA desarrollada con Vue 3 y Vite |
-| Backend / Platform | Pendiente de confirmar | Pendiente | No se identifica aquí un repositorio de backend productivo validado para el Sprint 2 |
+| Backend / Platform | `backend-bicigo` | https://github.com/Startup-Chapa/backend-bicigo | API REST por Bounded Contexts implementada en el Sprint 3 (.NET 10, EF Core y MySQL) |
 
 El repositorio del frontend tiene `main` como rama principal y utiliza `develop` como rama de integración. El trabajo por funcionalidad se distribuye en ramas tales como `feature/iam`, `feature/trip-management`, `feature/billing-subscriptions`, `feature/fleet-station-management` y `feature/maintenance`. El repositorio también conserva una rama `feature/corrections`. La documentación de integración señala que se consolidaron archivos de los módulos sobre una base compartida; por tanto, no corresponde afirmar que todos los cambios se integraron exclusivamente mediante *merge* o Pull Requests.
 
@@ -651,11 +651,11 @@ Para una evaluación completa de la colaboración se recomienda adjuntar una tab
 
 #### 5.2.3.1. Sprint Planning 3
 
-El Sprint 3 está proyectado como una iteración posterior orientada a implementar e integrar los **RESTful Web Services** pendientes y a sustituir progresivamente los contratos simulados utilizados durante el Sprint 2. La planificación final debe derivarse de las Technical Stories del Capítulo III, de la evaluación del incremento frontend y del calendario del curso.
+El Sprint 3 corresponde al primer incremento de backend de BiciGO: la implementación de los **RESTful Web Services** en el repositorio [`Startup-Chapa/backend-bicigo`](https://github.com/Startup-Chapa/backend-bicigo), una API REST desarrollada con **ASP.NET Core (.NET 10)**, **Entity Framework Core 10** y **MySQL**, organizada por **Bounded Contexts** (IAM, Trip, Billing, Fleet & Station Management, Maintenance y Shared) con capas Domain, Application, Infrastructure e Interfaces (REST). Los contratos se exponen mediante OpenAPI 3.1.1 con la interfaz **Scalar** en el entorno local `http://localhost:5267`.
 
 **Sprint Planning Background**
 
-| Campo | Registro previsto para Sprint 3 |
+| Campo | Registro de Sprint 3 |
 |---|---|
 | Sprint # | Sprint 3 |
 | Date | 09/11/2026 (**propuesta original, por confirmar**) |
@@ -663,52 +663,218 @@ El Sprint 3 está proyectado como una iteración posterior orientada a implement
 | Location | Reunión virtual |
 | Prepared By | Aguirre Ramos, Eduardo Manuel (**según borrador**) |
 | Attendees | Aguirre Ramos, Eduardo Manuel; Armestar Felipa, Adrian Andres; Ayllon Pauccar, Juan David; Franco del Carpio, José María; Velasquez Velasquez, Rodrigo |
-| Sprint 2 Review Summary | **Pendiente:** completar con historias aceptadas, pendientes y evidencia validada del Sprint 2. |
-| Sprint 2 Retrospective Summary | **Pendiente:** registrar acuerdos reales sobre integración, pruebas, distribución y deuda técnica. |
+| Sprint 2 Review Summary | Se integró y publicó la primera versión navegable de la Frontend Web Application con módulos por Bounded Context, API simulada (JSON Server) y Firebase Hosting. Quedaron pendientes de validar evidencias de algunos flujos (inicio, viaje activo y cierre de alquiler; método de pago). |
+| Sprint 2 Retrospective Summary | Se acordó trasladar la lógica al backend real organizado por Bounded Contexts, asignar un líder por contexto, versionar la API bajo el prefijo `/api/v1` y documentar los contratos con OpenAPI antes de reintegrar el frontend. |
 
-**Sprint Goal provisional**
+**Sprint Goal & User Stories**
 
 *Our focus is on implementing and connecting the backend services required by BiciGO's priority user journeys. We believe it will replace key simulated operations with verifiable RESTful endpoints and allow the frontend and backend to work as a consistent application. This will be confirmed when the selected Technical Stories meet their acceptance criteria, API contracts are documented, and end-to-end scenarios can be demonstrated.*
 
 | Campo | Situación |
 |---|---|
-| Selected Technical Stories | Pendiente de selección formal a partir del Product Backlog del Capítulo III. |
-| Sprint 3 Velocity | No definida: se debe estimar según capacidad y resultados validados del Sprint 2. |
-| Sum of Story Points | Pendiente de sumar después de seleccionar las historias. |
-| Task Estimation | Pendiente de desglose y estimación por el equipo. |
+| Selected Technical Stories | IAM: TS-15 (con cobertura parcial de TS-01). Trip: TS-08, TS-09, TS-10, TS-11. Billing: TS-12, TS-13, TS-14. Fleet: TS-05, TS-06. Maintenance: TS-17, TS-18, TS-19. Transversal: persistencia compartida, seeder y documentación OpenAPI. |
+| Cobertura parcial | TS-02, TS-03 y TS-04 (login, recuperación y verificación) no cuentan con endpoints de autenticación dedicados; el registro se expone como `POST /api/v1/users` y el acceso por correo como `GET /api/v1/users?email=`. Su cierre se plantea para una iteración posterior. |
+| Historias no incluidas | TS-07 (Search Coverage Zone) y TS-20 (Get Dashboard Metrics) quedan fuera del alcance del Sprint 3. |
+| Sum of Story Points | 41 SP de Technical Stories + 5 SP del trabajo transversal Shared = **46 SP** (escala 1, 2, 3 y 5). |
+| Task Estimation | **63 h**, correspondientes a 20 microtareas. |
+| Sprint 3 Velocity | Pendiente de validar contra los criterios de aceptación de cada Technical Story. |
 
-**Nota de planificación:** la tabla del borrador anterior repetía el objetivo, las historias de Landing Page y las referencias a Sprint 0 del Sprint 1. Esos datos no correspondían al Sprint 3 y se retiran sin sustituirlos por resultados ficticios.
+**Distribución estimada de Story Points**
+
+| Story Id | Story Title | Story Points |
+|---|---|---:|
+| TS-05 | Get Nearby Bikes (Fleet) | 3 |
+| TS-06 | Get Bike Detail (Fleet) | 2 |
+| TS-08 | Start Rental (Trip) | 5 |
+| TS-09 | Unlock Bike (Trip) | 3 |
+| TS-10 | Get Active Rental (Trip) | 2 |
+| TS-11 | Finish Rental (Trip) | 5 |
+| TS-12 | Register Payment Method (Billing) | 3 |
+| TS-13 | Process Rental Payment (Billing) | 5 |
+| TS-14 | Manage Subscription (Billing) | 3 |
+| TS-15 | Get User Profile (IAM) | 2 |
+| TS-17 | Create Incident (Maintenance) | 3 |
+| TS-18 | Get Incident Status (Maintenance) | 2 |
+| TS-19 | Manage Bike Status (Maintenance) | 3 |
+| TS-SH01 | Persistencia compartida, seeder y OpenAPI (transversal) | 5 |
+| **Total** | **13 Technical Stories + 1 transversal** | **46** |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
 La organización del Sprint 3 se encuentra basada en los cinco Bounded Contexts definidos durante el diseño de arquitectura.
 
-Cada integrante lidera un contexto y participa como colaborador en los demás.
+Cada integrante lidera un contexto y participa como colaborador en los demás. Respecto al Sprint 2, Fleet y Maintenance rotaron **intencionalmente** entre Eduardo Aguirre y Rodrigo Velasquez: Rodrigo asume Fleet & Station Management y Eduardo asume Maintenance. El cambio fue acordado en la planificación para repartir el conocimiento de la capa de datos, ya que Fleet administra los agregados de bicicletas y estaciones, y Maintenance registra reportes e historial de estados sobre esas mismas unidades. El trabajo transversal del contexto Shared (persistencia, seeder y OpenAPI) se distribuyó entre todo el equipo según el backlog.
 
 | Team Member | GitHub Username | IAM | Trip Management | Billing & Subscriptions | Fleet & Station Management | Maintenance |
 |---|---|:---:|:---:|:---:|:---:|:---:|
 | Armestar Felipa, Adrian Andres | Adrian5102 | L | C | C | C | C |
-| Franco del Carpio, José María | VoltTrd | C | C | C | L | C |
+| Franco del Carpio, José María | VoltTrd | C | L | C | C | C |
 | Ayllon Pauccar, Juan David | JuanDPAUC | C | C | L | C | C |
-| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | C | L | C | C | C |
-| Velasquez Velasquez, Rodrigo | Rodrigov233 | C | C | C | C | L |
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | C | C | C | C | L |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | C | C | C | L | C |
 
 **L:** Leader  
 **C:** Collaborator
 
-La distribución permite desarrollar funcionalidades en paralelo y posteriormente integrarlas en una versión común del Frontend Web Application.
+La distribución permite implementar cada contexto de forma paralela sobre el repositorio `backend-bicigo` y luego exponer los recursos en una API común bajo el prefijo `/api/v1`.
 
 #### 5.2.3.3. Sprint Backlog 3
 
+El backlog organiza 20 microtareas agrupadas por Bounded Context y actividades transversales, con una estimación total de **63 horas**. Las tareas siguen la convención `T3-XX` y se asocian a las Technical Stories del Capítulo III.
+
+**Trello del Sprint 3 — PENDIENTE DE ENLACE**
+
+```text
+Trello Sprint 3: PENDIENTE DE ENLACE
+Captura del tablero: PENDIENTE DE ADJUNTAR
+```
+
+La estructura completa de listas y tarjetas del tablero está disponible en [`Trello_Sprint3_Backlog.md`](./Trello_Sprint3_Backlog.md).
+
+**Sprint #: Sprint 3**
+
+| Epic / Story ID | Task ID | Título de la Microtarea | Descripción y Alcance Técnico | Estimación (Horas) | Asignado a | Estado |
+| :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **TS-SH01** | T3-01 | `[SHARED]` `[BACK]` Solución y estructura por Bounded Contexts | Crear la solución .NET 10 con las carpetas `Iam`, `Trip`, `Billing`, `Fleet`, `Maintenance` y `Shared`, y registrar los servicios de cada contexto en `Program.cs`. | 3 h | Equipo | Done |
+| **TS-SH01** | T3-02 | `[SHARED]` `[BACK]` AppDbContext MySQL y repositorios base | Configurar `AppDbContext` con MySQL (`MySql.EntityFrameworkCore`), `UnitOfWork`, `BaseRepository` y `AuditableEntityInterceptor`. | 3 h | Equipo | Done |
+| **TS-SH01** | T3-03 | `[SHARED]` `[BACK]` Seeder y tablas normalizadas | Implementar `DatabaseSeeder` y la creación idempotente de `plan_features`, `user_notifications`, `bicycle_assignments`, `trip_users`, `trip_route_points`, `trip_photo_evidences` y `maintenance_status_histories`. | 3 h | Equipo | Done |
+| **TS-SH01** | T3-04 | `[SHARED]` `[DOCS]` OpenAPI 3.1.1 y Scalar | Habilitar `AddOpenApi`/`MapOpenApi` y `MapScalarApiReference` para documentar y explorar la API en el entorno local. | 2 h | Equipo | Done |
+| **TS-15** | T3-05 | `[IAM]` `[BACK]` Dominio y aplicación de Users | Modelar el agregado `User` con sus comandos y consultas (registro, consulta por correo), su repositorio y los servicios de aplicación. | 3 h | Armestar Felipa, Adrian Andres | Done |
+| **TS-15** | T3-06 | `[IAM]` `[BACK]` Users REST: CRUD y PATCH de perfil | Exponer `POST /api/v1/users` (201/400/409), `GET /api/v1/users?email=`, `GET /{id}`, `PATCH /{id}` (perfil, plan y balance) y `DELETE /{id}` con assemblers. | 3 h | Armestar Felipa, Adrian Andres | Done |
+| **TS-15** | T3-07 | `[IAM]` `[BACK]` UserNotifications REST | Implementar `GET`/`POST /api/v1/user-notifications` y `PATCH /{id}/read` para las notificaciones del usuario. | 3 h | Armestar Felipa, Adrian Andres | Done |
+| **TS-08** | T3-08 | `[TRIP]` `[BACK]` Dominio y persistencia de Trips | Modelar el agregado `Trip` con sus estados, comandos y consultas, y su repositorio EFC. | 4 h | Franco del Carpio, José María | Done |
+| **TS-08/10/11** | T3-09 | `[TRIP]` `[BACK]` Trips REST: ciclo de alquiler | Exponer `POST /api/v1/trips` (inicio), `GET /{id}` (consulta), `PUT /{id}` (actualización y cierre), `DELETE /{id}` y el listado `GET /api/v1/trips`. | 4 h | Franco del Carpio, José María | Done |
+| **TS-10** | T3-10 | `[TRIP]` `[BACK]` TripUsers REST | Implementar `GET`/`POST /api/v1/trip-users` y `GET /{id}` para asociar usuarios al viaje. | 2 h | Franco del Carpio, José María | Done |
+| **TS-11** | T3-11 | `[TRIP]` `[BACK]` Route points y evidencias fotográficas | Implementar `api/v1/trip-route-points` y `api/v1/trip-photo-evidences` (consulta y registro). | 2 h | Franco del Carpio, José María | Done |
+| **TS-09** | T3-12 | `[TRIP]` `[BACK]` QrValidations REST | Implementar `GET`/`POST /api/v1/qr-validations` y `GET /{id}` para la validación QR del desbloqueo del alquiler vigente. | 3 h | Franco del Carpio, José María | Done |
+| **TS-12** | T3-13 | `[BILLING]` `[BACK]` PaymentMethods y Payments REST | Implementar `GET`/`POST /api/v1/payment-methods`, `GET/POST /api/v1/payments` y `GET /payments/{id}`. | 4 h | Ayllon Pauccar, Juan David | Done |
+| **TS-14** | T3-14 | `[BILLING]` `[BACK]` Plans, PlanFeatures y Subscriptions | Exponer `GET /api/v1/plans` y `GET /{id}`, `GET`/`POST /api/v1/plan-features` y `GET`/`POST /api/v1/subscriptions` (activación de plan). | 4 h | Ayllon Pauccar, Juan David | Done |
+| **TS-05/06** | T3-15 | `[FLEET]` `[BACK]` Bicycles REST y estados | Modelar el agregado `Bicycle` con el value object `BicycleStatus` y exponer `GET`/`POST`/`PUT`/`DELETE /api/v1/bicycles` (disponibilidad y detalle). | 4 h | Velasquez Velasquez, Rodrigo | Done |
+| **TS-05** | T3-16 | `[FLEET]` `[BACK]` BikePoints y BicycleAssignments | Implementar `GET`/`POST`/`PUT`/`DELETE /api/v1/bike-points` y `GET`/`POST /api/v1/bicycle-assignments` (ubicación y asignaciones). | 3 h | Velasquez Velasquez, Rodrigo | Done |
+| **TS-17/18** | T3-17 | `[MAINT]` `[BACK]` MaintenanceReports REST | Modelar el reporte de mantenimiento e implementar `GET`/`POST /api/v1/maintenance-reports` y `GET /{id}`. | 4 h | Aguirre Ramos, Eduardo Manuel | Done |
+| **TS-19** | T3-18 | `[MAINT]` `[BACK]` Cambio de estado e historial | Implementar `POST /api/v1/maintenance-reports/{bikeId}/status` y `GET`/`POST /api/v1/maintenance-status-histories` con el agregado `MaintenanceStatusHistory`. | 3 h | Aguirre Ramos, Eduardo Manuel | Done |
+| **Transversal** | T3-19 | `[QA]` `[BACK]` Pruebas locales de la API | Ejecutar la API con MySQL y verificar los contratos de cada contexto desde Scalar: al menos una respuesta exitosa y un caso de error por recurso. | 3 h | Equipo | To-Review |
+| **Transversal** | T3-20 | `[DOCS]` Documentación del Sprint 3 en el informe | Redactar las secciones 5.2.3.1 a 5.2.3.8 y actualizar la tabla de repositorios de 5.1.2 con `backend-bicigo`. | 3 h | Aguirre Ramos, Eduardo Manuel | Done |
+
+**Criterio para el cierre.** Una Technical Story solo pasa a `Done` cuando su recurso responde en el entorno local, el contrato figura en OpenAPI y sus escenarios se pueden reproducir contra la base MySQL con los datos del seeder. La cobertura parcial de autenticación (TS-02 a TS-04) y el despliegue público del backend quedan explícitamente fuera del cierre del Sprint 3.
+
 #### 5.2.3.4. Development Evidence for Sprint Review
+
+El desarrollo se documenta en el repositorio [`Startup-Chapa/backend-bicigo`](https://github.com/Startup-Chapa/backend-bicigo). Cada contexto organiza sus capas como `Domain` (agregados, value objects, comandos y consultas), `Application` (servicios de comando y consulta), `Infrastructure` (repositorios EFC) e `Interfaces` (controllers, resources y assemblers REST), sobre el contexto `Shared`, que registra el `DbContext`, el unit of work y el seeder.
+
+| Bounded Context | Carpeta | Recursos REST implementados | Agregados principales |
+|---|---|---|---|
+| IAM | `Iam/` | `users`, `user-notifications` | `User`, `UserNotification` |
+| Trip Management | `Trip/` | `trips`, `trip-users`, `trip-route-points`, `trip-photo-evidences`, `qr-validations` | `Trip`, `TripUser`, `TripRoutePoint`, `TripPhotoEvidence`, `QrValidation` |
+| Billing & Subscriptions | `Billing/` | `plans`, `plan-features`, `payments`, `payment-methods`, `subscriptions` | `Plan`, `Payment`, `Subscription` |
+| Fleet & Station Management | `Fleet/` | `bicycles`, `bike-points`, `bicycle-assignments` | `Bicycle`, `BikePoint`, `BicycleAssignment` |
+| Maintenance | `Maintenance/` | `maintenance-reports`, `maintenance-status-histories` | `MaintenanceReport`, `MaintenanceStatusHistory` |
+
+`Program.cs` registra los servicios de cada contexto, configura MySQL mediante la cadena `DefaultConnection` y, al arrancar, ejecuta `EnsureCreated`, crea las siete tablas normalizadas con `CREATE TABLE IF NOT EXISTS` y aplica el `DatabaseSeeder`.
+
+![Documentación Swagger del backend biciGO](./Resources/chapter5/backend-swagger-sprint3.png)
+
+*Figura: documentación OpenAPI 3.1.1 de `backend-bicigo v1`, abierta en el entorno local `http://localhost:5267`.*
+
+**Historial de commits del backend — PENDIENTE DE ADJUNTAR.** Esta sección debe completarse con la tabla de commits de la rama `develop` del backend (SHA, mensaje, autor y fecha) filtrada por el rango del Sprint 3 y la captura de GitHub Pulse del repositorio `backend-bicigo`, siguiendo el formato de las secciones 5.2.1.4 y 5.2.2.4.
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
+La evidencia de ejecución debe mostrar solicitudes reales contra la API local. Para cerrar esta sección se requieren capturas por contexto que incluyan al menos una respuesta exitosa y un caso de error coherente con los criterios de aceptación del Capítulo III:
+
+| Bounded Context | Solicitudes sugeridas para la evidencia |
+|---|---|
+| IAM | `POST /api/v1/users` (201), `POST /api/v1/users` con correo duplicado (409), `PATCH /api/v1/users/{id}` |
+| Trip | `POST /api/v1/trips`, `GET /api/v1/trips/{id}`, `POST /api/v1/qr-validations` |
+| Billing | `GET /api/v1/plans`, `POST /api/v1/payment-methods`, `POST /api/v1/payments` |
+| Fleet | `GET /api/v1/bicycles`, `POST /api/v1/bicycle-assignments` |
+| Maintenance | `POST /api/v1/maintenance-reports`, `POST /api/v1/maintenance-reports/{bikeId}/status` |
+
+```text
+Capturas de ejecución por contexto: PENDIENTES DE ADJUNTAR
+Video de ejecución: PENDIENTE DE ENLACE
+```
+
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+La documentación se expone como **OpenAPI 3.1.1** (`backend-bicigo v1`) y se explora con **Scalar** en el servidor local `http://localhost:5267`. La siguiente tabla corresponde a las **60 operaciones implementadas en los 17 controllers** del repositorio, extraídas del código fuente:
+
+| Bounded Context | Recurso | Operación | Método y ruta |
+|---|---|---|---|
+| IAM | Users | Registro de usuario | `POST /api/v1/users` |
+| IAM | Users | Listado y filtro por correo | `GET /api/v1/users?email={email}` |
+| IAM | Users | Usuario por identificador | `GET /api/v1/users/{id}` |
+| IAM | Users | Actualización parcial (perfil, plan, balance) | `PATCH /api/v1/users/{id}` |
+| IAM | Users | Eliminación de usuario | `DELETE /api/v1/users/{id}` |
+| IAM | User Notifications | Notificaciones de usuario | `GET /api/v1/user-notifications` |
+| IAM | User Notifications | Notificación por identificador | `GET /api/v1/user-notifications/{id}` |
+| IAM | User Notifications | Crear notificación | `POST /api/v1/user-notifications` |
+| IAM | User Notifications | Marcar como leída | `PATCH /api/v1/user-notifications/{id}/read` |
+| Trip | Trips | Listado de viajes | `GET /api/v1/trips` |
+| Trip | Trips | Viaje por identificador | `GET /api/v1/trips/{id}` |
+| Trip | Trips | Inicio de alquiler | `POST /api/v1/trips` |
+| Trip | Trips | Actualización y cierre | `PUT /api/v1/trips/{id}` |
+| Trip | Trips | Eliminación de viaje | `DELETE /api/v1/trips/{id}` |
+| Trip | Trip Users | Usuarios del viaje | `GET /api/v1/trip-users` · `GET /{id}` · `POST /` |
+| Trip | Trip Route Points | Puntos de recorrido | `GET /api/v1/trip-route-points` · `GET /{id}` · `POST /` |
+| Trip | Trip Photo Evidences | Evidencias fotográficas | `GET /api/v1/trip-photo-evidences` · `GET /{id}` · `POST /` |
+| Trip | QR Validations | Validación QR para desbloqueo | `GET /api/v1/qr-validations` · `GET /{id}` · `POST /` |
+| Billing | Plans | Listado y detalle de planes | `GET /api/v1/plans` · `GET /{id}` |
+| Billing | Plan Features | Características de plan | `GET /api/v1/plan-features` · `GET /{id}` · `POST /` |
+| Billing | Payments | Pagos | `GET /api/v1/payments` · `POST /` · `GET /{id}` |
+| Billing | Payment Methods | Métodos de pago | `GET /api/v1/payment-methods` · `POST /` · `GET /{id}` |
+| Billing | Subscriptions | Suscripciones | `GET /api/v1/subscriptions` · `GET /{id}` · `POST /` |
+| Fleet | Bicycles | Flota de bicicletas | `GET /api/v1/bicycles` · `GET /{id}` · `POST /` · `PUT /{id}` · `DELETE /{id}` |
+| Fleet | Bike Points | Estaciones y puntos | `GET /api/v1/bike-points` · `GET /{id}` · `POST /` · `PUT /{id}` · `DELETE /{id}` |
+| Fleet | Bicycle Assignments | Asignaciones bicicleta–punto | `GET /api/v1/bicycle-assignments` · `GET /{id}` · `POST /` |
+| Maintenance | Maintenance Reports | Reportes de mantenimiento | `GET /api/v1/maintenance-reports` · `GET /{id}` · `POST /` |
+| Maintenance | Maintenance Reports | Cambio de estado de bicicleta | `POST /api/v1/maintenance-reports/{bikeId}/status` |
+| Maintenance | Status Histories | Historial de estados | `GET /api/v1/maintenance-status-histories` · `GET /{id}` · `POST /` |
+
+**Desalineación de prefijos.** El backend usa el prefijo `/api/v1/...`, mientras que los ejemplos del Capítulo III escriben `/api/...` con rutas como `/api/auth/register`, `/api/bikes/nearby` o `/api/rentals`. Antes del cierre, el equipo debe alinear los contratos de las Technical Stories con las rutas reales o documentar el mapeo entre ambas. La correspondencia funcional principal es: registro (`TS-01`) → `POST /api/v1/users`; detalle de bicicleta (`TS-06`) → `GET /api/v1/bicycles/{id}`; inicio de alquiler (`TS-08`) → `POST /api/v1/trips`; desbloqueo (`TS-09`) → `POST /api/v1/qr-validations`; consulta del viaje activo (`TS-10`) → `GET /api/v1/trips/{id}`; finalización (`TS-11`) → `PUT /api/v1/trips/{id}`; método de pago (`TS-12`) → `POST /api/v1/payment-methods`; pago del alquiler (`TS-13`) → `POST /api/v1/payments`; suscripción (`TS-14`) → `POST /api/v1/subscriptions`; reporte de incidencia (`TS-17`) → `POST /api/v1/maintenance-reports`; cambio de estado administrativo (`TS-19`) → `POST /api/v1/maintenance-reports/{bikeId}/status`.
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
+El backend del Sprint 3 se **ejecuta localmente** con MySQL. La evidencia disponible (documentación OpenAPI/Scalar en `localhost:5267`) acredita la ejecución local, no un despliegue productivo. No debe confundirse con la publicación del frontend en Firebase Hosting documentada para el Sprint 2.
+
+**Procedimiento de ejecución local**
+
+1. Clonar el repositorio `Startup-Chapa/backend-bicigo`.
+2. Configurar la cadena de conexión MySQL (`DefaultConnection`) en `appsettings.json`.
+3. Restaurar dependencias y ejecutar la API con `dotnet restore` y `dotnet run`.
+4. Al iniciar, la aplicación crea el esquema (`EnsureCreated`), añade las siete tablas normalizadas y aplica el `DatabaseSeeder`.
+5. Explorar la documentación OpenAPI/Scalar en `http://localhost:5267` y verificar los contratos de cada contexto.
+
+```bash
+git clone https://github.com/Startup-Chapa/backend-bicigo.git
+cd backend-bicigo
+dotnet restore
+dotnet run
+# OpenAPI/Scalar: http://localhost:5267
+```
+
+| Producto | Plataforma | URL o acceso | Estado de evidencia |
+|---|---|---|---|
+| Backend API (Sprint 3) | Ejecución local .NET 10 + MySQL | `http://localhost:5267` | Ejecutado localmente; despliegue público pendiente |
+| Documentación OpenAPI | Scalar (local) | `http://localhost:5267` | Captura incluida en 5.2.3.4 |
+| Frontend Web Application | Firebase Hosting | https://example-pro-d6e84.web.app | Publicación documentada en Sprint 2 |
+| Backend desplegado en producción | Pendiente | No disponible en la evidencia del Sprint 3 | No incluido en el incremento actual |
+
+**Pendiente de despliegue.** Para cerrar el apartado se debe registrar la publicación del backend (por ejemplo, en un servicio de hosting para .NET) y su URL pública, además de actualizar la configuración de despliegue de la sección 5.1.4.
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint
+
+El trabajo se distribuyó por Bounded Contexts según la matriz de 5.2.3.2, con la rotación intencional de Fleet y Maintenance respecto al Sprint 2. El contexto Shared (persistencia, seeder y documentación OpenAPI) se trabajó de forma transversal.
+
+| Integrante | GitHub Username | Contexto liderado | Technical Stories principales |
+|---|---|---|---|
+| Armestar Felipa, Adrian Andres | Adrian5102 | IAM | TS-15 (y cobertura parcial de TS-01) |
+| Franco del Carpio, José María | VoltTrd | Trip Management | TS-08, TS-09, TS-10, TS-11 |
+| Ayllon Pauccar, Juan David | JuanDPAUC | Billing & Subscriptions | TS-12, TS-13, TS-14 |
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | Maintenance | TS-17, TS-18, TS-19 |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | Fleet & Station Management | TS-05, TS-06 |
+
+**Evidencia de contribución — PENDIENTE DE ADJUNTAR.** Al cierre se debe incorporar la captura de GitHub Pulse y la tabla de commits del repositorio `backend-bicigo` (autor, rama, SHA, fecha y Technical Story asociada) filtradas por el rango real del Sprint 3, sin atribuir aportes sin evidencia.
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
