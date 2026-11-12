@@ -261,7 +261,7 @@ La interfaz está disponible en inglés (idioma por defecto) y en español latin
 
 **Vista de escritorio (1440 px)**
 
-![landing-hero-desktop](./Resources/chapter5/landing-hero-desktop.png)
+![landing-hero-desktop](./Resources/chapter5/hero-secction.png)
 
 **Página completa en escritorio (1440 px)**
 
@@ -836,26 +836,59 @@ La documentación se expone como **OpenAPI 3.1.1** (`backend-bicigo v1`) y se ex
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-El backend del Sprint 3 se **ejecuta localmente** con MySQL y se encuentra **en proceso de despliegue en Azure App Service** (tarea T3-21). La evidencia disponible (documentación OpenAPI/Scalar en `localhost:5267`) acredita la ejecución local; la URL pública de Azure se registrará al finalizar la verificación. No debe confundirse con la publicación del frontend en Firebase Hosting documentada para el Sprint 2.
+El backend del Sprint 3 se **ejecuta localmente** con MySQL y se encuentra **en proceso de despliegue en Azure** (tarea T3-21). La evidencia disponible (documentación OpenAPI/Scalar en `localhost:5267`) acredita la ejecución local; la URL pública de Azure se registrará al finalizar la verificación. No debe confundirse con la publicación del frontend en Firebase Hosting documentada para el Sprint 2.
 
+**Aprovisionamiento de la base de datos MySQL en Azure (12/11/2026)**
 
+Como parte del despliegue, el equipo aprovisionó en Azure la base de datos MySQL que utilizará el backend, mediante el servicio **Azure Database for MySQL Flexible Server**. Los pasos realizados y su evidencia son los siguientes:
 
-**Despliegue en Azure App Service (en curso — T3-21)**
+1. Se creó el servidor `new-backend-bicigo` en el grupo de recursos `backend-project`, en la región **Chile Central**, con MySQL **8.4**, carga de trabajo *Dev/Test* y configuración *Burstable B1ms* (1 vCore, 2 GiB RAM, 20 GiB de almacenamiento).
+
+![Creación del servidor MySQL Flexible Server en Azure](./Resources/chapter5/azure/azure-mysql-basics.jpeg)
+
+*Figura: configuración básica del servidor `new-backend-bicigo` (región Chile Central, MySQL 8.4, Burstable B1ms).*
+
+2. Se configuró la autenticación exclusiva de **MySQL** con el usuario administrador `backendroot`.
+
+![Configuración de autenticación del servidor MySQL](./Resources/chapter5/azure/azure-mysql-auth.jpeg)
+
+*Figura: método de autenticación "MySQL authentication only" y administrador del servidor.*
+
+3. En la pestaña *Networking* se habilitó el **acceso público** con direcciones IP permitidas, el puerto **3306** y el acceso desde servicios de Azure.
+
+![Configuración de red del servidor MySQL](./Resources/chapter5/azure/azure-mysql-networking.jpeg)
+
+*Figura: conectividad pública del servidor MySQL Flexible Server y puerto 3306.*
+
+4. Se agregó la regla de firewall necesaria para las conexiones del equipo durante la verificación inicial.
+
+![Regla de firewall del servidor MySQL](./Resources/chapter5/azure/azure-mysql-firewall.jpeg)
+
+*Figura: regla de firewall configurada para la verificación de conexiones.*
+
+5. El servidor quedó aprovisionado el **12/11/2026 (16:14 UTC)** con el endpoint `new-backend-bicigo.mysql.database.azure.com`. Tras la verificación inicial, el servidor se detuvo (*Stop*) para controlar los costos del nivel *Dev/Test*; puede reiniciarse al completar el despliegue del App Service.
+
+![Servidor MySQL creado en Azure](./Resources/chapter5/azure/azure-mysql-overview.jpeg)
+
+*Figura: vista general del servidor `new-backend-bicigo` con su endpoint y la acción de detención.*
+
+**Despliegue del backend en Azure App Service (en curso — T3-21)**
 
 1. Crear el recurso de **Azure App Service** (runtime .NET 10) y su grupo de recursos.
-2. Configurar la cadena de conexión MySQL (`DefaultConnection`) en *Settings > Environment variables*.
+2. Configurar la cadena de conexión MySQL (`DefaultConnection`) apuntando al servidor `new-backend-bicigo.mysql.database.azure.com` en *Settings > Environment variables*.
 3. Publicar la API desde el repositorio (`az webapp up` o GitHub Actions).
-4. Verificar HTTPS, la documentación OpenAPI/Scalar y los contratos de cada contexto contra la base MySQL.
+4. Reiniciar el servidor MySQL, verificar HTTPS, la documentación OpenAPI/Scalar y los contratos de cada contexto contra la base MySQL.
 5. Registrar la URL pública en la tabla de productos al finalizar la verificación.
 
 | Producto | Plataforma | URL o acceso | Estado de evidencia |
 |---|---|---|---|
 | Backend API (Sprint 3) | Ejecución local .NET 10 + MySQL | `http://localhost:5267` | Ejecutado localmente; despliegue público pendiente |
 | Documentación OpenAPI | Scalar (local) | `http://localhost:5267` | Captura incluida en 5.2.3.4 |
+| Base de datos en Azure | Azure Database for MySQL Flexible Server | `new-backend-bicigo.mysql.database.azure.com` | Aprovisionada el 12/11/2026 (Chile Central); servidor detenido para control de costos |
 | Frontend Web Application | Firebase Hosting | https://example-pro-d6e84.web.app | Publicación documentada en Sprint 2 |
-| Backend en Azure App Service | Azure (T3-21, en proceso) | URL por confirmar | Despliegue en curso; evidencia pendiente |
+| Backend en Azure App Service | Azure (T3-21, en proceso) | URL por confirmar | En curso; la base de datos ya se encuentra aprovisionada |
 
-**Pendiente de despliegue.** Al finalizar T3-21 se debe registrar la URL pública de Azure App Service, la evidencia del despliegue (capturas del portal o del pipeline) y actualizar la configuración de despliegue de la sección 5.1.4.
+**Pendiente de despliegue.** Al finalizar T3-21 se debe registrar la URL pública de Azure App Service y la evidencia del despliegue (capturas del portal o del pipeline). La base de datos MySQL en Azure ya se encuentra aprovisionada; para completar el despliegue, el servidor debe reiniciarse y el App Service debe configurar la cadena de conexión. También corresponde actualizar la configuración de despliegue de la sección 5.1.4.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
