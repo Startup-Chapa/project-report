@@ -923,6 +923,20 @@ El trabajo se distribuyó por Bounded Contexts según la matriz de 5.2.3.2, con 
 
 *Resumen de apreciaciones:* El entrevistado consideró que la propuesta y la aplicación se entienden y valoró positivamente la facilidad para ubicar una unidad, iniciar y seguir un recorrido, así como conocer la tarifa estimada antes de confirmar. Como oportunidad de mejora para la Landing Page, señaló que algunos espacios se perciben desaprovechados y que la separación entre el contenido y las imágenes afecta el atractivo visual. Indicó que usaría el servicio sobre todo para trayectos cortos y destacó como posibles barreras la falta de conexión a Internet, la disponibilidad de unidades y las opciones de pago; además, propuso compartir el viaje en tiempo real y permitir dividir la tarifa. La transcripción también incluye referencias a mototaxis, conductores y placas, por lo que esas opiniones de seguridad no se consideran una validación directa del flujo de alquiler de bicicletas de BiciGO. La edad y el distrito del entrevistado no aparecen en la transcripción disponible.
 
+#### Entrevista 2
+
+| Campo | Detalle |
+|---|---|
+| Entrevistado | Mauricio |
+| Segmento | Usuario de movilidad urbana que realiza trayectos cotidianos y recorridos cortos |
+| Entrevistador | Adrian Armestar |
+| Video | [Ver entrevista en Youtube](https://www.youtube.com/watch?v=KC9VsKTfLH0) |
+| Tiempo | 00:00–06:18 (6 min 18 s) |
+
+![Imagen 2. Evidencia de la entrevista de validación de BiciGO](./Resources/chapter5/entrevista-validacion2.png)
+
+*Resumen de apreciaciones:* El entrevistado consideró que el proceso de ingresar el punto de partida y el destino en la aplicación BiciGO es sencillo y rápido, destacando que no genera distracciones innecesarias. Asimismo, valoro positivamente conocer la tarifa estimada antes de confirmar el viaje, ya que esta brinda transparencia y permite que cada usuario decida según su situación económica. Del mismo modo, señaló que utilizaría el servicio tanto para trasladarse a estudiar como para otros desplazamientos cotidianos, destacando la ventaja de las ciclovías frente al tráfico constante de Lima y el mayor control sobre sus tiempos de traslado en comparación con el transporte público. Como oportunidad de mejora, propuso incorporar puntos de interés en el mapa y durante los recorridos, como restaurantes, parques y tiendas, para enriquecer la experiencia e incentivar nuevos recorridos de manera que fomente el uso frecuente de la aplicación.
+
 ### 5.3.3. Evaluaciones según heurísticas.
  
 | Campo | Detalle |
