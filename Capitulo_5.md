@@ -876,6 +876,20 @@ El trabajo se distribuyó por Bounded Contexts según la matriz de 5.2.3.2, con 
 
 ### 5.3.2. Registro de Entrevistas.
 
+#### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| Entrevistado | Fernando Guere (nombre visible en la captura) |
+| Segmento | Usuario de movilidad urbana que realiza trayectos cotidianos y recorridos cortos |
+| Entrevistador | Juan David Ayllon |
+| Video | [Ver entrevista en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a860_upc_edu_pe/IQB7Vo7PzItDQZnS5a6Q6wJbAbt5YZamBytgUuFBTexmkEA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YgDPsl) |
+| Tiempo | 00:00–17:35 (17 min 35 s) |
+
+![Imagen 2. Evidencia de la entrevista de validación de BiciGO](./Resources/chapter5/entrevista-validacion.png)
+
+*Resumen de apreciaciones:* El entrevistado consideró que la propuesta y la aplicación se entienden y valoró positivamente la facilidad para ubicar una unidad, iniciar y seguir un recorrido, así como conocer la tarifa estimada antes de confirmar. Como oportunidad de mejora para la Landing Page, señaló que algunos espacios se perciben desaprovechados y que la separación entre el contenido y las imágenes afecta el atractivo visual. Indicó que usaría el servicio sobre todo para trayectos cortos y destacó como posibles barreras la falta de conexión a Internet, la disponibilidad de unidades y las opciones de pago; además, propuso compartir el viaje en tiempo real y permitir dividir la tarifa. La transcripción también incluye referencias a mototaxis, conductores y placas, por lo que esas opiniones de seguridad no se consideran una validación directa del flujo de alquiler de bicicletas de BiciGO. La edad y el distrito del entrevistado no aparecen en la transcripción disponible.
+
 ### 5.3.3. Evaluaciones según heurísticas.
  
 | Campo | Detalle |
