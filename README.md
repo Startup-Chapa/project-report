@@ -3173,7 +3173,144 @@ El desarrollo se documenta en el repositorio [`Startup-Chapa/backend-bicigo`](ht
 
 *Figura: documentación OpenAPI 3.1.1 de `backend-bicigo v1`, abierta en el entorno local `http://localhost:5267`.*
 
-**Historial de commits del backend — PENDIENTE DE ADJUNTAR.** Esta sección debe completarse con la tabla de commits de la rama `develop` del backend (SHA, mensaje, autor y fecha) filtrada por el rango del Sprint 3 y la captura de GitHub Pulse del repositorio `backend-bicigo`, siguiendo el formato de las secciones 5.2.1.4 y 5.2.2.4.
+**Historial de commits del backend** Esta sección debe completarse con la tabla de commits de la rama `develop` del backend (SHA, mensaje, autor y fecha) filtrada por el rango del Sprint 3 y la captura de GitHub Pulse del repositorio `backend-bicigo`, siguiendo el formato de las secciones 5.2.1.4 y 5.2.2.4.
+
+| Repositorio | Rama | Commit | Asunto | Cuerpo | Fecha | Autor |
+| --- | --- | --- | --- | --- | --- | --- |
+| Startup-Chapa/backend-bicigo | `main` | `962d3a6` | Merge pull request #8 from Startup-Chapa/develop | Develop | 12/11/2026 | Eduardo Manuel Aguirre |
+| Startup-Chapa/backend-bicigo | `main` | `64d11d8` | Merge pull request #7 from Startup-Chapa/feature/deploy | Feature/deploy | 12/11/2026 | Eduardo Manuel Aguirre |
+| Startup-Chapa/backend-bicigo | `main` | `74bdb0c` | fix: the final solution |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `8405e55` | fix: add some datails to conecto frontend |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `b19a16d` | fix:change shared configurations |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `2af0e55` | Merge pull request #6 from Startup-Chapa/feature/iam | Feature/iam | 12/11/2026 | Eduardo Manuel Aguirre |
+| Startup-Chapa/backend-bicigo | `main` | `0b10104` | Merge pull request #5 from Startup-Chapa/trips | Trips | 12/11/2026 | Eduardo Manuel Aguirre |
+| Startup-Chapa/backend-bicigo | `main` | `733b63b` | Delete Trip directory | fix: ultimate change | 12/11/2026 | Eduardo Manuel Aguirre |
+| Startup-Chapa/backend-bicigo | `main` | `f8c913b` | fix: repair internal error |  | 12/11/2026 | Rodrigov233 |
+| Startup-Chapa/backend-bicigo | `main` | `8cede9c` | Merge pull request #4 from Startup-Chapa/feature/billing | Feature/billing | 12/11/2026 | Eduardo Manuel Aguirre |
+| Startup-Chapa/backend-bicigo | `main` | `554e2f3` | Merge pull request #3 from Startup-Chapa/fleet | Fleet | 12/11/2026 | Eduardo Manuel Aguirre |
+| Startup-Chapa/backend-bicigo | `main` | `e3c51c8` | Merge pull request #2 from Startup-Chapa/feature/maintenance | Feature/maintenance | 12/11/2026 | Eduardo Manuel Aguirre |
+| Startup-Chapa/backend-bicigo | `main` | `5e517c0` | feat: add maintenance controller to maintenance interfaces |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `1e3612a` | feat: add assemblers of maintenance to transform file |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `73ffa11` | feat:add maintenanceStatusHistory to Maintenance REST resource |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `295a2de` | feat: add maintenancereport as a resource to interfaces maintenance |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `282b37e` | feat: add the creation of resource maintenace report to interfaces maintenance |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `ad7ef3f` | feat: add services to application maintenance |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `3e017da` | feat: add queryservices to internal maintenance |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `cbd56e3` | feat:add commandservice to maintenance |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `3380c1f` | feat: add value of error to application of maintenance |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `2d340b1` | feat: add infrastructure file to maintenance |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `78e1cb3` | feat: add maintenance repository to doamin |  | 12/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `74ce38b` | feat:add maintenance status history query to queries in aggregates |  | 11/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `db3c9d8` | feat: add maintenancestatushistory to aggregates in maintenance |  | 11/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `60ed8f9` | feat: add maintenaceReport to aggregates |  | 11/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `e6e49a9` | feat: maintenancequeries ad to maintenance BC |  | 11/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `2a78d35` | feat: add maintenanceStatus to maintenance domain |  | 11/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `4ab5753` | feat: add MaintenanceCommands to maintenance domain |  | 11/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `0f13a3f` | feat:valueObject of maintenance bicigo |  | 11/11/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `662294f` | feat(trip): implement REST endpoints and documentation |  | 11/11/2026 | VoltTrd |
+| Startup-Chapa/backend-bicigo | `main` | `5da05b4` | feat(trip): implement persistence repositories |  | 11/11/2026 | VoltTrd |
+| Startup-Chapa/backend-bicigo | `main` | `d7741b3` | feat(trip): implement application services |  | 11/11/2026 | VoltTrd |
+| Startup-Chapa/backend-bicigo | `main` | `b279bea` | feat(trip): implement domain model |  | 11/11/2026 | VoltTrd |
+| Startup-Chapa/backend-bicigo | `main` | `d1debac` | feat(iam): add action result from create user result assembler |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `6368c7a` | feat(iam): add create user command from resource assembler |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `2ba6428` | feat(iam): add user resource from entity assembler |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `f5b7336` | feat(iam): add user notification assembler |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `7ef8562` | feat(iam): add user resource |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `df610c4` | feat(iam): add user notification resource |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `9fd5430` | feat(iam): add update user resource |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `ab6c7cc` | feat(iam): add create user resource |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `3562530` | feat(iam): add user notification controller |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `41c9ee1` | feat(iam): add users controller |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `a42aa44` | feat(iam): add user query service |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `e913b2f` | feat(iam): add interface user query service |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `21503e3` | feat(iam): add user command service |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `e6996d3` | feat(iam): add interface user command service |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `c5d4167` | feat(iam): add cr├®ate user errors |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `27c7104` | feat(iam): add user repository |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `cedba6c` | feat(iam): add interface user repository |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `de5e72e` | feat(iam): add plan key value object |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `0e235dd` | feat(iam): add email value object |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `ac2d8b8` | feat(iam): add user queries |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `ffad930` | feat(iam): add user notification queries |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `a4e627d` | feat(iam): add user notification commands |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `c5061da` | feat(iam): add update user command |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `f51ae45` | feat(iam): add register user command |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `22a4ecf` | feat(iam): add user notification aggregate |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `0b25022` | feat(iam): add user aggregate |  | 11/11/2026 | Adrian5102 |
+| Startup-Chapa/backend-bicigo | `main` | `e8c7b60` | feat(http): add billing api requests |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `a5905d9` | feat(config): add development database connection string |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `c4e5d31` | feat(config): add database connection string |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `f023dbd` | feat(api): register billing services and controllers |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `2576c8a` | feat(shared): add billing seed data |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `51807af` | feat(shared): configure billing entities in AppDbContext |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `5437fe8` | feat(shared): add auditable entity interceptor |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `9e3c085` | feat(shared): add persistence string extensions |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `50b96e6` | feat(shared): align Result pattern namespace with backend_bicigo |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `37813ab` | feat(billing): add payment methods controller |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `8db480a` | feat(billing): add payments controller |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `e498cad` | feat(billing): add subscriptions controller |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `e005ee9` | feat(billing): add plan features controller |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `c6d00da` | feat(billing): add plans controller |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `701a0a5` | feat(billing): add plan feature assembler |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `46dea16` | feat(billing): add billing resource assembler |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `921ab26` | feat(billing): add billing commands assembler |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `258f5d4` | feat(billing): add create payment method resource |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `9e73416` | feat(billing): add create payment resource |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `3370edd` | feat(billing): add create subscription resource |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `6c70348` | feat(billing): add payment method resource |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `490f36e` | feat(billing): add payment resource |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `9b0e553` | feat(billing): add subscription resource |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `d4b9195` | feat(billing): add plan feature resource |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `5b4e33f` | feat(billing): add plan resource |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `955b878` | feat(billing): implement billing query service |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `97495b7` | feat(billing): implement billing command service |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `c6d74f1` | feat(billing): add billing query service contract |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `71eccd9` | feat(billing): add billing command service contract |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `2417ef3` | feat(billing): add billing error types |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `3ae0d5a` | feat(billing): add subscription repository |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `90bb324` | feat(billing): add billing repository contract |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `5848140` | feat(billing): add PaymentMethod aggregate |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `60242c2` | feat(billing): add Payment aggregate |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `b62cac4` | feat(billing): add Subscription aggregate |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `c490db9` | feat(billing): add PlanFeature aggregate |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `0897131` | feat(billing): add Plan aggregate |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `ed39936` | feat(billing): add plan feature query |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `2aeaf38` | feat(billing): add billing queries |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `be90b45` | feat(billing): add plan feature command |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `8880f20` | feat(billing): add billing commands |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `91b4493` | feat(billing): add billing value objects marker |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `d4196fb` | feat(billing): add PaymentType value object |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `9ad6872` | feat(billing): add PlanType value object |  | 10/11/2026 | Juan David |
+| Startup-Chapa/backend-bicigo | `main` | `49ebaef` | feat(fleet): add fleet REST assembler |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `262e47c` | feat(fleet): add bicycle assignment assembler |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `9ce278e` | feat(fleet): add create bike point REST resource |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `7f6a4ba` | feat(fleet): add create bicycle REST resource |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `2ba6a56` | feat(fleet): add bicycle assignment REST resource |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `2758a00` | feat(fleet): add bike point REST resource |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `908bec1` | feat(fleet): add bicycle REST resource |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `bf90fb3` | feat(fleet): add bicycle assignments REST controller |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `d6eabdd` | feat(fleet): add bike points REST controller |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `60e1387` | feat(fleet): add bicycles REST controller |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `a789665` | feat(fleet): implement bike point repository |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `6b7ba93` | feat(fleet): implement bicycle repository |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `9321b5a` | feat(fleet): add fleet error definitions |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `194613f` | feat(fleet): implement fleet query service |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `686c88f` | feat(fleet): implement fleet command service |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `db421d0` | feat(fleet): add fleet query service interface |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `7109617` | feat(fleet): add fleet command service interface |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `d84b2c8` | feat(fleet): add bicycle repository interface |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `d487b8f` | feat(fleet): add bicycle assignment queries |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `ec1794e` | feat(fleet): add fleet queries |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `4e8a03d` | feat(fleet): add bicycle assignment commands |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `a38ac62` | feat(fleet): add fleet commands |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `4319e17` | feat(fleet): add BikePointStatus value object |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `9f779f4` | feat(fleet): add BicycleStatus value object |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `b4e30e1` | feat(fleet): add BicycleAssignment aggregate |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `cc029e4` | feat(fleet): add BikePoint aggregate |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `0cff6f1` | feat(fleet): add Bicycle aggregate |  | 10/11/2026 | rodrigovelasquez |
+| Startup-Chapa/backend-bicigo | `main` | `cb5332f` | feat:Some initial change |  | 30/10/2026 | TheEngineEdu |
+| Startup-Chapa/backend-bicigo | `main` | `8b9ea79` | feat:initial commit |  | 29/10/2026 | TheEngineEdu |
+
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
