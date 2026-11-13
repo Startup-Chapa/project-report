@@ -92,7 +92,7 @@ Proyecto:
 | 41 | **1.6** | 18/09/2026 | Jose Maria | 5.1.4. Software Deployment Configuration |
 | 42 | **1.7** | 19/09/2026 | Eduardo  | 5.2.1  Sprint 1 |
 | 43 | **2.0** | 06/10/2026 | Rodrigo  | 5.2.2  Sprint 2 |
-| 44 | **3.0** | 12/11/2026 | Juan David | 5.2.3  Sprint 3 y evidencias de despliegue en Azure |
+| 44 | **3.0** | 12/11/2026 | Juan David | 5.2.3  Sprint 3 y despliegue del backend en Railway |
 
 
 <div style="page-break-after: always;"></div>
@@ -270,8 +270,10 @@ En el siguiente cuadro se describen las acciones realizadas y las conclusiones d
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| *5.c.1 Trabaja en equipo para proporcionar liderazgo en forma conjunta* | **Aguirre, Eduardo**<br>**AV1:** Apoyó la planificación del trabajo y orientó al equipo en la resolución de los problemas que surgieron durante el desarrollo de los entregables.<br>**TB1:** Lideró el desarrollo del frontend del bounded context Fleet & Station Management, guiando las decisiones de implementación de sus vistas y asegurando su coherencia con el resto de la aplicación. Además, lideró la finalización de las entrevistas y la mejora del perfil demográfico, orientando al equipo en la comprensión de los usuarios.<br>**Franco, José**<br>**AV1:** Coordinó al equipo en la organización de tareas y en la revisión de avances, facilitando que los entregables avanzaran de forma ordenada.<br>**TB1:** Lideró el desarrollo del frontend del bounded context Trip Management, coordinando la implementación de sus vistas con los demás módulos. Asimismo, guio la mejora de la resolución de los diagramas de clases y de base de datos asegurando una comunicación clara del trabajo del equipo.<br>**Velasquez, Rodrigo**<br>**AV1:** Colaboró en la estructuración del contenido y orientó el análisis de la información, aportando coherencia a los documentos del proyecto.<br>**TB1:** Lideró el desarrollo del frontend del bounded context Maintenance y coordinó la elaboración del Reporte de Participación. Además, guio la corrección del apartado de Open Source por Aplicaciones Web y la reorganización del README, asegurando que el repositorio fuera claro y estuviera correctamente presentado.<br>**Ayllon, Juan**<br>**AV1:** Guio las decisiones de diseño de la landing page y la web app, la definición de las style guidelines y la arquitectura del sistema mediante EventStorming.<br>**TB1:** Lideró el desarrollo del frontend del bounded context Billing & Subscription y guio la corrección de las historias de usuario de 8 story points, descomponiéndolas para facilitar su planificación. También coordinó la finalización de la sección 4.4 Web Applications UX/UI Design, manteniendo la consistencia visual del producto.<br>**Armestar, Adrian**<br>**AV1:** Lideró la elaboración de Antecedentes y problemática, Lean UX Canvas, Segmentos objetivo, Big Picture EventStorming, Software Architecture Container Diagrams y Source Code Management, orientando las decisiones técnicas y de producto del equipo.<br>**TB1:** Lideró el desarrollo del frontend del bounded context IAM, estableciendo la base de identidad y acceso sobre la que se integran los demás módulos. Asimismo, lideró la mejora de este Student Outcome y la edición del video del proyecto, asegurando una presentación coherente del trabajo del equipo. | **AV1:** El equipo demostró liderazgo conjunto al distribuir responsabilidades según las áreas del proyecto, apoyar a sus integrantes y coordinar las decisiones importantes. Cada integrante asumió la conducción de una parte del trabajo, lo que permitió avanzar de forma estructurada.<br>**TB1:** En el TB1, el liderazgo se distribuyó por bounded context del frontend (IAM, Trip Management, Billing & Subscription, Fleet & Station Management y Maintenance), y cada integrante asumió además la conducción de un frente de corrección o documentación. Esto consolidó un avance técnico ordenado y alineado con los objetivos del producto. |
-| *5.c.2 Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos* | **Aguirre, Eduardo**<br>**AV1:** Colaboró en la descripción del equipo y en el needfinding, y cumplió con el maquetado del frontend en Figma dentro del plazo establecido para el Sprint 1.<br>**TB1:** Completó las entrevistas pendientes, mejoró el perfil demográfico, agregó la potencialidad del proyecto y completó los precios del Benchmark, además de cumplir con la implementación del módulo Fleet & Station Management dentro del plazo del TB1.<br>**Franco, José**<br>**AV1:** Participó en la planificación y revisión de avances, contribuyendo a mantener las tareas ordenadas y orientadas a los objetivos del Sprint 1.<br>**TB1:** Colaboró en el desarrollo del módulo Trip Management y cumplió con la elaboración del PPT de la exposición y la mejora de los diagramas de clases y de base de datos, apoyando la entrega final del equipo.<br>**Velasquez, Rodrigo**<br>**AV1:** Aportó a la organización del contenido y a la coordinación del trabajo grupal, favoreciendo que todos los integrantes pudieran contribuir de manera equilibrada.<br>**TB1:** Participó en el desarrollo del módulo Maintenance y cumplió con el Reporte de Participación y la reorganización del README.<br>**Ayllon, Juan**<br>**AV1:** Colaboró en la definición de tareas y en la mejora de la estructura del proyecto, contribuyendo a una planificación más clara del Sprint 1.<br>**TB1:** Colaboró en el desarrollo del módulo Billing & Subscription y cumplió con agregar la evidencia de Trello del Sprint 1, corregir los Story Points de 8 y completar la sección de las Web Applications UX/UI Design, mejorando la trazabilidad de la planificación del equipo.<br>**Armestar, Adrian**<br>**AV1:** Contribuyó a la definición de la Landing Page UI Design, los wireframes y los mockups, cumpliendo con sus entregables dentro del plazo del Sprint 1.<br>**TB1:** Colaboró en el desarrollo del módulo IAM y cumplió con la mejora del Student Outcome, contribuyendo al cumplimiento de los objetivos del TB1 dentro del plazo establecido. | **AV1:** El equipo mantuvo un ambiente colaborativo e incluso estableció metas claras, con el objetivo de planificar las tareas y revisar el progreso de forma continua. Esto permitió cumplir los objetivos y consolidar una propuesta de valor estructurada para BiciGo.<br>**TB1:** En el TB1 se combinó el desarrollo del frontend por módulos con la corrección de los entregables del AV1, manteniendo una distribución equitativa de tareas, seguimiento constante del avance y cumplimiento de los entregables dentro de los plazos definidos. |
+| *5.c.1 Trabaja en equipo para proporcionar liderazgo en forma conjunta* | **Aguirre, Eduardo**<br>**AV1:** Apoyó la planificación del trabajo y orientó al equipo en la resolución de los problemas que surgieron durante el desarrollo de los entregables.<br>**TB1:** Lideró el desarrollo del frontend del bounded context Fleet & Station Management, guiando las decisiones de implementación de sus vistas y asegurando su coherencia con el resto de la aplicación. Además, lideró la finalización de las entrevistas y la mejora del perfil demográfico, orientando al equipo en la comprensión de los usuarios.<br>**AV2:** Como Team Leader, coordinó el avance del Sprint 3 y lideró el desarrollo del backend del bounded context Maintenance (Maintenance Reports y Status Histories). Además, condujo el despliegue del backend en Railway, dejando los servicios disponibles para la integración con el frontend y la validación del equipo.<br>**Franco, José**<br>**AV1:** Coordinó al equipo en la organización de tareas y en la revisión de avances, facilitando que los entregables avanzaran de forma ordenada.<br>**TB1:** Lideró el desarrollo del frontend del bounded context Trip Management, coordinando la implementación de sus vistas con los demás módulos. Asimismo, guio la mejora de la resolución de los diagramas de clases y de base de datos asegurando una comunicación clara del trabajo del equipo.<br>**AV2:** Lideró el desarrollo del backend del bounded context Trip Management (Trips, Trip Users, Trip Route Points, Trip Photo Evidences y QR Validations), definiendo cómo este módulo se relaciona con IAM y Fleet & Station Management para soportar el flujo completo de un viaje.<br>**Velasquez, Rodrigo**<br>**AV1:** Colaboró en la estructuración del contenido y orientó el análisis de la información, aportando coherencia a los documentos del proyecto.<br>**TB1:** Lideró el desarrollo del frontend del bounded context Maintenance y coordinó la elaboración del Reporte de Participación. Además, guio la corrección del apartado de Open Source por Aplicaciones Web y la reorganización del README, asegurando que el repositorio fuera claro y estuviera correctamente presentado.<br>**AV2:** Lideró el desarrollo del backend del bounded context Fleet & Station Management (Bicycles, Bike Points y Bicycle Assignments). Asimismo, coordinó el Participant Performance Report y la sección de Mejora Continua, y guio la revisión del README para mantener la documentación alineada con el estado actual del proyecto.<br>**Ayllon, Juan**<br>**AV1:** Guio las decisiones de diseño de la landing page y la web app, la definición de las style guidelines y la arquitectura del sistema mediante EventStorming.<br>**TB1:** Lideró el desarrollo del frontend del bounded context Billing & Subscription y guio la corrección de las historias de usuario de 8 story points, descomponiéndolas para facilitar su planificación. También coordinó la finalización de la sección 4.4 Web Applications UX/UI Design, manteniendo la consistencia visual del producto.<br>**AV2:** Lideró el desarrollo del backend del bounded context Billing & Subscription (Plans, Plan Features, Payments, Payment Methods y Subscriptions) y condujo la planificación del Sprint Backlog 3 en Trello, junto con la corrección de los Story Points, orientando la organización del trabajo del sprint.<br>**Armestar, Adrian**<br>**AV1:** Lideró la elaboración de Antecedentes y problemática, Lean UX Canvas, Segmentos objetivo, Big Picture EventStorming, Software Architecture Container Diagrams y Source Code Management, orientando las decisiones técnicas y de producto del equipo.<br>**TB1:** Lideró el desarrollo del frontend del bounded context IAM, estableciendo la base de identidad y acceso sobre la que se integran los demás módulos. Asimismo, lideró la mejora de este Student Outcome y la edición del video del proyecto, asegurando una presentación coherente del trabajo del equipo.<br>**AV2:** Lideró el desarrollo del backend del bounded context IAM (Users y User Notifications), estableciendo la base de autenticación y notificaciones que consumen los demás módulos. Además, condujo la elaboración del PPT de la exposición, asegurando una presentación clara de los avances del Sprint 3. | **AV1:** El equipo demostró liderazgo conjunto al distribuir responsabilidades según las áreas del proyecto, apoyar a sus integrantes y coordinar las decisiones importantes. Cada integrante asumió la conducción de una parte del trabajo, lo que permitió avanzar de forma estructurada.<br>**TB1:** En el TB1, el liderazgo se distribuyó por bounded context del frontend (IAM, Trip Management, Billing & Subscription, Fleet & Station Management y Maintenance), y cada integrante asumió además la conducción de un frente de corrección o documentación. Esto consolidó un avance técnico ordenado y alineado con los objetivos del producto.<br>**AV2:** En el Sprint 3, el liderazgo se mantuvo distribuido por bounded context, ahora en el backend, de modo que cada integrante condujo el módulo que ya había trabajado en el frontend. A esto se sumó la conducción de frentes específicos (despliegue en Railway, Sprint Backlog en Trello, PPT, reporte de desempeño y Mejora Continua), lo que dio continuidad técnica al producto y permitió una integración coherente entre capas. |
+| *5.c.2 Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos* | **Aguirre, Eduardo**<br>**AV1:** Colaboró en la descripción del equipo y en el needfinding, y cumplió con el maquetado del frontend en Figma dentro del plazo establecido para el Sprint 1.<br>**TB1:** Completó las entrevistas pendientes, mejoró el perfil demográfico, agregó la potencialidad del proyecto y completó los precios del Benchmark, además de cumplir con la implementación del módulo Fleet & Station Management dentro del plazo del TB1.<br>**AV2:** Realizó su entrevista de validación y cumplió a tiempo con la implementación del backend de Maintenance y el despliegue en Railway, facilitando que el resto del equipo pudiera probar sus módulos sobre un entorno común.<br>**Franco, José**<br>**AV1:** Participó en la planificación y revisión de avances, contribuyendo a mantener las tareas ordenadas y orientadas a los objetivos del Sprint 1.<br>**TB1:** Colaboró en el desarrollo del módulo Trip Management y cumplió con la elaboración del PPT de la exposición y la mejora de los diagramas de clases y de base de datos, apoyando la entrega final del equipo.<br>**AV2:** Realizó su entrevista de validación y cumplió a tiempo con la implementación del backend de Trip Management, coordinando con los responsables de IAM y Fleet & Station Management las dependencias entre módulos.<br>**Velasquez, Rodrigo**<br>**AV1:** Aportó a la organización del contenido y a la coordinación del trabajo grupal, favoreciendo que todos los integrantes pudieran contribuir de manera equilibrada.<br>**TB1:** Participó en el desarrollo del módulo Maintenance y cumplió con el Reporte de Participación y la reorganización del README.<br>**AV2:** Realizó su entrevista de validación y cumplió a tiempo con el backend de Fleet & Station Management, el Participant Performance Report, la Mejora Continua y la revisión del README, dejando registrada la participación de cada integrante.<br>**Ayllon, Juan**<br>**AV1:** Colaboró en la definición de tareas y en la mejora de la estructura del proyecto, contribuyendo a una planificación más clara del Sprint 1.<br>**TB1:** Colaboró en el desarrollo del módulo Billing & Subscription y cumplió con agregar la evidencia de Trello del Sprint 1, corregir los Story Points de 8 y completar la sección de las Web Applications UX/UI Design, mejorando la trazabilidad de la planificación del equipo.<br>**AV2:** Realizó su entrevista de validación y cumplió a tiempo con el backend de Billing & Subscription, el Sprint Backlog 3 en Trello y la corrección de Story Points, manteniendo visible para todo el equipo la planificación y el avance del sprint.<br>**Armestar, Adrian**<br>**AV1:** Contribuyó a la definición de la Landing Page UI Design, los wireframes y los mockups, cumpliendo con sus entregables dentro del plazo del Sprint 1.<br>**TB1:** Colaboró en el desarrollo del módulo IAM y cumplió con la mejora del Student Outcome, contribuyendo al cumplimiento de los objetivos del TB1 dentro del plazo establecido.<br>**AV2:** Realizó su entrevista de validación y cumplió a tiempo con el backend de IAM y la elaboración del PPT, contribuyendo al cumplimiento de los objetivos del AV2 dentro del plazo establecido. | **AV1:** El equipo mantuvo un ambiente colaborativo e incluso estableció metas claras, con el objetivo de planificar las tareas y revisar el progreso de forma continua. Esto permitió cumplir los objetivos y consolidar una propuesta de valor estructurada para BiciGo.<br>**TB1:** En el TB1 se combinó el desarrollo del frontend por módulos con la corrección de los entregables del AV1, manteniendo una distribución equitativa de tareas, seguimiento constante del avance y cumplimiento de los entregables dentro de los plazos definidos.<br>**AV2:** En el Sprint 3 todos los integrantes participaron en las entrevistas de validación y asumieron un bounded context del backend junto con un entregable complementario, lo que mantuvo una carga de trabajo equilibrada. La planificación en Trello y el despliegue en un entorno compartido facilitaron el seguimiento y la integración, y todos cumplieron sus responsabilidades a tiempo según el Participant Performance Report. |
+
+</div>
 
 </div>
 
@@ -2409,6 +2411,7 @@ Maintance
 | Modelado de Dominio | Canva | Desarrollo del Event Storming utilizado para identificar eventos, procesos y elementos principales del dominio de biciGO. | [https://canva.link/7coo689oj2nx3b7](https://canva.link/7coo689oj2nx3b7) |
 | Desarrollo Web | GitHub Pages | Despliegue público de la Landing Page de biciGO. | [https://startup-chapa.github.io/Landing-Page/](https://startup-chapa.github.io/Landing-Page/) |
 | Frontend Deployment | Firebase Hosting | Plataforma utilizada para publicar la Frontend Web Application de biciGO y proporcionar acceso mediante una URL pública. | [https://firebase.google.com/](https://firebase.google.com/) |
+| Backend Deployment | Railway | Plataforma utilizada para publicar la API de biciGO con MySQL gestionado y exponer los Web Services mediante una URL pública. | [https://backend-bicigo-production.up.railway.app/scalar/v1](https://backend-bicigo-production.up.railway.app/scalar/v1) |
 | Framework frontend | Vue 3 | Construcción de las interfaces reactivas y los componentes de la aplicación web. | https://vuejs.org/ |
 | Bundler y entorno de desarrollo | Vite | Servidor local y generación de archivos optimizados de producción en `dist`. | https://vite.dev/ |
 | Estado y navegación | Pinia y Vue Router | Estado compartido, navegación entre vistas y separación de rutas por módulo. | https://pinia.vuejs.org/ |
@@ -3151,9 +3154,9 @@ El backlog organiza 21 microtareas agrupadas por Bounded Context y actividades t
 | **TS-19** | T3-18 | Cambio de estado e historial | Implementar `POST /api/v1/maintenance-reports/{bikeId}/status` y `GET`/`POST /api/v1/maintenance-status-histories` con el agregado `MaintenanceStatusHistory`. | 3 h | Aguirre Ramos, Eduardo Manuel | Done |
 | **Transversal** | T3-19 | Pruebas locales de la API | Ejecutar la API con MySQL y verificar los contratos de cada contexto desde Scalar: al menos una respuesta exitosa y un caso de error por recurso. | 3 h | Equipo | To-Review |
 | **Transversal** | T3-20 | Documentación del Sprint 3 en el informe | Redactar las secciones 5.2.3.1 a 5.2.3.8 y actualizar la tabla de repositorios de 5.1.2 con `backend-bicigo`. | 3 h | Aguirre Ramos, Eduardo Manuel | Done |
-| **TS-SH02** | T3-21 | Despliegue del backend en Azure App Service | Crear el recurso de Azure App Service (runtime .NET 10), configurar la cadena de conexión MySQL (`DefaultConnection`) y publicar la API; registrar la URL pública al finalizar la verificación. | 4 h | Equipo | In-Process |
+| **TS-SH02** | T3-21 | Despliegue del backend en Railway | Configurar el servicio `backend-bicigo` y la base MySQL gestionada en Railway (con volumen persistente), publicar la API desde GitHub mediante el Dockerfile del repositorio y registrar la URL pública verificada. | 4 h | Equipo | Done |
 
-**Criterio para el cierre.** Una Technical Story solo pasa a `Done` cuando su recurso responde en el entorno local, el contrato figura en OpenAPI y sus escenarios se pueden reproducir contra la base MySQL con los datos del seeder. La cobertura parcial de autenticación (TS-02 a TS-04) queda fuera del cierre del Sprint 3; el despliegue en Azure App Service (T3-21) se encuentra **en proceso** al momento de este registro y debe acreditar la URL pública antes de pasar a `Done`.
+**Criterio para el cierre.** Una Technical Story solo pasa a `Done` cuando su recurso responde en el entorno local, el contrato figura en OpenAPI y sus escenarios se pueden reproducir contra la base MySQL con los datos del seeder. La cobertura parcial de autenticación (TS-02 a TS-04) queda fuera del cierre del Sprint 3. El despliegue del backend previsto en TS-SH02 se materializó en la plataforma **Railway**, en lugar del Azure App Service previsto inicialmente, y acreditó la URL pública del servicio (sección 5.2.3.7), por lo que T3-21 pasa a `Done`.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -3173,144 +3176,11 @@ El desarrollo se documenta en el repositorio [`Startup-Chapa/backend-bicigo`](ht
 
 *Figura: documentación OpenAPI 3.1.1 de `backend-bicigo v1`, abierta en el entorno local `http://localhost:5267`.*
 
-**Historial de commits del backend** Esta sección debe completarse con la tabla de commits de la rama `develop` del backend (SHA, mensaje, autor y fecha) filtrada por el rango del Sprint 3 y la captura de GitHub Pulse del repositorio `backend-bicigo`, siguiendo el formato de las secciones 5.2.1.4 y 5.2.2.4.
+![Estructura del repositorio backend-bicigo](./Resources/chapter5/railway/railway-repo-estructura.jpeg)
 
-| Repositorio | Rama | Commit | Asunto | Cuerpo | Fecha | Autor |
-| --- | --- | --- | --- | --- | --- | --- |
-| Startup-Chapa/backend-bicigo | `main` | `962d3a6` | Merge pull request #8 from Startup-Chapa/develop | Develop | 12/11/2026 | Eduardo Manuel Aguirre |
-| Startup-Chapa/backend-bicigo | `main` | `64d11d8` | Merge pull request #7 from Startup-Chapa/feature/deploy | Feature/deploy | 12/11/2026 | Eduardo Manuel Aguirre |
-| Startup-Chapa/backend-bicigo | `main` | `74bdb0c` | fix: the final solution |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `8405e55` | fix: add some datails to conecto frontend |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `b19a16d` | fix:change shared configurations |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `2af0e55` | Merge pull request #6 from Startup-Chapa/feature/iam | Feature/iam | 12/11/2026 | Eduardo Manuel Aguirre |
-| Startup-Chapa/backend-bicigo | `main` | `0b10104` | Merge pull request #5 from Startup-Chapa/trips | Trips | 12/11/2026 | Eduardo Manuel Aguirre |
-| Startup-Chapa/backend-bicigo | `main` | `733b63b` | Delete Trip directory | fix: ultimate change | 12/11/2026 | Eduardo Manuel Aguirre |
-| Startup-Chapa/backend-bicigo | `main` | `f8c913b` | fix: repair internal error |  | 12/11/2026 | Rodrigov233 |
-| Startup-Chapa/backend-bicigo | `main` | `8cede9c` | Merge pull request #4 from Startup-Chapa/feature/billing | Feature/billing | 12/11/2026 | Eduardo Manuel Aguirre |
-| Startup-Chapa/backend-bicigo | `main` | `554e2f3` | Merge pull request #3 from Startup-Chapa/fleet | Fleet | 12/11/2026 | Eduardo Manuel Aguirre |
-| Startup-Chapa/backend-bicigo | `main` | `e3c51c8` | Merge pull request #2 from Startup-Chapa/feature/maintenance | Feature/maintenance | 12/11/2026 | Eduardo Manuel Aguirre |
-| Startup-Chapa/backend-bicigo | `main` | `5e517c0` | feat: add maintenance controller to maintenance interfaces |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `1e3612a` | feat: add assemblers of maintenance to transform file |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `73ffa11` | feat:add maintenanceStatusHistory to Maintenance REST resource |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `295a2de` | feat: add maintenancereport as a resource to interfaces maintenance |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `282b37e` | feat: add the creation of resource maintenace report to interfaces maintenance |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `ad7ef3f` | feat: add services to application maintenance |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `3e017da` | feat: add queryservices to internal maintenance |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `cbd56e3` | feat:add commandservice to maintenance |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `3380c1f` | feat: add value of error to application of maintenance |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `2d340b1` | feat: add infrastructure file to maintenance |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `78e1cb3` | feat: add maintenance repository to doamin |  | 12/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `74ce38b` | feat:add maintenance status history query to queries in aggregates |  | 11/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `db3c9d8` | feat: add maintenancestatushistory to aggregates in maintenance |  | 11/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `60ed8f9` | feat: add maintenaceReport to aggregates |  | 11/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `e6e49a9` | feat: maintenancequeries ad to maintenance BC |  | 11/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `2a78d35` | feat: add maintenanceStatus to maintenance domain |  | 11/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `4ab5753` | feat: add MaintenanceCommands to maintenance domain |  | 11/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `0f13a3f` | feat:valueObject of maintenance bicigo |  | 11/11/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `662294f` | feat(trip): implement REST endpoints and documentation |  | 11/11/2026 | VoltTrd |
-| Startup-Chapa/backend-bicigo | `main` | `5da05b4` | feat(trip): implement persistence repositories |  | 11/11/2026 | VoltTrd |
-| Startup-Chapa/backend-bicigo | `main` | `d7741b3` | feat(trip): implement application services |  | 11/11/2026 | VoltTrd |
-| Startup-Chapa/backend-bicigo | `main` | `b279bea` | feat(trip): implement domain model |  | 11/11/2026 | VoltTrd |
-| Startup-Chapa/backend-bicigo | `main` | `d1debac` | feat(iam): add action result from create user result assembler |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `6368c7a` | feat(iam): add create user command from resource assembler |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `2ba6428` | feat(iam): add user resource from entity assembler |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `f5b7336` | feat(iam): add user notification assembler |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `7ef8562` | feat(iam): add user resource |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `df610c4` | feat(iam): add user notification resource |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `9fd5430` | feat(iam): add update user resource |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `ab6c7cc` | feat(iam): add create user resource |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `3562530` | feat(iam): add user notification controller |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `41c9ee1` | feat(iam): add users controller |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `a42aa44` | feat(iam): add user query service |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `e913b2f` | feat(iam): add interface user query service |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `21503e3` | feat(iam): add user command service |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `e6996d3` | feat(iam): add interface user command service |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `c5d4167` | feat(iam): add cr├®ate user errors |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `27c7104` | feat(iam): add user repository |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `cedba6c` | feat(iam): add interface user repository |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `de5e72e` | feat(iam): add plan key value object |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `0e235dd` | feat(iam): add email value object |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `ac2d8b8` | feat(iam): add user queries |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `ffad930` | feat(iam): add user notification queries |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `a4e627d` | feat(iam): add user notification commands |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `c5061da` | feat(iam): add update user command |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `f51ae45` | feat(iam): add register user command |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `22a4ecf` | feat(iam): add user notification aggregate |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `0b25022` | feat(iam): add user aggregate |  | 11/11/2026 | Adrian5102 |
-| Startup-Chapa/backend-bicigo | `main` | `e8c7b60` | feat(http): add billing api requests |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `a5905d9` | feat(config): add development database connection string |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `c4e5d31` | feat(config): add database connection string |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `f023dbd` | feat(api): register billing services and controllers |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `2576c8a` | feat(shared): add billing seed data |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `51807af` | feat(shared): configure billing entities in AppDbContext |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `5437fe8` | feat(shared): add auditable entity interceptor |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `9e3c085` | feat(shared): add persistence string extensions |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `50b96e6` | feat(shared): align Result pattern namespace with backend_bicigo |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `37813ab` | feat(billing): add payment methods controller |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `8db480a` | feat(billing): add payments controller |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `e498cad` | feat(billing): add subscriptions controller |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `e005ee9` | feat(billing): add plan features controller |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `c6d00da` | feat(billing): add plans controller |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `701a0a5` | feat(billing): add plan feature assembler |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `46dea16` | feat(billing): add billing resource assembler |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `921ab26` | feat(billing): add billing commands assembler |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `258f5d4` | feat(billing): add create payment method resource |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `9e73416` | feat(billing): add create payment resource |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `3370edd` | feat(billing): add create subscription resource |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `6c70348` | feat(billing): add payment method resource |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `490f36e` | feat(billing): add payment resource |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `9b0e553` | feat(billing): add subscription resource |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `d4b9195` | feat(billing): add plan feature resource |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `5b4e33f` | feat(billing): add plan resource |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `955b878` | feat(billing): implement billing query service |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `97495b7` | feat(billing): implement billing command service |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `c6d74f1` | feat(billing): add billing query service contract |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `71eccd9` | feat(billing): add billing command service contract |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `2417ef3` | feat(billing): add billing error types |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `3ae0d5a` | feat(billing): add subscription repository |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `90bb324` | feat(billing): add billing repository contract |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `5848140` | feat(billing): add PaymentMethod aggregate |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `60242c2` | feat(billing): add Payment aggregate |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `b62cac4` | feat(billing): add Subscription aggregate |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `c490db9` | feat(billing): add PlanFeature aggregate |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `0897131` | feat(billing): add Plan aggregate |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `ed39936` | feat(billing): add plan feature query |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `2aeaf38` | feat(billing): add billing queries |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `be90b45` | feat(billing): add plan feature command |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `8880f20` | feat(billing): add billing commands |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `91b4493` | feat(billing): add billing value objects marker |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `d4196fb` | feat(billing): add PaymentType value object |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `9ad6872` | feat(billing): add PlanType value object |  | 10/11/2026 | Juan David |
-| Startup-Chapa/backend-bicigo | `main` | `49ebaef` | feat(fleet): add fleet REST assembler |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `262e47c` | feat(fleet): add bicycle assignment assembler |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `9ce278e` | feat(fleet): add create bike point REST resource |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `7f6a4ba` | feat(fleet): add create bicycle REST resource |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `2ba6a56` | feat(fleet): add bicycle assignment REST resource |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `2758a00` | feat(fleet): add bike point REST resource |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `908bec1` | feat(fleet): add bicycle REST resource |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `bf90fb3` | feat(fleet): add bicycle assignments REST controller |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `d6eabdd` | feat(fleet): add bike points REST controller |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `60e1387` | feat(fleet): add bicycles REST controller |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `a789665` | feat(fleet): implement bike point repository |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `6b7ba93` | feat(fleet): implement bicycle repository |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `9321b5a` | feat(fleet): add fleet error definitions |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `194613f` | feat(fleet): implement fleet query service |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `686c88f` | feat(fleet): implement fleet command service |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `db421d0` | feat(fleet): add fleet query service interface |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `7109617` | feat(fleet): add fleet command service interface |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `d84b2c8` | feat(fleet): add bicycle repository interface |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `d487b8f` | feat(fleet): add bicycle assignment queries |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `ec1794e` | feat(fleet): add fleet queries |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `4e8a03d` | feat(fleet): add bicycle assignment commands |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `a38ac62` | feat(fleet): add fleet commands |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `4319e17` | feat(fleet): add BikePointStatus value object |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `9f779f4` | feat(fleet): add BicycleStatus value object |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `b4e30e1` | feat(fleet): add BicycleAssignment aggregate |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `cc029e4` | feat(fleet): add BikePoint aggregate |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `0cff6f1` | feat(fleet): add Bicycle aggregate |  | 10/11/2026 | rodrigovelasquez |
-| Startup-Chapa/backend-bicigo | `main` | `cb5332f` | feat:Some initial change |  | 30/10/2026 | TheEngineEdu |
-| Startup-Chapa/backend-bicigo | `main` | `8b9ea79` | feat:initial commit |  | 29/10/2026 | TheEngineEdu |
+*Figura: estructura de la rama `main` del repositorio `backend-bicigo`, con los Bounded Contexts (Billing, Fleet, Iam, Maintenance, Shared y Trip), el `Dockerfile` utilizado por Railway y los archivos de configuración por entorno.*
 
+**Historial de commits del backend — PENDIENTE DE ADJUNTAR.** Esta sección debe completarse con la tabla de commits de la rama `develop` del backend (SHA, mensaje, autor y fecha) filtrada por el rango del Sprint 3 y la captura de GitHub Pulse del repositorio `backend-bicigo`, siguiendo el formato de las secciones 5.2.1.4 y 5.2.2.4.
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -3369,59 +3239,59 @@ La documentación se expone como **OpenAPI 3.1.1** (`backend-bicigo v1`) y se ex
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-El backend del Sprint 3 se **ejecuta localmente** con MySQL y se encuentra **en proceso de despliegue en Azure** (tarea T3-21). La evidencia disponible (documentación OpenAPI/Scalar en `localhost:5267`) acredita la ejecución local; la URL pública de Azure se registrará al finalizar la verificación. No debe confundirse con la publicación del frontend en Firebase Hosting documentada para el Sprint 2.
+El backend del Sprint 3 se **ejecuta localmente** con MySQL y se encuentra **desplegado en producción en Railway** (tarea T3-21, `Done`). La evidencia comprende tres niveles: la ejecución local con documentación OpenAPI/Scalar en `localhost:5267`, el aprovisionamiento inicial de una base de datos MySQL en Azure como parte del plan de despliegue, y el despliegue productivo del servicio en Railway con su propio MySQL gestionado. No debe confundirse con la publicación del frontend en Firebase Hosting documentada para el Sprint 2.
 
-**Aprovisionamiento de la base de datos MySQL en Azure (12/11/2026)**
 
-Como parte del despliegue, el equipo aprovisionó en Azure la base de datos MySQL que utilizará el backend, mediante el servicio **Azure Database for MySQL Flexible Server**. Los pasos realizados y su evidencia son los siguientes:
+**Despliegue productivo del backend en Railway (T3-21 — `Done`)**
 
-1. Se creó el servidor `new-backend-bicigo` en el grupo de recursos `backend-project`, en la región **Chile Central**, con MySQL **8.4**, carga de trabajo *Dev/Test* y configuración *Burstable B1ms* (1 vCore, 2 GiB RAM, 20 GiB de almacenamiento).
+La plataforma final de despliegue fue **Railway**, donde la API quedó publicada y accesible públicamente con su documentación en:
 
-![Creación del servidor MySQL Flexible Server en Azure](./Resources/chapter5/azure/azure-mysql-basics.jpeg)
+[https://backend-bicigo-production.up.railway.app/scalar/v1](https://backend-bicigo-production.up.railway.app/scalar/v1)
 
-*Figura: configuración básica del servidor `new-backend-bicigo` (región Chile Central, MySQL 8.4, Burstable B1ms).*
+El procedimiento realizado fue el siguiente:
 
-2. Se configuró la autenticación exclusiva de **MySQL** con el usuario administrador `backendroot`.
+1. Se creó el proyecto en Railway con dos servicios: `backend-bicigo` (API .NET 10) y **MySQL gestionado** con volumen persistente (`mysql-volume`).
 
-![Configuración de autenticación del servidor MySQL](./Resources/chapter5/azure/azure-mysql-auth.jpeg)
+![Proyecto en Railway con el servicio backend-bicigo y MySQL](./Resources/chapter5/railway/railway-project-mysql-tablas.jpeg)
 
-*Figura: método de autenticación "MySQL authentication only" y administrador del servidor.*
+*Figura: proyecto en Railway (entorno production) con los servicios MySQL y backend-bicigo en estado Online, y las tablas de la base de datos.*
 
-3. En la pestaña *Networking* se habilitó el **acceso público** con direcciones IP permitidas, el puerto **3306** y el acceso desde servicios de Azure.
+2. Se configuró la red del servicio: dominio público `backend-bicigo-production.up.railway.app` (puerto 8080) y red privada `backend-bicigo.railway.internal`.
 
-![Configuración de red del servidor MySQL](./Resources/chapter5/azure/azure-mysql-networking.jpeg)
+![Configuración de red pública del servicio backend-bicigo](./Resources/chapter5/railway/railway-dominio-publico.jpeg)
 
-*Figura: conectividad pública del servidor MySQL Flexible Server y puerto 3306.*
+*Figura: dominio público y networking del servicio backend-bicigo en Railway.*
 
-4. Se agregó la regla de firewall necesaria para las conexiones del equipo durante la verificación inicial.
+3. Se conectó el repositorio `backend-bicigo` para el despliegue automático desde GitHub mediante el `Dockerfile` del proyecto. Un primer intento de despliegue falló en los checks de Railway y se corrigió con el commit `fix:add final` sobre la rama `main`.
 
-![Regla de firewall del servidor MySQL](./Resources/chapter5/azure/azure-mysql-firewall.jpeg)
+![Primer intento de despliegue con error de checks](./Resources/chapter5/railway/railway-repo-primer-intento.jpeg)
 
-*Figura: regla de firewall configurada para la verificación de conexiones.*
+*Figura: commit `fix:add final` en la rama `main` del repositorio durante el proceso de despliegue, con el resultado fallido del primer intento.*
 
-5. El servidor quedó aprovisionado el **12/11/2026 (16:14 UTC)** con el endpoint `new-backend-bicigo.mysql.database.azure.com`. Tras la verificación inicial, el servidor se detuvo (*Stop*) para controlar los costos del nivel *Dev/Test*; puede reiniciarse al completar el despliegue del App Service.
+4. El despliegue finalizó correctamente: el deployment quedó **Active** con el estado *Deployment successful*.
 
-![Servidor MySQL creado en Azure](./Resources/chapter5/azure/azure-mysql-overview.jpeg)
+![Despliegue exitoso del backend en Railway](./Resources/chapter5/railway/railway-deployment-exitoso.jpeg)
 
-*Figura: vista general del servidor `new-backend-bicigo` con su endpoint y la acción de detención.*
+*Figura: deployment Active del servicio backend-bicigo en Railway tras el commit `fix:add final`.*
 
-**Despliegue del backend en Azure App Service (en curso — T3-21)**
+5. Al inicializar la API, se crearon las **17 tablas** del modelo de datos (users, user_notifications, trips, trip_users, trip_route_points, trip_photo_evidences, qr_validations, plans, plan_features, payments, payment_methods, subscriptions, bicycles, bike_points, bicycle_assignments, maintenance_reports y maintenance_status_histories) junto con los datos del seeder.
 
-1. Crear el recurso de **Azure App Service** (runtime .NET 10) y su grupo de recursos.
-2. Configurar la cadena de conexión MySQL (`DefaultConnection`) apuntando al servidor `new-backend-bicigo.mysql.database.azure.com` en *Settings > Environment variables*.
-3. Publicar la API desde el repositorio (`az webapp up` o GitHub Actions).
-4. Reiniciar el servidor MySQL, verificar HTTPS, la documentación OpenAPI/Scalar y los contratos de cada contexto contra la base MySQL.
-5. Registrar la URL pública en la tabla de productos al finalizar la verificación.
+![Base de datos MySQL creada en Railway](./Resources/chapter5/railway/railway-mysql-tablas.jpeg)
+
+*Figura: tablas de la base MySQL gestionada en Railway, creadas por la API al inicializar.*
+
+6. Se verificó el acceso público a la documentación Scalar y a los contratos de cada contexto en la URL registrada.
 
 | Producto | Plataforma | URL o acceso | Estado de evidencia |
 |---|---|---|---|
-| Backend API (Sprint 3) | Ejecución local .NET 10 + MySQL | `http://localhost:5267` | Ejecutado localmente; despliegue público pendiente |
-| Documentación OpenAPI | Scalar (local) | `http://localhost:5267` | Captura incluida en 5.2.3.4 |
-| Base de datos en Azure | Azure Database for MySQL Flexible Server | `new-backend-bicigo.mysql.database.azure.com` | Aprovisionada el 12/11/2026 (Chile Central); servidor detenido para control de costos |
+| Backend API (Sprint 3) | Railway (producción) | https://backend-bicigo-production.up.railway.app | Desplegado; deployment Active |
+| Documentación OpenAPI (producción) | Scalar en Railway | https://backend-bicigo-production.up.railway.app/scalar/v1 | URL pública verificada |
+| Documentación OpenAPI (local) | Scalar (local) | `http://localhost:5267` | Captura incluida en 5.2.3.4 |
+| Base de datos MySQL en Railway | MySQL gestionado + volumen en Railway | Red privada `backend-bicigo.railway.internal` | 17 tablas creadas al inicializar la API |
+| Base de datos MySQL en Azure | Azure Database for MySQL Flexible Server | `new-backend-bicigo.mysql.database.azure.com` | Aprovisionada el 12/11/2026 como parte del plan; servidor detenido para control de costos |
 | Frontend Web Application | Firebase Hosting | https://example-pro-d6e84.web.app | Publicación documentada en Sprint 2 |
-| Backend en Azure App Service | Azure (T3-21, en proceso) | URL por confirmar | En curso; la base de datos ya se encuentra aprovisionada |
 
-**Pendiente de despliegue.** Al finalizar T3-21 se debe registrar la URL pública de Azure App Service y la evidencia del despliegue (capturas del portal o del pipeline). La base de datos MySQL en Azure ya se encuentra aprovisionada; para completar el despliegue, el servidor debe reiniciarse y el App Service debe configurar la cadena de conexión. También corresponde actualizar la configuración de despliegue de la sección 5.1.4.
+**URL pública registrada.** Con el despliegue en Railway, la tarea T3-21 se cierra con la URL pública del backend y su documentación verificadas. El servidor MySQL de Azure permanece detenido como aprovisionamiento preparatorio y puede eliminarse o reiniciarse si el equipo decide migrar la persistencia productiva a Azure.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -3438,8 +3308,25 @@ El trabajo se distribuyó por Bounded Contexts según la matriz de 5.2.3.2, con 
 **Evidencia de contribución — PENDIENTE DE ADJUNTAR.** Al cierre se debe incorporar la captura de GitHub Pulse y la tabla de commits del repositorio `backend-bicigo` (autor, rama, SHA, fecha y Technical Story asociada) filtradas por el rango real del Sprint 3, sin atribuir aportes sin evidencia.
 
 ## 5.3. Validation Interviews.
+
 ### 5.3.1. Diseño de Entrevistas.
 
+# Preguntas de entrevistas de validacion
+Para recordar ¿Cómo te movilizas normalmente para ir a estudiar, trabajar o reunirte con tus amigos? ¿Sueles utilizar bicicleta?
+
+¿Qué dificultades encuentras cuando necesitas conseguir una bicicleta, especialmente cuando tienes prisa o es tarde?
+
+Después de conocer BiciGo, ¿qué fue lo primero que te llamó la atención de la aplicación? ¿Qué entendiste que podías hacer con ella?
+
+Qué te pareció el proceso de ingresar tu punto de partida y tu destino para solicitar una bicicleta?
+
+¿Te parece útil conocer la tarifa estimada antes de confirmar el viaje? 
+
+¿Qué tan seguro te sentirías solicitando una bicicleta mediante esta aplicación, en comparación con tomar uno directamente en la calle? ¿Por qué?
+
+¿Utilizarías BiciGo para tus desplazamientos cotidianos? ¿En qué situaciones te resultaría más útil y qué podría impedirte usarla?
+
+Si pudieras cambiar o agregar una sola cosa a la aplicación para que fuera más útil para los jóvenes, ¿qué sería?
 ### 5.3.2. Registro de Entrevistas.
 
 #### Entrevista 1
@@ -3455,6 +3342,20 @@ El trabajo se distribuyó por Bounded Contexts según la matriz de 5.2.3.2, con 
 ![Imagen 2. Evidencia de la entrevista de validación de BiciGO](./Resources/chapter5/entrevista-validacion.png)
 
 *Resumen de apreciaciones:* El entrevistado consideró que la propuesta y la aplicación se entienden y valoró positivamente la facilidad para ubicar una unidad, iniciar y seguir un recorrido, así como conocer la tarifa estimada antes de confirmar. Como oportunidad de mejora para la Landing Page, señaló que algunos espacios se perciben desaprovechados y que la separación entre el contenido y las imágenes afecta el atractivo visual. Indicó que usaría el servicio sobre todo para trayectos cortos y destacó como posibles barreras la falta de conexión a Internet, la disponibilidad de unidades y las opciones de pago; además, propuso compartir el viaje en tiempo real y permitir dividir la tarifa. La transcripción también incluye referencias a mototaxis, conductores y placas, por lo que esas opiniones de seguridad no se consideran una validación directa del flujo de alquiler de bicicletas de BiciGO. La edad y el distrito del entrevistado no aparecen en la transcripción disponible.
+
+#### Entrevista 2
+
+| Campo | Detalle |
+|---|---|
+| Entrevistado | Mauricio |
+| Segmento | Usuario de movilidad urbana que realiza trayectos cotidianos y recorridos cortos |
+| Entrevistador | Adrian Armestar |
+| Video | [Ver entrevista en Youtube](https://www.youtube.com/watch?v=KC9VsKTfLH0) |
+| Tiempo | 00:00–06:18 (6 min 18 s) |
+
+![Imagen 2. Evidencia de la entrevista de validación de BiciGO](./Resources/chapter5/entrevista-validacion2.png)
+
+*Resumen de apreciaciones:* El entrevistado consideró que el proceso de ingresar el punto de partida y el destino en la aplicación BiciGO es sencillo y rápido, destacando que no genera distracciones innecesarias. Asimismo, valoro positivamente conocer la tarifa estimada antes de confirmar el viaje, ya que esta brinda transparencia y permite que cada usuario decida según su situación económica. Del mismo modo, señaló que utilizaría el servicio tanto para trasladarse a estudiar como para otros desplazamientos cotidianos, destacando la ventaja de las ciclovías frente al tráfico constante de Lima y el mayor control sobre sus tiempos de traslado en comparación con el transporte público. Como oportunidad de mejora, propuso incorporar puntos de interés en el mapa y durante los recorridos, como restaurantes, parques y tiendas, para enriquecer la experiencia e incentivar nuevos recorridos de manera que fomente el uso frecuente de la aplicación.
 
 ### 5.3.3. Evaluaciones según heurísticas.
  
@@ -3740,6 +3641,14 @@ El header de la Web Application incluye un buscador con el placeholder genérico
 Usar un placeholder descriptivo del ámbito de búsqueda (por ejemplo, "Buscar estaciones, bicicletas o viajes...") y mostrar sugerencias o categorías de resultados al escribir.
 ## 5.4. Video About-the-Product.
 
+El video de presentación del producto biciGO resume la propuesta de valor, los principales flujos de la aplicación web y el estado de la implementación alcanzado durante los Sprints del proyecto.
+
+- **Enlace:** [https://youtu.be/V5GNY8Vs4wA](https://youtu.be/V5GNY8Vs4wA)
+
+![Portada del video About-the-Product de biciGO](./Resources/chapter5/about-the-product.png)
+
+*Figura: portada del video About-the-Product de biciGO.*
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
@@ -3780,3 +3689,6 @@ Ortega, R., Chavez, H. & Borja, M. (2026). Una ciudad desigual: ¿cómo afecta e
 
 # Anexos
 En esta sección se presentan los enlaces a los recursos de diseño, presentaciones de equipo y entornos desplegados para el proyecto:
+
+Video About the Team: https://youtu.be/-nA2OtuzVRQ
+**Enlace:** [https://youtu.be/-nA2OtuzVRQ](https://youtu.be/-nA2OtuzVRQ)

@@ -13,6 +13,7 @@
 | Modelado de Dominio | Canva | Desarrollo del Event Storming utilizado para identificar eventos, procesos y elementos principales del dominio de biciGO. | [https://canva.link/7coo689oj2nx3b7](https://canva.link/7coo689oj2nx3b7) |
 | Desarrollo Web | GitHub Pages | Despliegue público de la Landing Page de biciGO. | [https://startup-chapa.github.io/Landing-Page/](https://startup-chapa.github.io/Landing-Page/) |
 | Frontend Deployment | Firebase Hosting | Plataforma utilizada para publicar la Frontend Web Application de biciGO y proporcionar acceso mediante una URL pública. | [https://firebase.google.com/](https://firebase.google.com/) |
+| Backend Deployment | Railway | Plataforma utilizada para publicar la API de biciGO con MySQL gestionado y exponer los Web Services mediante una URL pública. | [https://backend-bicigo-production.up.railway.app/scalar/v1](https://backend-bicigo-production.up.railway.app/scalar/v1) |
 | Framework frontend | Vue 3 | Construcción de las interfaces reactivas y los componentes de la aplicación web. | https://vuejs.org/ |
 | Bundler y entorno de desarrollo | Vite | Servidor local y generación de archivos optimizados de producción en `dist`. | https://vite.dev/ |
 | Estado y navegación | Pinia y Vue Router | Estado compartido, navegación entre vistas y separación de rutas por módulo. | https://pinia.vuejs.org/ |
@@ -755,9 +756,9 @@ El backlog organiza 21 microtareas agrupadas por Bounded Context y actividades t
 | **TS-19** | T3-18 | Cambio de estado e historial | Implementar `POST /api/v1/maintenance-reports/{bikeId}/status` y `GET`/`POST /api/v1/maintenance-status-histories` con el agregado `MaintenanceStatusHistory`. | 3 h | Aguirre Ramos, Eduardo Manuel | Done |
 | **Transversal** | T3-19 | Pruebas locales de la API | Ejecutar la API con MySQL y verificar los contratos de cada contexto desde Scalar: al menos una respuesta exitosa y un caso de error por recurso. | 3 h | Equipo | To-Review |
 | **Transversal** | T3-20 | Documentación del Sprint 3 en el informe | Redactar las secciones 5.2.3.1 a 5.2.3.8 y actualizar la tabla de repositorios de 5.1.2 con `backend-bicigo`. | 3 h | Aguirre Ramos, Eduardo Manuel | Done |
-| **TS-SH02** | T3-21 | Despliegue del backend en Azure App Service | Crear el recurso de Azure App Service (runtime .NET 10), configurar la cadena de conexión MySQL (`DefaultConnection`) y publicar la API; registrar la URL pública al finalizar la verificación. | 4 h | Equipo | In-Process |
+| **TS-SH02** | T3-21 | Despliegue del backend en Railway | Configurar el servicio `backend-bicigo` y la base MySQL gestionada en Railway (con volumen persistente), publicar la API desde GitHub mediante el Dockerfile del repositorio y registrar la URL pública verificada. | 4 h | Equipo | Done |
 
-**Criterio para el cierre.** Una Technical Story solo pasa a `Done` cuando su recurso responde en el entorno local, el contrato figura en OpenAPI y sus escenarios se pueden reproducir contra la base MySQL con los datos del seeder. La cobertura parcial de autenticación (TS-02 a TS-04) queda fuera del cierre del Sprint 3; el despliegue en Azure App Service (T3-21) se encuentra **en proceso** al momento de este registro y debe acreditar la URL pública antes de pasar a `Done`.
+**Criterio para el cierre.** Una Technical Story solo pasa a `Done` cuando su recurso responde en el entorno local, el contrato figura en OpenAPI y sus escenarios se pueden reproducir contra la base MySQL con los datos del seeder. La cobertura parcial de autenticación (TS-02 a TS-04) queda fuera del cierre del Sprint 3. El despliegue del backend previsto en TS-SH02 se materializó en la plataforma **Railway**, en lugar del Azure App Service previsto inicialmente, y acreditó la URL pública del servicio (sección 5.2.3.7), por lo que T3-21 pasa a `Done`.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -776,6 +777,10 @@ El desarrollo se documenta en el repositorio [`Startup-Chapa/backend-bicigo`](ht
 ![Documentación Swagger del backend biciGO](./Resources/chapter5/backend-swagger-sprint3.png)
 
 *Figura: documentación OpenAPI 3.1.1 de `backend-bicigo v1`, abierta en el entorno local `http://localhost:5267`.*
+
+![Estructura del repositorio backend-bicigo](./Resources/chapter5/railway/railway-repo-estructura.jpeg)
+
+*Figura: estructura de la rama `main` del repositorio `backend-bicigo`, con los Bounded Contexts (Billing, Fleet, Iam, Maintenance, Shared y Trip), el `Dockerfile` utilizado por Railway y los archivos de configuración por entorno.*
 
 **Historial de commits del backend — PENDIENTE DE ADJUNTAR.** Esta sección debe completarse con la tabla de commits de la rama `develop` del backend (SHA, mensaje, autor y fecha) filtrada por el rango del Sprint 3 y la captura de GitHub Pulse del repositorio `backend-bicigo`, siguiendo el formato de las secciones 5.2.1.4 y 5.2.2.4.
 
@@ -836,11 +841,11 @@ La documentación se expone como **OpenAPI 3.1.1** (`backend-bicigo v1`) y se ex
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-El backend del Sprint 3 se **ejecuta localmente** con MySQL y se encuentra **en proceso de despliegue en Azure** (tarea T3-21). La evidencia disponible (documentación OpenAPI/Scalar en `localhost:5267`) acredita la ejecución local; la URL pública de Azure se registrará al finalizar la verificación. No debe confundirse con la publicación del frontend en Firebase Hosting documentada para el Sprint 2.
+El backend del Sprint 3 se **ejecuta localmente** con MySQL y se encuentra **desplegado en producción en Railway** (tarea T3-21, `Done`). La evidencia comprende tres niveles: la ejecución local con documentación OpenAPI/Scalar en `localhost:5267`, el aprovisionamiento inicial de una base de datos MySQL en Azure como parte del plan de despliegue, y el despliegue productivo del servicio en Railway con su propio MySQL gestionado. No debe confundirse con la publicación del frontend en Firebase Hosting documentada para el Sprint 2.
 
-**Aprovisionamiento de la base de datos MySQL en Azure (12/11/2026)**
+**Aprovisionamiento inicial de la base de datos MySQL en Azure (12/11/2026)**
 
-Como parte del despliegue, el equipo aprovisionó en Azure la base de datos MySQL que utilizará el backend, mediante el servicio **Azure Database for MySQL Flexible Server**. Los pasos realizados y su evidencia son los siguientes:
+Como parte del plan de despliegue, el equipo aprovisionó en Azure una base de datos MySQL para el backend, mediante el servicio **Azure Database for MySQL Flexible Server**. Este aprovisionamiento fue preparatorio: el despliegue productivo finalmente se materializó en Railway con la base MySQL gestionada de esa plataforma (se describe más abajo), por lo que el servidor de Azure se mantuvo detenido para controlar los costos. Los pasos realizados y su evidencia son los siguientes:
 
 1. Se creó el servidor `new-backend-bicigo` en el grupo de recursos `backend-project`, en la región **Chile Central**, con MySQL **8.4**, carga de trabajo *Dev/Test* y configuración *Burstable B1ms* (1 vCore, 2 GiB RAM, 20 GiB de almacenamiento).
 
@@ -866,29 +871,62 @@ Como parte del despliegue, el equipo aprovisionó en Azure la base de datos MySQ
 
 *Figura: regla de firewall configurada para la verificación de conexiones.*
 
-5. El servidor quedó aprovisionado el **12/11/2026 (16:14 UTC)** con el endpoint `new-backend-bicigo.mysql.database.azure.com`. Tras la verificación inicial, el servidor se detuvo (*Stop*) para controlar los costos del nivel *Dev/Test*; puede reiniciarse al completar el despliegue del App Service.
+5. El servidor quedó aprovisionado el **12/11/2026 (16:14 UTC)** con el endpoint `new-backend-bicigo.mysql.database.azure.com`. Tras la verificación inicial, el servidor se detuvo (*Stop*) para controlar los costos del nivel *Dev/Test*; puede reiniciarse o eliminarse si el equipo decide migrar la persistencia productiva a Azure.
 
 ![Servidor MySQL creado en Azure](./Resources/chapter5/azure/azure-mysql-overview.jpeg)
 
 *Figura: vista general del servidor `new-backend-bicigo` con su endpoint y la acción de detención.*
 
-**Despliegue del backend en Azure App Service (en curso — T3-21)**
+**Despliegue productivo del backend en Railway (T3-21 — `Done`)**
 
-1. Crear el recurso de **Azure App Service** (runtime .NET 10) y su grupo de recursos.
-2. Configurar la cadena de conexión MySQL (`DefaultConnection`) apuntando al servidor `new-backend-bicigo.mysql.database.azure.com` en *Settings > Environment variables*.
-3. Publicar la API desde el repositorio (`az webapp up` o GitHub Actions).
-4. Reiniciar el servidor MySQL, verificar HTTPS, la documentación OpenAPI/Scalar y los contratos de cada contexto contra la base MySQL.
-5. Registrar la URL pública en la tabla de productos al finalizar la verificación.
+La plataforma final de despliegue fue **Railway**, donde la API quedó publicada y accesible públicamente con su documentación en:
+
+[https://backend-bicigo-production.up.railway.app/scalar/v1](https://backend-bicigo-production.up.railway.app/scalar/v1)
+
+El procedimiento realizado fue el siguiente:
+
+1. Se creó el proyecto en Railway con dos servicios: `backend-bicigo` (API .NET 10) y **MySQL gestionado** con volumen persistente (`mysql-volume`).
+
+![Proyecto en Railway con el servicio backend-bicigo y MySQL](./Resources/chapter5/railway/railway-project-mysql-tablas.jpeg)
+
+*Figura: proyecto en Railway (entorno production) con los servicios MySQL y backend-bicigo en estado Online, y las tablas de la base de datos.*
+
+2. Se configuró la red del servicio: dominio público `backend-bicigo-production.up.railway.app` (puerto 8080) y red privada `backend-bicigo.railway.internal`.
+
+![Configuración de red pública del servicio backend-bicigo](./Resources/chapter5/railway/railway-dominio-publico.jpeg)
+
+*Figura: dominio público y networking del servicio backend-bicigo en Railway.*
+
+3. Se conectó el repositorio `backend-bicigo` para el despliegue automático desde GitHub mediante el `Dockerfile` del proyecto. Un primer intento de despliegue falló en los checks de Railway y se corrigió con el commit `fix:add final` sobre la rama `main`.
+
+![Primer intento de despliegue con error de checks](./Resources/chapter5/railway/railway-repo-primer-intento.jpeg)
+
+*Figura: commit `fix:add final` en la rama `main` del repositorio durante el proceso de despliegue, con el resultado fallido del primer intento.*
+
+4. El despliegue finalizó correctamente: el deployment quedó **Active** con el estado *Deployment successful*.
+
+![Despliegue exitoso del backend en Railway](./Resources/chapter5/railway/railway-deployment-exitoso.jpeg)
+
+*Figura: deployment Active del servicio backend-bicigo en Railway tras el commit `fix:add final`.*
+
+5. Al inicializar la API, se crearon las **17 tablas** del modelo de datos (users, user_notifications, trips, trip_users, trip_route_points, trip_photo_evidences, qr_validations, plans, plan_features, payments, payment_methods, subscriptions, bicycles, bike_points, bicycle_assignments, maintenance_reports y maintenance_status_histories) junto con los datos del seeder.
+
+![Base de datos MySQL creada en Railway](./Resources/chapter5/railway/railway-mysql-tablas.jpeg)
+
+*Figura: tablas de la base MySQL gestionada en Railway, creadas por la API al inicializar.*
+
+6. Se verificó el acceso público a la documentación Scalar y a los contratos de cada contexto en la URL registrada.
 
 | Producto | Plataforma | URL o acceso | Estado de evidencia |
 |---|---|---|---|
-| Backend API (Sprint 3) | Ejecución local .NET 10 + MySQL | `http://localhost:5267` | Ejecutado localmente; despliegue público pendiente |
-| Documentación OpenAPI | Scalar (local) | `http://localhost:5267` | Captura incluida en 5.2.3.4 |
-| Base de datos en Azure | Azure Database for MySQL Flexible Server | `new-backend-bicigo.mysql.database.azure.com` | Aprovisionada el 12/11/2026 (Chile Central); servidor detenido para control de costos |
+| Backend API (Sprint 3) | Railway (producción) | https://backend-bicigo-production.up.railway.app | Desplegado; deployment Active |
+| Documentación OpenAPI (producción) | Scalar en Railway | https://backend-bicigo-production.up.railway.app/scalar/v1 | URL pública verificada |
+| Documentación OpenAPI (local) | Scalar (local) | `http://localhost:5267` | Captura incluida en 5.2.3.4 |
+| Base de datos MySQL en Railway | MySQL gestionado + volumen en Railway | Red privada `backend-bicigo.railway.internal` | 17 tablas creadas al inicializar la API |
+| Base de datos MySQL en Azure | Azure Database for MySQL Flexible Server | `new-backend-bicigo.mysql.database.azure.com` | Aprovisionada el 12/11/2026 como parte del plan; servidor detenido para control de costos |
 | Frontend Web Application | Firebase Hosting | https://example-pro-d6e84.web.app | Publicación documentada en Sprint 2 |
-| Backend en Azure App Service | Azure (T3-21, en proceso) | URL por confirmar | En curso; la base de datos ya se encuentra aprovisionada |
 
-**Pendiente de despliegue.** Al finalizar T3-21 se debe registrar la URL pública de Azure App Service y la evidencia del despliegue (capturas del portal o del pipeline). La base de datos MySQL en Azure ya se encuentra aprovisionada; para completar el despliegue, el servidor debe reiniciarse y el App Service debe configurar la cadena de conexión. También corresponde actualizar la configuración de despliegue de la sección 5.1.4.
+**URL pública registrada.** Con el despliegue en Railway, la tarea T3-21 se cierra con la URL pública del backend y su documentación verificadas. El servidor MySQL de Azure permanece detenido como aprovisionamiento preparatorio y puede eliminarse o reiniciarse si el equipo decide migrar la persistencia productiva a Azure.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -1220,3 +1258,11 @@ El header de la Web Application incluye un buscador con el placeholder genérico
 **Recomendación:**
 Usar un placeholder descriptivo del ámbito de búsqueda (por ejemplo, "Buscar estaciones, bicicletas o viajes...") y mostrar sugerencias o categorías de resultados al escribir.
 ## 5.4. Video About-the-Product.
+
+El video de presentación del producto biciGO resume la propuesta de valor, los principales flujos de la aplicación web y el estado de la implementación alcanzado durante los Sprints del proyecto.
+
+- **Enlace:** [https://youtu.be/V5GNY8Vs4wA](https://youtu.be/V5GNY8Vs4wA)
+
+![Portada del video About-the-Product de biciGO](URL_PENDIENTE_PORTADA)
+
+*Figura: portada del video About-the-Product de biciGO.*
