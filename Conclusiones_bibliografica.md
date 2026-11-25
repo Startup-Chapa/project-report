@@ -1,6 +1,6 @@
-# Conclusiones
+# Conclusiones y recomendaciones
 
-## Conclusiones y recomendaciones
+## Conclusiones
 Conclusiones Generales del Proyecto
 Validación del Problema de Movilidad Urbana:
 
@@ -25,6 +25,22 @@ Se registraron avances significativos en la maquetación y estructura del fronte
 Dificultad de Implementación y Fricción en el Flujo Principal de Bicicletas:
 
 Se identificó una complejidad considerable al diseñar e implementar el flujo principal de alquiler y la interacción del usuario con las bicicletas (localización por GPS, escaneo QR del candado y finalización en BikePoints). Esta etapa genera fricción operativa debido a problemas potenciales como fallas de conexion con otras bounded context y por potenciales criticos a no ser lanzado el programa, se tuvo que suspeder ese apartado y por ello tambien la logica de bicigo.
+
+## Recomendaciones
+Conectar la aplicación web con el backend real:
+El backend funciona correctamente en producción pero varias pantallas del frontend aún usan datos simulados. Se recomienda conectar ambas para que el usuario pueda alquilar una bicicleta, pagar y reportar incidencias de verdad.
+
+Completar el inicio de sesión y la recuperación de cuenta:
+El backend solo permite registrar usuarios y buscarlos por correo, sin recuperación de contraseña. Se recomienda terminar esta parte pues sirve para proteger los datos de las cuentas, como los pagos y/o viajes.
+
+Corregir los problemas más graves de la evaluación heurística:
+Se recomienda solucionar el botón "Generar datos aleatorios" involucrados al momento de insertar un método de pago, asi como la separación entre usuario y administrador en la gestión de bicicletas, el cambio seguro de contraseña y la mezcla de inglés y español puesto que son los que más afectan a la confianza del usuario así como el uso básico de la app.
+
+Transparencia en los gastos de los planes:
+El usuario no puede comparar objetivamente el Plan Tarifa con la Suscripción Pro porque no ve el precio por viaje. Se recomienda mostrar mensualmente cuánto ahorraría con el plan Pro de manera que sirva como ayuda al momento de decidir si vale la pena cambiar de plan.
+
+Elegir un solo entorno de producción para cuidar la base de datos:
+Hay una base de datos activa en Railway y otra detenida en Azure. Se recomienda quedarse con una y usar migraciones para cambiar tablas de manera que una modificación no ponga en riesgo los datos reales.
 
 # Bibliografía
 
