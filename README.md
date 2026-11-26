@@ -40,7 +40,7 @@ Proyecto:
 
 **Período 202620**
 
-**Septiembre 2026**
+**Diciembre 2026**
 
 </div>
 <div style="page-break-after: always;"></div>
@@ -61,12 +61,12 @@ Proyecto:
 | 10 | **1.1** | 05/09/2026 | Rodrigo | 2.1.2. Estrategias y tácticas frente a competidores |
 | 11 | **1.1** | 06/09/2026 | David | 2.2.1. Diseño de entrevistas |
 | 12 | **1.1** | 06/09/2026 | Cada uno | 2.2.2. Registro de entrevistas |
-| 13 | **1.1** | 07/09/2026 | Rodrigo Velazquez | 2.2.3. Análisis de entrevistas |
+| 13 | **1.1** | 07/09/2026 | Rodrigo Velasquez | 2.2.3. Análisis de entrevistas |
 | 14 | **1.1** | 07/09/2026 | Eduardo Aguirre | 2.3.1. User Personas |
 | 15 | **1.1** | 08/09/2026 | Eduardo Aguirre | 2.3.2. User Task Matrix |
 | 16 | **1.1** | 08/09/2026 | Eduardo Aguirre | 2.3.3. User Journey Mapping |
 | 17 | **1.1** | 09/09/2026 | Eduardo Aguirre | 2.3.4. Empathy Mapping |
-| 18 | **1.2** | 09/09/2026 | Adrian León | 2.4. Big Picture EventStorming |
+| 18 | **1.2** | 09/09/2026 | Adrian Armestar | 2.4. Big Picture EventStorming |
 | 19 | **1.2** | 10/09/2026 | Jose María | 2.5. Ubiquitous Language |
 | 20 | **1.2** | 10/09/2026 | Equipo (7 HU por persona) | 3.1. User Stories |
 | 21 | **1.2** | 11/09/2026 | Rodrigo | 3.2. Impact Mapping |
@@ -76,10 +76,10 @@ Proyecto:
 | 25 | **1.3** | 13/09/2026 | Jose Maria | 4.2.1. Organization Systems |
 | 26 | **1.3** | 13/09/2026 | Jose Maria | 4.2.2. Labeling Systems |
 | 27 | **1.3** | 13/09/2026 | Jose Maria | 4.2.3. SEO Tags and Meta Tags |
-| 28 | **1.3** | 14/09/2026 | Adrian Leon | 4.2.4. Searching Systems |
-| 29 | **1.3** | 14/09/2026 | Adrian Leon | 4.2.5. Navigation Systems |
+| 28 | **1.3** | 14/09/2026 | Adrian Armestar | 4.2.4. Searching Systems |
+| 29 | **1.3** | 14/09/2026 | Adrian Armestar | 4.2.5. Navigation Systems |
 | 30 | **1.4** | 14/09/2026 | Eduardo | 4.3. Landing Page UI Design (Wireframe y Mock-up) |
-| 31 | **1.4** | 15/09/2026 | Adrian Leon | 4.4. Web Applications UX/UI Design |
+| 31 | **1.4** | 15/09/2026 | Adrian Armestar | 4.4. Web Applications UX/UI Design |
 | 32 | **1.4** | 15/09/2026 | Juan | 4.6.1. Design-Level EventStorming |
 | 33 | **1.4** | 16/09/2026 | Jose Maria | 4.6.2. Software Architecture Context Diagram |
 | 34 | **1.4** | 16/09/2026 | Adrian | 4.6.3. Software Architecture Container Diagrams |
