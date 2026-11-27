@@ -93,6 +93,7 @@ Proyecto:
 | 42 | **1.7** | 19/09/2026 | Eduardo  | 5.2.1  Sprint 1 |
 | 43 | **2.0** | 06/10/2026 | Rodrigo  | 5.2.2  Sprint 2 |
 | 44 | **3.0** | 12/11/2026 | Juan David | 5.2.3  Sprint 3 y despliegue del backend en Railway |
+| 45 | **4.0** | 27/11/2026 | Rodrigo | 5.2.4 Sprint 4 |
 
 
 <div style="page-break-after: always;"></div>
@@ -244,6 +245,15 @@ Figura: Gráfico de contribuciones del repositorio del informe del proyecto para
     - [5.2.3.6 Services Documentation Evidence for Sprint Review](Capitulo_5.md#5236-services-documentation-evidence-for-sprint-review)
     - [5.2.3.7 Software Deployment Evidence for Sprint Review](Capitulo_5.md#5237-software-deployment-evidence-for-sprint-review)
     - [5.2.3.8 Team Collaboration Insights during Sprint](Capitulo_5.md#5238-team-collaboration-insights-during-sprint)
+  - [5.2.4 Sprint 4](Capitulo_5.md#524-sprint-4)
+    - [5.2.4.1 Sprint Planning 4](Capitulo_5.md#5241-sprint-planning-4)
+    - [5.2.4.2 Aspect Leaders and Collaborators](Capitulo_5.md#5242-aspect-leaders-and-collaborators)
+    - [5.2.4.3 Sprint Backlog 4](Capitulo_5.md#5243-sprint-backlog-4)
+    - [5.2.4.4 Development Evidence for Sprint Review](Capitulo_5.md#5244-development-evidence-for-sprint-review)
+    - [5.2.4.5 Execution Evidence for Sprint Review](Capitulo_5.md#5245-execution-evidence-for-sprint-review)
+    - [5.2.4.6 Services Documentation Evidence for Sprint Review](Capitulo_5.md#5246-services-documentation-evidence-for-sprint-review)
+    - [5.2.4.7 Software Deployment Evidence for Sprint Review](Capitulo_5.md#5247-software-deployment-evidence-for-sprint-review)
+    - [5.2.4.8 Team Collaboration Insights during Sprint](Capitulo_5.md#5248-team-collaboration-insights-during-sprint)
 - [5.3 Validation Interviews](Capitulo_5.md#53-validation-interviews)
   - [5.3.1 Diseño de Entrevistas](Capitulo_5.md#531-diseño-de-entrevistas)
   - [5.3.2 Registro de Entrevistas](Capitulo_5.md#532-registro-de-entrevistas)
@@ -3306,6 +3316,154 @@ El trabajo se distribuyó por Bounded Contexts según la matriz de 5.2.3.2, con 
 | Velasquez Velasquez, Rodrigo | Rodrigov233 | Fleet & Station Management | TS-05, TS-06 |
 
 **Evidencia de contribución — PENDIENTE DE ADJUNTAR.** Al cierre se debe incorporar la captura de GitHub Pulse y la tabla de commits del repositorio `backend-bicigo` (autor, rama, SHA, fecha y Technical Story asociada) filtradas por el rango real del Sprint 3, sin atribuir aportes sin evidencia.
+
+### 5.2.4. Sprint 4
+
+El Sprint 4 tiene como objetivo integrar la Frontend Web Application de BiciGO con los RESTful Web Services implementados en el Sprint 3. El incremento se orienta a sustituir los mecanismos de simulación por operaciones persistentes mediante la API REST, corregir los problemas identificados durante la validación y preparar la publicación de una versión integrada del producto.
+
+#### 5.2.4.1. Sprint Planning 4
+
+**Sprint Planning Background**
+
+| Campo | Registro de Sprint 4 |
+|---|---|
+| Sprint # | Sprint 4 |
+| Date | Pendiente de confirmar con el equipo |
+| Time | Pendiente de confirmar |
+| Location | Reunión virtual (propuesta) |
+| Prepared By | Velasquez Velasquez, Rodrigo (borrador de documentación) |
+| Attendees | Aguirre Ramos, Eduardo Manuel; Armestar Felipa, Adrian Andres; Ayllon Pauccar, Juan David; Franco del Carpio, José María; Velasquez Velasquez, Rodrigo (participación por confirmar) |
+| Sprint 3 Review Summary | Se implementaron los servicios REST por Bounded Context, la persistencia en MySQL, la documentación OpenAPI mediante Scalar y el despliegue del backend en Railway. |
+| Sprint 3 Retrospective Summary | Como propuesta de mejora, se plantea unificar los contratos del frontend con la API, verificar la autenticación y persistencia, y registrar evidencias de los flujos integrados. |
+
+**Sprint Goal & User Stories**
+
+*Our focus is on integrating the BiciGO Frontend Web Application with the RESTful Web Services deployed on Railway. We believe it delivers a consistent experience to citizens and operators by connecting account management, bicycle and station information, trips, subscriptions and maintenance reports to persistent backend services. This will be confirmed when the selected end-to-end scenarios can be reproduced, API responses and persistence are verified, and the integrated application is deployed and documented.*
+
+La selección siguiente propone recuperar historias priorizadas en el Sprint 2 y contrastarlas con los contratos técnicos del Sprint 3. No constituye una selección aprobada en Trello.
+
+| Bounded Context | Selected User Stories | SP del Product Backlog |
+|---|---|---:|
+| IAM | US-01, US-02, US-03 | 9 |
+| Fleet & Station Management | US-07, US-08, US-09 | 11 |
+| Trip Management | US-11, US-13, US-15 | 13 |
+| Billing & Subscriptions | US-16, US-17, US-19 | 12 |
+| Maintenance | US-26, US-29, US-33 | 11 |
+| Total de referencia | 15 historias | 56 |
+
+Los 56 SP corresponden a las estimaciones de las historias completas del Sprint 2 y no al esfuerzo residual de integración. La selección definitiva, su estimación residual y la velocidad real del Sprint 4 quedan pendientes de validación. Las tareas transversales se estiman por separado en horas.
+
+#### 5.2.4.2. Aspect Leaders and Collaborators
+
+Se propone conservar la asignación de responsables de frontend del Sprint 2 y coordinar los contratos con los responsables del backend del Sprint 3. En particular, Eduardo y Rodrigo deben coordinar Fleet y Maintenance debido a la rotación de responsabilidades entre ambos incrementos.
+
+| Team Member | GitHub Username | IAM | Trip Management | Billing & Subscriptions | Fleet & Station Management | Maintenance |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Armestar Felipa, Adrian Andres | Adrian5102 | L | C | C | C | C |
+| Franco del Carpio, José María | VoltTrd | C | L | C | C | C |
+| Ayllon Pauccar, Juan David | JuanDPAUC | C | C | L | C | C |
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | C | C | C | L | C |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | C | C | C | C | L |
+
+*L = Leader; C = Collaborator. Matriz propuesta, pendiente de aprobación para el Sprint 4.*
+
+#### 5.2.4.3. Sprint Backlog 4
+
+El backlog propuesto se organiza por contexto y actividades transversales. Se mantiene la nomenclatura de microtareas de los sprints anteriores. Los estados oficiales deberán obtenerse del tablero Trello del Sprint 4.
+
+| Epic / Story ID | Task ID | Título de la Microtarea | Descripción y Alcance Técnico | Estimación (Horas) | Asignado a (propuesta) | Estado de revisión |
+|---|---|---|---|---:|---|---|
+| Transversal | T4-01 | Configure API connection | Configurar VITE_BICIGO_API_URL, cliente HTTP y manejo de errores; verificar CORS. | 3 | Equipo | Pendiente de validar |
+| US-01, US-02, US-03 | T4-02 | Integrate IAM | Contrastar registro, login y recuperación con los contratos reales; identificar servicios de autenticación faltantes. | 5 | Adrian Armestar | Pendiente de validar |
+| US-07, US-08, US-09 | T4-03 | Integrate Fleet | Adaptar consultas de bicicletas y estaciones, revisar filtros, disponibilidad y asignaciones. | 5 | Eduardo Aguirre / Rodrigo Velasquez | Pendiente de validar |
+| US-11, US-13, US-15 | T4-04 | Integrate Trip | Verificar inicio, consulta y finalización del alquiler contra los servicios disponibles. | 6 | José María Franco | Pendiente de validar |
+| US-16, US-17, US-19 | T4-05 | Integrate Billing | Conectar planes, métodos de pago y suscripciones; distinguir registros internos de cobros reales. | 5 | Juan David Ayllon | Pendiente de validar |
+| US-26 | T4-06 | Integrate Damage Reports | Adaptar el formulario al contrato de maintenance-reports y comprobar persistencia. | 4 | Rodrigo Velasquez / Eduardo Aguirre | Pendiente de validar |
+| US-29, US-33 | T4-07 | Integrate Incident Management | Consultar incidencias e historial y verificar las transiciones de estado disponibles en la API. | 5 | Rodrigo Velasquez / Eduardo Aguirre | Pendiente de validar |
+| Transversal | T4-08 | UX and i18n corrections | Priorizar los problemas de la sección 5.3.3, revisar traducciones y mensajes de error. | 4 | Equipo | Pendiente de validar |
+| Transversal | T4-09 | End-to-end validation | Comprobar flujos exitosos, errores, persistencia, navegación y permisos. | 5 | Equipo | Pendiente de validar |
+| Transversal | T4-10 | Production deployment | Generar build de producción y verificar conexión Firebase–Railway. | 3 | Equipo | Pendiente de validar |
+| Transversal | T4-11 | Sprint evidence and documentation | Registrar commits, capturas, resultados de pruebas y documentación de servicios. | 4 | Rodrigo Velasquez / Equipo | Pendiente de validar |
+| Total | 11 tareas | | | 49 | | |
+
+Las 49 horas son una estimación propuesta, no horas ejecutadas. El enlace y la captura del tablero quedan pendientes. Una historia se considera terminada cuando se verifican sus criterios de aceptación, la integración real y las evidencias correspondientes; cualquier reducción de alcance debe acordarse con el equipo.
+
+#### 5.2.4.4. Development Evidence for Sprint Review
+
+La integración parte de los repositorios [frontend-bicigo](https://github.com/Startup-Chapa/frontend-bicigo) y [backend-bicigo](https://github.com/Startup-Chapa/backend-bicigo). El frontend dispone de adaptadores de infraestructura para IAM, Fleet, Trip, Billing y Maintenance, además del cliente compartido `src/shared/infrastructure/base-api.js`. El backend contiene los controladores REST de los contextos correspondientes.
+
+| Repositorio / rama | Commit de referencia | Mensaje | GitHub User | Fecha (Lima) |
+|---|---|---|---|---|
+| frontend-bicigo / develop | [98658e2](https://github.com/Startup-Chapa/frontend-bicigo/commit/98658e2) | feat: integrate BiciGO frontend modules | Rodrigov233 | 06/10/2026 |
+| frontend-bicigo / feature/corrections | [70708ca](https://github.com/Startup-Chapa/frontend-bicigo/commit/70708ca) | fix: Replace wrong data with new ones | TheEngineEdu | 27/10/2026 |
+| backend-bicigo / develop | [8405e55](https://github.com/Startup-Chapa/backend-bicigo/commit/8405e55) | fix: add some datails to conecto frontend | TheEngineEdu | 12/11/2026 |
+| backend-bicigo / main | [ff39ddd](https://github.com/Startup-Chapa/backend-bicigo/commit/ff39ddd) | fix:add final | TheEngineEdu | 12/11/2026 |
+
+Estos commits son antecedentes comprobados, no contribuciones atribuidas al Sprint 4. Al 27/11/2026, las ramas main y develop del frontend no muestran commits posteriores al 10/10/2026. Se requiere identificar la rama efectiva de integración y registrar los nuevos commits del Sprint 4, junto con su autor, fecha, mensaje y evidencia de GitHub Pulse.
+
+#### 5.2.4.5. Execution Evidence for Sprint Review
+
+La revisión de ejecución se orienta a demostrar que las vistas consumen servicios reales y que los cambios persisten tras recargar la aplicación. Las siguientes pruebas constituyen un plan de validación, no resultados de pruebas ejecutadas.
+
+| Contexto | Escenario a verificar | Evidencia requerida | Resultado |
+|---|---|---|---|
+| IAM | Registro, acceso válido e inválido, perfil | Capturas de interfaz y respuesta API sin exponer credenciales | Pendiente |
+| Fleet | Consulta de bicicletas y estaciones | Listado, detalle y respuesta HTTP | Pendiente |
+| Trip | Inicio, viaje activo y finalización | Secuencia de pantallas y estados persistidos | Pendiente |
+| Billing | Consulta de planes y gestión de suscripción | Respuesta API y estado de suscripción; identificar si el pago es simulado | Pendiente |
+| Maintenance | Creación y seguimiento de incidencia | Formulario, reporte creado, historial y verificación tras recarga | Pendiente |
+| Transversal | Error de red, navegación y traducciones | Capturas de mensajes de error y vistas ES/EN | Pendiente |
+
+**Video de ejecución:** pendiente de enlace y marcas de tiempo. Las capturas se incorporarán después de ejecutar las pruebas, dentro de `Resources/chapter5/`.
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+La documentación de servicios parte de OpenAPI y Scalar del backend implementado en Sprint 3. Durante el Sprint 4 se deberá contrastar cada recurso con los métodos, parámetros, recursos JSON, códigos de respuesta y reglas de autorización utilizados desde el frontend.
+
+| Contexto | Recursos REST de referencia (Sprint 3) |
+|---|---|
+| IAM | `/api/v1/users`, `/api/v1/user-notifications` |
+| Fleet | `/api/v1/bicycles`, `/api/v1/bike-points`, `/api/v1/bicycle-assignments` |
+| Trip | `/api/v1/trips`, `/api/v1/trip-users`, `/api/v1/trip-route-points`, `/api/v1/trip-photo-evidences`, `/api/v1/qr-validations` |
+| Billing | `/api/v1/plans`, `/api/v1/plan-features`, `/api/v1/payments`, `/api/v1/payment-methods`, `/api/v1/subscriptions` |
+| Maintenance | `/api/v1/maintenance-reports`, `/api/v1/maintenance-status-histories` |
+
+Documentación publicada según el Sprint 3: [Scalar — BiciGO API](https://backend-bicigo-production.up.railway.app/scalar/v1). El acceso actual y la versión de los contratos requieren revalidación. No se acredita autenticación JWT, recuperación real de contraseña ni pasarela de pago por la mera existencia de los recursos anteriores.
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review
+
+La configuración objetivo conserva Firebase Hosting para la SPA y Railway para la API REST y MySQL. El frontend debe compilarse apuntando al origen real de la API, sin depender de JSON Server en producción.
+
+```bash
+npm ci
+npm run build
+firebase deploy --only hosting
+```
+
+Antes de publicar, verificar que el cliente HTTP y la variable `VITE_BICIGO_API_URL` construyen correctamente las rutas `/api/v1`, que CORS admite el origen de Firebase y que no se incluyen secretos en el bundle del frontend.
+
+| Producto | Plataforma | URL de referencia | Estado |
+|---|---|---|---|
+| Landing Page | GitHub Pages | https://startup-chapa.github.io/Landing-Page/ | Documentado en Sprint 1 |
+| Frontend | Firebase Hosting | https://example-pro-d6e84.web.app | URL histórica del Sprint 2; verificar nueva publicación |
+| Backend | Railway | https://backend-bicigo-production.up.railway.app/scalar/v1 | Despliegue documentado en Sprint 3; revalidar |
+| Persistencia | MySQL en Railway | Acceso interno | Verificar persistencia con pruebas de integración |
+
+Se adjuntarán capturas del build, despliegue y peticiones desde la aplicación publicada. No se acredita todavía un nuevo despliegue del Sprint 4.
+
+#### 5.2.4.8. Team Collaboration Insights during Sprint
+
+La colaboración propuesta contempla la coordinación de los cinco Bounded Contexts, la revisión de contratos y la validación conjunta de los flujos integrados. Los responsables documentarán sus cambios mediante commits descriptivos y mantendrán la trazabilidad entre las tareas de Trello, las historias y las evidencias de ejecución.
+
+| Integrante | GitHub Username | Responsabilidad propuesta |
+|---|---|---|
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | Integración Fleet, coordinación con Maintenance y despliegue |
+| Armestar Felipa, Adrian Andres | Adrian5102 | Integración IAM y revisión de autenticación |
+| Ayllon Pauccar, Juan David | JuanDPAUC | Integración Billing & Subscriptions |
+| Franco del Carpio, José María | VoltTrd | Integración Trip Management |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | Integración Maintenance, coordinación con Fleet y documentación del Sprint 4 |
+
+El conteo de commits y Pull Requests por integrante queda pendiente hasta definir el rango del Sprint 4 y la rama de integración. Se deberá adjuntar GitHub Pulse y el historial filtrado, evitando atribuir al Sprint 4 los commits de los incrementos anteriores.
 
 ## 5.3. Validation Interviews.
 
