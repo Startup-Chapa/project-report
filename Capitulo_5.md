@@ -1471,18 +1471,18 @@ Esta matriz relaciona los requerimientos seleccionados con los contextos y las v
 
 #### 5.2.4.5. Execution Evidence for Sprint Review
 
-La revisión de ejecución se orienta a demostrar que las vistas consumen servicios reales y que los cambios persisten tras recargar la aplicación. Las siguientes pruebas constituyen un plan de validación, no resultados de pruebas ejecutadas.
+La revisión de ejecución se orienta a demostrar que las vistas consumen servicios reales y que los cambios persisten tras recargar la aplicación. Se presentan las evidencias obtenidas durante la revisión del incremento, diferenciando las pruebas visuales, las consultas REST verificadas y las funcionalidades cuya integración permanece pendiente.
 
 | Contexto | Escenario a verificar | Evidencia requerida | Resultado |
 |---|---|---|---|
-| IAM | Registro, acceso válido e inválido, perfil | Capturas de interfaz y respuesta API sin exponer credenciales | Pendiente |
-| Fleet | Consulta de bicicletas y estaciones | Listado, detalle y respuesta HTTP | Pendiente |
-| Trip | Inicio, viaje activo y finalización | Secuencia de pantallas y estados persistidos | Pendiente |
-| Billing | Consulta de planes y gestión de suscripción | Respuesta API y estado de suscripción; identificar si el pago es simulado | Pendiente |
-| Maintenance | Creación y seguimiento de incidencia | Formulario, reporte creado, historial y verificación tras recarga | Pendiente |
-| Transversal | Error de red, navegación y traducciones | Capturas de mensajes de error y vistas ES/EN | Pendiente |
+| IAM | Registro, acceso válido e inválido, perfil | Capturas de interfaz y respuesta API sin exponer credenciales | Validación visual parcial |
+| Fleet | Consulta de bicicletas y estaciones | Listado, detalle y respuesta HTTP | Consultas REST verificadas |
+| Trip | Inicio, viaje activo y finalización | Secuencia de pantallas y estados persistidos | Validación visual parcial |
+| Billing | Consulta de planes y gestión de suscripción | Respuesta API y estado de suscripción; identificar si el pago es simulado | Validación visual parcial |
+| Maintenance | Creación y seguimiento de incidencia | Formulario, reporte creado, historial y verificación tras recarga | Integración pendiente |
+| Transversal | Error de red, navegación y traducciones | Capturas de mensajes de error y vistas ES/EN | Validación parcial ES/EN y responsive |
 
-**Video de ejecución:** pendiente de enlace y marcas de tiempo. Las capturas se incorporarán después de ejecutar las pruebas, dentro de `Resources/chapter5/`.
+**Video de ejecución:** pendiente de enlace y marcas de tiempo. Las capturas obtenidas se presentan a continuación y se almacenan dentro de `Resources/chapter5/sprint4/`.
 
 <!-- S4-TESTING-START -->
 **Functional and Integration Test Cases**
@@ -1491,24 +1491,24 @@ La revisión de ejecución se orienta a demostrar que las vistas consumen servic
 |---|---|---|---|---|
 | TC4-01 | US-01 | Registro con datos validos | Usuario registrado y respuesta coherente con el contrato. | Pendiente |
 | TC4-02 | US-01 | Datos incompletos | Validacion y ausencia de registros invalidos. | Pendiente |
-| TC4-03 | US-02 | Inicio de sesion valido | Acceso al flujo autorizado. | Pendiente |
+| TC4-03 | US-02 | Inicio de sesion valido | Acceso al flujo autorizado. | Parcial: acceso con perfil demo |
 | TC4-04 | US-02 | Credenciales incorrectas | Acceso rechazado y mensaje comprensible. | Pendiente |
 | TC4-05 | US-03 | Recuperacion de acceso | Respuesta consistente con el servicio disponible. | Pendiente |
-| TC4-06 | US-07 | Consulta de bicicletas | Listado obtenido mediante la API. | Pendiente |
+| TC4-06 | US-07 | Consulta de bicicletas | Listado obtenido mediante la API. | Passed: HTTP 200 y listado visible |
 | TC4-07 | US-08 | Bicicleta inexistente | Manejo correcto del recurso no encontrado. | Pendiente |
 | TC4-08 | US-09 | Zona sin bicicletas | Estado vacio sin errores de interfaz. | Pendiente |
 | TC4-09 | US-11 | Inicio de viaje | Registro y estado inicial persistidos. | Pendiente |
 | TC4-10 | US-13 | Consulta de viaje activo | Informacion actual del viaje. | Pendiente |
 | TC4-11 | US-15 | Finalizacion de viaje | Estado final consistente. | Pendiente |
 | TC4-12 | US-16 | Metodo de pago invalido | Validacion sin exponer informacion financiera. | Pendiente |
-| TC4-13 | US-17 | Consulta de planes y tarifas | Valores coherentes con la API. | Pendiente |
+| TC4-13 | US-17 | Consulta de planes y tarifas | Valores coherentes con la API. | Parcial: planes visibles |
 | TC4-14 | US-19 | Registro de suscripcion | Estado de suscripcion verificable. | Pendiente |
-| TC4-15 | US-26 | Creacion de reporte | Incidencia registrada en el backend. | Pendiente |
-| TC4-16 | US-29 | Consulta posterior a recarga | Reporte persistente y accesible. | Pendiente |
-| TC4-17 | US-33 | Cambio de estado | Historial coherente y permisos verificados. | Pendiente |
+| TC4-15 | US-26 | Creacion de reporte | Incidencia registrada en el backend. | Blocked: integración pendiente |
+| TC4-16 | US-29 | Consulta posterior a recarga | Reporte persistente y accesible. | Blocked: persistencia no verificada |
+| TC4-17 | US-33 | Cambio de estado | Historial coherente y permisos verificados. | Blocked: servicio no conectado |
 | TC4-18 | Transversal | API no disponible | Mensaje de error y recuperacion de interfaz. | Pendiente |
-| TC4-19 | Transversal | Cambio de idioma | Interfaz consistente en ES y EN. | Pendiente |
-| TC4-20 | Transversal | Acceso desde Firebase | Comunicacion HTTPS con el backend. | Pendiente |
+| TC4-19 | Transversal | Cambio de idioma | Interfaz consistente en ES y EN. | Parcial: cambio ES/EN verificado en Dashboard |
+| TC4-20 | Transversal | Acceso desde Firebase | Comunicacion HTTPS con el backend. | Parcial: conexión verificada para Fleet |
 
 **Integration Evidence Protocol**
 
@@ -1523,6 +1523,117 @@ Para cada escenario ejecutado se registrara:
 
 Las pruebas deberan realizarse con cuentas y datos de prueba autorizados.
 <!-- S4-TESTING-END -->
+
+<!-- S4-EXECUTION-IMAGES-START -->
+
+**Web Application Execution Evidence**
+
+Durante el Sprint Review se revisaron las vistas de BiciGO publicadas en Firebase Hosting, utilizando el perfil Operador Demo.
+
+[Frontend Web Application](https://example-pro-d6e84.web.app/)
+
+**Evidence S4-E01: Login**
+
+![Login](./Resources/chapter5/sprint4/execution-login.jpeg)
+
+*Figura: Interfaz de inicio de sesión con campos de correo electrónico y contraseña.*
+
+**Evidence S4-E02: User Registration**
+
+![User Registration](./Resources/chapter5/sprint4/execution-register.jpeg)
+
+*Figura: Formulario de registro de usuarios y campos requeridos.*
+
+**Evidence S4-E03: Dashboard**
+
+![Dashboard](./Resources/chapter5/sprint4/execution-dashboard.jpeg)
+
+*Figura: Acceso al panel principal mediante el perfil Operador Demo.*
+
+**Evidence S4-E04: Station Management**
+
+![Station Management](./Resources/chapter5/sprint4/execution-stations.jpeg)
+
+*Figura: Visualización de estaciones, capacidad y disponibilidad de espacios.*
+
+**Evidence S4-E05: Bicycle Management**
+
+![Bicycle Management](./Resources/chapter5/sprint4/execution-bicycles.jpeg)
+
+*Figura: Listado de bicicletas, códigos QR, estados y estaciones asociadas.*
+
+**Evidence S4-E06: Trip Management**
+
+![Trip Management](./Resources/chapter5/sprint4/execution-trip.jpeg)
+
+*Figura: Visualización del historial de viajes. No se registraron viajes en la captura.*
+
+**Evidence S4-E07: Billing and Subscriptions**
+
+![Billing and Subscriptions](./Resources/chapter5/sprint4/execution-billing.jpeg)
+
+*Figura: Comparación del plan por uso y la suscripción Pro de S/ 30.00 mensuales.*
+
+**Evidence S4-E08: Damage Reports**
+
+![Damage Reports](./Resources/chapter5/sprint4/execution-maintenance.jpeg)
+
+*Figura: Formulario de reporte de averías. La conexión al servicio se encuentra pendiente.*
+
+**Evidence S4-E09: Maintenance Management**
+
+![Maintenance Management](./Resources/chapter5/sprint4/execution-maintenance-management.jpeg)
+
+*Figura: Panel administrativo de incidencias, indicadores y filtros por estado.*
+
+**Evidence S4-E10: REST API Integration**
+
+![REST API Integration](./Resources/chapter5/sprint4/execution-api.jpeg)
+
+*Figura: Solicitudes XHR bike-points y bicycles con respuesta HTTP 200 desde el backend.*
+
+**Evidence S4-E11: Responsive Design**
+
+![Responsive Design](./Resources/chapter5/sprint4/execution-responsive.jpeg)
+
+*Figura: Adaptación del Dashboard a una pantalla estrecha con distribución vertical.*
+
+**Evidence S4-E12: Internationalization**
+
+![Internationalization](./Resources/chapter5/sprint4/execution-english.jpeg)
+
+*Figura: Cambio de idioma de inglés a español en el Dashboard.*
+
+**REST API Integration Results**
+
+| Resource | Request Type | HTTP Status | Response Time | Transferred |
+|---|---|---|---|---|
+| bike-points | XHR | 200 OK | 2.81 s | 313 B |
+| bicycles | XHR | 200 OK | 2.89 s | 366 B |
+
+Las consultas realizadas desde el frontend acreditan la comunicación con el backend desplegado en Railway para los recursos del contexto Fleet & Station Management.
+
+**Test Execution Summary**
+
+| Estado | Cantidad |
+|---|---:|
+| Passed | 1 |
+| Partial | 4 |
+| Blocked | 3 |
+| Pending | 12 |
+| Total | 20 |
+
+**Observaciones y oportunidades de mejora**
+
+- Fleet: las consultas de estaciones y bicicletas respondieron correctamente.
+- IAM: el acceso al Dashboard está acreditado visualmente; falta verificar la autenticación REST.
+- Trip Management: no se acredita el ciclo completo de alquiler.
+- Billing: los planes están disponibles visualmente; falta verificar la contratación y el pago.
+- Maintenance: las vistas están implementadas, pero su integración con el backend permanece pendiente.
+- Responsive Design: se recomienda optimizar el espacio ocupado por el menú de navegación.
+- Internationalization: el cambio de idioma funciona en el Dashboard, aunque existen etiquetas pendientes de traducción en otros módulos.
+
+<!-- S4-EXECUTION-IMAGES-END -->
 
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review
 
