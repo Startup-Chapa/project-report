@@ -54,13 +54,9 @@ La aplicación se organiza por contextos funcionales y comparte en `src` el enru
 
 *Figura: repositorio de la Landing Page.*
 
-![Repositorio del frontend](./Resources/chapter-images/chapter-5/webapp.png)
+[Consultar repositorio del frontend](https://github.com/Startup-Chapa/frontend-bicigo) — captura pendiente.
 
-*Figura: repositorio de la Frontend Web Application.*
-
-![Repositorio de plataforma](./Resources/chapter-images/chapter-5/platform.png)
-
-*Figura: captura histórica asociada a plataforma; confirmar su repositorio y alcance antes de presentarla como backend implementado.*
+[Consultar repositorio del backend](https://github.com/Startup-Chapa/backend-bicigo) — captura pendiente.
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
@@ -942,6 +938,895 @@ El trabajo se distribuyó por Bounded Contexts según la matriz de 5.2.3.2, con 
 
 **Evidencia de contribución — PENDIENTE DE ADJUNTAR.** Al cierre se debe incorporar la captura de GitHub Pulse y la tabla de commits del repositorio `backend-bicigo` (autor, rama, SHA, fecha y Technical Story asociada) filtradas por el rango real del Sprint 3, sin atribuir aportes sin evidencia.
 
+### 5.2.4. Sprint 4
+
+El Sprint 4 tiene como objetivo integrar la Frontend Web Application de BiciGO con los RESTful Web Services implementados en el Sprint 3. El incremento se orienta a sustituir los mecanismos de simulación por operaciones persistentes mediante la API REST, corregir los problemas identificados durante la validación y preparar la publicación de una versión integrada del producto.
+
+#### 5.2.4.1. Sprint Planning 4
+
+**Sprint Planning Background**
+
+| Campo | Registro de Sprint 4 |
+|---|---|
+| Sprint # | Sprint 4 - TB2 |
+| Date | 27/11/2026 (fecha de actualización del informe) |
+| Time | Sin registro confirmado de la reunión |
+| Location | Modalidad de reunión no acreditada |
+| Prepared By | Velasquez Velasquez, Rodrigo |
+| Team Members | Aguirre Ramos, Eduardo Manuel; Armestar Felipa, Adrian Andres; Ayllon Pauccar, Juan David; Franco del Carpio, José María; Velasquez Velasquez, Rodrigo |
+| Sprint 3 Review Summary | Implementación de los servicios REST mediante ASP.NET Core, persistencia con Entity Framework Core y MySQL, documentación OpenAPI mediante Scalar y despliegue del backend en Railway. |
+| Sprint 3 Retrospective Summary | Se identificaron oportunidades de mejora relacionadas con la integración del frontend y backend, la persistencia de información, la gestión de errores, las migraciones de base de datos y la validación de los flujos funcionales. |
+| Project Management Tool | [Sprint 4 - Trello](https://trello.com/b/FJ6zVLwa/sprint-4-web-application-bicigo) |
+
+**Sprint Goal & User Stories**
+
+*Our focus is on delivering an integrated version of BiciGO by connecting the Frontend Web Application with the RESTful Web Services deployed on Railway. We believe this increment will deliver a more consistent experience to citizens and operators through persistent account management, bicycle availability, trip management, subscriptions and maintenance reporting. This will be confirmed through functional testing, API response validation, data persistence verification and deployment evidence.*
+
+El objetivo del Sprint 4 consiste en consolidar los incrementos desarrollados durante los sprints anteriores, integrando las interfaces del frontend con los servicios REST del backend y atendiendo las observaciones correspondientes al AV2.
+
+**Previous Sprint Continuity**
+
+| Sprint | Entregable | Incremento desarrollado | Tareas |
+|---|---|---|---:|
+| Sprint 1 | AV1 | Landing Page, diseño visual y presentación del producto. | 16 |
+| Sprint 2 | TB1 | Frontend Web Application mediante Vue 3. | 18 |
+| Sprint 3 | AV2 | Backend REST, persistencia y despliegue en Railway. | 21 |
+| Sprint 4 | TB2 | Integración, validación, correcciones y documentación final. | 40 |
+
+**Selected User Stories**
+
+| Bounded Context | Selected User Stories | Reference Story Points |
+|---|---|---:|
+| Identity and Access Management | US-01, US-02, US-03 | 9 |
+| Fleet and Station Management | US-07, US-08, US-09 | 11 |
+| Trip Management | US-11, US-13, US-15 | 13 |
+| Billing and Subscriptions | US-16, US-17, US-19 | 12 |
+| Maintenance | US-26, US-29, US-33 | 11 |
+| **Total** | **15 User Stories** | **56** |
+
+Los Story Points corresponden a las estimaciones de referencia del Product Backlog utilizadas en el Sprint 2. No representan la velocidad alcanzada ni el esfuerzo residual del Sprint 4.
+
+**Sprint Capacity and Task Estimation**
+
+| Planning Indicator | Value |
+|---|---:|
+| Team Members | 5 |
+| Selected User Stories | 15 |
+| Reference Story Points | 56 |
+| Main Tasks | 15 |
+| Complementary Microtasks | 25 |
+| Total Trello Cards | 40 |
+| Estimated Effort | 61 hours |
+| Average Estimated Effort per Member | 12.2 hours |
+| Bounded Contexts | 5 |
+| REST Controllers | 17 |
+| HTTP Operations | 61 |
+
+Las 40 tarjetas se distribuyen en 15 actividades principales y 25 microtareas de verificación y documentación. Las microtareas complementarias están comprendidas en la estimación de las actividades generales, evitando contabilizar dos veces el esfuerzo.
+
+La distribución individual de horas y la velocidad real del Sprint se determinarán mediante la revisión de las actividades completadas.
+
+**Sprint Scope**
+
+| Aspect | Expected Deliverable |
+|---|---|
+| Frontend Integration | Consumo de servicios REST desde Vue 3 mediante Axios. |
+| Backend Integration | Validación de contratos HTTP y recursos JSON. |
+| Database Management | Revisión de migraciones mediante Entity Framework Core. |
+| Functional Testing | Ejecución de escenarios funcionales de los cinco Bounded Contexts. |
+| User Experience | Corrección de problemas de navegación, responsive e internacionalización. |
+| Deployment | Verificación de la comunicación entre Firebase Hosting y Railway. |
+| Documentation | Evidencias de desarrollo, ejecución, servicios y despliegue. |
+| Product Presentation | Videos About-the-Product y About-the-Team. |
+
+**Sprint Backlog Distribution**
+
+| Task Range | Work Area | Cards |
+|---|---|---:|
+| T4-01 - T4-15 | Main Sprint Activities | 15 |
+| T4-16 - T4-18 | Identity and Access Management | 3 |
+| T4-19 - T4-21 | Fleet and Station Management | 3 |
+| T4-22 - T4-25 | Trip Management | 4 |
+| T4-26 - T4-28 | Billing and Subscriptions | 3 |
+| T4-29 - T4-31 | Maintenance | 3 |
+| T4-32 - T4-33 | Quality Assurance and UX | 2 |
+| T4-34 - T4-36 | Migrations and Deployment | 3 |
+| T4-37 - T4-40 | Documentation and Evidence | 4 |
+| **Total** | | **40** |
+
+**Technical Scope and Integration Strategy**
+
+| Technical Work Item | Technical Objective | Acceptance Criteria |
+|---|---|---|
+| TW4-01 | API Configuration | Configuración de la URL base y construcción correcta de rutas HTTP. |
+| TW4-02 | API Contracts | Compatibilidad entre los recursos del frontend y backend. |
+| TW4-03 | Data Persistence | Disponibilidad de los datos después de recargar la aplicación. |
+| TW4-04 | Error Handling | Gestión de respuestas HTTP fallidas sin exponer información sensible. |
+| TW4-05 | EF Core Migrations | Administración verificable del esquema de base de datos. |
+| TW4-06 | Software Deployment | Comunicación HTTPS entre la aplicación publicada y el backend. |
+
+**Sprint Risks and Mitigation**
+
+| Risk | Impact | Mitigation Strategy |
+|---|---|---|
+| Incompatibilidad de contratos REST | Alto | Contrastar los recursos del frontend con OpenAPI. |
+| Dependencia de datos simulados | Alto | Verificar las peticiones HTTP realizadas desde la aplicación. |
+| Inconsistencias en la base de datos | Alto | Revisar las migraciones en un entorno de prueba. |
+| Errores de CORS | Alto | Verificar la configuración de orígenes permitidos. |
+| Servicios de autenticación incompletos | Alto | Identificar las limitaciones y validar los servicios disponibles. |
+| Falta de evidencias | Medio | Registrar resultados, capturas y commits de cada actividad. |
+| Dificultades de coordinación | Medio | Actualizar el Sprint Backlog mediante Trello. |
+
+**Definition of Done**
+
+- Código fuente registrado en GitHub.
+- Contratos REST contrastados con OpenAPI y Scalar.
+- Criterios de aceptación verificados mediante pruebas funcionales.
+- Persistencia de los datos comprobada.
+- Manejo adecuado de errores y estados vacíos.
+- Compilación y despliegue del incremento verificados.
+- Evidencias técnicas incorporadas al informe.
+- Estados del Sprint Backlog actualizados según resultados comprobables.
+
+**Sprint 4 Architecture**
+
+```mermaid
+flowchart TD
+    U[Usuario BiciGO] --> F[Vue 3 - Firebase Hosting]
+    F --> H[Axios HTTP Client]
+    H --> A[ASP.NET Core REST API - Railway]
+    A --> I[IAM]
+    A --> FL[Fleet and Station Management]
+    A --> T[Trip Management]
+    A --> B[Billing and Subscriptions]
+    A --> M[Maintenance]
+    I --> E[Entity Framework Core]
+    FL --> E
+    T --> E
+    B --> E
+    M --> E
+    E --> DB[(MySQL)]
+    A --> S[Scalar / OpenAPI]
+```
+
+*Figura: arquitectura objetivo de integración del Sprint 4 de BiciGO.*
+
+La planificación establece los criterios para la revisión final del producto. El cumplimiento efectivo de las funcionalidades se acredita mediante las evidencias de las secciones posteriores.
+
+#### 5.2.4.2. Aspect Leaders and Collaborators
+
+Durante el Sprint 4, el equipo orienta sus esfuerzos hacia la integración de los componentes desarrollados en los incrementos anteriores. La distribución de responsabilidades considera la experiencia técnica de cada integrante, los Bounded Contexts implementados durante los sprints 2 y 3, y las actividades correspondientes al TB2.
+
+**Leadership-and-Collaboration Matrix (LACX)**
+
+| Team Member | GitHub Username | IAM | Fleet & Station Management | Trip Management | Billing & Subscriptions | Maintenance |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Armestar Felipa, Adrian Andres | Adrian5102 | L | C | C | C | C |
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | C | L | C | C | C |
+| Franco del Carpio, José María | VoltTrd | C | C | L | C | C |
+| Ayllon Pauccar, Juan David | JuanDPAUC | C | C | C | L | C |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | C | C | C | C | L |
+
+*L = Leader; C = Collaborator.*
+
+La matriz establece una propuesta de liderazgo funcional basada en los responsables del frontend durante el Sprint 2. Los responsables del backend colaboran en la integración y validación de los contratos REST.
+
+**Continuity of Responsibilities**
+
+| Bounded Context | Sprint 2 - Frontend | Sprint 3 - Backend | Sprint 4 - Integration |
+|---|---|---|---|
+| IAM | Adrian Armestar | Adrian Armestar | Adrian Armestar / Eduardo Aguirre |
+| Fleet & Station Management | Eduardo Aguirre | Rodrigo Velasquez | Eduardo Aguirre / Rodrigo Velasquez |
+| Trip Management | José María Franco | José María Franco | José María Franco / Eduardo Aguirre |
+| Billing & Subscriptions | Juan David Ayllon | Juan David Ayllon | Juan David Ayllon / Eduardo Aguirre |
+| Maintenance | Rodrigo Velasquez | Eduardo Aguirre | Rodrigo Velasquez / Eduardo Aguirre |
+
+La continuidad de responsabilidades facilita la identificación de incompatibilidades entre los componentes del frontend y los servicios REST implementados en el backend.
+
+En Fleet y Maintenance se establece una coordinación especial entre Eduardo Aguirre y Rodrigo Velasquez, debido al intercambio de responsabilidades entre los incrementos de frontend y backend.
+
+**Cross-cutting Leadership and Collaboration Matrix**
+
+| Team Member | API Integration | EF Core Migrations | Functional Testing | Sprint Documentation | Report Corrections | About-the-Product | About-the-Team |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Eduardo Aguirre | L | C | C | C | C | L | C |
+| Adrian Armestar | C | C | C | C | L | C | C |
+| Juan David Ayllon | C | L | C | C | C | C | C |
+| José María Franco | C | C | C | C | C | C | C |
+| Rodrigo Velasquez | C | C | C | L | C | C | L |
+
+Las actividades transversales toman como referencia las responsabilidades registradas en el Student Outcome del TB2. La validación funcional constituye una responsabilidad compartida entre los integrantes del equipo.
+
+**Responsibilities and Expected Deliverables**
+
+| Team Member | Main Responsibility | Expected Deliverable | Related Tasks |
+|---|---|---|---|
+| Eduardo Aguirre | Liderazgo de integración y coordinación técnica. | Frontend conectado con los servicios REST y video About-the-Product. | T4-01, T4-03, T4-10, T4-13, T4-35, T4-36 |
+| Adrian Armestar | Integración de IAM y correcciones documentales. | Validación de usuarios, recomendaciones e incorporación del video en la Landing Page. | T4-02, T4-14, T4-16, T4-17, T4-18 |
+| José María Franco | Validación del ciclo de alquiler. | Evidencias de inicio, consulta, finalización de viajes y validación QR. | T4-04, T4-22, T4-23, T4-24, T4-25 |
+| Juan David Ayllon | Billing y migraciones de base de datos. | Validación de planes, métodos de pago, suscripciones y migraciones EF Core. | T4-05, T4-12, T4-26, T4-27, T4-28, T4-34 |
+| Rodrigo Velasquez | Maintenance, planificación y documentación del Sprint. | Sprint Backlog, evidencias técnicas, documentación REST y video About-the-Team. | T4-06, T4-07, T4-11, T4-15, T4-29, T4-30, T4-31, T4-37, T4-38, T4-39, T4-40 |
+
+Las actividades T4-08, T4-09, T4-32 y T4-33 corresponden a actividades compartidas de calidad, experiencia de usuario y pruebas de integración.
+
+Las tarjetas T4-19, T4-20 y T4-21 requieren la colaboración de Eduardo Aguirre y Rodrigo Velasquez para validar las bicicletas, estaciones y mecanismos de búsqueda.
+
+**Team Coordination Strategy**
+
+El equipo organiza el seguimiento del Sprint 4 mediante Trello, utilizando las columnas To-do, In-Process, To-Review y Done. Cada actividad se relaciona con los objetivos del incremento y debe contar con evidencias suficientes antes de considerarse completada.
+
+| Collaboration Activity | Supporting Tool |
+|---|---|
+| Distribución y seguimiento de tareas | Trello |
+| Control de versiones | Git y GitHub |
+| Revisión de cambios | GitHub Pull Requests |
+| Documentación de servicios | OpenAPI y Scalar |
+| Validación funcional | Web Application y herramientas de desarrollo del navegador |
+| Documentación de evidencias | Project Report |
+| Verificación de despliegue | Firebase Hosting y Railway |
+
+**Team GitHub Profiles**
+
+| Team Member | GitHub Profile |
+|---|---|
+| Adrian Armestar | [Adrian5102](https://github.com/Adrian5102) |
+| Eduardo Aguirre | [TheEngineEdu](https://github.com/TheEngineEdu) |
+| José María Franco | [VoltTrd](https://github.com/VoltTrd) |
+| Juan David Ayllon | [JuanDPAUC](https://github.com/JuanDPAUC) |
+| Rodrigo Velasquez | [Rodrigov233](https://github.com/Rodrigov233) |
+
+La distribución permite mantener la trazabilidad entre los responsables, las historias de usuario, las actividades técnicas y los entregables del Sprint 4. Las contribuciones efectivamente realizadas se acreditan en las secciones de Development Evidence y Team Collaboration Insights.
+
+#### 5.2.4.3. Sprint Backlog 4
+
+El Sprint Backlog 4 comprende las actividades necesarias para integrar los componentes desarrollados en los sprints anteriores, validar los servicios REST, atender las observaciones del AV2 y consolidar la documentación correspondiente al trabajo final.
+
+Para la gestión de las actividades se utiliza Trello, manteniendo la organización empleada en los sprints anteriores mediante las columnas To-do, In-Process, To-Review y Done.
+
+**Sprint Backlog Management Tool:** Trello.
+
+**Sprint Backlog URL:** [Sprint 4 Web Application - BiciGO](https://trello.com/b/FJ6zVLwa/sprint-4-web-application-bicigo)
+
+**Sprint Backlog 4**
+
+| Epic / Story ID | Task ID | Task Title | Description | Estimation | Assigned To (Reference) | Status |
+|---|---|---|---|---:|---|---|
+| Transversal | T4-01 | Configure API connection | Configurar la URL base, Axios, manejo de errores y CORS. | 3 h | Eduardo / Equipo | To-do |
+| US-01, US-02, US-03 | T4-02 | Integrate IAM | Integrar los servicios de gestión de usuarios y revisar los mecanismos de autenticación. | 5 h | Adrian / Eduardo | To-do |
+| US-07, US-08, US-09 | T4-03 | Integrate Fleet | Integrar bicicletas, estaciones, filtros y disponibilidad. | 5 h | Eduardo | To-do |
+| US-11, US-13, US-15 | T4-04 | Integrate Trip | Integrar el inicio, consulta y finalización del alquiler. | 6 h | José / Eduardo | To-do |
+| US-16, US-17, US-19 | T4-05 | Integrate Billing | Integrar planes, métodos de pago y suscripciones. | 5 h | Juan / Eduardo | To-do |
+| US-26 | T4-06 | Integrate Damage Reports | Integrar el formulario de reporte de incidencias con la API. | 4 h | Eduardo | To-do |
+| US-29, US-33 | T4-07 | Integrate Incident Management | Integrar el seguimiento de reportes, historial y estados. | 5 h | Eduardo | To-do |
+| Transversal | T4-08 | UX and i18n corrections | Atender observaciones de usabilidad, traducciones y navegación. | 4 h | Equipo | To-do |
+| Transversal | T4-09 | End-to-end validation | Verificar los flujos funcionales integrados. | 5 h | Equipo | To-do |
+| Transversal | T4-10 | Production deployment | Compilar y verificar el despliegue integrado. | 3 h | Eduardo | To-do |
+| Transversal | T4-11 | Sprint evidence and documentation | Elaborar el informe, registrar commits y recopilar evidencias. | 4 h | Rodrigo | In-Process |
+| TS-SH01 | T4-12 | EF Core migrations | Revisar la inicialización de la base de datos y las migraciones. | 3 h | Juan | To-do |
+| Transversal | T4-13 | About-the-Product video | Elaborar la presentación narrada del producto. | 3 h | Eduardo | To-do |
+| Transversal | T4-14 | Final report and landing corrections | Corregir el informe, recomendaciones y Landing Page. | 3 h | Adrian | To-do |
+| Transversal | T4-15 | About-the-Team video | Elaborar la presentación del equipo. | 3 h | Rodrigo | To-do |
+| US-01 | T4-16 | Validate register contract | Contrastar el formulario de registro con CreateUserResource. | T4-02 | Adrian / Eduardo | To-do |
+| US-02 | T4-17 | Validate login and session | Verificar credenciales, autenticación y estado de sesión. | T4-02 | Adrian / Eduardo | To-do |
+| US-03 | T4-18 | Review recovery service | Identificar y comprobar el servicio de recuperación de acceso. | T4-02 | Adrian / Eduardo | To-do |
+| US-07 | T4-19 | Verify bicycle map | Contrastar las bicicletas y estaciones de la API con el mapa. | T4-03 | Eduardo / Rodrigo | To-do |
+| US-08 | T4-20 | Verify bicycle details | Validar identificadores, disponibilidad y detalle de bicicletas. | T4-03 | Eduardo / Rodrigo | To-do |
+| US-09 | T4-21 | Verify zone filters | Comprobar los filtros de búsqueda y resultados vacíos. | T4-03 | Eduardo / Rodrigo | To-do |
+| US-11 | T4-22 | Verify start trip | Validar la creación de viajes y disponibilidad de bicicletas. | T4-04 | José / Eduardo | To-do |
+| US-13 | T4-23 | Verify active trip | Comprobar la recuperación y persistencia del viaje activo. | T4-04 | José / Eduardo | To-do |
+| US-15 | T4-24 | Verify trip finish | Validar la finalización del alquiler y transición de estado. | T4-04 | José / Eduardo | To-do |
+| TS-09, TS-11 | T4-25 | Verify QR and route points | Contrastar la validación QR y los puntos de ruta. | T4-04 | José / Eduardo | To-do |
+| US-16 | T4-26 | Verify payment method | Validar el contrato de métodos de pago con datos de prueba. | T4-05 | Juan / Eduardo | To-do |
+| US-17 | T4-27 | Verify plans and pricing | Comparar precios y planes del frontend con la API REST. | T4-05 | Juan / Eduardo | To-do |
+| US-19 | T4-28 | Verify subscriptions | Comprobar el registro y consulta de suscripciones. | T4-05 | Juan / Eduardo | To-do |
+| US-26 | T4-29 | Validate damage report form | Validar campos obligatorios y errores del formulario de reporte. | T4-06 | Rodrigo / Eduardo | To-do |
+| US-29 | T4-30 | Verify report tracking | Comprobar la consulta y persistencia de los reportes. | T4-07 | Rodrigo / Eduardo | To-do |
+| US-33 | T4-31 | Verify incident status and permissions | Validar cambios de estado, historial y permisos. | T4-07 | Rodrigo / Eduardo | To-do |
+| Transversal | T4-32 | Validate API error handling | Verificar errores HTTP, CORS y estados de carga. | T4-09 | Equipo | To-do |
+| Transversal | T4-33 | Verify responsive and bilingual UI | Comprobar resoluciones de 390, 768 y 1440 px e idiomas ES/EN. | T4-08 | Equipo | To-do |
+| TS-SH01 | T4-34 | Verify migration history | Revisar Program.cs y el historial de migraciones EF Core. | T4-12 | Juan | To-do |
+| Transversal | T4-35 | Verify frontend production build | Registrar la compilación de producción y versión publicada. | T4-10 | Eduardo | To-do |
+| TS-SH02 | T4-36 | Verify deployed API connectivity | Verificar la comunicación HTTPS entre la SPA y Railway. | T4-10 | Eduardo | To-do |
+| Transversal | T4-37 | Document Scalar evidence | Incorporar las seis capturas de Scalar y verificar su visualización. | T4-11 | Rodrigo | In-Process |
+| Transversal | T4-38 | Collect development and collaboration evidence | Registrar commits, ramas, Pull Requests y contribuciones. | T4-11 | Rodrigo | In-Process |
+| Transversal | T4-39 | Collect execution and deployment evidence | Registrar pruebas funcionales y evidencias de despliegue. | T4-11 | Rodrigo / Equipo | To-do |
+| Transversal | T4-40 | Reconcile final backlog and report | Sincronizar las 40 tarjetas, estados y evidencias con el informe. | T4-11 | Rodrigo | In-Process |
+| **Total** | **40 tareas** | | | **61 h** | | |
+
+Las tareas T4-01 a T4-15 representan las actividades principales del Sprint 4. Las tareas T4-16 a T4-40 corresponden a microtareas complementarias cuya estimación está incluida en la actividad principal indicada en la columna Estimation.
+
+Los responsables corresponden a las referencias registradas en Trello y a la distribución técnica del equipo. No representan necesariamente asignaciones formales dentro de la plataforma.
+
+**Sprint Backlog Summary**
+
+| Indicator | Value |
+|---|---:|
+| Main Tasks | 15 |
+| Complementary Microtasks | 25 |
+| Total Tasks | 40 |
+| Estimated Effort | 61 h |
+| To-do | 36 |
+| In-Process | 4 |
+| To-Review | 0 |
+| Done | 0 |
+
+Los estados corresponden a la consulta del tablero realizada el 27/11/2026. Se actualizarán conforme se obtengan las evidencias técnicas y se realice la revisión de las actividades.
+
+**Task Distribution by Bounded Context**
+
+| Work Area | Complementary Tasks |
+|---|---:|
+| Identity and Access Management | 3 |
+| Fleet and Station Management | 3 |
+| Trip Management | 4 |
+| Billing and Subscriptions | 3 |
+| Maintenance | 3 |
+| Quality Assurance and UX | 2 |
+| Migrations and Deployment | 3 |
+| Documentation and Evidence | 4 |
+| **Total** | **25** |
+
+**Sprint Workflow**
+
+```mermaid
+flowchart LR
+    A[To-do] --> B[In-Process]
+    B --> C[To-Review]
+    C --> D[Done]
+    C -->|Correcciones| B
+```
+
+*Figura: flujo de seguimiento de actividades del Sprint 4.*
+
+| Status | Description |
+|---|---|
+| To-do | Actividades registradas cuya ejecución todavía no se ha acreditado. |
+| In-Process | Actividades con avances en elaboración o implementación. |
+| To-Review | Actividades ejecutadas que requieren revisión. |
+| Done | Actividades verificadas y aceptadas mediante evidencias. |
+
+**Sprint Backlog Evidence**
+
+El tablero puede consultarse directamente mediante el siguiente enlace:
+
+[SPRINT 4 WEB APPLICATION - BiciGO](https://trello.com/b/FJ6zVLwa/sprint-4-web-application-bicigo)
+
+<!-- S4-TRELLO-IMAGE-START -->
+
+![Sprint Backlog 4 - Trello](./Resources/chapter5/sprint4/trello4.jpeg)
+
+*Figura: Tablero Trello del Sprint 4 de BiciGO, conformado por 40 tarjetas.*
+
+<!-- S4-TRELLO-IMAGE-END -->
+
+El seguimiento mediante Trello permite mantener la trazabilidad entre las historias de usuario, las actividades de integración, las responsabilidades del equipo y las evidencias presentadas durante el Sprint Review.
+
+#### 5.2.4.4. Development Evidence for Sprint Review
+
+La integración parte de los repositorios [frontend-bicigo](https://github.com/Startup-Chapa/frontend-bicigo) y [backend-bicigo](https://github.com/Startup-Chapa/backend-bicigo). El frontend dispone de adaptadores de infraestructura para IAM, Fleet, Trip, Billing y Maintenance, además del cliente compartido `src/shared/infrastructure/base-api.js`. El backend contiene los controladores REST de los contextos correspondientes.
+
+| Repositorio / rama | Commit de referencia | Mensaje | GitHub User | Fecha (Lima) |
+|---|---|---|---|---|
+| frontend-bicigo / develop | [98658e2](https://github.com/Startup-Chapa/frontend-bicigo/commit/98658e2) | feat: integrate BiciGO frontend modules | Rodrigov233 | 06/10/2026 |
+| frontend-bicigo / feature/corrections | [70708ca](https://github.com/Startup-Chapa/frontend-bicigo/commit/70708ca) | fix: Replace wrong data with new ones | TheEngineEdu | 27/10/2026 |
+| backend-bicigo / develop | [8405e55](https://github.com/Startup-Chapa/backend-bicigo/commit/8405e55) | fix: add some datails to conecto frontend | TheEngineEdu | 12/11/2026 |
+| backend-bicigo / main | [ff39ddd](https://github.com/Startup-Chapa/backend-bicigo/commit/ff39ddd) | fix:add final | TheEngineEdu | 12/11/2026 |
+
+Estos commits son antecedentes comprobados, no contribuciones atribuidas al Sprint 4. Al 27/11/2026, las ramas main y develop del frontend no muestran commits posteriores al 10/10/2026. Se requiere identificar la rama efectiva de integración y registrar los nuevos commits del Sprint 4, junto con su autor, fecha, mensaje y evidencia de GitHub Pulse.
+
+<!-- SPRINT4-COMMITS-START -->
+
+**Sprint 4 Development Evidence**
+
+Durante el Sprint 4, el desarrollo se orienta hacia la integración de los servicios REST con la aplicación frontend, el fortalecimiento de los mecanismos de autenticación y la consolidación del informe final del proyecto.
+
+**Development Repositories**
+
+| Repository | Technology | Purpose |
+|---|---|---|
+| [frontend-bicigo](https://github.com/Startup-Chapa/frontend-bicigo) | Vue 3, Vite, Axios | Frontend Web Application |
+| [backend-bicigo](https://github.com/Startup-Chapa/backend-bicigo) | C#, ASP.NET Core, EF Core | RESTful Web Services |
+| [Landing-Page](https://github.com/Startup-Chapa/Landing-Page) | Web Technologies | Product Landing Page |
+| [project-report](https://github.com/Startup-Chapa/project-report) | Markdown | Project Documentation |
+
+**Commit History**
+
+El siguiente registro comprende los commits identificados desde el 13 de noviembre de 2026, fecha provisional de inicio del Sprint 4, hasta el 27 de noviembre de 2026. Los commits compartidos entre ramas se contabilizan una sola vez.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) | GitHub User |
+|---|---|---|---|---|---|---|
+| Startup-Chapa/backend-bicigo | feature/jwt-iam | [591f26c](https://github.com/Startup-Chapa/backend-bicigo/commit/591f26c6939ac5aadb840a36428ebc13607ff27d) | fix(Iam): resolve BCrypt namespace conflict | Sin cuerpo adicional | 27/11/2026 | JuanDPAUC |
+| Startup-Chapa/backend-bicigo | feature/jwt-iam | [63311ff](https://github.com/Startup-Chapa/backend-bicigo/commit/63311ff2fa6e3c1ed55d82b25be80f913a61e8f9) | feat(Iam): add JWT authentication | Sin cuerpo adicional | 27/11/2026 | JuanDPAUC |
+| Startup-Chapa/project-report | feature/chapter5-sprint-4 | [8a31b3f](https://github.com/Startup-Chapa/project-report/commit/8a31b3f3ffa3cb45439a62afa9f240eff3d8f045) | docs(sprint4): add sprint planning, backlog and implementation evidence | Sin cuerpo adicional | 27/11/2026 | Rodrigov233 |
+| Startup-Chapa/project-report | main | [d679644](https://github.com/Startup-Chapa/project-report/commit/d6796445feffea4adf304fc6e38902c610e00271) | feat(README): add student outcome feats for TB2 | Sin cuerpo adicional | 26/11/2026 | Adrian5102 |
+| Startup-Chapa/project-report | main | [791e8ce](https://github.com/Startup-Chapa/project-report/commit/791e8ce5dc253f79a05231c31da7609819037337) | Correcion de la fecha en la caratula | Sin cuerpo adicional | 26/11/2026 | Adrian5102 |
+| Startup-Chapa/project-report | main | [f30e9c1](https://github.com/Startup-Chapa/project-report/commit/f30e9c1f77e6f8f003d722365f2b0a61306b4f16) | fix(conclusions): fixed minor details | Sin cuerpo adicional | 24/11/2026 | Adrian5102 |
+| Startup-Chapa/project-report | main | [8d8cac5](https://github.com/Startup-Chapa/project-report/commit/8d8cac5cea25316fd42e2228d7e1c3370179686d) | feat(conclusions): add recomendations | Sin cuerpo adicional | 24/11/2026 | Adrian5102 |
+
+Las fechas corresponden a la zona horaria de Lima, UTC-5.
+
+**Backend Development: JWT Authentication**
+
+El commit 63311ff incorpora mecanismos de autenticación mediante JSON Web Tokens en el Bounded Context IAM. Los cambios comprenden servicios de generación de tokens, hashing de contraseñas mediante BCrypt, recursos REST y modificaciones en la configuración de la aplicación.
+
+| Architectural Layer | Component | Development Evidence |
+|---|---|---|
+| Domain | User | Actualización del agregado de usuarios. |
+| Domain | SignInCommand | Incorporación del comando de autenticación. |
+| Application | UserCommandService | Actualización de la lógica de gestión de usuarios. |
+| Application | IHashingService | Incorporación de la abstracción de hashing. |
+| Application | ITokenService | Incorporación de la abstracción de tokens. |
+| Infrastructure | HashingService | Implementación del servicio BCrypt. |
+| Infrastructure | TokenService | Incorporación del servicio JWT. |
+| Infrastructure | TokenSettings | Configuración de parámetros relacionados con tokens. |
+| Interfaces | TokensController | Incorporación del controlador REST de tokens. |
+| Interfaces | SignInResource | Incorporación del recurso de autenticación. |
+| Interfaces | AuthenticatedUserResource | Incorporación del recurso de usuario autenticado. |
+| Configuration | Program.cs | Actualización de la configuración del backend. |
+
+**Code Change Statistics**
+
+| Commit | Files Changed | Additions | Deletions |
+|---|---:|---:|---:|
+| 63311ff | 27 | 391 | 48 |
+| 591f26c | 1 | 2 | 2 |
+
+El commit 591f26c corrige un conflicto de namespace relacionado con BCrypt, complementando la implementación inicial de autenticación.
+
+Estos cambios se encuentran en la rama feature/jwt-iam. Su presencia en dicha rama no acredita todavía su integración en main ni su despliegue en Railway.
+
+**Authentication Architecture**
+
+```mermaid
+flowchart TD
+    A[Web Application] --> B[REST Authentication Interface]
+    B --> C[SignInCommand]
+    C --> D[UserCommandService]
+    D --> E[User Repository]
+    D --> F[BCrypt Hashing Service]
+    D --> G[JWT Token Service]
+    E --> H[(MySQL)]
+    G --> I[Authenticated User Resource]
+    I --> A
+```
+
+*Figura: representación conceptual de los componentes de autenticación incorporados en la rama feature/jwt-iam.*
+
+**Development Contribution Summary**
+
+| Team Member | GitHub Username | Identified Commits |
+|---|---|---:|
+| Adrian Armestar | Adrian5102 | 4 |
+| Juan David Ayllon | JuanDPAUC | 2 |
+| Rodrigo Velasquez | Rodrigov233 | 1 |
+| Eduardo Aguirre | TheEngineEdu | 0 |
+| José María Franco | VoltTrd | 0 |
+| **Total** | | **7** |
+
+El registro corresponde exclusivamente a los commits identificados en las ramas consultadas durante el periodo de revisión. No representa la totalidad de las actividades académicas, reuniones, pruebas o cambios locales efectuados por los integrantes.
+
+**Pull Request Review**
+
+La revisión de los Pull Requests disponibles en los cuatro repositorios no identificó registros creados o actualizados durante el periodo consultado del Sprint 4.
+
+| Repository | Pull Requests in Reviewed Period | Evidence Link |
+|---|---:|---|
+| frontend-bicigo | 0 | [Pull Requests](https://github.com/Startup-Chapa/frontend-bicigo/pulls?q=is%3Apr) |
+| backend-bicigo | 0 | [Pull Requests](https://github.com/Startup-Chapa/backend-bicigo/pulls?q=is%3Apr) |
+| Landing-Page | 0 | [Pull Requests](https://github.com/Startup-Chapa/Landing-Page/pulls?q=is%3Apr) |
+| project-report | 0 | [Pull Requests](https://github.com/Startup-Chapa/project-report/pulls?q=is%3Apr) |
+
+**GitHub Development Evidence**
+
+<!-- S4-DEVELOPMENT-IMAGES-START -->
+
+![github-backend-commits](./Resources/chapter5/sprint4/github-backend-commits.png)
+
+*Figura: Historial de commits de la rama feature/jwt-iam del backend, evidenciando la implementacion de JWT y la correccion de BCrypt.*
+
+![github-jwt-implementation](./Resources/chapter5/sprint4/github-jwt-implementation.png)
+
+*Figura: Implementacion de autenticacion JWT mediante el commit 63311ff, con 27 archivos modificados, 391 lineas agregadas y 48 eliminadas.*
+
+![github-report-commits](./Resources/chapter5/sprint4/github-report-commits.png)
+
+*Figura: Historial de contribuciones del Project Report durante el Sprint 4.*
+
+<!-- S4-DEVELOPMENT-IMAGES-END -->
+
+**Development References**
+
+- [Backend JWT implementation](https://github.com/Startup-Chapa/backend-bicigo/tree/feature/jwt-iam)
+- [Backend JWT commit history](https://github.com/Startup-Chapa/backend-bicigo/commits/feature/jwt-iam/)
+- [Frontend development history](https://github.com/Startup-Chapa/frontend-bicigo/commits/develop/)
+- [Sprint 4 documentation history](https://github.com/Startup-Chapa/project-report/commits/feature/chapter5-sprint-4/)
+
+El historial permite mantener la trazabilidad de los cambios técnicos y documentales del Sprint 4. La validación de su funcionamiento se desarrolla en Execution Evidence for Sprint Review.
+
+<!-- SPRINT4-COMMITS-END -->
+
+<!-- S4-TRACEABILITY-START -->
+**Requirements Traceability Matrix**
+
+| Story ID | Funcionalidad | Contexto | Verificacion tecnica |
+|---|---|---|---|
+| US-01 | Registro de usuario | IAM | Contrato de creacion y validacion de datos. |
+| US-02 | Inicio de sesion | IAM | Credenciales validas, invalidas y estado de sesion. |
+| US-03 | Recuperacion de contrasena | IAM | Disponibilidad del servicio y respuesta al usuario. |
+| US-07 | Bicicletas cercanas | Fleet | Consulta de bicicletas y estaciones disponibles. |
+| US-08 | Detalle de bicicleta | Fleet | Identificador, informacion y estado del recurso. |
+| US-09 | Busqueda por zona | Fleet | Filtrado y resultados vacios. |
+| US-11 | Inicio de alquiler | Trip | Creacion del viaje y disponibilidad de bicicleta. |
+| US-13 | Viaje activo | Trip | Recuperacion del estado y datos asociados. |
+| US-15 | Finalizacion de alquiler | Trip | Transicion de estado y persistencia. |
+| US-16 | Metodo de pago | Billing | Validacion del recurso y datos no sensibles. |
+| US-17 | Consulta de tarifa | Billing | Correspondencia de precios y condiciones. |
+| US-19 | Suscripcion mensual | Billing | Creacion y consulta de suscripciones. |
+| US-26 | Reporte de bicicleta | Maintenance | Registro de incidencia y persistencia. |
+| US-29 | Seguimiento | Maintenance | Consulta del reporte y su estado. |
+| US-33 | Gestion de incidencias | Maintenance | Transiciones de estado y permisos. |
+
+Esta matriz relaciona los requerimientos seleccionados con los contextos y las verificaciones tecnicas propuestas. No constituye una declaracion de cumplimiento de las historias.
+<!-- S4-TRACEABILITY-END -->
+
+#### 5.2.4.5. Execution Evidence for Sprint Review
+
+La revisión de ejecución se orienta a demostrar que las vistas consumen servicios reales y que los cambios persisten tras recargar la aplicación. Las siguientes pruebas constituyen un plan de validación, no resultados de pruebas ejecutadas.
+
+| Contexto | Escenario a verificar | Evidencia requerida | Resultado |
+|---|---|---|---|
+| IAM | Registro, acceso válido e inválido, perfil | Capturas de interfaz y respuesta API sin exponer credenciales | Pendiente |
+| Fleet | Consulta de bicicletas y estaciones | Listado, detalle y respuesta HTTP | Pendiente |
+| Trip | Inicio, viaje activo y finalización | Secuencia de pantallas y estados persistidos | Pendiente |
+| Billing | Consulta de planes y gestión de suscripción | Respuesta API y estado de suscripción; identificar si el pago es simulado | Pendiente |
+| Maintenance | Creación y seguimiento de incidencia | Formulario, reporte creado, historial y verificación tras recarga | Pendiente |
+| Transversal | Error de red, navegación y traducciones | Capturas de mensajes de error y vistas ES/EN | Pendiente |
+
+**Video de ejecución:** pendiente de enlace y marcas de tiempo. Las capturas se incorporarán después de ejecutar las pruebas, dentro de `Resources/chapter5/`.
+
+<!-- S4-TESTING-START -->
+**Functional and Integration Test Cases**
+
+| Test ID | Story ID | Escenario | Resultado esperado | Estado |
+|---|---|---|---|---|
+| TC4-01 | US-01 | Registro con datos validos | Usuario registrado y respuesta coherente con el contrato. | Pendiente |
+| TC4-02 | US-01 | Datos incompletos | Validacion y ausencia de registros invalidos. | Pendiente |
+| TC4-03 | US-02 | Inicio de sesion valido | Acceso al flujo autorizado. | Pendiente |
+| TC4-04 | US-02 | Credenciales incorrectas | Acceso rechazado y mensaje comprensible. | Pendiente |
+| TC4-05 | US-03 | Recuperacion de acceso | Respuesta consistente con el servicio disponible. | Pendiente |
+| TC4-06 | US-07 | Consulta de bicicletas | Listado obtenido mediante la API. | Pendiente |
+| TC4-07 | US-08 | Bicicleta inexistente | Manejo correcto del recurso no encontrado. | Pendiente |
+| TC4-08 | US-09 | Zona sin bicicletas | Estado vacio sin errores de interfaz. | Pendiente |
+| TC4-09 | US-11 | Inicio de viaje | Registro y estado inicial persistidos. | Pendiente |
+| TC4-10 | US-13 | Consulta de viaje activo | Informacion actual del viaje. | Pendiente |
+| TC4-11 | US-15 | Finalizacion de viaje | Estado final consistente. | Pendiente |
+| TC4-12 | US-16 | Metodo de pago invalido | Validacion sin exponer informacion financiera. | Pendiente |
+| TC4-13 | US-17 | Consulta de planes y tarifas | Valores coherentes con la API. | Pendiente |
+| TC4-14 | US-19 | Registro de suscripcion | Estado de suscripcion verificable. | Pendiente |
+| TC4-15 | US-26 | Creacion de reporte | Incidencia registrada en el backend. | Pendiente |
+| TC4-16 | US-29 | Consulta posterior a recarga | Reporte persistente y accesible. | Pendiente |
+| TC4-17 | US-33 | Cambio de estado | Historial coherente y permisos verificados. | Pendiente |
+| TC4-18 | Transversal | API no disponible | Mensaje de error y recuperacion de interfaz. | Pendiente |
+| TC4-19 | Transversal | Cambio de idioma | Interfaz consistente en ES y EN. | Pendiente |
+| TC4-20 | Transversal | Acceso desde Firebase | Comunicacion HTTPS con el backend. | Pendiente |
+
+**Integration Evidence Protocol**
+
+Para cada escenario ejecutado se registrara:
+
+1. Identificador del caso de prueba.
+2. Version o commit de la aplicacion.
+3. Captura de la interfaz.
+4. Peticion HTTP y codigo de respuesta.
+5. Resultado obtenido y observaciones.
+6. Estado Passed, Failed o Blocked.
+
+Las pruebas deberan realizarse con cuentas y datos de prueba autorizados.
+<!-- S4-TESTING-END -->
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+La documentación de servicios parte de OpenAPI y Scalar del backend implementado en Sprint 3. Durante el Sprint 4 se deberá contrastar cada recurso con los métodos, parámetros, recursos JSON, códigos de respuesta y reglas de autorización utilizados desde el frontend.
+
+| Contexto | Recursos REST de referencia (Sprint 3) |
+|---|---|
+| IAM | `/api/v1/users`, `/api/v1/user-notifications` |
+| Fleet | `/api/v1/bicycles`, `/api/v1/bike-points`, `/api/v1/bicycle-assignments` |
+| Trip | `/api/v1/trips`, `/api/v1/trip-users`, `/api/v1/trip-route-points`, `/api/v1/trip-photo-evidences`, `/api/v1/qr-validations` |
+| Billing | `/api/v1/plans`, `/api/v1/plan-features`, `/api/v1/payments`, `/api/v1/payment-methods`, `/api/v1/subscriptions` |
+| Maintenance | `/api/v1/maintenance-reports`, `/api/v1/maintenance-status-histories` |
+
+Documentación publicada según el Sprint 3: [Scalar — BiciGO API](https://backend-bicigo-production.up.railway.app/scalar/v1). El acceso actual y la versión de los contratos requieren revalidación. No se acredita autenticación JWT, recuperación real de contraseña ni pasarela de pago por la mera existencia de los recursos anteriores.
+
+<!-- S4-REST-DOCUMENTATION-START -->
+
+**RESTful Web Services - Technical Documentation**
+
+Los servicios REST de BiciGO se implementan mediante ASP.NET Core y C#, organizados por Bounded Contexts. Cada controlador expone operaciones HTTP que permiten consultar, registrar o actualizar recursos del dominio.
+
+- Framework: ASP.NET Core.
+- Lenguaje: C#.
+- ORM: Entity Framework Core.
+- Base de datos: MySQL.
+- API Documentation: OpenAPI y Scalar.
+- Backend Hosting: Railway.
+
+**Base URL:** https://backend-bicigo-production.up.railway.app
+
+**API Reference:** [Scalar OpenAPI](https://backend-bicigo-production.up.railway.app/scalar/v1)
+
+### Identity and Access Management
+
+| HTTP Method | Endpoint | Parameters / Resource | Expected HTTP Status |
+|---|---|---|---|
+| GET | /api/v1/users | email (optional) | 200 |
+| GET | /api/v1/users/{id} | User ID | 200, 404 |
+| POST | /api/v1/users | CreateUserResource | 201, 400, 409, 500 |
+| PATCH | /api/v1/users/{id} | UpdateUserResource | 200, 404 |
+| DELETE | /api/v1/users/{id} | User ID | 204, 404 |
+| GET | /api/v1/user-notifications | userId (optional) | 200 |
+| GET | /api/v1/user-notifications/{id} | Notification ID | 200, 404 |
+| POST | /api/v1/user-notifications | CreateUserNotificationResource | 201, 400 |
+| PATCH | /api/v1/user-notifications/{id}/read | Notification ID | 200, 404 |
+
+Los controladores permiten gestionar usuarios y notificaciones. La existencia de estos recursos no demuestra por si sola una autenticacion JWT ni un servicio de recuperacion de contrasena.
+
+### Fleet and Station Management
+
+| HTTP Method | Endpoint | Parameters / Resource | Expected HTTP Status |
+|---|---|---|---|
+| GET | /api/v1/bicycles | None | 200 |
+| GET | /api/v1/bicycles/{id} | Bicycle ID | 200, 404 |
+| POST | /api/v1/bicycles | CreateBicycleResource | 201, 400, 409 |
+| PUT | /api/v1/bicycles/{id} | CreateBicycleResource | 200, 400, 404 |
+| DELETE | /api/v1/bicycles/{id} | Bicycle ID | 204, 404 |
+| GET | /api/v1/bike-points | None | 200 |
+| GET | /api/v1/bike-points/{id} | BikePoint ID | 200, 404 |
+| POST | /api/v1/bike-points | CreateBikePointResource | 201, 400 |
+| PUT | /api/v1/bike-points/{id} | CreateBikePointResource | 200, 400, 404 |
+| DELETE | /api/v1/bike-points/{id} | BikePoint ID | 204, 404, 409 |
+| GET | /api/v1/bicycle-assignments | bicycleId, bikePointId | 200 |
+| GET | /api/v1/bicycle-assignments/{id} | Assignment ID | 200, 404 |
+| POST | /api/v1/bicycle-assignments | CreateBicycleAssignmentResource | 201, 400 |
+
+El contexto Fleet centraliza la gestion de bicicletas, estaciones y asignaciones. Entre sus reglas se identifica la validacion de codigos duplicados y la restriccion de eliminacion de estaciones que conservan bicicletas asignadas.
+
+### Trip Management
+
+| HTTP Method | Endpoint | Parameters / Resource | Expected HTTP Status |
+|---|---|---|---|
+| GET | /api/v1/trips | userId (optional) | 200 |
+| GET | /api/v1/trips/{id} | Trip ID | 200, 404 |
+| POST | /api/v1/trips | CreateTripResource | 201, 400, 409 |
+| PUT | /api/v1/trips/{id} | TripResource | 200, 400, 404, 409 |
+| POST | /api/v1/trips/{id}/finish | FinishTripResource | 200, 400, 404, 409 |
+| DELETE | /api/v1/trips/{id} | Trip ID | 204, 404 |
+| GET | /api/v1/trip-users | userId (optional) | 200 |
+| GET | /api/v1/trip-users/{id} | ID | 200, 404 |
+| POST | /api/v1/trip-users | CreateTripUserResource | 201, 400, 409 |
+| GET | /api/v1/trip-route-points | tripId (optional) | 200 |
+| GET | /api/v1/trip-route-points/{id} | ID | 200, 404 |
+| POST | /api/v1/trip-route-points | CreateTripRoutePointResource | 201, 400, 404, 409 |
+| GET | /api/v1/trip-photo-evidences | tripId (optional) | 200 |
+| GET | /api/v1/trip-photo-evidences/{id} | ID | 200, 404 |
+| POST | /api/v1/trip-photo-evidences | CreateTripPhotoEvidenceResource | 201, 400, 404 |
+| GET | /api/v1/qr-validations | tripId (optional) | 200 |
+| GET | /api/v1/qr-validations/{id} | ID | 200, 404 |
+| POST | /api/v1/qr-validations | CreateQrValidationResource | 201, 400, 404, 409 |
+
+El contexto Trip proporciona operaciones para administrar viajes, registrar coordenadas, almacenar referencias de evidencias fotograficas y gestionar validaciones QR.
+
+La finalizacion del viaje requiere una distancia valida. Los puntos de ruta solamente pueden registrarse para viajes en progreso, segun las reglas identificadas en los controladores.
+
+### Billing and Subscriptions
+
+| HTTP Method | Endpoint | Parameters / Resource | Expected HTTP Status |
+|---|---|---|---|
+| GET | /api/v1/plans | None | 200 |
+| GET | /api/v1/plans/{id} | Plan ID | 200, 404 |
+| GET | /api/v1/plan-features | planId (optional) | 200 |
+| GET | /api/v1/plan-features/{id} | ID | 200, 404 |
+| POST | /api/v1/plan-features | CreatePlanFeatureResource | 201, 400 |
+| GET | /api/v1/paymentmethods | userId (optional) | 200 |
+| GET | /api/v1/paymentmethods/{id} | ID | 200, 404 |
+| POST | /api/v1/paymentmethods | CreatePaymentMethodResource | 201, 400 |
+| GET | /api/v1/payments | userId, subscriptionId | 200 |
+| GET | /api/v1/payments/{id} | Payment ID | 200, 404 |
+| POST | /api/v1/payments | CreatePaymentResource | 201, 400 |
+| GET | /api/v1/subscriptions | userId (optional) | 200 |
+| GET | /api/v1/subscriptions/{id} | Subscription ID | 200, 404 |
+| POST | /api/v1/subscriptions | CreateSubscriptionResource | 201, 400 |
+
+El controlador PaymentMethods utiliza el token [controller] en su atributo Route. La ruta indicada debe contrastarse con el documento OpenAPI desplegado, especialmente antes de integrarla con los adaptadores del frontend.
+
+Los registros de pagos y metodos de pago no acreditan por si mismos la existencia de una pasarela financiera productiva.
+
+### Maintenance
+
+| HTTP Method | Endpoint | Parameters / Resource | Expected HTTP Status |
+|---|---|---|---|
+| GET | /api/v1/maintenance-reports | bikeId, status | 200 |
+| GET | /api/v1/maintenance-reports/{id} | Report ID | 200, 404 |
+| POST | /api/v1/maintenance-reports | CreateMaintenanceReportResource | 201, 400 |
+| POST | /api/v1/maintenance-reports/{bikeId}/status | UpdateBikeStatusResource | 204, 400, 404 |
+| GET | /api/v1/maintenance-status-histories | bikeId, maintenanceReportId | 200 |
+| GET | /api/v1/maintenance-status-histories/{id} | History ID | 200, 404 |
+| POST | /api/v1/maintenance-status-histories | CreateMaintenanceStatusHistoryResource | 201, 400 |
+
+El contexto Maintenance administra los reportes de incidencias y su historial. La operacion de cambio de estado valida los valores AVAILABLE y MAINTENANCE.
+
+**Summary of REST Operations**
+
+| Bounded Context | Controllers | HTTP Operations |
+|---|---:|---:|
+| IAM | 2 | 9 |
+| Fleet | 3 | 13 |
+| Trip | 5 | 18 |
+| Billing | 5 | 14 |
+| Maintenance | 2 | 7 |
+| Total | 17 | 61 |
+
+Los metodos, recursos y codigos HTTP se obtuvieron mediante la revision del codigo fuente de los controladores. Los codigos corresponden a respuestas declaradas o identificadas en la implementacion, no a resultados de pruebas ejecutadas.
+
+**HTTP Status Code Interpretation**
+
+| Code | Meaning | Application |
+|---|---|---|
+| 200 | OK | Consulta o actualizacion exitosa. |
+| 201 | Created | Creacion de un recurso. |
+| 204 | No Content | Operacion exitosa sin cuerpo de respuesta. |
+| 400 | Bad Request | Datos invalidos o incumplimiento de validaciones. |
+| 404 | Not Found | Recurso inexistente. |
+| 409 | Conflict | Duplicidad o conflicto con reglas del dominio. |
+| 500 | Internal Server Error | Error interno del servidor. |
+
+**Source Code References**
+
+- [IAM Controllers](https://github.com/Startup-Chapa/backend-bicigo/tree/main/backend-bicigo/Iam/Interfaces/REST)
+- [Fleet Controllers](https://github.com/Startup-Chapa/backend-bicigo/tree/main/backend-bicigo/Fleet/Interfaces/REST)
+- [Trip Controllers](https://github.com/Startup-Chapa/backend-bicigo/tree/main/backend-bicigo/Trip/Interfaces/REST)
+- [Billing Controllers](https://github.com/Startup-Chapa/backend-bicigo/tree/main/backend-bicigo/Billing/Interfaces/REST)
+- [Maintenance Controllers](https://github.com/Startup-Chapa/backend-bicigo/tree/main/backend-bicigo/Maintenance/Interfaces/REST)
+
+**Database Migration Observation**
+
+En la revision de Program.cs realizada el 27/11/2026, la rama main contiene Database.EnsureCreated() e instrucciones SQL de creacion de tablas. La sustitucion por Database.Migrate() constituye una actividad pendiente de acreditacion mediante el commit y las pruebas correspondientes.
+
+[Source code - Program.cs](https://github.com/Startup-Chapa/backend-bicigo/blob/main/backend-bicigo/Program.cs)
+
+<!-- S4-REST-DOCUMENTATION-END -->
+
+<!-- S4-SCALAR-EVIDENCE-START -->
+
+**OpenAPI and Scalar Documentation Evidence**
+
+**General API Documentation**
+
+![Scalar Overview](./Resources/chapter5/sprint4/scalar-overview.jpeg)
+
+*Figura: Documentación general de los servicios REST de BiciGO.*
+
+**Identity and Access Management**
+
+![Scalar IAM](./Resources/chapter5/sprint4/scalar-iam.jpeg)
+
+*Figura: Documentación del endpoint POST /api/v1/Users.*
+
+**Fleet and Station Management**
+
+![Scalar Fleet](./Resources/chapter5/sprint4/scalar-fleet.jpeg)
+
+*Figura: Documentación del endpoint GET /api/v1/Bicycles.*
+
+**Trip Management**
+
+![Scalar Trip](./Resources/chapter5/sprint4/scalar-trip.jpeg)
+
+*Figura: Documentación del endpoint POST /api/v1/Trips/{id}/finish.*
+
+**Billing and Subscriptions**
+
+![Scalar Billing](./Resources/chapter5/sprint4/scalar-billing.jpeg)
+
+*Figura: Documentación del endpoint GET /api/v1/Plans.*
+
+**Maintenance**
+
+![Scalar Maintenance](./Resources/chapter5/sprint4/scalar-maintenance.jpeg)
+
+*Figura: Documentación del endpoint POST /api/v1/maintenance-reports.*
+
+<!-- S4-SCALAR-EVIDENCE-END -->
+
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review
+
+La configuración objetivo conserva Firebase Hosting para la SPA y Railway para la API REST y MySQL. El frontend debe compilarse apuntando al origen real de la API, sin depender de JSON Server en producción.
+
+```bash
+npm ci
+npm run build
+firebase deploy --only hosting
+```
+
+Antes de publicar, verificar que el cliente HTTP y la variable `VITE_BICIGO_API_URL` construyen correctamente las rutas `/api/v1`, que CORS admite el origen de Firebase y que no se incluyen secretos en el bundle del frontend.
+
+| Producto | Plataforma | URL de referencia | Estado |
+|---|---|---|---|
+| Landing Page | GitHub Pages | https://startup-chapa.github.io/Landing-Page/ | Documentado en Sprint 1 |
+| Frontend | Firebase Hosting | https://example-pro-d6e84.web.app | URL histórica del Sprint 2; verificar nueva publicación |
+| Backend | Railway | https://backend-bicigo-production.up.railway.app/scalar/v1 | Despliegue documentado en Sprint 3; revalidar |
+| Persistencia | MySQL en Railway | Acceso interno | Verificar persistencia con pruebas de integración |
+
+Se adjuntarán capturas del build, despliegue y peticiones desde la aplicación publicada. No se acredita todavía un nuevo despliegue del Sprint 4.
+
+<!-- S4-MIGRATIONS-START -->
+**Backend Build and Database Migration Validation**
+
+El backend de BiciGO utiliza ASP.NET Core, C# y Entity Framework Core con MySQL. Una de las actividades asignadas para el TB2 consiste en revisar Program.cs y sustituir la creacion personalizada de tablas por el mecanismo de migraciones de Entity Framework Core.
+
+El siguiente procedimiento corresponde a una guia de verificacion y no a comandos cuya ejecucion haya sido acreditada en este Sprint.
+
+```bash
+dotnet --info
+dotnet restore
+dotnet build --configuration Release
+dotnet ef migrations list
+```
+
+La consulta de migraciones requiere la herramienta dotnet-ef y una configuracion valida del DbContext. Antes de aplicar cambios al esquema se debe confirmar el proyecto de inicio, la cadena de conexion, las migraciones existentes y el entorno de destino.
+
+| Verification | Evidence |
+|---|---|
+| Compilacion Release | Salida de dotnet build sin errores. |
+| Configuracion del DbContext | Codigo fuente y commit correspondiente. |
+| Migraciones | Historial de migraciones y revision de Program.cs. |
+| Inicializacion de la API | Logs del entorno autorizado. |
+| Documentacion REST | Acceso a Scalar y contrato OpenAPI. |
+| Persistencia MySQL | Consultas realizadas con datos de prueba. |
+
+No se deben publicar cadenas de conexion, claves, tokens ni credenciales en las capturas del informe.
+<!-- S4-MIGRATIONS-END -->
+
+#### 5.2.4.8. Team Collaboration Insights during Sprint
+
+La colaboración propuesta contempla la coordinación de los cinco Bounded Contexts, la revisión de contratos y la validación conjunta de los flujos integrados. Los responsables documentarán sus cambios mediante commits descriptivos y mantendrán la trazabilidad entre las tareas de Trello, las historias y las evidencias de ejecución.
+
+| Integrante | GitHub Username | Responsabilidad propuesta |
+|---|---|---|
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | Integración Fleet, coordinación con Maintenance y despliegue |
+| Armestar Felipa, Adrian Andres | Adrian5102 | Integración IAM y revisión de autenticación |
+| Ayllon Pauccar, Juan David | JuanDPAUC | Integración Billing & Subscriptions |
+| Franco del Carpio, José María | VoltTrd | Integración Trip Management |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | Integración Maintenance, coordinación con Fleet y documentación del Sprint 4 |
+
+El conteo de commits y Pull Requests por integrante queda pendiente hasta definir el rango del Sprint 4 y la rama de integración. Se deberá adjuntar GitHub Pulse y el historial filtrado, evitando atribuir al Sprint 4 los commits de los incrementos anteriores.
+
+<!-- S4-COLLABORATION-START -->
+**Collaboration Evidence and Review Criteria**
+
+La revision de la colaboracion considera los repositorios del frontend, backend, Landing Page e informe. Para evitar duplicidades, los commits compartidos entre ramas deben contabilizarse una sola vez por SHA.
+
+| Indicador | Fuente de verificacion |
+|---|---|
+| Commits individuales | Historial Git por autor y periodo |
+| Pull Requests | GitHub Pull Requests |
+| Participacion | GitHub Contributors |
+| Actividad durante el Sprint | GitHub Pulse |
+| Distribucion de tareas | Trello |
+| Entregables documentales | Project Report |
+
+**Evidence Links**
+
+- [Frontend Contributors](https://github.com/Startup-Chapa/frontend-bicigo/graphs/contributors)
+- [Backend Contributors](https://github.com/Startup-Chapa/backend-bicigo/graphs/contributors)
+- [Project Report Contributors](https://github.com/Startup-Chapa/project-report/graphs/contributors)
+- [Frontend Pull Requests](https://github.com/Startup-Chapa/frontend-bicigo/pulls)
+- [Backend Pull Requests](https://github.com/Startup-Chapa/backend-bicigo/pulls)
+
+Las metricas finales de participacion se determinaran al cierre del periodo acordado. No se atribuyen contribuciones individuales que no puedan verificarse.
+<!-- S4-COLLABORATION-END -->
+
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
 
@@ -1263,6 +2148,6 @@ El video de presentación del producto biciGO resume la propuesta de valor, los 
 
 - **Enlace:** [https://youtu.be/V5GNY8Vs4wA](https://youtu.be/V5GNY8Vs4wA)
 
-![Portada del video About-the-Product de biciGO](URL_PENDIENTE_PORTADA)
+![Portada del video About-the-Product de biciGO](./Resources/chapter5/about-the-product.png)
 
 *Figura: portada del video About-the-Product de biciGO.*
