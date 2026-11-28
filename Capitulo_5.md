@@ -1852,52 +1852,218 @@ En la revision de Program.cs realizada el 27/11/2026, la rama main contiene Data
 
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review
 
-La configuración objetivo conserva Firebase Hosting para la SPA y Railway para la API REST y MySQL. El frontend debe compilarse apuntando al origen real de la API, sin depender de JSON Server en producción.
+Durante el Sprint 4, el equipo realizó la revisión de la infraestructura de despliegue de BiciGO, verificando la disponibilidad de la aplicación web, los servicios REST, la estructura de almacenamiento y la compilación local de los componentes de software.
 
-```bash
-npm ci
-npm run build
-firebase deploy --only hosting
+La arquitectura utiliza Firebase Hosting para la Single Page Application desarrollada con Vue.js, Railway para el backend ASP.NET Core y MySQL como sistema de gestión de base de datos relacional.
+
+**Deployment Architecture**
+
+```mermaid
+flowchart LR
+    U[Usuario] --> F[Firebase Hosting]
+    F --> V[Vue.js Web Application]
+    V -->|HTTPS REST API| B[ASP.NET Core - Railway]
+    B -->|Entity Framework Core| D[(MySQL)]
+    D --> P[Persistent Volume]
+    B --> S[Scalar OpenAPI]
 ```
 
-Antes de publicar, verificar que el cliente HTTP y la variable `VITE_BICIGO_API_URL` construyen correctamente las rutas `/api/v1`, que CORS admite el origen de Firebase y que no se incluyen secretos en el bundle del frontend.
+**Deployed Software Components**
 
-| Producto | Plataforma | URL de referencia | Estado |
+| Producto | Plataforma | URL | Estado |
 |---|---|---|---|
 | Landing Page | GitHub Pages | https://startup-chapa.github.io/Landing-Page/ | Documentado en Sprint 1 |
-| Frontend | Firebase Hosting | https://example-pro-d6e84.web.app | URL histórica del Sprint 2; verificar nueva publicación |
-| Backend | Railway | https://backend-bicigo-production.up.railway.app/scalar/v1 | Despliegue documentado en Sprint 3; revalidar |
-| Persistencia | MySQL en Railway | Acceso interno | Verificar persistencia con pruebas de integración |
+| Frontend | Firebase Hosting | https://example-pro-d6e84.web.app/ | Publicado y verificado |
+| Backend | Railway | https://backend-bicigo-production.up.railway.app/ | Online |
+| REST API Documentation | Scalar | https://backend-bicigo-production.up.railway.app/scalar/v1 | Disponible |
+| Database | MySQL en Railway | Acceso interno | Estructura verificada |
 
-Se adjuntarán capturas del build, despliegue y peticiones desde la aplicación publicada. No se acredita todavía un nuevo despliegue del Sprint 4.
+**Firebase Hosting Deployment**
 
-<!-- S4-MIGRATIONS-START -->
-**Backend Build and Database Migration Validation**
+| Indicador | Resultado |
+|---|---|
+| Proyecto | 202620-Example-pro |
+| Versión publicada | 9d4c58 |
+| Último despliegue visible | 12/11/2026 - 22:50 |
+| Dominio principal | example-pro-d6e84.web.app |
+| Dominio alternativo | example-pro-d6e84.firebaseapp.com |
+| Plan | Spark |
+| Historial de versiones | Disponible |
 
-El backend de BiciGO utiliza ASP.NET Core, C# y Entity Framework Core con MySQL. Una de las actividades asignadas para el TB2 consiste en revisar Program.cs y sustituir la creacion personalizada de tablas por el mecanismo de migraciones de Entity Framework Core.
+La revisión acredita la disponibilidad del frontend publicado. La versión visible corresponde al 12 de noviembre de 2026, por lo que no se atribuye un nuevo despliegue al Sprint 4.
 
-El siguiente procedimiento corresponde a una guia de verificacion y no a comandos cuya ejecucion haya sido acreditada en este Sprint.
+**Railway Backend Deployment**
+
+| Indicador | Resultado |
+|---|---|
+| Proyecto | attractive-compassion |
+| Servicio | backend-bicigo |
+| Entorno | production |
+| Estado | Online / Active |
+| Deployment | Successful |
+| Región | US East |
+| Réplicas | 1 |
+| Origen del despliegue | GitHub |
+| Antigüedad visible | 15 días |
+
+La comunicación entre el frontend publicado y el backend se verificó mediante las solicitudes XHR de los recursos bike-points y bicycles, las cuales devolvieron HTTP 200, según las evidencias del apartado 5.2.4.5.
+
+**MySQL Database Infrastructure**
+
+La infraestructura contiene un servicio MySQL asociado al volumen mysql-volume. Se identificaron 17 tablas distribuidas entre los contextos del dominio.
+
+| Bounded Context | Tablas observadas |
+|---|---:|
+| Identity and Access Management | 2 |
+| Fleet and Station Management | 3 |
+| Trip Management | 5 |
+| Billing and Subscriptions | 5 |
+| Maintenance | 2 |
+| Total | 17 |
+
+La revisión confirma la existencia de la estructura de almacenamiento. No se realizaron modificaciones sobre las tablas ni pruebas completas de persistencia mediante operaciones de escritura.
+
+Se observaron dos cambios pendientes en el servicio MySQL de Railway, los cuales no fueron aplicados durante esta revisión.
+
+**Frontend Build Verification**
+
+Repositorio: https://github.com/Startup-Chapa/frontend-bicigo
 
 ```bash
-dotnet --info
-dotnet restore
-dotnet build --configuration Release
-dotnet ef migrations list
+git switch develop
+npm ci
+npm run build
 ```
 
-La consulta de migraciones requiere la herramienta dotnet-ef y una configuracion valida del DbContext. Antes de aplicar cambios al esquema se debe confirmar el proyecto de inicio, la cadena de conexion, las migraciones existentes y el entorno de destino.
-
-| Verification | Evidence |
+| Indicador | Resultado |
 |---|---|
-| Compilacion Release | Salida de dotnet build sin errores. |
-| Configuracion del DbContext | Codigo fuente y commit correspondiente. |
-| Migraciones | Historial de migraciones y revision de Program.cs. |
-| Inicializacion de la API | Logs del entorno autorizado. |
-| Documentacion REST | Acceso a Scalar y contrato OpenAPI. |
-| Persistencia MySQL | Consultas realizadas con datos de prueba. |
+| Rama | develop |
+| Node.js | 26.0.0 |
+| npm | 11.12.1 |
+| Vite | 8.3.2 |
+| Dependencias instaladas | 239 |
+| Módulos transformados | 890 |
+| Tiempo de compilación | 352 ms |
+| Bundle principal | 1072.76 kB |
+| Bundle principal gzip | 250.76 kB |
+| Resultado | Passed |
 
-No se deben publicar cadenas de conexion, claves, tokens ni credenciales en las capturas del informe.
+La compilación generó correctamente el directorio dist. Se identificaron nueve vulnerabilidades reportadas por npm, ocho de severidad alta y una moderada, además de advertencias sobre dependencias obsoletas y tamaño del bundle.
+
+Estas observaciones deberán atenderse mediante una revisión de dependencias y estrategias de code splitting.
+
+**Backend Build Verification**
+
+Repositorio: https://github.com/Startup-Chapa/backend-bicigo
+
+```bash
+dotnet --version
+dotnet restore
+dotnet build --configuration Release
+```
+
+| Indicador | Resultado |
+|---|---|
+| Rama | develop |
+| Commit inspeccionado | 64d11d8 |
+| SDK disponible | 11.0.100 |
+| Target Framework | net10.0 |
+| Restauración de dependencias | 15.9 s |
+| Compilación Release | 3.6 s |
+| Artefacto | backend-bicigo.dll |
+| Resultado | Passed |
+
+Inicialmente, la compilación presentó el error NETSDK1045 debido al uso de un SDK 7.0.302 incompatible con el framework objetivo. Tras actualizar el entorno de desarrollo, el proyecto compiló correctamente sin modificar su Target Framework.
+
+<!-- S4-MIGRATIONS-START -->
+
+**Entity Framework Core Migration Verification**
+
+Se inspeccionaron los archivos de migración y la configuración de inicialización de la base de datos en el commit 64d11d8 de la rama develop.
+
+| Elemento | Resultado |
+|---|---|
+| InitialCreate.cs | Encontrado |
+| AppDbContextModelSnapshot.cs | Encontrado |
+| Database.EnsureCreated() | Presente en Program.cs, línea 82 |
+| Database.Migrate() | No encontrado en Program.cs |
+| __EFMigrationsHistory | No visible en la captura de MySQL |
+| Migraciones aplicadas en producción | No verificadas |
+| Estado de la actividad | Pendiente de integración y validación |
+
+La existencia de archivos de migración no acredita su aplicación efectiva en producción. El mecanismo observado todavía utiliza EnsureCreated(), por lo que la transición hacia Migrate() requiere revisión, respaldo y validación previa en un entorno de pruebas.
+
+No se ejecutaron migraciones ni modificaciones sobre la base de datos de producción.
+
 <!-- S4-MIGRATIONS-END -->
+
+**Deployment Evidence**
+
+**Evidence S4-D01: Firebase Hosting**
+
+![Firebase Hosting](./Resources/chapter5/sprint4/deployment-firebase-hosting.jpeg)
+
+*Figura: Consola de Firebase Hosting con la versión publicada, dominios e historial de despliegues.*
+
+**Evidence S4-D02: Railway Service Architecture**
+
+![Railway Service Architecture](./Resources/chapter5/sprint4/deployment-railway-architecture.jpeg)
+
+*Figura: Arquitectura del entorno production con el backend, MySQL y el volumen de almacenamiento.*
+
+**Evidence S4-D03: Railway Backend Deployment**
+
+![Railway Backend Deployment](./Resources/chapter5/sprint4/deployment-railway-backend.jpeg)
+
+*Figura: Servicio backend-bicigo activo, con despliegue exitoso en la región US East.*
+
+**Evidence S4-D04: MySQL Database**
+
+![MySQL Database](./Resources/chapter5/sprint4/deployment-railway-mysql.jpeg)
+
+*Figura: Estructura de almacenamiento MySQL con las 17 tablas correspondientes a los cinco Bounded Contexts.*
+
+**Evidence S4-D05: Frontend Build**
+
+![Frontend Build](./Resources/chapter5/sprint4/deployment-frontend-build.jpeg)
+
+*Figura: Compilación exitosa del frontend mediante Vite y generación de los archivos de producción.*
+
+**Evidence S4-D06: Backend Build**
+
+![Backend Build](./Resources/chapter5/sprint4/deployment-backend-build.jpeg)
+
+*Figura: Compilación exitosa del backend ASP.NET Core en configuración Release y framework net10.0.*
+
+**Evidence S4-D07: Entity Framework Core Migrations**
+
+![Entity Framework Core Migrations](./Resources/chapter5/sprint4/deployment-efcore-migrations.jpeg)
+
+*Figura: Inspección de los archivos de migración y del mecanismo de inicialización de la base de datos.*
+
+**Deployment Verification Summary**
+
+| Verificación | Resultado |
+|---|---|
+| Frontend publicado | Verified |
+| Backend disponible | Verified |
+| Infraestructura MySQL | Verified |
+| Comunicación REST de Fleet | Passed |
+| Frontend Build | Passed |
+| Backend Build | Passed |
+| Migraciones EF Core en producción | Pending |
+| Persistencia funcional completa | Pending |
+| Nuevo despliegue durante Sprint 4 | Not verified |
+
+**Observaciones y oportunidades de mejora**
+
+- Mantener sincronizadas las versiones publicadas con las ramas de integración.
+- Revisar las vulnerabilidades y dependencias obsoletas del frontend.
+- Optimizar el tamaño de los archivos JavaScript mediante code splitting.
+- Completar la integración REST del contexto Maintenance.
+- Validar la transición de EnsureCreated() a Migrate() en un entorno controlado.
+- Verificar la persistencia de datos y los flujos completos de negocio antes de realizar un nuevo despliegue.
+- Evitar la exposición de credenciales, tokens y cadenas de conexión en las evidencias del informe.
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint
 
