@@ -3564,23 +3564,23 @@ Para la gestión de las actividades se utiliza Trello, manteniendo la organizaci
 
 | Epic / Story ID | Task ID | Task Title | Description | Estimation | Assigned To (Reference) | Status |
 |---|---|---|---|---:|---|---|
-| Transversal | T4-01 | Configure API connection | Configurar la URL base, Axios, manejo de errores y CORS. | 3 h | Eduardo / Equipo | To-do |
-| US-01, US-02, US-03 | T4-02 | Integrate IAM | Integrar los servicios de gestión de usuarios y revisar los mecanismos de autenticación. | 5 h | Adrian / Eduardo | To-do |
-| US-07, US-08, US-09 | T4-03 | Integrate Fleet | Integrar bicicletas, estaciones, filtros y disponibilidad. | 5 h | Eduardo | To-do |
+| Transversal | T4-01 | Configure API connection | Configurar la URL base, Axios, manejo de errores y CORS. | 3 h | Eduardo / Equipo | In-Process |
+| US-01, US-02, US-03 | T4-02 | Integrate IAM | Integrar los servicios de gestión de usuarios y revisar los mecanismos de autenticación. | 5 h | Adrian / Eduardo | In-Process |
+| US-07, US-08, US-09 | T4-03 | Integrate Fleet | Integrar bicicletas, estaciones, filtros y disponibilidad. | 5 h | Eduardo | In-Process |
 | US-11, US-13, US-15 | T4-04 | Integrate Trip | Integrar el inicio, consulta y finalización del alquiler. | 6 h | José / Eduardo | To-do |
 | US-16, US-17, US-19 | T4-05 | Integrate Billing | Integrar planes, métodos de pago y suscripciones. | 5 h | Juan / Eduardo | To-do |
 | US-26 | T4-06 | Integrate Damage Reports | Integrar el formulario de reporte de incidencias con la API. | 4 h | Eduardo | To-do |
 | US-29, US-33 | T4-07 | Integrate Incident Management | Integrar el seguimiento de reportes, historial y estados. | 5 h | Eduardo | To-do |
 | Transversal | T4-08 | UX and i18n corrections | Atender observaciones de usabilidad, traducciones y navegación. | 4 h | Equipo | To-do |
-| Transversal | T4-09 | End-to-end validation | Verificar los flujos funcionales integrados. | 5 h | Equipo | To-do |
-| Transversal | T4-10 | Production deployment | Compilar y verificar el despliegue integrado. | 3 h | Eduardo | To-do |
+| Transversal | T4-09 | End-to-end validation | Verificar los flujos funcionales integrados. | 5 h | Equipo | In-Process |
+| Transversal | T4-10 | Production deployment | Compilar y verificar el despliegue integrado. | 3 h | Eduardo | In-Process |
 | Transversal | T4-11 | Sprint evidence and documentation | Elaborar el informe, registrar commits y recopilar evidencias. | 4 h | Rodrigo | In-Process |
-| TS-SH01 | T4-12 | EF Core migrations | Revisar la inicialización de la base de datos y las migraciones. | 3 h | Juan | To-do |
+| TS-SH01 | T4-12 | EF Core migrations | Revisar la inicialización de la base de datos y las migraciones. | 3 h | Juan | In-Process |
 | Transversal | T4-13 | About-the-Product video | Elaborar la presentación narrada del producto. | 3 h | Eduardo | To-do |
 | Transversal | T4-14 | Final report and landing corrections | Corregir el informe, recomendaciones y Landing Page. | 3 h | Adrian | To-do |
 | Transversal | T4-15 | About-the-Team video | Elaborar la presentación del equipo. | 3 h | Rodrigo | To-do |
 | US-01 | T4-16 | Validate register contract | Contrastar el formulario de registro con CreateUserResource. | T4-02 | Adrian / Eduardo | To-do |
-| US-02 | T4-17 | Validate login and session | Verificar credenciales, autenticación y estado de sesión. | T4-02 | Adrian / Eduardo | To-do |
+| US-02 | T4-17 | Validate login and session | Verificar credenciales, autenticación y estado de sesión. | T4-02 | Adrian / Eduardo | In-Process |
 | US-03 | T4-18 | Review recovery service | Identificar y comprobar el servicio de recuperación de acceso. | T4-02 | Adrian / Eduardo | To-do |
 | US-07 | T4-19 | Verify bicycle map | Contrastar las bicicletas y estaciones de la API con el mapa. | T4-03 | Eduardo / Rodrigo | To-do |
 | US-08 | T4-20 | Verify bicycle details | Validar identificadores, disponibilidad y detalle de bicicletas. | T4-03 | Eduardo / Rodrigo | To-do |
@@ -3596,13 +3596,13 @@ Para la gestión de las actividades se utiliza Trello, manteniendo la organizaci
 | US-29 | T4-30 | Verify report tracking | Comprobar la consulta y persistencia de los reportes. | T4-07 | Rodrigo / Eduardo | To-do |
 | US-33 | T4-31 | Verify incident status and permissions | Validar cambios de estado, historial y permisos. | T4-07 | Rodrigo / Eduardo | To-do |
 | Transversal | T4-32 | Validate API error handling | Verificar errores HTTP, CORS y estados de carga. | T4-09 | Equipo | To-do |
-| Transversal | T4-33 | Verify responsive and bilingual UI | Comprobar resoluciones de 390, 768 y 1440 px e idiomas ES/EN. | T4-08 | Equipo | To-do |
-| TS-SH01 | T4-34 | Verify migration history | Revisar Program.cs y el historial de migraciones EF Core. | T4-12 | Juan | To-do |
-| Transversal | T4-35 | Verify frontend production build | Registrar la compilación de producción y versión publicada. | T4-10 | Eduardo | To-do |
-| TS-SH02 | T4-36 | Verify deployed API connectivity | Verificar la comunicación HTTPS entre la SPA y Railway. | T4-10 | Eduardo | To-do |
-| Transversal | T4-37 | Document Scalar evidence | Incorporar las seis capturas de Scalar y verificar su visualización. | T4-11 | Rodrigo | In-Process |
+| Transversal | T4-33 | Verify responsive and bilingual UI | Comprobar resoluciones de 390, 768 y 1440 px e idiomas ES/EN. | T4-08 | Equipo | In-Process |
+| TS-SH01 | T4-34 | Verify migration history | Revisar Program.cs y el historial de migraciones EF Core. | T4-12 | Juan | In-Process |
+| Transversal | T4-35 | Verify frontend production build | Registrar la compilación de producción y versión publicada. | T4-10 | Eduardo | Done |
+| TS-SH02 | T4-36 | Verify deployed API connectivity | Verificar la comunicación HTTPS entre la SPA y Railway. | T4-10 | Eduardo | In-Process |
+| Transversal | T4-37 | Document Scalar evidence | Incorporar las seis capturas de Scalar y verificar su visualización. | T4-11 | Rodrigo | Done |
 | Transversal | T4-38 | Collect development and collaboration evidence | Registrar commits, ramas, Pull Requests y contribuciones. | T4-11 | Rodrigo | In-Process |
-| Transversal | T4-39 | Collect execution and deployment evidence | Registrar pruebas funcionales y evidencias de despliegue. | T4-11 | Rodrigo / Equipo | To-do |
+| Transversal | T4-39 | Collect execution and deployment evidence | Registrar pruebas funcionales y evidencias de despliegue. | T4-11 | Rodrigo / Equipo | To-Review |
 | Transversal | T4-40 | Reconcile final backlog and report | Sincronizar las 40 tarjetas, estados y evidencias con el informe. | T4-11 | Rodrigo | In-Process |
 | **Total** | **40 tareas** | | | **61 h** | | |
 
@@ -3618,12 +3618,12 @@ Los responsables corresponden a las referencias registradas en Trello y a la dis
 | Complementary Microtasks | 25 |
 | Total Tasks | 40 |
 | Estimated Effort | 61 h |
-| To-do | 36 |
-| In-Process | 4 |
-| To-Review | 0 |
-| Done | 0 |
+| To-do | 24 |
+| In-Process | 13 |
+| To-Review | 1 |
+| Done | 2 |
 
-Los estados corresponden a la consulta del tablero realizada el 27/11/2026. Se actualizarán conforme se obtengan las evidencias técnicas y se realice la revisión de las actividades.
+Los estados corresponden a la revisión del tablero realizada el 28/11/2026. Se conservaron las actividades pendientes y se actualizaron únicamente las tareas con avances o evidencias verificadas.
 
 **Task Distribution by Bounded Context**
 
@@ -3668,11 +3668,18 @@ El tablero puede consultarse directamente mediante el siguiente enlace:
 
 ![Sprint Backlog 4 - Trello](./Resources/chapter5/sprint4/trello4.jpeg)
 
-*Figura: Tablero Trello del Sprint 4 de BiciGO, conformado por 40 tarjetas.*
+*Figura: Estado inicial del tablero Trello del Sprint 4, conformado por 40 tarjetas.*
+
+**Updated Sprint Backlog Evidence**
+
+![Sprint Backlog 4 - Updated Trello](./Resources/chapter5/sprint4/collaboration-trello-final.jpeg)
+
+*Figura: Estado del tablero al 28/11/2026, con 24 tareas pendientes, 13 en proceso, una en revisión y dos completadas.*
 
 <!-- S4-TRELLO-IMAGE-END -->
 
 El seguimiento mediante Trello permite mantener la trazabilidad entre las historias de usuario, las actividades de integración, las responsabilidades del equipo y las evidencias presentadas durante el Sprint Review.
+
 
 #### 5.2.4.4. Development Evidence for Sprint Review
 
