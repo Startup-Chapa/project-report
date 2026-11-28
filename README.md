@@ -4440,41 +4440,198 @@ No se ejecutaron migraciones ni modificaciones sobre la base de datos de producc
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint
 
-La colaboración propuesta contempla la coordinación de los cinco Bounded Contexts, la revisión de contratos y la validación conjunta de los flujos integrados. Los responsables documentarán sus cambios mediante commits descriptivos y mantendrán la trazabilidad entre las tareas de Trello, las historias y las evidencias de ejecución.
+Durante el Sprint 4, el equipo organizó las actividades de integración, revisión técnica, validación funcional y documentación mediante GitHub y Trello. La colaboración se estructuró considerando las responsabilidades de los cinco integrantes y los Bounded Contexts del producto.
 
-| Integrante | GitHub Username | Responsabilidad propuesta |
+**Team Responsibilities**
+
+| Integrante | GitHub Username | Responsabilidad de referencia |
 |---|---|---|
-| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | Integración Fleet, coordinación con Maintenance y despliegue |
-| Armestar Felipa, Adrian Andres | Adrian5102 | Integración IAM y revisión de autenticación |
-| Ayllon Pauccar, Juan David | JuanDPAUC | Integración Billing & Subscriptions |
-| Franco del Carpio, José María | VoltTrd | Integración Trip Management |
-| Velasquez Velasquez, Rodrigo | Rodrigov233 | Integración Maintenance, coordinación con Fleet y documentación del Sprint 4 |
+| Aguirre Ramos, Eduardo Manuel | TheEngineEdu | Integración Fleet, coordinación técnica y despliegue |
+| Armestar Felipa, Adrian Andres | Adrian5102 | IAM, revisión del informe y recomendaciones |
+| Ayllon Pauccar, Juan David | JuanDPAUC | Billing, autenticación JWT y migraciones EF Core |
+| Franco del Carpio, José María | VoltTrd | Trip Management |
+| Velasquez Velasquez, Rodrigo | Rodrigov233 | Maintenance, Fleet y documentación del Sprint 4 |
 
-El conteo de commits y Pull Requests por integrante queda pendiente hasta definir el rango del Sprint 4 y la rama de integración. Se deberá adjuntar GitHub Pulse y el historial filtrado, evitando atribuir al Sprint 4 los commits de los incrementos anteriores.
+Las responsabilidades representan la distribución de trabajo registrada en el informe y el backlog. No implican que todas las actividades asignadas hayan sido completadas.
 
 <!-- S4-COLLABORATION-START -->
-**Collaboration Evidence and Review Criteria**
 
-La revision de la colaboracion considera los repositorios del frontend, backend, Landing Page e informe. Para evitar duplicidades, los commits compartidos entre ramas deben contabilizarse una sola vez por SHA.
+**Project Report Activity**
 
-| Indicador | Fuente de verificacion |
-|---|---|
-| Commits individuales | Historial Git por autor y periodo |
-| Pull Requests | GitHub Pull Requests |
-| Participacion | GitHub Contributors |
-| Actividad durante el Sprint | GitHub Pulse |
-| Distribucion de tareas | Trello |
-| Entregables documentales | Project Report |
+GitHub Pulse muestra la actividad correspondiente al periodo comprendido entre el 27 de octubre y el 27 de noviembre de 2026.
 
-**Evidence Links**
+| Indicador | Resultado |
+|---|---:|
+| Autores activos | 4 |
+| Commits en main, excluyendo merges | 13 |
+| Commits en todas las ramas, excluyendo merges | 21 |
+| Pull Requests integrados | 1 |
+| Pull Requests abiertos | 0 |
+| Issues activos | 0 |
+| Archivos modificados en main | 19 |
+| Líneas agregadas en main | 1440 |
+| Líneas eliminadas en main | 454 |
 
+Estas métricas corresponden al intervalo mensual mostrado por GitHub Pulse y no exclusivamente al Sprint 4.
+
+**Historical Repository Contributions**
+
+Los gráficos de GitHub Contributors permiten observar la participación histórica en la rama main, excluyendo los commits de integración.
+
+| GitHub Username | Project Report | Frontend | Backend | Landing Page |
+|---|---:|---:|---:|---:|
+| TheEngineEdu | 1 | 2 | 25 | 1 |
+| Adrian5102 | 6 | 0 | 26 | 7 |
+| JuanDPAUC | 6 | 0 | 44 | 0 |
+| VoltTrd | 0 | 1 | 4 | 0 |
+| Rodrigov233 | 1 | 0 | 28 | 0 |
+| Total visible | 14 | 3 | 127 | 8 |
+
+Para Project Report se seleccionó el último mes. Para Frontend, Backend y Landing Page se seleccionaron los últimos tres meses, conservando los intervalos visibles en las capturas.
+
+Los valores cero indican que el integrante no aparece en el gráfico seleccionado. No demuestran ausencia de participación en otras ramas, actividades o periodos.
+
+Las métricas de Pulse y Contributors pueden diferir debido a los intervalos temporales y criterios de agregación utilizados por GitHub.
+
+**Backend Contribution Analysis**
+
+| Integrante | Commits | Additions | Deletions |
+|---|---:|---:|---:|
+| JuanDPAUC | 44 | 1631 | 44 |
+| Rodrigov233 | 28 | 2925 | 0 |
+| Adrian5102 | 26 | 941 | 13 |
+| TheEngineEdu | 25 | 2256 | 2369 |
+| VoltTrd | 4 | 1757 | 0 |
+| Total | 127 | 9510 | 2426 |
+
+La evidencia histórica del backend muestra la participación de los cinco integrantes. El número de commits y líneas modificadas constituye un indicador de actividad, pero no una medición directa de la calidad del software.
+
+**Sprint 4 Commit Analysis**
+
+Se realizó una revisión de los commits registrados entre el 13 y el 28 de noviembre de 2026, considerando el 13 de noviembre como fecha de referencia provisional posterior al Sprint 3.
+
+El análisis comprende las siguientes ramas:
+
+- Project Report: develop.
+- Backend: develop y feature/jwt-iam.
+- Frontend: develop.
+- Landing Page: main.
+
+Los commits se contabilizaron una sola vez por SHA. Se identificaron 15 commits, de los cuales 14 corresponden a cambios individuales y uno a integración de ramas.
+
+| Integrante | Commits sin merges | Merges | Total |
+|---|---:|---:|---:|
+| Rodrigov233 | 8 | 1 | 9 |
+| Adrian5102 | 4 | 0 | 4 |
+| JuanDPAUC | 2 | 0 | 2 |
+| TheEngineEdu | 0 | 0 | 0 |
+| VoltTrd | 0 | 0 | 0 |
+| Total | 14 | 1 | 15 |
+
+El recuento corresponde exclusivamente a las ramas consultadas y al momento de la revisión. No constituye un inventario exhaustivo de todas las ramas ni de todas las actividades realizadas por el equipo.
+
+**Verified Sprint 4 Commit History**
+
+| Repository | Commit ID | Author | Contribution | Date (Lima) |
+|---|---|---|---|---|
+| Project Report | 8d8cac5 | Adrian5102 | Incorporación de recomendaciones | 24/11/2026 |
+| Project Report | f30e9c1 | Adrian5102 | Correcciones de conclusiones | 24/11/2026 |
+| Project Report | 791e8ce | Adrian5102 | Corrección de fecha en carátula | 26/11/2026 |
+| Project Report | d679644 | Adrian5102 | Student Outcomes TB2 | 26/11/2026 |
+| Backend | 63311ff | JuanDPAUC | Implementación de autenticación JWT | 27/11/2026 |
+| Backend | 591f26c | JuanDPAUC | Corrección de conflicto BCrypt | 27/11/2026 |
+| Project Report | 8a31b3f | Rodrigov233 | Documentación inicial del Sprint 4 | 27/11/2026 |
+| Project Report | 0f6e382 | Rodrigov233 | Planning, backlog y servicios REST | 27/11/2026 |
+| Project Report | 050f91c | Rodrigov233 | Integración en develop | 27/11/2026 |
+| Project Report | e49bff9 | Rodrigov233 | Sincronización del Capítulo V | 27/11/2026 |
+| Project Report | 8c34033 | Rodrigov233 | Corrección de imágenes y navegación | 27/11/2026 |
+| Project Report | 091a849 | Rodrigov233 | Corrección de diagramas del Capítulo IV | 27/11/2026 |
+| Project Report | 0067b7f | Rodrigov233 | Corrección de diagramas del README | 27/11/2026 |
+| Project Report | 546b666 | Rodrigov233 | Execution Evidence y resultados de pruebas | 27/11/2026 |
+| Project Report | bcd1170 | Rodrigov233 | Deployment Evidence y compilación | 28/11/2026 |
+
+La autoría indicada corresponde a las cuentas registradas por GitHub. Se utilizaron herramientas de asistencia de IA para apoyar la elaboración y corrección de la documentación.
+
+Los cambios de autenticación JWT se encuentran en feature/jwt-iam. Su integración en develop y su publicación en producción no se consideran verificadas.
+
+**Collaboration and Task Management**
+
+El tablero de Trello permite registrar las actividades principales, microtareas, responsables de referencia y estados de ejecución.
+
+| Estado | Tarjetas | Porcentaje |
+|---|---:|---:|
+| To-do | 24 | 60% |
+| In-Process | 13 | 32.5% |
+| To-Review | 1 | 2.5% |
+| Done | 2 | 5% |
+| Total | 40 | 100% |
+
+Las tareas T4-35 y T4-37 se trasladaron a Done al contar con evidencias de compilación del frontend y documentación Scalar.
+
+La tarea T4-39 se trasladó a To-Review tras publicar las evidencias de ejecución y despliegue. Las demás actividades mantienen su estado según el nivel de validación disponible.
+
+El estado del tablero corresponde a la revisión del 28 de noviembre de 2026 y no representa el cierre de todas las funcionalidades del Sprint.
+
+**Collaboration Evidence**
+
+**Evidence S4-C01: Project Report Pulse**
+
+![Project Report Pulse](./Resources/chapter5/sprint4/collaboration-report-pulse.jpeg)
+
+*Figura: Actividad mensual del repositorio del informe.*
+
+**Evidence S4-C02: Project Report Contributors**
+
+![Project Report Contributors](./Resources/chapter5/sprint4/collaboration-report-contributors.jpeg)
+
+*Figura: Contribuciones históricas de los integrantes en main.*
+
+**Evidence S4-C03: Frontend Contributors**
+
+![Frontend Contributors](./Resources/chapter5/sprint4/collaboration-frontend-contributors.jpeg)
+
+*Figura: Actividad histórica del repositorio frontend.*
+
+**Evidence S4-C04: Backend Contributors**
+
+![Backend Contributors](./Resources/chapter5/sprint4/collaboration-backend-contributors.jpeg)
+
+*Figura: Participación de los cinco integrantes en el backend.*
+
+**Evidence S4-C05: Landing Page Contributors**
+
+![Landing Page Contributors](./Resources/chapter5/sprint4/collaboration-landing-contributors.jpeg)
+
+*Figura: Contribuciones históricas al desarrollo de la Landing Page.*
+
+**Evidence S4-C06: Sprint 4 Commit History**
+
+![Sprint 4 Commit History](./Resources/chapter5/sprint4/collaboration-sprint4-commits.jpeg)
+
+*Figura: Historial de documentación y correcciones integradas en develop.*
+
+**Evidence S4-C07: Sprint Backlog Review**
+
+![Sprint Backlog Review](./Resources/chapter5/sprint4/collaboration-trello-final.jpeg)
+
+*Figura: Estado de las 40 tarjetas de Trello al 28 de noviembre de 2026.*
+
+**Repository and Collaboration Links**
+
+- [Project Report Pulse](https://github.com/Startup-Chapa/project-report/pulse)
+- [Project Report Contributors](https://github.com/Startup-Chapa/project-report/graphs/contributors)
 - [Frontend Contributors](https://github.com/Startup-Chapa/frontend-bicigo/graphs/contributors)
 - [Backend Contributors](https://github.com/Startup-Chapa/backend-bicigo/graphs/contributors)
-- [Project Report Contributors](https://github.com/Startup-Chapa/project-report/graphs/contributors)
-- [Frontend Pull Requests](https://github.com/Startup-Chapa/frontend-bicigo/pulls)
-- [Backend Pull Requests](https://github.com/Startup-Chapa/backend-bicigo/pulls)
+- [Landing Page Contributors](https://github.com/Startup-Chapa/Landing-Page/graphs/contributors)
+- [Develop Commit History](https://github.com/Startup-Chapa/project-report/commits/develop/)
+- [Sprint 4 Trello Board](https://trello.com/b/FJ6zVLwa/sprint-4-web-application-bicigo)
 
-Las metricas finales de participacion se determinaran al cierre del periodo acordado. No se atribuyen contribuciones individuales que no puedan verificarse.
+**Team Collaboration Review**
+
+La colaboración permitió consolidar la documentación de los componentes, revisar la infraestructura y verificar las compilaciones del frontend y backend. Asimismo, se identificaron oportunidades de mejora relacionadas con la integración de Maintenance, autenticación JWT, migraciones EF Core, traducciones y validación de los flujos completos de negocio.
+
+El equipo deberá mantener la trazabilidad entre tareas, commits, evidencias y criterios de aceptación para facilitar la integración final del producto.
+
 <!-- S4-COLLABORATION-END -->
 
 ## 5.3. Validation Interviews.
