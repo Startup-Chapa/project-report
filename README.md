@@ -2386,19 +2386,19 @@ El diagrama de contenedores (L2) descompone BiciGo en sus bloques de alto nivel:
 ### 4.7.1. Class Diagrams
 IAM
 
-[iam](./Resources/chapter4/IAMSLA.png)
+![IAM — Class Diagram](./Resources/chapter4/IAMSLA.png)
 
 Trip managment
-[trip](/Resources/chapter4/trip.png)
+![Trip Management — Class Diagram](./Resources/chapter4/trip.png)
 
 Fleet & Station Management
-[fleet](./Resources/chapter4/fleet.png)
+![Fleet & Station Management — Class Diagram](./Resources/chapter4/fleet.png)
 
 Billing
-[billing](./Resources/chapter4/billing.png)
+![Billing — Class Diagram](./Resources/chapter4/billing.png)
 
 Maintance
-[maintance](./Resources/chapter4/main.png)
+![Maintenance — Class Diagram](./Resources/chapter4/main.png)
 ## 4.8. Database Design
 ![Diagrama de base de datos de biciGO](./Resources/chapter-images/chapter-4/BICIGO.jpeg)
 ### 4.8.1. Database Diagrams
