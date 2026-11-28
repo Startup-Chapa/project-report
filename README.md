@@ -130,16 +130,14 @@ Esta distribución evidencia un esfuerzo colaborativo y la participación activa
 
 Durante esta fase, el equipo implementó el primer incremento de backend de biciGO (RESTful Web Services organizados por Bounded Contexts), documentó el Sprint 3 en el Capítulo V del informe y aprovisionó la base de datos MySQL en Azure como parte del despliegue.
 
-<!-- Imagen de contribuciones para AV2: reemplazar URL_PENDIENTE con la ruta o URL de la captura de GitHub -->
-
-![Gráfico de contribuciones del repositorio del informe del proyecto para AV2](URL_PENDIENTE)
-
-Figura: Gráfico de contribuciones del repositorio del informe del proyecto para AV2, mostrando la actividad de colaboración de todos los miembros del equipo durante el Sprint 3 y el despliegue en Azure.
+[Consultar historial de contribuciones del proyecto](https://github.com/Startup-Chapa/project-report/graphs/contributors) — captura histórica de AV2 pendiente.
 
 
 <div style="page-break-after: always;"></div>
 
 # Tabla de contenidos
+
+**Acceso directo:** [Sprint 4 — documentación y evidencias](./Capitulo_5.md#524-sprint-4).
 
 ## [Capítulo I: Introducción](Capitulo_1.md)
 
@@ -258,7 +256,7 @@ Figura: Gráfico de contribuciones del repositorio del informe del proyecto para
   - [5.3.1 Diseño de Entrevistas](Capitulo_5.md#531-diseño-de-entrevistas)
   - [5.3.2 Registro de Entrevistas](Capitulo_5.md#532-registro-de-entrevistas)
   - [5.3.3 Evaluaciones según heurísticas](Capitulo_5.md#533-evaluaciones-según-heurísticas)
-- [5.4 About-the-Product](Capitulo_5.md#54-about-the-product)
+- [5.4 About-the-Product](Capitulo_5.md#54-video-about-the-product)
 
 ## [Conclusiones](Conclusiones_bibliografica.md#conclusiones)
 
@@ -2462,13 +2460,9 @@ La aplicación se organiza por contextos funcionales y comparte en `src` el enru
 
 *Figura: repositorio de la Landing Page.*
 
-![Repositorio del frontend](./Resources/chapter-images/chapter-5/webapp.png)
+[Consultar repositorio del frontend](https://github.com/Startup-Chapa/frontend-bicigo) — captura pendiente.
 
-*Figura: repositorio de la Frontend Web Application.*
-
-![Repositorio de plataforma](./Resources/chapter-images/chapter-5/platform.png)
-
-*Figura: captura histórica asociada a plataforma; confirmar su repositorio y alcance antes de presentarla como backend implementado.*
+[Consultar repositorio del backend](https://github.com/Startup-Chapa/backend-bicigo) — captura pendiente.
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
